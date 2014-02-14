@@ -39,7 +39,7 @@
 #include <kiconloader.h>
 #include <klocale.h>
 
-#include <QtCore/QTimer>
+#include <QTimer>
 #include <QDesktopWidget>
 
 #include <iostream>
@@ -50,8 +50,8 @@
 
 #include "../config-apps.h"
 #ifdef QT_QTDBUS_FOUND
-#include <QtDBus/QDBusConnection>
-#include <QtDBus/QDBusConnectionInterface>
+#include <QDBusConnection>
+#include <QDBusConnectionInterface>
 #endif
 
 #ifdef Q_WS_WIN

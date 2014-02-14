@@ -23,9 +23,9 @@
 #include <kdatepicker.h>
 
 // Qt
-#include <QtCore/QFile>
+#include <QFile>
 #include <QDesktopWidget>
-#include <QtCore/QTextStream>
+#include <QTextStream>
 #include <QTextCursor>
 #include <QLabel>
 

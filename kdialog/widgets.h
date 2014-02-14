@@ -22,9 +22,9 @@
 #define WIDGETS_H
 
 #include <QDate>
-#include <QtCore/QByteRef>
+#include <QByteRef>
 #include <QWidget>
-#include <QtCore/QStringList>
+#include <QStringList>
 
 namespace Widgets
 {
