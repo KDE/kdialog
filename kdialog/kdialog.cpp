@@ -29,7 +29,7 @@
 #include <kpassivepopup.h>
 #include <krecentdocument.h>
 #include <kcmdlineargs.h>
-#include <kaboutdata.h>
+#include <k4aboutdata.h>
 #include <kfiledialog.h>
 #include <kfileitem.h>
 #include <kicondialog.h>
@@ -38,6 +38,7 @@
 #include <kwindowsystem.h>
 #include <kiconloader.h>
 #include <klocale.h>
+#include <kurl.h>
 
 #include <QTimer>
 #include <QDesktopWidget>
@@ -305,7 +306,7 @@ static int directCommand(KCmdLineArgs *args)
           if( values.count() == 2 )
           {
             dontagaincfg = new KConfig( values[ 0 ] );
-            KMessageBox::setDontShowAskAgainConfig( dontagaincfg );
+            KMessageBox::setDontShowAgainConfig( dontagaincfg );
             dontagain = values[ 1 ];
           }
           else
@@ -569,7 +570,7 @@ static int directCommand(KCmdLineArgs *args)
 	}
 	Widgets::handleXGeometry(&dlg);
 	kapp->setTopWidget( &dlg );
-	dlg.setCaption(title.isEmpty() ? i18nc("@title:window", "Open") : title);
+	dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
 	dlg.exec();
 
         if (args->isSet("multiple")) {
@@ -614,7 +615,7 @@ static int directCommand(KCmdLineArgs *args)
 	dlg.setOperationMode( KFileDialog::Saving );
 	Widgets::handleXGeometry(&dlg);
 	kapp->setTopWidget( &dlg );
-	dlg.setCaption(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
+	dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
 	dlg.exec();
 
 	if ( args->isSet("getsaveurl") ) {
@@ -652,7 +653,7 @@ static int directCommand(KCmdLineArgs *args)
 
 	Widgets::handleXGeometry(&myDialog);
 	if ( !title.isEmpty() )
-	    myDialog.setCaption( title );
+	    myDialog.setWindowTitle( title );
 
 	if ( myDialog.exec() == QDialog::Accepted )
 	    url =  myDialog.url();
@@ -685,7 +686,7 @@ static int directCommand(KCmdLineArgs *args)
 	}
 	Widgets::handleXGeometry(&dlg);
 	kapp->setTopWidget( &dlg );
-	dlg.setCaption(title.isEmpty() ? i18nc("@title:window", "Open") : title);
+	dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
 	dlg.exec();
 
         if (args->isSet("multiple")) {
@@ -749,7 +750,7 @@ static int directCommand(KCmdLineArgs *args)
         dlg.setIconSize(KIconLoader::SizeHuge);
 
 	if (!title.isEmpty())
-	    dlg.setCaption(title);
+	    dlg.setWindowTitle(title);
 
 	Widgets::handleXGeometry(&dlg);
 
@@ -789,7 +790,7 @@ static int directCommand(KCmdLineArgs *args)
         }
         Widgets::handleXGeometry(&dlg);
         kapp->setTopWidget(&dlg);
-        dlg.setCaption(title.isEmpty() ? i18nc("@title:window", "Choose Color") : title);
+        dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Choose Color") : title);
 
         if (dlg.exec() == KColorDialog::Accepted) {
             QString result;
@@ -840,9 +841,9 @@ static int directCommand(KCmdLineArgs *args)
 
 int main(int argc, char *argv[])
 {
-  KAboutData aboutData( "kdialog", 0, ki18n("KDialog"),
+  K4AboutData aboutData( "kdialog", 0, ki18n("KDialog"),
                         "1.0", ki18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
-			KAboutData::License_GPL,
+			K4AboutData::License_GPL,
                         ki18n("(C) 2000, Nick Thompson"));
   aboutData.addAuthor(ki18n("David Faure"), ki18n("Current maintainer"),"faure@kde.org");
   aboutData.addAuthor(ki18n("Brad Hards"), KLocalizedString(), "bradh@frogmouth.net");
