@@ -9,7 +9,7 @@ qt5_add_dbus_adaptor( kdialog_SRCS org.kde.kdialog.ProgressDialog.xml progressdi
 add_executable(kdialog ${kdialog_SRCS})
 
 # Need libkfile due to the code that adjusts the geometry of the KDirSelectDialog
-target_link_libraries(kdialog Qt5::DBus KF5::KIOWidgets KF5::KDE4Support)
+target_link_libraries(kdialog Qt5::DBus KF5::KIOWidgets KF5::KDELibs4Support)
 # if (Q_WS_X11)
 #   target_link_libraries(kdialog ${X11_X11_LIB})
 #   if (QT_QTDBUS_FOUND)
