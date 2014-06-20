@@ -841,10 +841,12 @@ static int directCommand(KCmdLineArgs *args)
 
 int main(int argc, char *argv[])
 {
+    KLocalizedString::setApplicationDomain("kdialog");
+
   K4AboutData aboutData( "kdialog", 0, ki18n("KDialog"),
-                        "1.0", ki18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
-			K4AboutData::License_GPL,
-                        ki18n("(C) 2000, Nick Thompson"));
+                         "1.0", ki18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
+                         K4AboutData::License_GPL,
+                         ki18n("(C) 2000, Nick Thompson"));
   aboutData.addAuthor(ki18n("David Faure"), ki18n("Current maintainer"),"faure@kde.org");
   aboutData.addAuthor(ki18n("Brad Hards"), KLocalizedString(), "bradh@frogmouth.net");
   aboutData.addAuthor(ki18n("Nick Thompson"),KLocalizedString(), 0/*"nickthompson@lucent.com" bounces*/);
@@ -914,4 +916,3 @@ int main(int argc, char *argv[])
   // execute direct kdialog command
   return directCommand(args);
 }
-
