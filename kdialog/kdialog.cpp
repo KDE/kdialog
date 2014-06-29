@@ -49,8 +49,8 @@
 #include <netwm.h>
 #endif
 
-#include "../config-apps.h"
-#ifdef QT_QTDBUS_FOUND
+#include "config-kdialog.h"
+#ifdef Qt5DBus_FOUND
 #include <QDBusConnection>
 #include <QDBusConnectionInterface>
 #endif
@@ -103,7 +103,7 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
  */
 bool sendVisualNotification(const QString &text, const QString &title, const QString &icon, int timeout)
 {
-#ifdef QT_QTDBUS_FOUND
+#ifdef Qt5DBus_FOUND
   const QString dbusServiceName = "org.freedesktop.Notifications";
   const QString dbusInterfaceName = "org.freedesktop.Notifications";
   const QString dbusPath = "/org/freedesktop/Notifications";
