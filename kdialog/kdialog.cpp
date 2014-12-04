@@ -20,8 +20,7 @@
 //  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //
 
-#include <QDate>
-#include <kdebug.h>
+#include "config-kdialog.h"
 #include "widgets.h"
 
 #include <kmessagebox.h>
@@ -38,15 +37,18 @@
 #include <kwindowsystem.h>
 #include <kiconloader.h>
 #include <KLocalizedString>
+#include <kdebug.h>
 
+#include <QDate>
 #include <QUrl>
 #include <QTimer>
 #include <QDesktopWidget>
 
 #include <iostream>
 
-#if defined Q_WS_X11 && ! defined K_WS_QTONLY
-#include <netwm.h>
+#if defined HAVE_X11 && !defined K_WS_QTONLY
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
 #endif
 
 #include "config-kdialog.h"
@@ -431,23 +433,23 @@ static int directCommand(KCmdLineArgs *args)
         timer->setSingleShot( true );
         timer->start( timeout );
 
-#ifdef Q_WS_X11
+#ifdef HAVE_X11
 	QString geometry;
-	KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
+    KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
 	if (args && args->isSet("geometry"))
 		geometry = args->getOption("geometry");
-	if ( !geometry.isEmpty()) {
+    if ( !geometry.isEmpty()) {
 	    int x, y;
 	    int w, h;
-	    int m = XParseGeometry( geometry.toLatin1(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
+        int m = XParseGeometry( geometry.toLatin1().constData(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
 	    if ( (m & XNegative) )
-		x = KApplication::desktop()->width()  + x - w;
+            x = KApplication::desktop()->width()  + x - w;
 	    if ( (m & YNegative) )
-		y = KApplication::desktop()->height() + y - h;
+            y = KApplication::desktop()->height() + y - h;
 	    popup->setAnchor( QPoint(x, y) );
 	}
 #endif
-	qApp->exec();
+    qApp->exec();
 	return 0;
       }
 
@@ -927,7 +929,7 @@ int main(int argc, char *argv[])
   /* kdialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
      * For backwards compatibility, we silently map --embed to --attach */
   options.add("attach <winid>", ki18n("Makes the dialog transient for an X app specified by winid"));
-  options.add("embed <winid>");
+  options.add("embed <winid>", ki18n("A synonym for --attach"));
 
   options.add("+[arg]", ki18n("Arguments - depending on main option"));
 

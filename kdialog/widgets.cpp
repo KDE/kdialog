@@ -19,8 +19,8 @@
 
 
 // Own
+#include "config-kdialog.h"
 #include "widgets.h"
-#include <kdatepicker.h>
 
 // Qt
 #include <QFile>
@@ -30,7 +30,6 @@
 #include <QLabel>
 
 // KDE
-#include <klocale.h>
 #include <kmessagebox.h>
 #include <kinputdialog.h>
 #include <kpassworddialog.h>
@@ -40,33 +39,35 @@
 #include <kcmdlineargs.h>
 #include <ktextedit.h>
 #include <kvbox.h>
+#include <kdatepicker.h>
 
 // Local
 #include "klistboxdialog.h"
 #include "progressdialog.h"
 
 
-#if defined Q_WS_X11 && ! defined K_WS_QTONLY
-#include <netwm.h>
+#if defined HAVE_X11 && ! defined K_WS_QTONLY
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
 #endif
 
 void Widgets::handleXGeometry(QWidget * dlg)
 {
-#ifdef Q_WS_X11
-	QString geometry;
-	KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
-	if (args && args->isSet("geometry"))
-		geometry = args->getOption("geometry");
-    if ( ! geometry.isEmpty()) {
-	int x, y;
-	int w, h;
-	int m = XParseGeometry( geometry.toLatin1(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
-	if ( (m & XNegative) )
-	    x = KApplication::desktop()->width()  + x - w;
-	if ( (m & YNegative) )
-	    y = KApplication::desktop()->height() + y - h;
-	dlg->setGeometry(x, y, w, h);
-	// kDebug() << "x: " << x << "  y: " << y << "  w: " << w << "  h: " << h;
+#ifdef HAVE_X11
+    QString geometry;
+    KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
+    if (args && args->isSet("geometry"))
+        geometry = args->getOption("geometry");
+    if ( !geometry.isEmpty()) {
+        int x, y;
+        int w, h;
+        int m = XParseGeometry( geometry.toLatin1().constData(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
+        if ( (m & XNegative) )
+            x = KApplication::desktop()->width() + x - w;
+        if ( (m & YNegative) )
+            y = KApplication::desktop()->height() + y - h;
+        dlg->setGeometry(x, y, w, h);
+        kDebug() << "x: " << x << "  y: " << y << "  w: " << w << "  h: " << h;
     }
 #endif
 }

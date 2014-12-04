@@ -15,6 +15,11 @@ include(KDEFrameworkCompilerSettings)
 find_package(KF5 REQUIRED COMPONENTS KDELibs4Support KIO)
 find_package(Qt5DBus CONFIG)
 
+find_package(X11)
+if(X11_FOUND)
+   set(HAVE_X11 1)
+endif()
+
 configure_file(config-kdialog.h.cmake ${KDialog_BINARY_DIR}/config-kdialog.h)
 
 remove_definitions(-DQT_NO_URL_CAST_FROM_STRING)
@@ -39,9 +44,9 @@ if(Qt5DBus_FOUND)
     target_link_libraries(kdialog Qt5::DBus)
 endif()
 
-# if (Q_WS_X11)
-#   target_link_libraries(kdialog ${X11_X11_LIB})
-# endif (Q_WS_X11)
+if (HAVE_X11)
+  target_link_libraries(kdialog ${X11_X11_LIB})
+endif()
 
 install(TARGETS kdialog ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.kdialog.ProgressDialog.xml DESTINATION ${DBUS_INTERFACES_INSTALL_DIR})
