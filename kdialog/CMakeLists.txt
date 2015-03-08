@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.12)
 project(KDialog)
 
 # ECM setup
-find_package(ECM 0.0.14 CONFIG REQUIRED)
+find_package(ECM 1.7.0 CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(FeatureSummary)
@@ -49,7 +49,7 @@ if (HAVE_X11)
 endif()
 
 install(TARGETS kdialog ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
-install(FILES org.kde.kdialog.ProgressDialog.xml DESTINATION ${DBUS_INTERFACES_INSTALL_DIR})
+install(FILES org.kde.kdialog.ProgressDialog.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
 
 if("${CMAKE_SOURCE_DIR}" STREQUAL "${KDialog_SOURCE_DIR}")
   feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
