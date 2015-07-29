@@ -937,6 +937,9 @@ int main(int argc, char *argv[])
 
   KApplication app;
 
+  // enable high dpi support
+  app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
+
   KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
 
   // execute direct kdialog command
