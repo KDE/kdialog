@@ -9,7 +9,7 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 include(FeatureSummary)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
-include(KDEFrameworkCompilerSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 
 # Build dependencies
 find_package(KF5 REQUIRED COMPONENTS KDELibs4Support KIO)
