@@ -103,7 +103,7 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
  * Display a passive notification popup using the D-Bus interface, if possible.
  * @return true if the notification was successfully sent, false otherwise.
  */
-bool sendVisualNotification(const QString &text, const QString &title, const QString &icon, int timeout)
+static bool sendVisualNotification(const QString &text, const QString &title, const QString &icon, int timeout)
 {
 #ifdef Qt5DBus_FOUND
   const QString dbusServiceName = "org.freedesktop.Notifications";
@@ -184,22 +184,22 @@ static void outputStringList(const QList<QUrl> &list, bool separateOutput)
 }
 
 
-KGuiItem configuredYes(const QString &text)
+static KGuiItem configuredYes(const QString &text)
 {
   return KGuiItem( text, "dialog-ok" );
 }
 
-KGuiItem configuredNo(const QString &text)
+static KGuiItem configuredNo(const QString &text)
 {
   return KGuiItem( text, "process-stop" );
 }
 
-KGuiItem configuredCancel(const QString &text)
+static KGuiItem configuredCancel(const QString &text)
 {
   return KGuiItem( text, "dialog-cancel" );
 }
 
-KGuiItem configuredContinue(const QString &text)
+static KGuiItem configuredContinue(const QString &text)
 {
   return KGuiItem( text, "arrow-right" );
 }
@@ -269,7 +269,7 @@ static int directCommand(KCmdLineArgs *args)
     }
 
     // --yesno and other message boxes
-    KMessageBox::DialogType type = (KMessageBox::DialogType) 0;
+    KMessageBox::DialogType type = static_cast<KMessageBox::DialogType>(0);
     QByteArray option;
     if (args->isSet("yesno")) {
         option = "yesno";
