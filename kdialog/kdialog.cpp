@@ -631,7 +631,7 @@ static int directCommand(KCmdLineArgs *args)
             KFileItem kfi(startUrl);
             specialDir = kfi.isDir();
         }
-        KFileDialog dlg( specialDir ? startDir : QUrl(), filter, 0 );
+        KFileDialog dlg( specialDir ? startUrl : QUrl(), filter, 0 );
         if ( !specialDir )
             dlg.setSelection( startDir );
         dlg.setOperationMode( KFileDialog::Saving );
