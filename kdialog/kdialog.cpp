@@ -20,8 +20,7 @@
 //  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //
 
-#include <QDate>
-#include <kdebug.h>
+#include "config-kdialog.h"
 #include "widgets.h"
 
 #include <kmessagebox.h>
@@ -29,7 +28,7 @@
 #include <kpassivepopup.h>
 #include <krecentdocument.h>
 #include <kcmdlineargs.h>
-#include <kaboutdata.h>
+#include <k4aboutdata.h>
 #include <kfiledialog.h>
 #include <kfileitem.h>
 #include <kicondialog.h>
@@ -37,21 +36,25 @@
 #include <kcolordialog.h>
 #include <kwindowsystem.h>
 #include <kiconloader.h>
-#include <klocale.h>
+#include <KLocalizedString>
+#include <kdebug.h>
 
-#include <QtCore/QTimer>
+#include <QDate>
+#include <QUrl>
+#include <QTimer>
 #include <QDesktopWidget>
 
 #include <iostream>
 
-#if defined Q_WS_X11 && ! defined K_WS_QTONLY
-#include <netwm.h>
+#if defined HAVE_X11 && !defined K_WS_QTONLY
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
 #endif
 
-#include "../config-apps.h"
-#ifdef QT_QTDBUS_FOUND
-#include <QtDBus/QDBusConnection>
-#include <QtDBus/QDBusConnectionInterface>
+#include "config-kdialog.h"
+#ifdef Qt5DBus_FOUND
+#include <QDBusConnection>
+#include <QDBusConnectionInterface>
 #endif
 
 #ifdef Q_WS_WIN
@@ -100,9 +103,9 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
  * Display a passive notification popup using the D-Bus interface, if possible.
  * @return true if the notification was successfully sent, false otherwise.
  */
-bool sendVisualNotification(const QString &text, const QString &title, const QString &icon, int timeout)
+static bool sendVisualNotification(const QString &text, const QString &title, const QString &icon, int timeout)
 {
-#ifdef QT_QTDBUS_FOUND
+#ifdef Qt5DBus_FOUND
   const QString dbusServiceName = "org.freedesktop.Notifications";
   const QString dbusInterfaceName = "org.freedesktop.Notifications";
   const QString dbusPath = "/org/freedesktop/Notifications";
@@ -155,34 +158,48 @@ bool sendVisualNotification(const QString &text, const QString &title, const QSt
 static void outputStringList(const QStringList &list, bool separateOutput)
 {
     if ( separateOutput) {
-	for ( QStringList::ConstIterator it = list.begin(); it != list.end(); ++it ) {
-	    cout << (*it).toLocal8Bit().data() << endl;
-	}
+        for ( QStringList::ConstIterator it = list.constBegin(); it != list.constEnd(); ++it ) {
+            cout << (*it).toLocal8Bit().data() << endl;
+        }
     } else {
-	for ( QStringList::ConstIterator it = list.begin(); it != list.end(); ++it ) {
-	    cout << (*it).toLocal8Bit().data() << " ";
-	}
-	cout << endl;
+        for ( QStringList::ConstIterator it = list.constBegin(); it != list.constEnd(); ++it ) {
+            cout << (*it).toLocal8Bit().data() << " ";
+        }
+        cout << endl;
+    }
+}
+
+static void outputStringList(const QList<QUrl> &list, bool separateOutput)
+{
+    if ( separateOutput) {
+        for ( auto it = list.constBegin(); it != list.constEnd(); ++it ) {
+            cout << (*it).toDisplayString().toLocal8Bit().data() << endl;
+        }
+    } else {
+        for ( auto it = list.constBegin(); it != list.constEnd(); ++it ) {
+            cout << (*it).toDisplayString().toLocal8Bit().data() << " ";
+        }
+        cout << endl;
     }
 }
 
 
-KGuiItem configuredYes(const QString &text)
+static KGuiItem configuredYes(const QString &text)
 {
   return KGuiItem( text, "dialog-ok" );
 }
 
-KGuiItem configuredNo(const QString &text)
+static KGuiItem configuredNo(const QString &text)
 {
   return KGuiItem( text, "process-stop" );
 }
 
-KGuiItem configuredCancel(const QString &text)
+static KGuiItem configuredCancel(const QString &text)
 {
   return KGuiItem( text, "dialog-cancel" );
 }
 
-KGuiItem configuredContinue(const QString &text)
+static KGuiItem configuredContinue(const QString &text)
 {
   return KGuiItem( text, "arrow-right" );
 }
@@ -252,7 +269,7 @@ static int directCommand(KCmdLineArgs *args)
     }
 
     // --yesno and other message boxes
-    KMessageBox::DialogType type = (KMessageBox::DialogType) 0;
+    KMessageBox::DialogType type = static_cast<KMessageBox::DialogType>(0);
     QByteArray option;
     if (args->isSet("yesno")) {
         option = "yesno";
@@ -305,7 +322,7 @@ static int directCommand(KCmdLineArgs *args)
           if( values.count() == 2 )
           {
             dontagaincfg = new KConfig( values[ 0 ] );
-            KMessageBox::setDontShowAskAgainConfig( dontagaincfg );
+            KMessageBox::setDontShowAgainConfig( dontagaincfg );
             dontagain = values[ 1 ];
           }
           else
@@ -416,23 +433,23 @@ static int directCommand(KCmdLineArgs *args)
         timer->setSingleShot( true );
         timer->start( timeout );
 
-#ifdef Q_WS_X11
+#ifdef HAVE_X11
 	QString geometry;
-	KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
+    KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
 	if (args && args->isSet("geometry"))
 		geometry = args->getOption("geometry");
-	if ( !geometry.isEmpty()) {
+    if ( !geometry.isEmpty()) {
 	    int x, y;
 	    int w, h;
-	    int m = XParseGeometry( geometry.toLatin1(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
+        int m = XParseGeometry( geometry.toLatin1().constData(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
 	    if ( (m & XNegative) )
-		x = KApplication::desktop()->width()  + x - w;
+            x = KApplication::desktop()->width()  + x - w;
 	    if ( (m & YNegative) )
-		y = KApplication::desktop()->height() + y - h;
+            y = KApplication::desktop()->height() + y - h;
 	    popup->setAnchor( QPoint(x, y) );
 	}
 #endif
-	qApp->exec();
+    qApp->exec();
 	return 0;
       }
 
@@ -553,38 +570,40 @@ static int directCommand(KCmdLineArgs *args)
 
     // getopenfilename [startDir] [filter]
     if (args->isSet("getopenfilename")) {
-        QString startDir;
+        QString startDir = args->getOption("getopenfilename");
+        if (!startDir.startsWith(QStringLiteral("file://")))
+            startDir.prepend(QStringLiteral("file://"));
+        const QUrl startUrl = QUrl::fromUserInput(startDir);
         QString filter;
-        startDir = args->getOption("getopenfilename");
         if (args->count() >= 1)  {
             filter = Widgets::parseString(args->arg(0));
         }
-	KFileDialog dlg( startDir, filter, 0 );
-	dlg.setOperationMode( KFileDialog::Opening );
-
-	if (args->isSet("multiple")) {
-	    dlg.setMode(KFile::Files | KFile::LocalOnly);
-	} else {
-	    dlg.setMode(KFile::File | KFile::LocalOnly);
-	}
-	Widgets::handleXGeometry(&dlg);
-	kapp->setTopWidget( &dlg );
-	dlg.setCaption(title.isEmpty() ? i18nc("@title:window", "Open") : title);
-	dlg.exec();
+        KFileDialog dlg( startUrl, filter, 0 );
+        dlg.setOperationMode( KFileDialog::Opening );
 
         if (args->isSet("multiple")) {
-	    QStringList result = dlg.selectedFiles();
-	    if ( !result.isEmpty() ) {
-		outputStringList( result, separateOutput );
-		return 0;
-	    }
-	} else {
-	    QString result = dlg.selectedFile();
-	    if (!result.isEmpty())  {
-		cout << result.toLocal8Bit().data() << endl;
-		return 0;
-	    }
-	}
+            dlg.setMode(KFile::Files | KFile::LocalOnly);
+        } else {
+            dlg.setMode(KFile::File | KFile::LocalOnly);
+        }
+        Widgets::handleXGeometry(&dlg);
+        kapp->setTopWidget( &dlg );
+        dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
+        dlg.exec();
+
+        if (args->isSet("multiple")) {
+            const QStringList result = dlg.selectedFiles();
+            if ( !result.isEmpty() ) {
+                outputStringList( result, separateOutput );
+                return 0;
+            }
+        } else {
+            const QString result = dlg.selectedFile();
+            if (!result.isEmpty())  {
+                cout << result.toLocal8Bit().data() << endl;
+                return 0;
+            }
+        }
         return 1; // canceled
     }
 
@@ -594,71 +613,76 @@ static int directCommand(KCmdLineArgs *args)
     if ( (args->isSet("getsavefilename") ) || (args->isSet("getsaveurl") ) ) {
         QString startDir;
         QString filter;
-	if ( args->isSet("getsavefilename") ) {
-	    startDir = args->getOption("getsavefilename");
-	} else {
-	    startDir = args->getOption("getsaveurl");
-	}
+        if ( args->isSet("getsavefilename") ) {
+            startDir = args->getOption("getsavefilename");
+        } else {
+            startDir = args->getOption("getsaveurl");
+        }
+        if (!startDir.startsWith(QStringLiteral("file://")))
+            startDir.prepend(QStringLiteral("file://"));
+        const QUrl startUrl = QUrl::fromUserInput(startDir);
+
         if (args->count() >= 1)  {
             filter = Widgets::parseString(args->arg(0));
         }
-	// copied from KFileDialog::getSaveFileName(), so we can add geometry
-	bool specialDir = ( startDir.at(0) == ':' );
-	if ( !specialDir ) {
-	    KFileItem kfi(KFileItem::Unknown, KFileItem::Unknown, KUrl(startDir));
-	    specialDir = kfi.isDir();
-	}
-	KFileDialog dlg( specialDir ? startDir : QString(), filter, 0 );
-	if ( !specialDir )
-	    dlg.setSelection( startDir );
-	dlg.setOperationMode( KFileDialog::Saving );
-	Widgets::handleXGeometry(&dlg);
-	kapp->setTopWidget( &dlg );
-	dlg.setCaption(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
-	dlg.exec();
+        // copied from KFileDialog::getSaveFileName(), so we can add geometry
+        bool specialDir = startDir.startsWith(QLatin1Char(':'));
+        if ( !specialDir ) {
+            KFileItem kfi(startUrl);
+            specialDir = kfi.isDir();
+        }
+        KFileDialog dlg( specialDir ? startUrl : QUrl(), filter, 0 );
+        if ( !specialDir )
+            dlg.setSelection( startDir );
+        dlg.setOperationMode( KFileDialog::Saving );
+        Widgets::handleXGeometry(&dlg);
+        kapp->setTopWidget( &dlg );
+        dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
+        dlg.exec();
 
-	if ( args->isSet("getsaveurl") ) {
-	    KUrl result = dlg.selectedUrl();
-	    if ( result.isValid())  {
-
-		cout << result.url().toLocal8Bit().data() << endl;
-		return 0;
-	    }
-	} else { // getsavefilename
-	    QString result = dlg.selectedFile();
-	    if (!result.isEmpty())  {
-		KRecentDocument::add(result);
-		cout << result.toLocal8Bit().data() << endl;
-		return 0;
-	    }
-	}
+        if ( args->isSet("getsaveurl") ) {
+            const QUrl result = dlg.selectedUrl();
+            if ( result.isValid())  {
+                cout << result.url().toLocal8Bit().data() << endl;
+                return 0;
+            }
+        } else { // getsavefilename
+            const QString result = dlg.selectedFile();
+            if (!result.isEmpty())  {
+                KRecentDocument::add(QUrl::fromLocalFile(result));
+                cout << result.toLocal8Bit().data() << endl;
+                return 0;
+            }
+        }
         return 1; // canceled
     }
 
     // getexistingdirectory [startDir]
     if (args->isSet("getexistingdirectory")) {
-        QString startDir;
-        startDir = args->getOption("getexistingdirectory");
-	QString result;
+        QString startDir = args->getOption("getexistingdirectory");
+        if (!startDir.startsWith(QStringLiteral("file://")))
+            startDir.prepend(QStringLiteral("file://"));
+        const QUrl startUrl = QUrl::fromUserInput(startDir);
+        QString result;
 #ifdef Q_WS_WIN
-	result = QFileDialog::getExistingDirectory( 0, title, startDir,
-	                                            QFileDialog::DontResolveSymlinks |
-	                                            QFileDialog::ShowDirsOnly);
+        result = QFileDialog::getExistingDirectory( 0, title, startDir,
+                                                    QFileDialog::DontResolveSymlinks |
+                                                    QFileDialog::ShowDirsOnly);
 #else
-	KUrl url;
-	KDirSelectDialog myDialog( startDir, true, 0 );
+        QUrl url;
+        KDirSelectDialog myDialog( startUrl, true, 0 );
 
-	kapp->setTopWidget( &myDialog );
+        kapp->setTopWidget( &myDialog );
 
-	Widgets::handleXGeometry(&myDialog);
-	if ( !title.isEmpty() )
-	    myDialog.setCaption( title );
+        Widgets::handleXGeometry(&myDialog);
+        if ( !title.isEmpty() )
+            myDialog.setWindowTitle( title );
 
-	if ( myDialog.exec() == QDialog::Accepted )
-	    url =  myDialog.url();
+        if ( myDialog.exec() == QDialog::Accepted )
+            url = myDialog.url();
 
-	if ( url.isValid() )
-	    result = url.path();
+        if ( url.isValid() )
+            result = url.path();
 #endif
         if (!result.isEmpty())  {
             cout << result.toLocal8Bit().data() << endl;
@@ -669,38 +693,41 @@ static int directCommand(KCmdLineArgs *args)
 
     // getopenurl [startDir] [filter]
     if (args->isSet("getopenurl")) {
-        QString startDir;
+        QString startDir = args->getOption("getopenurl");
+        if (!startDir.startsWith(QStringLiteral("file://")))
+            startDir.prepend(QStringLiteral("file://"));
+        const QUrl startUrl = QUrl::fromUserInput(startDir);
+
         QString filter;
-        startDir = args->getOption("getopenurl");
         if (args->count() >= 1)  {
             filter = Widgets::parseString(args->arg(0));
         }
-	KFileDialog dlg( startDir, filter, 0 );
-	dlg.setOperationMode( KFileDialog::Opening );
-
-	if (args->isSet("multiple")) {
-	    dlg.setMode(KFile::Files);
-	} else {
-	    dlg.setMode(KFile::File);
-	}
-	Widgets::handleXGeometry(&dlg);
-	kapp->setTopWidget( &dlg );
-	dlg.setCaption(title.isEmpty() ? i18nc("@title:window", "Open") : title);
-	dlg.exec();
+        KFileDialog dlg( startUrl, filter, 0 );
+        dlg.setOperationMode( KFileDialog::Opening );
 
         if (args->isSet("multiple")) {
-	    KUrl::List result = dlg.selectedUrls();
-	    if ( !result.isEmpty() ) {
-		outputStringList( result.toStringList(), separateOutput );
-		return 0;
-	    }
-	} else {
-	    KUrl result = dlg.selectedUrl();
-	    if (!result.isEmpty())  {
-		cout << result.url().toLocal8Bit().data() << endl;
-		return 0;
-	    }
-	}
+            dlg.setMode(KFile::Files);
+        } else {
+            dlg.setMode(KFile::File);
+        }
+        Widgets::handleXGeometry(&dlg);
+        kapp->setTopWidget( &dlg );
+        dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
+        dlg.exec();
+
+        if (args->isSet("multiple")) {
+            const QList<QUrl> result = dlg.selectedUrls();
+            if ( !result.isEmpty() ) {
+                outputStringList( result, separateOutput );
+                return 0;
+            }
+        } else {
+            const QUrl result = dlg.selectedUrl();
+            if (!result.isEmpty())  {
+                cout << result.url().toLocal8Bit().data() << endl;
+                return 0;
+            }
+        }
         return 1; // canceled
     }
 
@@ -749,7 +776,7 @@ static int directCommand(KCmdLineArgs *args)
         dlg.setIconSize(KIconLoader::SizeHuge);
 
 	if (!title.isEmpty())
-	    dlg.setCaption(title);
+	    dlg.setWindowTitle(title);
 
 	Widgets::handleXGeometry(&dlg);
 
@@ -789,7 +816,7 @@ static int directCommand(KCmdLineArgs *args)
         }
         Widgets::handleXGeometry(&dlg);
         kapp->setTopWidget(&dlg);
-        dlg.setCaption(title.isEmpty() ? i18nc("@title:window", "Choose Color") : title);
+        dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Choose Color") : title);
 
         if (dlg.exec() == KColorDialog::Accepted) {
             QString result;
@@ -840,10 +867,12 @@ static int directCommand(KCmdLineArgs *args)
 
 int main(int argc, char *argv[])
 {
-  KAboutData aboutData( "kdialog", 0, ki18n("KDialog"),
-                        "1.0", ki18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
-			KAboutData::License_GPL,
-                        ki18n("(C) 2000, Nick Thompson"));
+    KLocalizedString::setApplicationDomain("kdialog");
+
+  K4AboutData aboutData( "kdialog", 0, ki18n("KDialog"),
+                         "1.0", ki18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
+                         K4AboutData::License_GPL,
+                         ki18n("(C) 2000, Nick Thompson"));
   aboutData.addAuthor(ki18n("David Faure"), ki18n("Current maintainer"),"faure@kde.org");
   aboutData.addAuthor(ki18n("Brad Hards"), KLocalizedString(), "bradh@frogmouth.net");
   aboutData.addAuthor(ki18n("Nick Thompson"),KLocalizedString(), 0/*"nickthompson@lucent.com" bounces*/);
@@ -900,7 +929,7 @@ int main(int argc, char *argv[])
   /* kdialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
      * For backwards compatibility, we silently map --embed to --attach */
   options.add("attach <winid>", ki18n("Makes the dialog transient for an X app specified by winid"));
-  options.add("embed <winid>");
+  options.add("embed <winid>", ki18n("A synonym for --attach"));
 
   options.add("+[arg]", ki18n("Arguments - depending on main option"));
 
@@ -908,9 +937,11 @@ int main(int argc, char *argv[])
 
   KApplication app;
 
+  // enable high dpi support
+  app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
+
   KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
 
   // execute direct kdialog command
   return directCommand(args);
 }
-

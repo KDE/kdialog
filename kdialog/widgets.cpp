@@ -19,18 +19,17 @@
 
 
 // Own
+#include "config-kdialog.h"
 #include "widgets.h"
-#include <kdatepicker.h>
 
 // Qt
-#include <QtCore/QFile>
+#include <QFile>
 #include <QDesktopWidget>
-#include <QtCore/QTextStream>
+#include <QTextStream>
 #include <QTextCursor>
 #include <QLabel>
 
 // KDE
-#include <klocale.h>
 #include <kmessagebox.h>
 #include <kinputdialog.h>
 #include <kpassworddialog.h>
@@ -40,33 +39,35 @@
 #include <kcmdlineargs.h>
 #include <ktextedit.h>
 #include <kvbox.h>
+#include <kdatepicker.h>
 
 // Local
 #include "klistboxdialog.h"
 #include "progressdialog.h"
 
 
-#if defined Q_WS_X11 && ! defined K_WS_QTONLY
-#include <netwm.h>
+#if defined HAVE_X11 && ! defined K_WS_QTONLY
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
 #endif
 
 void Widgets::handleXGeometry(QWidget * dlg)
 {
-#ifdef Q_WS_X11
-	QString geometry;
-	KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
-	if (args && args->isSet("geometry"))
-		geometry = args->getOption("geometry");
-    if ( ! geometry.isEmpty()) {
-	int x, y;
-	int w, h;
-	int m = XParseGeometry( geometry.toLatin1(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
-	if ( (m & XNegative) )
-	    x = KApplication::desktop()->width()  + x - w;
-	if ( (m & YNegative) )
-	    y = KApplication::desktop()->height() + y - h;
-	dlg->setGeometry(x, y, w, h);
-	// kDebug() << "x: " << x << "  y: " << y << "  w: " << w << "  h: " << h;
+#ifdef HAVE_X11
+    QString geometry;
+    KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
+    if (args && args->isSet("geometry"))
+        geometry = args->getOption("geometry");
+    if ( !geometry.isEmpty()) {
+        int x, y;
+        int w, h;
+        int m = XParseGeometry( geometry.toLatin1().constData(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
+        if ( (m & XNegative) )
+            x = KApplication::desktop()->width() + x - w;
+        if ( (m & YNegative) )
+            y = KApplication::desktop()->height() + y - h;
+        dlg->setGeometry(x, y, w, h);
+        kDebug() << "x: " << x << "  y: " << y << "  w: " << w << "  h: " << h;
     }
 #endif
 }
@@ -84,7 +85,7 @@ bool Widgets::passwordBox(QWidget *parent, const QString& title, const QString& 
 {
   KPasswordDialog dlg( parent );
   kapp->setTopWidget( &dlg );
-  dlg.setCaption(title);
+  dlg.setWindowTitle(title);
   dlg.setPrompt(text);
 
   handleXGeometry(&dlg);
@@ -99,7 +100,7 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
 {
 //  KTextBox dlg(parent, 0, true, width, height, file);
   KDialog dlg( parent );
-  dlg.setCaption( title );
+  dlg.setWindowTitle( title );
   dlg.setButtons( KDialog::Ok );
   dlg.setModal( true );
 
@@ -130,7 +131,7 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
       dlg.setInitialSize( QSize( width, height ) );
 
   handleXGeometry(&dlg);
-  dlg.setCaption(title);
+  dlg.setWindowTitle(title);
   return (dlg.exec() == KDialog::Accepted) ? 0 : 1;
 }
 
@@ -138,7 +139,7 @@ int Widgets::textInputBox(QWidget *parent, int width, int height, const QString&
 {
 //  KTextBox dlg(parent, 0, true, width, height, file);
   KDialog dlg( parent );
-  dlg.setCaption( title );
+  dlg.setWindowTitle( title );
   dlg.setButtons( KDialog::Ok );
   dlg.setModal( true );
 
@@ -163,7 +164,7 @@ int Widgets::textInputBox(QWidget *parent, int width, int height, const QString&
     dlg.setInitialSize( QSize( width, height ) );
 
   handleXGeometry(&dlg);
-  dlg.setCaption(title);
+  dlg.setWindowTitle(title);
   const int returnDialogCode = dlg.exec();
   result = edit->toPlainText();
   return (returnDialogCode == KDialog::Accepted ? 0 : 1);
@@ -174,7 +175,7 @@ bool Widgets::comboBox(QWidget *parent, const QString& title, const QString& tex
 {
   KDialog dlg( parent );
   kapp->setTopWidget( &dlg );
-  dlg.setCaption( title );
+  dlg.setWindowTitle( title );
   dlg.setButtons( KDialog::Ok|KDialog::Cancel );
   dlg.setModal( true );
   dlg.setDefaultButton( KDialog::Ok );
@@ -205,7 +206,7 @@ bool Widgets::listBox(QWidget *parent, const QString& title, const QString& text
   KListBoxDialog box(text,parent);
 
   kapp->setTopWidget( &box );
-  box.setCaption(title);
+  box.setWindowTitle(title);
 
   for (int i = 0; i+1<args.count(); i += 2) {
     box.insertItem(args[i+1]);
@@ -233,7 +234,7 @@ bool Widgets::checkList(QWidget *parent, const QString& title, const QString& te
   QListWidget &table = box.getTable();
 
   kapp->setTopWidget( &box );
-  box.setCaption(title);
+  box.setWindowTitle(title);
 
   for (int i=0; i+2<args.count(); i += 3) {
     tags.append(args[i]);
@@ -277,7 +278,7 @@ bool Widgets::radioBox(QWidget *parent, const QString& title, const QString& tex
   QListWidget &table = box.getTable();
 
   kapp->setTopWidget( &box );
-  box.setCaption(title);
+  box.setWindowTitle(title);
 
   for (int i=0; i+2<args.count(); i += 3) {
     tags.append(args[i]);
@@ -304,7 +305,7 @@ bool Widgets::progressBar(QWidget *parent, const QString& title, const QString& 
 {
   ProgressDialog dlg( parent, title, text, totalSteps );
   kapp->setTopWidget( &dlg );
-  dlg.setCaption( title );
+  dlg.setWindowTitle( title );
   handleXGeometry(&dlg);
   dlg.exec();
   return dlg.wasCancelled();
@@ -315,7 +316,7 @@ bool Widgets::slider( QWidget *parent, const QString& title, const QString& text
 {
     KDialog dlg( parent );
     kapp->setTopWidget( &dlg );
-    dlg.setCaption( title );
+    dlg.setWindowTitle( title );
     dlg.setButtons( KDialog::Ok|KDialog::Cancel );
     dlg.setModal( true );
     dlg.setDefaultButton( KDialog::Ok );
@@ -346,7 +347,7 @@ bool Widgets::calendar( QWidget *parent, const QString &title, const QString &te
 {
     KDialog dlg( parent );
     kapp->setTopWidget( &dlg );
-    dlg.setCaption( title );
+    dlg.setWindowTitle( title );
     dlg.setButtons( KDialog::Ok|KDialog::Cancel );
     dlg.setModal( true );
     dlg.setDefaultButton( KDialog::Ok );
