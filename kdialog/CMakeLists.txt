@@ -22,7 +22,7 @@ endif()
 
 configure_file(config-kdialog.h.cmake ${KDialog_BINARY_DIR}/config-kdialog.h)
 
-remove_definitions(-DQT_NO_URL_CAST_FROM_STRING)
+add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
 set(kdialog_SRCS
     kdialog.cpp
