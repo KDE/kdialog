@@ -1,6 +1,6 @@
 //
 //  Copyright (C) 1998 Matthias Hoelzer <hoelzer@kde.org>
-//  Copyright (C) 2002 David Faure <faure@kde.org>
+//  Copyright (C) 2002, 2016 David Faure <faure@kde.org>
 //  Copyright (C) 2005 Brad Hards <bradh@frogmouth.net>
 //  Copyright (C) 2008 by Dmitry Suzdalev <dimsuz@gmail.com>
 //  Copyright (C) 2011 Kai Uwe Broulik <kde@privat.broulik.de>
@@ -24,11 +24,11 @@
 #include "widgets.h"
 
 #include <kmessagebox.h>
-#include <kapplication.h>
 #include <kpassivepopup.h>
 #include <krecentdocument.h>
-#include <kcmdlineargs.h>
-#include <k4aboutdata.h>
+
+#include <kaboutdata.h>
+#include <kconfig.h>
 #include <kfiledialog.h>
 #include <kfileitem.h>
 #include <kicondialog.h>
@@ -39,6 +39,7 @@
 #include <KLocalizedString>
 #include <kdebug.h>
 
+#include <QApplication>
 #include <QDate>
 #include <QUrl>
 #include <QTimer>
@@ -61,6 +62,8 @@
 #include <QFileDialog>
 #endif
 #include <unistd.h>
+#include <QCommandLineParser>
+#include <QCommandLineOption>
 
 using namespace std;
 
@@ -204,41 +207,121 @@ static KGuiItem configuredContinue(const QString &text)
   return KGuiItem( text, "arrow-right" );
 }
 
-static int directCommand(KCmdLineArgs *args)
+int main(int argc, char *argv[])
 {
+    KLocalizedString::setApplicationDomain("kdialog");
+    QApplication app(argc, argv);
+
+    // enable high dpi support
+    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
+
+    KAboutData aboutData( "kdialog", i18n("KDialog"),
+            "1.0", i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
+            KAboutLicense::GPL,
+            i18n("(C) 2000, Nick Thompson"));
+    aboutData.addAuthor(i18n("David Faure"), i18n("Current maintainer"),"faure@kde.org");
+    aboutData.addAuthor(i18n("Brad Hards"), QString(), "bradh@frogmouth.net");
+    aboutData.addAuthor(i18n("Nick Thompson"),QString(), 0/*"nickthompson@lucent.com" bounces*/);
+    aboutData.addAuthor(i18n("Matthias Hölzer"),QString(),"hoelzer@kde.org");
+    aboutData.addAuthor(i18n("David Gümbel"),QString(),"david.guembel@gmx.net");
+    aboutData.addAuthor(i18n("Richard Moore"),QString(),"rich@kde.org");
+    aboutData.addAuthor(i18n("Dawit Alemayehu"),QString(),"adawit@kde.org");
+    aboutData.addAuthor(i18n("Kai Uwe Broulik"),QString(),"kde@privat.broulik.de");
+    QApplication::setWindowIcon(QIcon::fromTheme("system-run"));
+
+    QCommandLineParser parser;
+    KAboutData::setApplicationData(aboutData);
+    parser.addVersionOption();
+    parser.addHelpOption();
+    aboutData.setupCommandLine(&parser);
+
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("yesno"), i18n("Question message box with yes/no buttons"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("yesnocancel"), i18n("Question message box with yes/no/cancel buttons"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("warningyesno"), i18n("Warning message box with yes/no buttons"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("warningcontinuecancel"), i18n("Warning message box with continue/cancel buttons"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("warningyesnocancel"), i18n("Warning message box with yes/no/cancel buttons"), QLatin1String("text")));
+
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("yes-label"), i18n("Use text as Yes button label"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("no-label"), i18n("Use text as No button label"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("cancel-label"), i18n("Use text as Cancel button label"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("continue-label"), i18n("Use text as Continue button label"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("sorry"), i18n("'Sorry' message box"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("detailedsorry"), i18n("'Sorry' message box with expandable Details field"), QLatin1String("text> <details")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("error"), i18n("'Error' message box"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("detailederror"), i18n("'Error' message box with expandable Details field"), QLatin1String("text> <details")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("msgbox"), i18n("Message Box dialog"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("inputbox"), i18n("Input Box dialog"), QLatin1String("text> <init")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("password"), i18n("Password dialog"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("textbox"), i18n("Text Box dialog"), QLatin1String("file")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("textinputbox"), i18n("Text Input Box dialog"), QLatin1String("text> <init")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("combobox"), i18n("ComboBox dialog"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("menu"), i18n("Menu dialog"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("checklist"), i18n("Check List dialog"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("radiolist"), i18n("Radio List dialog"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("passivepopup"), i18n("Passive Popup"), QLatin1String("text> <timeout")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("icon"), i18n("Passive popup icon"), QLatin1String("icon")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getopenfilename"), i18n("File dialog to open an existing file (arguments [startDir] [filter])")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getsavefilename"), i18n("File dialog to save a file (arguments [startDir] [filter])")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getexistingdirectory"), i18n("File dialog to select an existing directory (arguments [startDir])")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getopenurl"), i18n("File dialog to open an existing URL (arguments [startDir] [filter])")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getsaveurl"), i18n("File dialog to save a URL (arguments [startDir] [filter])")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("geticon"), i18n("Icon chooser dialog (arguments [group] [context])")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("progressbar"), i18n("Progress bar dialog, returns a D-Bus reference for communication"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getcolor"), i18n("Color dialog to select a color")));
+    // TODO gauge stuff, reading values from stdin
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("title"), i18n("Dialog title"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("default"), i18n("Default entry to use for combobox, menu and color"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("multiple"), i18n("Allows the --getopenurl and --getopenfilename options to return multiple files")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("separate-output"), i18n("Return list items on separate lines (for checklist option and file open with --multiple)")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("print-winid"), i18n("Outputs the winId of each dialog")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("dontagain"), i18n("Config file and option name for saving the \"do-not-show/ask-again\" state"), QLatin1String("file:entry")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("slider"), i18n( "Slider dialog box, returns selected value" ), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("calendar"), i18n( "Calendar dialog box, returns selected date" ), QLatin1String("text")));
+    /* kdialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
+     * For backwards compatibility, we silently map --embed to --attach */
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("attach"), i18n("Makes the dialog transient for an X app specified by winid"), QLatin1String("winid")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("embed"), i18n("A synonym for --attach"), QLatin1String("winid")));
+
+    parser.addPositionalArgument(QLatin1String("[arg]"), i18n("Arguments - depending on main option"));
+
+    parser.process(app);
+    aboutData.processCommandLine(&parser);
+
+    // execute kdialog command
+
+    const QStringList args = parser.positionalArguments();
     QString title;
     bool separateOutput = false;
-    bool printWId = args->isSet("print-winid");
+    bool printWId = parser.isSet("print-winid");
     QString defaultEntry;
 
     // --title text
-    KCmdLineArgs *qtargs = KCmdLineArgs::parsedArgs("qt"); // --title is a qt option
-    if(qtargs->isSet("title")) {
-      title = qtargs->getOption("title");
+    if (parser.isSet("title")) {
+      title = parser.value("title");
     }
 
     // --separate-output
-    if (args->isSet("separate-output"))
+    if (parser.isSet("separate-output"))
     {
       separateOutput = true;
     }
 
     WId winid = 0;
-    bool attach = args->isSet("attach");
+    bool attach = parser.isSet("attach");
     if(attach) {
 #ifdef Q_WS_WIN
-        winid = reinterpret_cast<WId>(args->getOption("attach").toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
+        winid = reinterpret_cast<WId>(parser.value("attach").toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
 #else
-        winid = args->getOption("attach").toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
+        winid = parser.value("attach").toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
 #endif
-    } else if(args->isSet("embed")) {
+    } else if(parser.isSet("embed")) {
         /* KDialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
          * For consistancy, we silently map --embed to --attach */
         attach = true;
 #ifdef Q_WS_WIN
-        winid = reinterpret_cast<WId>(args->getOption("embed").toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
+        winid = reinterpret_cast<WId>(parser.value("embed").toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
 #else
-        winid = args->getOption("embed").toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
+        winid = parser.value("embed").toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
 #endif
     }
 
@@ -255,57 +338,57 @@ static int directCommand(KCmdLineArgs *args)
     KGuiItem continueButton = KStandardGuiItem::cont();
 
     // Customize the asked labels
-    if (args->isSet("yes-label")) {
-          yesButton = configuredYes( args->getOption("yes-label") );
+    if (parser.isSet("yes-label")) {
+          yesButton = configuredYes( parser.value("yes-label") );
     }
-    if (args->isSet("no-label")) {
-        noButton = configuredNo( args->getOption("no-label") );
+    if (parser.isSet("no-label")) {
+        noButton = configuredNo( parser.value("no-label") );
     }
-    if (args->isSet("cancel-label")) {
-        cancelButton = configuredCancel( args->getOption("cancel-label") );
+    if (parser.isSet("cancel-label")) {
+        cancelButton = configuredCancel( parser.value("cancel-label") );
     }
-    if (args->isSet("continue-label")) {
-        continueButton = configuredContinue( args->getOption("continue-label") );
+    if (parser.isSet("continue-label")) {
+        continueButton = configuredContinue( parser.value("continue-label") );
     }
 
     // --yesno and other message boxes
     KMessageBox::DialogType type = static_cast<KMessageBox::DialogType>(0);
     QByteArray option;
-    if (args->isSet("yesno")) {
+    if (parser.isSet("yesno")) {
         option = "yesno";
         type = KMessageBox::QuestionYesNo;
     }
-    else if (args->isSet("yesnocancel")) {
+    else if (parser.isSet("yesnocancel")) {
         option = "yesnocancel";
         type = KMessageBox::QuestionYesNoCancel;
     }
-    else if (args->isSet("warningyesno")) {
+    else if (parser.isSet("warningyesno")) {
         option = "warningyesno";
         type = KMessageBox::WarningYesNo;
     }
-    else if (args->isSet("warningcontinuecancel")) {
+    else if (parser.isSet("warningcontinuecancel")) {
         option = "warningcontinuecancel";
         type = KMessageBox::WarningContinueCancel;
     }
-    else if (args->isSet("warningyesnocancel")) {
+    else if (parser.isSet("warningyesnocancel")) {
         option = "warningyesnocancel";
         type = KMessageBox::WarningYesNoCancel;
     }
-    else if (args->isSet("sorry")) {
+    else if (parser.isSet("sorry")) {
         option = "sorry";
         type = KMessageBox::Sorry;
     }
-    else if (args->isSet("detailedsorry")) {
+    else if (parser.isSet("detailedsorry")) {
         option = "detailedsorry";
     }
-    else if (args->isSet("error")) {
+    else if (parser.isSet("error")) {
         option = "error";
         type = KMessageBox::Error;
     }
-    else if (args->isSet("detailederror")) {
+    else if (parser.isSet("detailederror")) {
         option = "detailederror";
     }
-    else if (args->isSet("msgbox")) {
+    else if (parser.isSet("msgbox")) {
         option = "msgbox";
         type = KMessageBox::Information;
     }
@@ -315,9 +398,9 @@ static int directCommand(KCmdLineArgs *args)
         KConfig* dontagaincfg = NULL;
         // --dontagain
         QString dontagain; // QString()
-        if (args->isSet("dontagain"))
+        if (parser.isSet("dontagain"))
         {
-          QString value = args->getOption("dontagain");
+          QString value = parser.value("dontagain");
           QStringList values = value.split( ':', QString::SkipEmptyParts );
           if( values.count() == 2 )
           {
@@ -330,11 +413,11 @@ static int directCommand(KCmdLineArgs *args)
         }
         int ret = 0;
 
-        QString text = Widgets::parseString(args->getOption(option));
+        QString text = Widgets::parseString(parser.value(option));
 
         QString details;
-        if (args->count() == 1) {
-            details = Widgets::parseString(args->arg(0));
+        if (args.count() == 1) {
+            details = Widgets::parseString(args.at(0));
         }
 
         if ( type == KMessageBox::WarningContinueCancel ) {
@@ -356,73 +439,71 @@ static int directCommand(KCmdLineArgs *args)
     }
 
     // --inputbox text [init]
-    if (args->isSet("inputbox"))
+    if (parser.isSet("inputbox"))
     {
       QString result;
       QString init;
 
-      if (args->count() > 0)
-          init = args->arg(0);
+      if (args.count() > 0) {
+          init = args.at(0);
+      }
 
-      const bool retcode = Widgets::inputBox(0, title, args->getOption("inputbox"), init, result);
+      const bool retcode = Widgets::inputBox(0, title, parser.value("inputbox"), init, result);
       cout << result.toLocal8Bit().data() << endl;
       return retcode ? 0 : 1;
     }
 
 
     // --password text
-    if (args->isSet("password"))
+    if (parser.isSet("password"))
     {
       QString result;
-      const bool retcode = Widgets::passwordBox(0, title, args->getOption("password"), result);
+      const bool retcode = Widgets::passwordBox(0, title, parser.value("password"), result);
       cout << qPrintable(result) << endl;
       return retcode ? 0 : 1;
     }
 
     // --passivepopup
-    if (args->isSet("passivepopup"))
+    if (parser.isSet("passivepopup"))
     {
         int timeout = 0;
-        if (args->count() > 0) {
-            timeout = 1000 * args->arg(0).toInt();
+        if (args.count() > 0) {
+            timeout = 1000 * args.at(0).toInt();
         }
 
         if (timeout < 0) {
             timeout = -1;
         }
 
-	// since --icon is a kde option, we need to parse the kde options here as well
-	KCmdLineArgs *kdeargs = KCmdLineArgs::parsedArgs("kde");
-
-	// Use --icon parameter for passivepopup as well
-	QString icon;
-	if (kdeargs->isSet("icon")) {
-	  icon = kdeargs->getOption("icon");
-	} else {
-	  icon = "dialog-information";	// Use generic (i)-icon if none specified
-	}
+        // Use --icon parameter for passivepopup as well
+        QString icon;
+        if (parser.isSet("icon")) {
+          icon = parser.value("icon");
+        } else {
+          icon = "dialog-information";        // Use generic (i)-icon if none specified
+        }
 
         // try to use more stylish notifications
-        if (sendVisualNotification(Widgets::parseString(args->getOption("passivepopup")), title, icon, timeout))
+        if (sendVisualNotification(Widgets::parseString(parser.value("passivepopup")), title, icon, timeout))
           return 0;
 
         // ...did not work, use KPassivePopup as fallback
 
         // parse timeout time again, so it does not auto-close the fallback (timer cannot handle -1 time)
-        if (args->count() > 0) {
-            timeout = 1000 * args->arg(0).toInt();
+        if (args.count() > 0) {
+            timeout = 1000 * args.at(0).toInt();
         }
         if (timeout <= 0) {
             timeout = 10*1000;    // 10 seconds should be a decent time for auto-closing (you can override this using a parameter)
         }
 
         QPixmap passiveicon;
-        if (kdeargs->isSet("icon")) {  // Only show icon if explicitly requested
+        if (parser.isSet("icon")) {  // Only show icon if explicitly requested
             passiveicon = KIconLoader::global()->loadIcon(icon, KIconLoader::Dialog);
         }
         KPassivePopup *popup = KPassivePopup::message( KPassivePopup::Boxed, // style
                                                        title,
-                                                       Widgets::parseString(args->getOption("passivepopup")),
+                                                       Widgets::parseString(parser.value("passivepopup")),
                                                        passiveicon,
                                                        (QWidget*)0UL, // parent
                                                        timeout );
@@ -434,74 +515,73 @@ static int directCommand(KCmdLineArgs *args)
         timer->start( timeout );
 
 #ifdef HAVE_X11
-	QString geometry;
-    KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
-	if (args && args->isSet("geometry"))
-		geometry = args->getOption("geometry");
+        QString geometry;
+        if (parser.isSet("geometry"))
+                geometry = parser.value("geometry");
     if ( !geometry.isEmpty()) {
-	    int x, y;
-	    int w, h;
+            int x, y;
+            int w, h;
         int m = XParseGeometry( geometry.toLatin1().constData(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
-	    if ( (m & XNegative) )
-            x = KApplication::desktop()->width()  + x - w;
-	    if ( (m & YNegative) )
-            y = KApplication::desktop()->height() + y - h;
-	    popup->setAnchor( QPoint(x, y) );
-	}
+            if ( (m & XNegative) )
+            x = QApplication::desktop()->width()  + x - w;
+            if ( (m & YNegative) )
+            y = QApplication::desktop()->height() + y - h;
+            popup->setAnchor( QPoint(x, y) );
+        }
 #endif
     qApp->exec();
-	return 0;
+        return 0;
       }
 
     // --textbox file [width] [height]
-    if (args->isSet("textbox"))
+    if (parser.isSet("textbox"))
     {
         int w = 0;
         int h = 0;
 
-        if (args->count() == 2) {
-            w = args->arg(0).toInt();
-            h = args->arg(1).toInt();
+        if (args.count() == 2) {
+            w = args.at(0).toInt();
+            h = args.at(1).toInt();
         }
 
-        return Widgets::textBox(0, w, h, title, args->getOption("textbox"));
+        return Widgets::textBox(0, w, h, title, parser.value("textbox"));
     }
 
     // --textinputbox file [width] [height]
-    if (args->isSet("textinputbox"))
+    if (parser.isSet("textinputbox"))
     {
       int w = 400;
       int h = 200;
 
-      if (args->count() >= 3) {
-	w = args->arg(1).toInt();
-	h = args->arg(2).toInt();
+      if (args.count() >= 3) {
+        w = args.at(1).toInt();
+        h = args.at(2).toInt();
       }
 
       QString init;
-      if (args->count() >= 1) {
-	  init = Widgets::parseString(args->arg(0));
+      if (args.count() >= 1) {
+          init = Widgets::parseString(args.at(0));
       }
 
       QString result;
-      int ret = Widgets::textInputBox(0, w, h, title, Widgets::parseString(args->getOption("textinputbox")), init, result);
+      int ret = Widgets::textInputBox(0, w, h, title, Widgets::parseString(parser.value("textinputbox")), init, result);
       cout << qPrintable(result) << endl;
       return ret;
     }
 
     // --combobox <text> item [item] ..."
-    if (args->isSet("combobox")) {
+    if (parser.isSet("combobox")) {
         QStringList list;
-        if (args->count() >= 1) {
-            for (int i = 0; i < args->count(); i++) {
-                list.append(args->arg(i));
+        if (args.count() >= 1) {
+            for (int i = 0; i < args.count(); i++) {
+                list.append(args.at(i));
             }
-            const QString text = Widgets::parseString(args->getOption("combobox"));
-	    if (args->isSet("default")) {
-	        defaultEntry = args->getOption("default");
-	    }
+            const QString text = Widgets::parseString(parser.value("combobox"));
+            if (parser.isSet("default")) {
+                defaultEntry = parser.value("default");
+            }
             QString result;
-	    const bool retcode = Widgets::comboBox(0, title, text, list, defaultEntry, result);
+            const bool retcode = Widgets::comboBox(0, title, text, list, defaultEntry, result);
             cout << result.toLocal8Bit().data() << endl;
             return retcode ? 0 : 1;
         }
@@ -509,89 +589,88 @@ static int directCommand(KCmdLineArgs *args)
     }
 
     // --menu text [tag item] [tag item] ...
-    if (args->isSet("menu")) {
+    if (parser.isSet("menu")) {
         QStringList list;
-        if (args->count() >= 2) {
-            for (int i = 0; i < args->count(); i++) {
-                list.append(args->arg(i));
+        if (args.count() >= 2) {
+            for (int i = 0; i < args.count(); i++) {
+                list.append(args.at(i));
             }
-            const QString text = Widgets::parseString(args->getOption("menu"));
-	    if (args->isSet("default")) {
-	        defaultEntry = args->getOption("default");
-	    }
+            const QString text = Widgets::parseString(parser.value("menu"));
+            if (parser.isSet("default")) {
+                defaultEntry = parser.value("default");
+            }
             QString result;
             const bool retcode = Widgets::listBox(0, title, text, list, defaultEntry, result);
             if (1 == retcode) { // OK was selected
-	        cout << result.toLocal8Bit().data() << endl;
-	    }
+                cout << result.toLocal8Bit().data() << endl;
+            }
             return retcode ? 0 : 1;
         }
         return -1;
     }
 
     // --checklist text [tag item status] [tag item status] ...
-    if (args->isSet("checklist")) {
+    if (parser.isSet("checklist")) {
         QStringList list;
-        if (args->count() >= 3) {
-            for (int i = 0; i < args->count(); i++) {
-                list.append(args->arg(i));
+        if (args.count() >= 3) {
+            for (int i = 0; i < args.count(); i++) {
+                list.append(args.at(i));
             }
 
-            const QString text = Widgets::parseString(args->getOption("checklist"));
+            const QString text = Widgets::parseString(parser.value("checklist"));
             QStringList result;
 
             const bool retcode = Widgets::checkList(0, title, text, list, separateOutput, result);
 
             for (int i=0; i<result.count(); i++)
                 if (!result.at(i).toLocal8Bit().isEmpty()) {
-		    cout << result.at(i).toLocal8Bit().data() << endl;
-		}
-            exit( retcode ? 0 : 1 );
+                    cout << result.at(i).toLocal8Bit().data() << endl;
+                }
+            return retcode ? 0 : 1;
         }
         return -1;
     }
 
     // --radiolist text width height menuheight [tag item status]
-    if (args->isSet("radiolist")) {
+    if (parser.isSet("radiolist")) {
         QStringList list;
-        if (args->count() >= 3) {
-            for (int i = 0; i < args->count(); i++) {
-                list.append(args->arg(i));
+        if (args.count() >= 3) {
+            for (int i = 0; i < args.count(); i++) {
+                list.append(args.at(i));
             }
 
-            const QString text = Widgets::parseString(args->getOption("radiolist"));
+            const QString text = Widgets::parseString(parser.value("radiolist"));
             QString result;
             const bool retcode = Widgets::radioBox(0, title, text, list, result);
             cout << result.toLocal8Bit().data() << endl;
-            exit( retcode ? 0 : 1 );
+            return retcode ? 0 : 1;
         }
         return -1;
     }
 
     // getopenfilename [startDir] [filter]
-    if (args->isSet("getopenfilename")) {
-        QString startDir = args->getOption("getopenfilename");
+    if (parser.isSet("getopenfilename")) {
+        QString startDir = parser.value("getopenfilename");
         if (!startDir.startsWith(QStringLiteral("file://")))
             startDir.prepend(QStringLiteral("file://"));
         const QUrl startUrl = QUrl::fromUserInput(startDir);
         QString filter;
-        if (args->count() >= 1)  {
-            filter = Widgets::parseString(args->arg(0));
+        if (args.count() >= 1)  {
+            filter = Widgets::parseString(args.at(0));
         }
         KFileDialog dlg( startUrl, filter, 0 );
         dlg.setOperationMode( KFileDialog::Opening );
 
-        if (args->isSet("multiple")) {
+        if (parser.isSet("multiple")) {
             dlg.setMode(KFile::Files | KFile::LocalOnly);
         } else {
             dlg.setMode(KFile::File | KFile::LocalOnly);
         }
         Widgets::handleXGeometry(&dlg);
-        kapp->setTopWidget( &dlg );
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
         dlg.exec();
 
-        if (args->isSet("multiple")) {
+        if (parser.isSet("multiple")) {
             const QStringList result = dlg.selectedFiles();
             if ( !result.isEmpty() ) {
                 outputStringList( result, separateOutput );
@@ -610,20 +689,20 @@ static int directCommand(KCmdLineArgs *args)
 
     // getsaveurl [startDir] [filter]
     // getsavefilename [startDir] [filter]
-    if ( (args->isSet("getsavefilename") ) || (args->isSet("getsaveurl") ) ) {
+    if ( (parser.isSet("getsavefilename") ) || (parser.isSet("getsaveurl") ) ) {
         QString startDir;
         QString filter;
-        if ( args->isSet("getsavefilename") ) {
-            startDir = args->getOption("getsavefilename");
+        if ( parser.isSet("getsavefilename") ) {
+            startDir = parser.value("getsavefilename");
         } else {
-            startDir = args->getOption("getsaveurl");
+            startDir = parser.value("getsaveurl");
         }
         if (!startDir.startsWith(QStringLiteral("file://")))
             startDir.prepend(QStringLiteral("file://"));
         const QUrl startUrl = QUrl::fromUserInput(startDir);
 
-        if (args->count() >= 1)  {
-            filter = Widgets::parseString(args->arg(0));
+        if (args.count() >= 1)  {
+            filter = Widgets::parseString(args.at(0));
         }
         // copied from KFileDialog::getSaveFileName(), so we can add geometry
         bool specialDir = startDir.startsWith(QLatin1Char(':'));
@@ -636,11 +715,10 @@ static int directCommand(KCmdLineArgs *args)
             dlg.setSelection( startDir );
         dlg.setOperationMode( KFileDialog::Saving );
         Widgets::handleXGeometry(&dlg);
-        kapp->setTopWidget( &dlg );
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
         dlg.exec();
 
-        if ( args->isSet("getsaveurl") ) {
+        if ( parser.isSet("getsaveurl") ) {
             const QUrl result = dlg.selectedUrl();
             if ( result.isValid())  {
                 cout << result.url().toLocal8Bit().data() << endl;
@@ -658,8 +736,8 @@ static int directCommand(KCmdLineArgs *args)
     }
 
     // getexistingdirectory [startDir]
-    if (args->isSet("getexistingdirectory")) {
-        QString startDir = args->getOption("getexistingdirectory");
+    if (parser.isSet("getexistingdirectory")) {
+        QString startDir = parser.value("getexistingdirectory");
         if (!startDir.startsWith(QStringLiteral("file://")))
             startDir.prepend(QStringLiteral("file://"));
         const QUrl startUrl = QUrl::fromUserInput(startDir);
@@ -672,7 +750,6 @@ static int directCommand(KCmdLineArgs *args)
         QUrl url;
         KDirSelectDialog myDialog( startUrl, true, 0 );
 
-        kapp->setTopWidget( &myDialog );
 
         Widgets::handleXGeometry(&myDialog);
         if ( !title.isEmpty() )
@@ -692,30 +769,29 @@ static int directCommand(KCmdLineArgs *args)
     }
 
     // getopenurl [startDir] [filter]
-    if (args->isSet("getopenurl")) {
-        QString startDir = args->getOption("getopenurl");
+    if (parser.isSet("getopenurl")) {
+        QString startDir = parser.value("getopenurl");
         if (!startDir.startsWith(QStringLiteral("file://")))
             startDir.prepend(QStringLiteral("file://"));
         const QUrl startUrl = QUrl::fromUserInput(startDir);
 
         QString filter;
-        if (args->count() >= 1)  {
-            filter = Widgets::parseString(args->arg(0));
+        if (args.count() >= 1)  {
+            filter = Widgets::parseString(args.at(0));
         }
         KFileDialog dlg( startUrl, filter, 0 );
         dlg.setOperationMode( KFileDialog::Opening );
 
-        if (args->isSet("multiple")) {
+        if (parser.isSet("multiple")) {
             dlg.setMode(KFile::Files);
         } else {
             dlg.setMode(KFile::File);
         }
         Widgets::handleXGeometry(&dlg);
-        kapp->setTopWidget( &dlg );
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
         dlg.exec();
 
-        if (args->isSet("multiple")) {
+        if (parser.isSet("multiple")) {
             const QList<QUrl> result = dlg.selectedUrls();
             if ( !result.isEmpty() ) {
                 outputStringList( result, separateOutput );
@@ -732,11 +808,11 @@ static int directCommand(KCmdLineArgs *args)
     }
 
     // geticon [group] [context]
-    if (args->isSet("geticon")) {
+    if (parser.isSet("geticon")) {
         QString groupStr, contextStr;
-        groupStr = args->getOption("geticon");
-        if (args->count() >= 1)  {
-            contextStr = args->arg(0);
+        groupStr = parser.value("geticon");
+        if (args.count() >= 1)  {
+            contextStr = args.at(0);
         }
         const KIconLoader::Group group =
             ( groupStr == QLatin1String( "Desktop" ) ) ?     KIconLoader::Desktop :
@@ -770,17 +846,16 @@ static int directCommand(KCmdLineArgs *args)
             // end: KDE3 compatibility
             /* else */                                           KIconLoader::Any;
 
-	KIconDialog dlg((QWidget*)0L);
-	kapp->setTopWidget( &dlg );
-	dlg.setup( group, context);
+        KIconDialog dlg((QWidget*)Q_NULLPTR);
+        dlg.setup( group, context);
         dlg.setIconSize(KIconLoader::SizeHuge);
 
-	if (!title.isEmpty())
-	    dlg.setWindowTitle(title);
+        if (!title.isEmpty())
+            dlg.setWindowTitle(title);
 
-	Widgets::handleXGeometry(&dlg);
+        Widgets::handleXGeometry(&dlg);
 
-	QString result = dlg.openDialog();
+        const QString result = dlg.openDialog();
 
         if (!result.isEmpty())  {
             cout << result.toLocal8Bit().data() << endl;
@@ -790,7 +865,7 @@ static int directCommand(KCmdLineArgs *args)
     }
 
     // --progressbar text totalsteps
-    if (args->isSet("progressbar"))
+    if (parser.isSet("progressbar"))
     {
        cout << "org.kde.kdialog-" << getpid() << " /ProgressDialog" << endl;
        if (fork())
@@ -798,24 +873,23 @@ static int directCommand(KCmdLineArgs *args)
        close(1);
 
        int totalsteps = 100;
-       const QString text = Widgets::parseString(args->getOption("progressbar"));
+       const QString text = Widgets::parseString(parser.value("progressbar"));
 
-       if (args->count() == 1)
-           totalsteps = args->arg(0).toInt();
+       if (args.count() == 1)
+           totalsteps = args.at(0).toInt();
 
        return Widgets::progressBar(0, title, text, totalsteps) ? 1 : 0;
     }
 
     // --getcolor
-    if (args->isSet("getcolor")) {
+    if (parser.isSet("getcolor")) {
         KColorDialog dlg((QWidget*)0L, true);
 
-        if (args->isSet("default")) {
-            defaultEntry = args->getOption("default");
+        if (parser.isSet("default")) {
+            defaultEntry = parser.value("default");
             dlg.setColor(defaultEntry);
         }
         Widgets::handleXGeometry(&dlg);
-        kapp->setTopWidget(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Choose Color") : title);
 
         if (dlg.exec() == KColorDialog::Accepted) {
@@ -830,17 +904,16 @@ static int directCommand(KCmdLineArgs *args)
         }
         return 1; // cancelled
     }
-    if (args->isSet("slider"))
+    if (parser.isSet("slider"))
     {
        int miniValue = 0;
        int maxValue = 0;
        int step = 0;
-       const QString text = Widgets::parseString(args->getOption("slider"));
-       if ( args->count() == 3 )
-       {
-           miniValue = args->arg(0).toInt();
-           maxValue = args->arg( 1 ).toInt();
-           step = args->arg( 2 ).toInt();
+       const QString text = Widgets::parseString(parser.value("slider"));
+       if (args.count() == 3) {
+           miniValue = args.at(0).toInt();
+           maxValue = args.at( 1 ).toInt();
+           step = args.at( 2 ).toInt();
        }
        int result = 0;
 
@@ -849,9 +922,9 @@ static int directCommand(KCmdLineArgs *args)
            cout << result << endl;
        return returnCode;
     }
-    if (args->isSet("calendar"))
+    if (parser.isSet("calendar"))
     {
-       const QString text = Widgets::parseString(args->getOption("calendar"));
+       const QString text = Widgets::parseString(parser.value("calendar"));
        QDate result;
 
        const bool returnCode = Widgets::calendar(0, title, text, result);
@@ -860,88 +933,6 @@ static int directCommand(KCmdLineArgs *args)
        return returnCode;
     }
 
-    KCmdLineArgs::usage();
+    parser.showHelp();
     return -2; // NOTREACHED
-}
-
-
-int main(int argc, char *argv[])
-{
-    KLocalizedString::setApplicationDomain("kdialog");
-
-  K4AboutData aboutData( "kdialog", 0, ki18n("KDialog"),
-                         "1.0", ki18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
-                         K4AboutData::License_GPL,
-                         ki18n("(C) 2000, Nick Thompson"));
-  aboutData.addAuthor(ki18n("David Faure"), ki18n("Current maintainer"),"faure@kde.org");
-  aboutData.addAuthor(ki18n("Brad Hards"), KLocalizedString(), "bradh@frogmouth.net");
-  aboutData.addAuthor(ki18n("Nick Thompson"),KLocalizedString(), 0/*"nickthompson@lucent.com" bounces*/);
-  aboutData.addAuthor(ki18n("Matthias Hölzer"),KLocalizedString(),"hoelzer@kde.org");
-  aboutData.addAuthor(ki18n("David Gümbel"),KLocalizedString(),"david.guembel@gmx.net");
-  aboutData.addAuthor(ki18n("Richard Moore"),KLocalizedString(),"rich@kde.org");
-  aboutData.addAuthor(ki18n("Dawit Alemayehu"),KLocalizedString(),"adawit@kde.org");
-  aboutData.addAuthor(ki18n("Kai Uwe Broulik"),KLocalizedString(),"kde@privat.broulik.de");
-  aboutData.setProgramIconName("system-run");
-
-  KCmdLineArgs::init(argc, argv, &aboutData);
-
-  KCmdLineOptions options;
-  options.add("yesno <text>", ki18n("Question message box with yes/no buttons"));
-  options.add("yesnocancel <text>", ki18n("Question message box with yes/no/cancel buttons"));
-  options.add("warningyesno <text>", ki18n("Warning message box with yes/no buttons"));
-  options.add("warningcontinuecancel <text>", ki18n("Warning message box with continue/cancel buttons"));
-  options.add("warningyesnocancel <text>", ki18n("Warning message box with yes/no/cancel buttons"));
-  options.add("yes-label <text>", ki18n("Use text as Yes button label"));
-  options.add("no-label <text>", ki18n("Use text as No button label"));
-  options.add("cancel-label <text>", ki18n("Use text as Cancel button label"));
-  options.add("continue-label <text>", ki18n("Use text as Continue button label"));
-  options.add("sorry <text>", ki18n("'Sorry' message box"));
-  options.add("detailedsorry <text> <details>", ki18n("'Sorry' message box with expandable Details field"));
-  options.add("error <text>", ki18n("'Error' message box"));
-  options.add("detailederror <text> <details>", ki18n("'Error' message box with expandable Details field"));
-  options.add("msgbox <text>", ki18n("Message Box dialog"));
-  options.add("inputbox <text> <init>", ki18n("Input Box dialog"));
-  options.add("password <text>", ki18n("Password dialog"));
-  options.add("textbox <file> [width] [height]", ki18n("Text Box dialog"));
-  options.add("textinputbox <text> <init> [width] [height]", ki18n("Text Input Box dialog"));
-  options.add("combobox <text> item [item] [item] ...", ki18n("ComboBox dialog"));
-  options.add("menu <text> [tag item] [tag item] ...", ki18n("Menu dialog"));
-  options.add("checklist <text> [tag item status] ...", ki18n("Check List dialog"));
-  options.add("radiolist <text> [tag item status] ...", ki18n("Radio List dialog"));
-  options.add("passivepopup <text> <timeout>", ki18n("Passive Popup"));
-  options.add("getopenfilename [startDir] [filter]", ki18n("File dialog to open an existing file"));
-  options.add("getsavefilename [startDir] [filter]", ki18n("File dialog to save a file"));
-  options.add("getexistingdirectory [startDir]", ki18n("File dialog to select an existing directory"));
-  options.add("getopenurl [startDir] [filter]", ki18n("File dialog to open an existing URL"));
-  options.add("getsaveurl [startDir] [filter]", ki18n("File dialog to save a URL"));
-  options.add("geticon [group] [context]", ki18n("Icon chooser dialog"));
-  options.add("progressbar <text> [totalsteps]", ki18n("Progress bar dialog, returns a D-Bus reference for communication"));
-  options.add("getcolor", ki18n("Color dialog to select a color"));
-  // TODO gauge stuff, reading values from stdin
-  options.add("title <text>", ki18n("Dialog title"));
-  options.add("default <text>", ki18n("Default entry to use for combobox, menu and color"));
-  options.add("multiple", ki18n("Allows the --getopenurl and --getopenfilename options to return multiple files"));
-  options.add("separate-output", ki18n("Return list items on separate lines (for checklist option and file open with --multiple)"));
-  options.add("print-winid", ki18n("Outputs the winId of each dialog"));
-  options.add("dontagain <file:entry>", ki18n("Config file and option name for saving the \"do-not-show/ask-again\" state"));
-  options.add( "slider <text> [minvalue] [maxvalue] [step]", ki18n( "Slider dialog box, returns selected value" ) );
-  options.add( "calendar <text>", ki18n( "Calendar dialog box, returns selected date" ) );
-  /* kdialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
-     * For backwards compatibility, we silently map --embed to --attach */
-  options.add("attach <winid>", ki18n("Makes the dialog transient for an X app specified by winid"));
-  options.add("embed <winid>", ki18n("A synonym for --attach"));
-
-  options.add("+[arg]", ki18n("Arguments - depending on main option"));
-
-  KCmdLineArgs::addCmdLineOptions( options ); // Add our own options.
-
-  KApplication app;
-
-  // enable high dpi support
-  app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-
-  KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
-
-  // execute direct kdialog command
-  return directCommand(args);
 }
