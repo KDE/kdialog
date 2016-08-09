@@ -650,13 +650,11 @@ int main(int argc, char *argv[])
 
     // getopenfilename [startDir] [filter]
     if (parser.isSet("getopenfilename")) {
-        QString startDir = parser.value("getopenfilename");
-        if (!startDir.startsWith(QStringLiteral("file://")))
-            startDir.prepend(QStringLiteral("file://"));
+        QString startDir = args.count() > 0 ? args.at(0) : QString();
         const QUrl startUrl = QUrl::fromUserInput(startDir);
         QString filter;
-        if (args.count() >= 1)  {
-            filter = Widgets::parseString(args.at(0));
+        if (args.count() > 1)  {
+            filter = Widgets::parseString(args.at(1));
         }
         KFileDialog dlg( startUrl, filter, 0 );
         dlg.setOperationMode( KFileDialog::Opening );
@@ -690,19 +688,12 @@ int main(int argc, char *argv[])
     // getsaveurl [startDir] [filter]
     // getsavefilename [startDir] [filter]
     if ( (parser.isSet("getsavefilename") ) || (parser.isSet("getsaveurl") ) ) {
-        QString startDir;
+        QString startDir = args.count() > 0 ? args.at(0) : QString();
         QString filter;
-        if ( parser.isSet("getsavefilename") ) {
-            startDir = parser.value("getsavefilename");
-        } else {
-            startDir = parser.value("getsaveurl");
-        }
-        if (!startDir.startsWith(QStringLiteral("file://")))
-            startDir.prepend(QStringLiteral("file://"));
         const QUrl startUrl = QUrl::fromUserInput(startDir);
 
-        if (args.count() >= 1)  {
-            filter = Widgets::parseString(args.at(0));
+        if (args.count() > 1)  {
+            filter = Widgets::parseString(args.at(1));
         }
         // copied from KFileDialog::getSaveFileName(), so we can add geometry
         bool specialDir = startDir.startsWith(QLatin1Char(':'));
@@ -737,9 +728,7 @@ int main(int argc, char *argv[])
 
     // getexistingdirectory [startDir]
     if (parser.isSet("getexistingdirectory")) {
-        QString startDir = parser.value("getexistingdirectory");
-        if (!startDir.startsWith(QStringLiteral("file://")))
-            startDir.prepend(QStringLiteral("file://"));
+        QString startDir = args.count() > 0 ? args.at(0) : QString();
         const QUrl startUrl = QUrl::fromUserInput(startDir);
         QString result;
 #ifdef Q_WS_WIN
@@ -770,14 +759,12 @@ int main(int argc, char *argv[])
 
     // getopenurl [startDir] [filter]
     if (parser.isSet("getopenurl")) {
-        QString startDir = parser.value("getopenurl");
-        if (!startDir.startsWith(QStringLiteral("file://")))
-            startDir.prepend(QStringLiteral("file://"));
+        QString startDir = args.count() > 0 ? args.at(0) : QString();
         const QUrl startUrl = QUrl::fromUserInput(startDir);
 
         QString filter;
-        if (args.count() >= 1)  {
-            filter = Widgets::parseString(args.at(0));
+        if (args.count() > 1)  {
+            filter = Widgets::parseString(args.at(1));
         }
         KFileDialog dlg( startUrl, filter, 0 );
         dlg.setOperationMode( KFileDialog::Opening );
