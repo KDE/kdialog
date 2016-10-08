@@ -112,20 +112,22 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
   edit->setReadOnly(true);
   edit->setFocus();
 
-  QFile f(file);
-  if (!f.open(QIODevice::ReadOnly))
-  {
-    kError() << i18n("kdialog: could not open file %1", file) << endl;
-    return -1;
+  if (file == QLatin1String("-")) {
+      QTextStream s(stdin, QIODevice::ReadOnly);
+      while (!s.atEnd())
+        edit->append(s.readLine());
+  } else {
+    QFile f(file);
+    if (!f.open(QIODevice::ReadOnly)) {
+        kError() << i18n("kdialog: could not open file %1", file) << endl;
+        return -1;
+    }
+    QTextStream s(&f);
+    while (!s.atEnd())
+        edit->append(s.readLine());
   }
-  QTextStream s(&f);
-
-  while (!s.atEnd())
-    edit->append(s.readLine());
 
   edit->setTextCursor(QTextCursor(edit->document()));
-
-  f.close();
 
   if ( width > 0 && height > 0 )
       dlg.setInitialSize( QSize( width, height ) );
