@@ -34,6 +34,7 @@
 #include <kicondialog.h>
 #include <kdirselectdialog.h>
 #include <kcolordialog.h>
+#include <kcolormimedata.h>
 #include <kwindowsystem.h>
 #include <kiconloader.h>
 #include <KLocalizedString>
@@ -41,6 +42,7 @@
 
 #include <QApplication>
 #include <QDate>
+#include <QClipboard>
 #include <QUrl>
 #include <QTimer>
 #include <QDesktopWidget>
@@ -875,7 +877,13 @@ int main(int argc, char *argv[])
         if (parser.isSet("default")) {
             defaultEntry = parser.value("default");
             dlg.setColor(defaultEntry);
+        } else {
+            QColor color = KColorMimeData::fromMimeData(QApplication::clipboard()->mimeData(QClipboard::Clipboard));
+            if (color.isValid()) {
+                dlg.setColor(color);
+            }
         }
+
         Widgets::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Choose Color") : title);
 
