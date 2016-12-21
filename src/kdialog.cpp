@@ -211,6 +211,14 @@ static KGuiItem configuredContinue(const QString &text)
 
 int main(int argc, char *argv[])
 {
+    // Bug 373677: Qt removes various arguments it treats internally (such as title and icon) from args
+    // and applies them to the first Qt::Window, while here we only show dialogs
+    // so we need to store them before we even create our QApplication
+    QStringList rawArgs;
+    for (int i = 0; i < argc; ++i) {
+        rawArgs << QString::fromLocal8Bit(argv[i]);
+    }
+
     KLocalizedString::setApplicationDomain("kdialog");
     QApplication app(argc, argv);
 
@@ -286,7 +294,7 @@ int main(int argc, char *argv[])
 
     parser.addPositionalArgument(QLatin1String("[arg]"), i18n("Arguments - depending on main option"));
 
-    parser.process(app);
+    parser.process(rawArgs);
     aboutData.processCommandLine(&parser);
 
     // execute kdialog command
