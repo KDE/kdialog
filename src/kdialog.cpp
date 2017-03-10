@@ -278,6 +278,7 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("geticon"), i18n("Icon chooser dialog (arguments [group] [context])")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("progressbar"), i18n("Progress bar dialog, returns a D-Bus reference for communication"), QLatin1String("text")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getcolor"), i18n("Color dialog to select a color")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("format"), i18n("Allow --getcolor to specify output format"), QLatin1String("text")));
     // TODO gauge stuff, reading values from stdin
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("title"), i18n("Dialog title"), QLatin1String("text")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("default"), i18n("Default entry to use for combobox, menu and color"), QLatin1String("text")));
@@ -897,10 +898,41 @@ int main(int argc, char *argv[])
 
         if (dlg.exec() == KColorDialog::Accepted) {
             QString result;
-            if (dlg.color().isValid()) {
-                result = dlg.color().name();
+            QRegularExpressionMatch match;
+            if (dlg.color().isValid() && parser.isSet("format")) {
+                bool found = false;
+                QString format = parser.value("format");
+                format.remove(QChar('*')); // stripped out * for safety
+                QList<QRegularExpression> pattern_pool;
+                pattern_pool << QRegularExpression("(%#?[-+]?\\d*\\.?\\d*(?:ll|hh|l|h)?[diouxX])")
+                        << QRegularExpression("(%#?[-+]?\\d*\\.?\\d*[l]?[efgEFG])");
+
+                for (int i = 0; i < pattern_pool.size(); i++) {
+                    QRegularExpressionMatchIterator itor = pattern_pool.at(i).globalMatch(format);
+                    QRegularExpressionMatch match;
+                    int match_count = 0;
+                    while (itor.hasNext()) {
+                        match = itor.next();
+                        if (match.hasMatch()) {
+                            match_count++;
+                        }
+                    }
+                    // currently only handle RGB, when alpha is ready, should hit 4
+                    if (3 == match_count) {
+                        found = true;
+                        if (match.captured(0).contains(QRegularExpression("[diouxX]"))) {
+                            result = QString::asprintf(format.toUtf8().constData(), dlg.color().red(), dlg.color().green(), dlg.color().blue());
+                        } else {
+                            result = QString::asprintf(format.toUtf8().constData(), dlg.color().redF(), dlg.color().greenF(), dlg.color().blueF());
+                        }
+                        break;
+                    }
+                }
+                if (false == found) {
+                    cout << "Invalid format pattern";
+                }
             } else {
-                result = dlg.defaultColor().name();
+                result = dlg.color().name();
             }
             cout << result.toLocal8Bit().data() << endl;
             return 0;
