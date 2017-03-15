@@ -91,7 +91,7 @@ private:
 bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
 {
     if (e->type() == QEvent::Show && o->isWidgetType()
-        && o->inherits("KDialog"))
+        && o->inherits("QDialog"))
     {
         QWidget *w = static_cast<QWidget*>(o);
         if (print)
