@@ -1,17 +1,17 @@
 dbusRef=`kdialog --geometry 300x200+100-100 --progressbar "Initialising" 6`
-qdbus $dbusRef Set org.kde.kdialog.ProgressDialog value 1
+qdbus $dbusRef value 1
 qdbus $dbusRef setLabelText "Thinking really hard"
 sleep 2
-qdbus $dbusRef Set org.kde.kdialog.ProgressDialog value 2
+qdbus $dbusRef value 2
 sleep 2
 qdbus $dbusRef setLabelText "Thinking some more"
-qdbus $dbusRef Set org.kde.kdialog.ProgressDialog value 3
+qdbus $dbusRef value 3
 sleep 2
-qdbus $dbusRef Set org.kde.kdialog.ProgressDialog value 4
+qdbus $dbusRef value 4
 sleep 2
 qdbus $dbusRef setLabelText "Finishing up"
-qdbus $dbusRef Set org.kde.kdialog.ProgressDialog value 5
+qdbus $dbusRef value 5
 sleep 1
-qdbus $dbusRef Set org.kde.kdialog.ProgressDialog value 6
+qdbus $dbusRef value 6
 sleep 1
-qdbus $dbusRef org.kde.kdialog.ProgressDialog.close
+qdbus $dbusRef close

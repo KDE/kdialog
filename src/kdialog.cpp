@@ -43,6 +43,7 @@
 #include <QApplication>
 #include <QDate>
 #include <QClipboard>
+#include <QDBusServiceWatcher>
 #include <QDebug>
 #include <QDesktopWidget>
 #include <QUrl>
@@ -869,8 +870,14 @@ int main(int argc, char *argv[])
        }
        qint64 pid = 0;
        if (process.startDetached("kdialog_progress_helper", arguments, QString(), &pid)) {
+           QDBusConnection dbus = QDBusConnection::sessionBus();
            const QString serviceName = QStringLiteral("org.kde.kdialog-") + QString::number(pid);
-           std::cout << serviceName.toLatin1().constData() << " /ProgressDialog" << std::endl << std::flush;
+           QDBusServiceWatcher watcher(serviceName, dbus, QDBusServiceWatcher::WatchForRegistration);
+           QObject::connect(&watcher, &QDBusServiceWatcher::serviceRegistered, [serviceName](){
+                   std::cout << serviceName.toLatin1().constData() << " /ProgressDialog" << std::endl << std::flush;
+                   qApp->quit();
+           });
+           qApp->exec();
            return 0;
        }
        qWarning() << "Error starting kdialog_progress_helper";

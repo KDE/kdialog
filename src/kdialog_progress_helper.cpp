@@ -23,6 +23,11 @@
 #include "progressdialog.h"
 #include "utils.h"
 
+#include <unistd.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+
 int main(int argc, char **argv)
 {
     QStringList rawArgs;
@@ -31,6 +36,14 @@ int main(int argc, char **argv)
     }
 
     KLocalizedString::setApplicationDomain("kdialog");
+
+    // This code was given by Thiago as a solution for the issue that
+    // otherwise bash waits for a SIGPIPE from kdialog that never comes in.
+    int fd = open("/dev/null", O_RDWR);
+    dup2(fd, STDIN_FILENO);
+    dup2(fd, STDOUT_FILENO);
+    dup2(fd, STDERR_FILENO);
+    close(fd);
 
     QApplication app(argc, argv);
     app.setApplicationName("kdialog");
