@@ -22,6 +22,7 @@
 
 #include "config-kdialog.h"
 #include "widgets.h"
+#include "utils.h"
 
 #include <kmessagebox.h>
 #include <kpassivepopup.h>
@@ -38,18 +39,19 @@
 #include <kwindowsystem.h>
 #include <kiconloader.h>
 #include <KLocalizedString>
-#include <kdebug.h>
 
 #include <QApplication>
 #include <QDate>
 #include <QClipboard>
-#include <QUrl>
-#include <QTimer>
+#include <QDebug>
 #include <QDesktopWidget>
+#include <QUrl>
+#include <QProcess>
+#include <QTimer>
 
 #include <iostream>
 
-#if defined HAVE_X11 && !defined K_WS_QTONLY
+#if defined HAVE_X11
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #endif
@@ -292,6 +294,7 @@ int main(int argc, char *argv[])
      * For backwards compatibility, we silently map --embed to --attach */
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("attach"), i18n("Makes the dialog transient for an X app specified by winid"), QLatin1String("winid")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("embed"), i18n("A synonym for --attach"), QLatin1String("winid")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("geometry"), i18n("Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"), QLatin1String("geometry")));
 
     parser.addPositionalArgument(QLatin1String("[arg]"), i18n("Arguments - depending on main option"));
 
@@ -301,21 +304,12 @@ int main(int argc, char *argv[])
     // execute kdialog command
 
     const QStringList args = parser.positionalArguments();
-    QString title;
-    bool separateOutput = false;
-    bool printWId = parser.isSet("print-winid");
+    const QString title = parser.value("title");
+    const bool separateOutput = parser.isSet("separate-output");
+    const bool printWId = parser.isSet("print-winid");
     QString defaultEntry;
-
-    // --title text
-    if (parser.isSet("title")) {
-      title = parser.value("title");
-    }
-
-    // --separate-output
-    if (parser.isSet("separate-output"))
-    {
-      separateOutput = true;
-    }
+    const QString geometry = parser.value("geometry");
+    Utils::setGeometry(geometry);
 
     WId winid = 0;
     bool attach = parser.isSet("attach");
@@ -424,11 +418,11 @@ int main(int argc, char *argv[])
         }
         int ret = 0;
 
-        QString text = Widgets::parseString(parser.value(option));
+        QString text = Utils::parseString(parser.value(option));
 
         QString details;
         if (args.count() == 1) {
-            details = Widgets::parseString(args.at(0));
+            details = Utils::parseString(args.at(0));
         }
 
         if ( type == KMessageBox::WarningContinueCancel ) {
@@ -495,7 +489,7 @@ int main(int argc, char *argv[])
         }
 
         // try to use more stylish notifications
-        if (sendVisualNotification(Widgets::parseString(parser.value("passivepopup")), title, icon, timeout))
+        if (sendVisualNotification(Utils::parseString(parser.value("passivepopup")), title, icon, timeout))
           return 0;
 
         // ...did not work, use KPassivePopup as fallback
@@ -514,7 +508,7 @@ int main(int argc, char *argv[])
         }
         KPassivePopup *popup = KPassivePopup::message( KPassivePopup::Boxed, // style
                                                        title,
-                                                       Widgets::parseString(parser.value("passivepopup")),
+                                                       Utils::parseString(parser.value("passivepopup")),
                                                        passiveicon,
                                                        (QWidget*)0UL, // parent
                                                        timeout );
@@ -526,23 +520,20 @@ int main(int argc, char *argv[])
         timer->start( timeout );
 
 #ifdef HAVE_X11
-        QString geometry;
-        if (parser.isSet("geometry"))
-                geometry = parser.value("geometry");
-    if ( !geometry.isEmpty()) {
+        if ( !geometry.isEmpty()) {
             int x, y;
             int w, h;
-        int m = XParseGeometry( geometry.toLatin1().constData(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
+            int m = XParseGeometry( geometry.toLatin1().constData(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
             if ( (m & XNegative) )
-            x = QApplication::desktop()->width()  + x - w;
+                x = QApplication::desktop()->width()  + x - w;
             if ( (m & YNegative) )
-            y = QApplication::desktop()->height() + y - h;
+                y = QApplication::desktop()->height() + y - h;
             popup->setAnchor( QPoint(x, y) );
         }
 #endif
-    qApp->exec();
+        qApp->exec();
         return 0;
-      }
+    }
 
     // --textbox file [width] [height]
     if (parser.isSet("textbox"))
@@ -571,11 +562,11 @@ int main(int argc, char *argv[])
 
       QString init;
       if (args.count() >= 1) {
-          init = Widgets::parseString(args.at(0));
+          init = Utils::parseString(args.at(0));
       }
 
       QString result;
-      int ret = Widgets::textInputBox(0, w, h, title, Widgets::parseString(parser.value("textinputbox")), init, result);
+      int ret = Widgets::textInputBox(0, w, h, title, Utils::parseString(parser.value("textinputbox")), init, result);
       cout << qPrintable(result) << endl;
       return ret;
     }
@@ -587,7 +578,7 @@ int main(int argc, char *argv[])
             for (int i = 0; i < args.count(); i++) {
                 list.append(args.at(i));
             }
-            const QString text = Widgets::parseString(parser.value("combobox"));
+            const QString text = Utils::parseString(parser.value("combobox"));
             if (parser.isSet("default")) {
                 defaultEntry = parser.value("default");
             }
@@ -606,7 +597,7 @@ int main(int argc, char *argv[])
             for (int i = 0; i < args.count(); i++) {
                 list.append(args.at(i));
             }
-            const QString text = Widgets::parseString(parser.value("menu"));
+            const QString text = Utils::parseString(parser.value("menu"));
             if (parser.isSet("default")) {
                 defaultEntry = parser.value("default");
             }
@@ -628,7 +619,7 @@ int main(int argc, char *argv[])
                 list.append(args.at(i));
             }
 
-            const QString text = Widgets::parseString(parser.value("checklist"));
+            const QString text = Utils::parseString(parser.value("checklist"));
             QStringList result;
 
             const bool retcode = Widgets::checkList(0, title, text, list, separateOutput, result);
@@ -650,7 +641,7 @@ int main(int argc, char *argv[])
                 list.append(args.at(i));
             }
 
-            const QString text = Widgets::parseString(parser.value("radiolist"));
+            const QString text = Utils::parseString(parser.value("radiolist"));
             QString result;
             const bool retcode = Widgets::radioBox(0, title, text, list, result);
             cout << result.toLocal8Bit().data() << endl;
@@ -665,7 +656,7 @@ int main(int argc, char *argv[])
         const QUrl startUrl = QUrl::fromUserInput(startDir);
         QString filter;
         if (args.count() > 1)  {
-            filter = Widgets::parseString(args.at(1));
+            filter = Utils::parseString(args.at(1));
         }
         KFileDialog dlg( startUrl, filter, 0 );
         dlg.setOperationMode( KFileDialog::Opening );
@@ -675,7 +666,7 @@ int main(int argc, char *argv[])
         } else {
             dlg.setMode(KFile::File | KFile::LocalOnly);
         }
-        Widgets::handleXGeometry(&dlg);
+        Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
         dlg.exec();
 
@@ -704,7 +695,7 @@ int main(int argc, char *argv[])
         const QUrl startUrl = QUrl::fromUserInput(startDir);
 
         if (args.count() > 1)  {
-            filter = Widgets::parseString(args.at(1));
+            filter = Utils::parseString(args.at(1));
         }
         // copied from KFileDialog::getSaveFileName(), so we can add geometry
         bool specialDir = startDir.startsWith(QLatin1Char(':'));
@@ -716,7 +707,7 @@ int main(int argc, char *argv[])
         if ( !specialDir )
             dlg.setSelection( startDir );
         dlg.setOperationMode( KFileDialog::Saving );
-        Widgets::handleXGeometry(&dlg);
+        Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
         dlg.exec();
 
@@ -751,7 +742,7 @@ int main(int argc, char *argv[])
         KDirSelectDialog myDialog( startUrl, true, 0 );
 
 
-        Widgets::handleXGeometry(&myDialog);
+        Utils::handleXGeometry(&myDialog);
         if ( !title.isEmpty() )
             myDialog.setWindowTitle( title );
 
@@ -775,7 +766,7 @@ int main(int argc, char *argv[])
 
         QString filter;
         if (args.count() > 1)  {
-            filter = Widgets::parseString(args.at(1));
+            filter = Utils::parseString(args.at(1));
         }
         KFileDialog dlg( startUrl, filter, 0 );
         dlg.setOperationMode( KFileDialog::Opening );
@@ -785,7 +776,7 @@ int main(int argc, char *argv[])
         } else {
             dlg.setMode(KFile::File);
         }
-        Widgets::handleXGeometry(&dlg);
+        Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
         dlg.exec();
 
@@ -851,7 +842,7 @@ int main(int argc, char *argv[])
         if (!title.isEmpty())
             dlg.setWindowTitle(title);
 
-        Widgets::handleXGeometry(&dlg);
+        Utils::handleXGeometry(&dlg);
 
         const QString result = dlg.openDialog();
 
@@ -865,18 +856,25 @@ int main(int argc, char *argv[])
     // --progressbar text totalsteps
     if (parser.isSet("progressbar"))
     {
-       cout << "org.kde.kdialog-" << getpid() << " /ProgressDialog" << endl;
-       if (fork())
-           _exit(0);
-       close(1);
+       const QString text = Utils::parseString(parser.value("progressbar"));
 
-       int totalsteps = 100;
-       const QString text = Widgets::parseString(parser.value("progressbar"));
-
-       if (args.count() == 1)
-           totalsteps = args.at(0).toInt();
-
-       return Widgets::progressBar(0, title, text, totalsteps) ? 1 : 0;
+       QProcess process;
+       QStringList arguments;
+       arguments << QStringLiteral("--progressbar");
+       arguments << text;
+       arguments << QStringLiteral("--title");
+       arguments << title;
+       if (args.count() == 1) {
+           arguments << args.at(0);
+       }
+       qint64 pid = 0;
+       if (process.startDetached("kdialog_progress_helper", arguments, QString(), &pid)) {
+           const QString serviceName = QStringLiteral("org.kde.kdialog-") + QString::number(pid);
+           std::cout << serviceName.toLatin1().constData() << " /ProgressDialog" << std::endl << std::flush;
+           return 0;
+       }
+       qWarning() << "Error starting kdialog_progress_helper";
+       return 1;
     }
 
     // --getcolor
@@ -893,7 +891,7 @@ int main(int argc, char *argv[])
             }
         }
 
-        Widgets::handleXGeometry(&dlg);
+        Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Choose Color") : title);
 
         if (dlg.exec() == KColorDialog::Accepted) {
@@ -944,7 +942,7 @@ int main(int argc, char *argv[])
        int miniValue = 0;
        int maxValue = 0;
        int step = 0;
-       const QString text = Widgets::parseString(parser.value("slider"));
+       const QString text = Utils::parseString(parser.value("slider"));
        if (args.count() == 3) {
            miniValue = args.at(0).toInt();
            maxValue = args.at( 1 ).toInt();
@@ -959,7 +957,7 @@ int main(int argc, char *argv[])
     }
     if (parser.isSet("calendar"))
     {
-       const QString text = Widgets::parseString(parser.value("calendar"));
+       const QString text = Utils::parseString(parser.value("calendar"));
        QDate result;
 
        const bool returnCode = Widgets::calendar(0, title, text, result);

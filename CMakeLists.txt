@@ -12,7 +12,7 @@ include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 
 # Build dependencies
-find_package(KF5 REQUIRED COMPONENTS KDELibs4Support KIO)
+find_package(KF5 REQUIRED COMPONENTS KDELibs4Support KIO DBusAddons)
 find_package(Qt5DBus CONFIG)
 
 find_package(X11)

@@ -19,35 +19,19 @@
 #ifndef PROGRESSDIALOG_H
 #define PROGRESSDIALOG_H
 
-#include <kprogressdialog.h>
-class ProgressDialog : public KProgressDialog
+#include <qprogressdialog.h>
+
+class ProgressDialog : public QProgressDialog
 {
     Q_OBJECT
-    Q_PROPERTY(int value READ value WRITE setValue)
-    Q_PROPERTY(int maximum READ maximum WRITE setMaximum)
-    Q_PROPERTY(bool autoClose READ autoClose WRITE setAutoClose)
 
  public:
-    explicit ProgressDialog(QWidget* parent = 0, 
-                            const QString& caption = QString(), 
+    explicit ProgressDialog(QWidget* parent = Q_NULLPTR,
+                            const QString& caption = QString(),
                             const QString& text = QString(), int totalSteps = 100);
-      
-    void setMaximum( int );
-    int maximum() const;
-    
-    void setValue( int );
-    int value() const;
-      
-    void setLabelText(const QString&);
-    
-    void showCancelButton(bool show);
-    bool wasCancelled() const;
-    void ignoreCancel();
 
-    void setAutoClose( bool );
-    bool autoClose() const;
-                  
-    void close();
+    void showCancelButton(bool show);
+    bool wasCancelled() const { return wasCanceled(); }
 };
 
 #endif // PROGRESSDIALOG_H

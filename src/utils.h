@@ -1,5 +1,4 @@
-//
-//  Copyright (C) 2004-2005 Stephan Binner <binner@kde.org>
+//  Copyright (C) 2017 David Faure <faure@kde.org>
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -16,24 +15,17 @@
 //  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //
 
-#include "progressdialog.h"
-#include "utils.h"
-#include "progressdialogadaptor.h"
-#include <KLocalizedString>
+#ifndef UTILS_P_H
+#define UTILS_P_H
 
-ProgressDialog::ProgressDialog(QWidget* parent, const QString& caption, const QString& text, int totalSteps)
-    : QProgressDialog(parent)
+#include <QString>
+class QWidget;
+
+namespace Utils
 {
-    setWindowTitle(caption);
-    setLabelText(text);
-    (void)new ProgressDialogAdaptor( this );
-    QDBusConnection::sessionBus().registerObject( QLatin1String("/ProgressDialog"), this );
-    setAutoClose( false );
-    setMaximum( totalSteps );
-    Utils::handleXGeometry(this);
+    void setGeometry(const QString &geometry);
+    void handleXGeometry(QWidget * dlg);
+    QString parseString(const QString &str);
 }
 
-void ProgressDialog::showCancelButton(bool show)
-{
-    setCancelButtonText(show ? i18n("Cancel") : QString());
-}
+#endif

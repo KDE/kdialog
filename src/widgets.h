@@ -22,7 +22,6 @@
 #define WIDGETS_H
 
 #include <QDate>
-#include <QByteRef>
 #include <QWidget>
 #include <QStringList>
 
@@ -36,13 +35,8 @@ namespace Widgets
     bool checkList(QWidget *parent, const QString& title, const QString& text, const QStringList& args, bool separateOutput, QStringList &result);
     bool radioBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args, QString &result);
     bool comboBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args, const QString& defaultEntry, QString &result);
-    bool progressBar(QWidget *parent, const QString& title, const QString& text, int totalSteps);
     bool slider( QWidget *parent, const QString& title, const QString& test, int minValue, int maxValue, int step, int &result );
     bool calendar( QWidget *parent, const QString &title, const QString &text, QDate & result );
-
-    void handleXGeometry(QWidget * dlg);
-
-    QString parseString(const QString &str);
 }
 
 #endif

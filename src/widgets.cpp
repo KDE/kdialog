@@ -21,6 +21,7 @@
 // Own
 #include "config-kdialog.h"
 #include "widgets.h"
+#include "utils.h"
 
 // Qt
 #include <QFile>
@@ -30,7 +31,6 @@
 #include <QLabel>
 
 // KDE
-#include <kmessagebox.h>
 #include <kinputdialog.h>
 #include <kpassworddialog.h>
 #include <kcombobox.h>
@@ -45,32 +45,6 @@
 #include "klistboxdialog.h"
 #include "progressdialog.h"
 
-
-#if defined HAVE_X11 && ! defined K_WS_QTONLY
-#include <X11/Xlib.h>
-#include <X11/Xutil.h>
-#endif
-
-void Widgets::handleXGeometry(QWidget * dlg)
-{
-#ifdef HAVE_X11
-    QString geometry;
-    KCmdLineArgs *args = KCmdLineArgs::parsedArgs("kde");
-    if (args && args->isSet("geometry"))
-        geometry = args->getOption("geometry");
-    if ( !geometry.isEmpty()) {
-        int x, y;
-        int w, h;
-        int m = XParseGeometry( geometry.toLatin1().constData(), &x, &y, (unsigned int*)&w, (unsigned int*)&h);
-        if ( (m & XNegative) )
-            x = KApplication::desktop()->width() + x - w;
-        if ( (m & YNegative) )
-            y = KApplication::desktop()->height() + y - h;
-        dlg->setGeometry(x, y, w, h);
-        kDebug() << "x: " << x << "  y: " << y << "  w: " << w << "  h: " << h;
-    }
-#endif
-}
 
 bool Widgets::inputBox(QWidget *parent, const QString& title, const QString& text, const QString& init, QString &result)
 {
@@ -88,7 +62,7 @@ bool Widgets::passwordBox(QWidget *parent, const QString& title, const QString& 
   dlg.setWindowTitle(title);
   dlg.setPrompt(text);
 
-  handleXGeometry(&dlg);
+  Utils::handleXGeometry(&dlg);
 
   bool retcode = (dlg.exec() == QDialog::Accepted);
   if ( retcode )
@@ -132,7 +106,7 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
   if ( width > 0 && height > 0 )
       dlg.setInitialSize( QSize( width, height ) );
 
-  handleXGeometry(&dlg);
+  Utils::handleXGeometry(&dlg);
   dlg.setWindowTitle(title);
   return (dlg.exec() == KDialog::Accepted) ? 0 : 1;
 }
@@ -165,7 +139,7 @@ int Widgets::textInputBox(QWidget *parent, int width, int height, const QString&
   if ( width > 0 && height > 0 )
     dlg.setInitialSize( QSize( width, height ) );
 
-  handleXGeometry(&dlg);
+  Utils::handleXGeometry(&dlg);
   dlg.setWindowTitle(title);
   const int returnDialogCode = dlg.exec();
   result = edit->toPlainText();
@@ -192,7 +166,7 @@ bool Widgets::comboBox(QWidget *parent, const QString& title, const QString& tex
   combo.setCurrentIndex( combo.findText( defaultEntry ) );
   combo.setFocus();
 
-  handleXGeometry(&dlg);
+  Utils::handleXGeometry(&dlg);
 
   bool retcode = (dlg.exec() == QDialog::Accepted);
 
@@ -215,7 +189,7 @@ bool Widgets::listBox(QWidget *parent, const QString& title, const QString& text
   }
   box.setCurrentItem( defaultEntry );
 
-  handleXGeometry(&box);
+  Utils::handleXGeometry(&box);
 
   const bool retcode = (box.exec() == QDialog::Accepted);
   if ( retcode )
@@ -251,7 +225,7 @@ bool Widgets::checkList(QWidget *parent, const QString& title, const QString& te
     table.item( i/3 )->setSelected( args[i+2] == QLatin1String("on") );
   }
 
-  handleXGeometry(&box);
+  Utils::handleXGeometry(&box);
 
   const bool retcode = (box.exec() == QDialog::Accepted);
 
@@ -295,24 +269,13 @@ bool Widgets::radioBox(QWidget *parent, const QString& title, const QString& tex
     }
   }
 
-  handleXGeometry(&box);
+  Utils::handleXGeometry(&box);
 
   const bool retcode = (box.exec() == QDialog::Accepted);
   if ( retcode )
     result = tags[ table.currentRow() ];
   return retcode;
 }
-
-bool Widgets::progressBar(QWidget *parent, const QString& title, const QString& text, int totalSteps)
-{
-  ProgressDialog dlg( parent, title, text, totalSteps );
-  kapp->setTopWidget( &dlg );
-  dlg.setWindowTitle( title );
-  handleXGeometry(&dlg);
-  dlg.exec();
-  return dlg.wasCancelled();
-}
-
 
 bool Widgets::slider( QWidget *parent, const QString& title, const QString& text, int minValue, int maxValue, int step, int &result )
 {
@@ -335,7 +298,7 @@ bool Widgets::slider( QWidget *parent, const QString& title, const QString& text
     slider.setTickPosition ( QSlider::TicksAbove );
     slider.setOrientation( Qt::Horizontal );
     slider.setFocus();
-    handleXGeometry(&dlg);
+    Utils::handleXGeometry(&dlg);
 
     const bool retcode = (dlg.exec() == QDialog::Accepted);
 
@@ -361,7 +324,7 @@ bool Widgets::calendar( QWidget *parent, const QString &title, const QString &te
     label.setText (text);
     KDatePicker dateWidget( vbox );
     dateWidget.setFocus();
-    handleXGeometry(&dlg);
+    Utils::handleXGeometry(&dlg);
 
     const bool retcode = (dlg.exec() == QDialog::Accepted);
 
@@ -371,35 +334,3 @@ bool Widgets::calendar( QWidget *parent, const QString &title, const QString &te
     return retcode;
 }
 
-QString Widgets::parseString(const QString &str)
-{
-    QString ret;
-    ret.reserve(str.size());
-    bool escaped = false;
-    for (int i = 0; i < str.size(); i++) {
-       QChar c = str.at(i);
-       if (escaped) {
-           escaped = false;
-           if (c == '\\') {
-               ret += c;
-           } else if (c == 'n') {
-               ret += '\n';
-           } else {
-               kWarning() << qPrintable(QString::fromLatin1("Unrecognized escape sequence \\%1").arg(c));
-               ret += '\\';
-               ret += c;
-           }
-       } else {
-           if (c == '\\') {
-               escaped = true;
-           } else {
-               ret += c;
-           }
-       }
-    }
-    if (escaped) {
-        kWarning() << "Unterminated escape sequence";
-        ret += '\\';
-    }
-    return ret;
-}
