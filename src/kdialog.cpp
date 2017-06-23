@@ -220,6 +220,32 @@ static void setFileDialogFilter(QFileDialog &dlg, const QString &filter)
     }
 }
 
+// taken from qfiledialog.cp
+static QString initialSelection(const QUrl &url)
+{
+    if (url.isEmpty()) {
+        return QString();
+    }
+    if (url.isLocalFile()) {
+        QFileInfo info(url.toLocalFile());
+        if (!info.isDir()) {
+            return info.fileName();
+        } else {
+            return QString();
+        }
+    }
+    // With remote URLs we can only assume.
+    return url.fileName();
+}
+
+static QUrl initialDirectory(const QUrl &url)
+{
+    if (url.isLocalFile() && QFileInfo(url.toLocalFile()).isDir()) {
+        return url;
+    }
+    return url.adjusted(QUrl::RemoveFilename);
+}
+
 int main(int argc, char *argv[])
 {
     // Bug 373677: Qt removes various arguments it treats internally (such as title and icon) from args
@@ -672,7 +698,8 @@ int main(int argc, char *argv[])
 
         QFileDialog dlg;
         dlg.setAcceptMode(QFileDialog::AcceptOpen);
-        dlg.setDirectoryUrl(startUrl);
+        dlg.setDirectoryUrl(initialDirectory(startUrl));
+        dlg.selectFile(initialSelection(startUrl));
 
         if (multiple) {
             dlg.setFileMode(QFileDialog::ExistingFiles);
@@ -730,7 +757,8 @@ int main(int argc, char *argv[])
         QFileDialog dlg;
         dlg.setAcceptMode(QFileDialog::AcceptSave);
         dlg.setFileMode(QFileDialog::AnyFile);
-        dlg.setDirectoryUrl(startUrl);
+        dlg.setDirectoryUrl(initialDirectory(startUrl));
+        dlg.selectFile(initialSelection(startUrl));
         setFileDialogFilter(dlg, filter);
         Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
@@ -764,7 +792,8 @@ int main(int argc, char *argv[])
         QFileDialog dlg;
         dlg.setFileMode(QFileDialog::DirectoryOnly);
         dlg.setOption(QFileDialog::ShowDirsOnly, true);
-        dlg.setDirectoryUrl(startUrl);
+        dlg.setDirectoryUrl(initialDirectory(startUrl));
+        dlg.selectFile(initialSelection(startUrl));
         Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Select Directory") : title);
         if (!dlg.exec()) {
