@@ -216,7 +216,7 @@ static void setFileDialogFilter(QFileDialog &dlg, const QString &filter)
     if (filter.contains("*")) {
         dlg.setNameFilter(filter);
     } else if (!filter.isEmpty()) {
-        dlg.setMimeTypeFilters(filter.split(' '));
+        dlg.setMimeTypeFilters(filter.trimmed().split(' '));
     }
 }
 
