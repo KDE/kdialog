@@ -46,6 +46,7 @@
 #include <QDBusServiceWatcher>
 #include <QDebug>
 #include <QDesktopWidget>
+#include <QFileDialog>
 #include <QUrl>
 #include <QProcess>
 #include <QTimer>
@@ -210,6 +211,15 @@ static KGuiItem configuredCancel(const QString &text)
 static KGuiItem configuredContinue(const QString &text)
 {
   return KGuiItem( text, "arrow-right" );
+}
+
+static void setFileDialogFilter(QFileDialog &dlg, const QString &filter)
+{
+    if (filter.contains("*")) {
+        dlg.setNameFilter(filter);
+    } else if (!filter.isEmpty()) {
+        dlg.setMimeTypeFilters(filter.split(' '));
+    }
 }
 
 int main(int argc, char *argv[])
@@ -652,39 +662,60 @@ int main(int argc, char *argv[])
     }
 
     // getopenfilename [startDir] [filter]
-    if (parser.isSet("getopenfilename")) {
+    // getopenurl [startDir] [filter]
+    if (parser.isSet("getopenfilename") || parser.isSet("getopenurl")) {
         QString startDir = args.count() > 0 ? args.at(0) : QString();
         const QUrl startUrl = QUrl::fromUserInput(startDir);
         QString filter;
         if (args.count() > 1)  {
             filter = Utils::parseString(args.at(1));
         }
-        KFileDialog dlg( startUrl, filter, 0 );
-        dlg.setOperationMode( KFileDialog::Opening );
+        const bool multiple = parser.isSet("multiple");
 
-        if (parser.isSet("multiple")) {
-            dlg.setMode(KFile::Files | KFile::LocalOnly);
+        QFileDialog dlg;
+        dlg.setAcceptMode(QFileDialog::AcceptOpen);
+        dlg.setDirectoryUrl(startUrl);
+
+        if (multiple) {
+            dlg.setFileMode(QFileDialog::ExistingFiles);
         } else {
-            dlg.setMode(KFile::File | KFile::LocalOnly);
+            dlg.setFileMode(QFileDialog::ExistingFile);
         }
+        const bool openUrls = parser.isSet("getopenurl");
+        if (!openUrls) {
+            dlg.setSupportedSchemes({"file"});
+        }
+        setFileDialogFilter(dlg, filter);
         Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
-        dlg.exec();
+        if (!dlg.exec()) {
+            return 1; // canceled
+        }
 
-        if (parser.isSet("multiple")) {
-            const QStringList result = dlg.selectedFiles();
-            if ( !result.isEmpty() ) {
-                outputStringList( result, separateOutput );
-                return 0;
+        if (openUrls) {
+            const QList<QUrl> result = dlg.selectedUrls();
+            if (!result.isEmpty()) {
+                if (multiple) {
+                    outputStringList(result, separateOutput);
+                    return 0;
+                } else {
+                    cout << result.at(0).url().toLocal8Bit().data() << endl;
+                    return 0;
+                }
             }
         } else {
-            const QString result = dlg.selectedFile();
+            const QStringList result = dlg.selectedFiles();
             if (!result.isEmpty())  {
-                cout << result.toLocal8Bit().data() << endl;
-                return 0;
+                if (multiple) {
+                    outputStringList(result, separateOutput);
+                    return 0;
+                } else {
+                    cout << result.at(0).toLocal8Bit().data() << endl;
+                    return 0;
+                }
             }
         }
-        return 1; // canceled
+        return 1;
     }
 
 
@@ -698,31 +729,29 @@ int main(int argc, char *argv[])
         if (args.count() > 1)  {
             filter = Utils::parseString(args.at(1));
         }
-        // copied from KFileDialog::getSaveFileName(), so we can add geometry
-        bool specialDir = startDir.startsWith(QLatin1Char(':'));
-        if ( !specialDir ) {
-            KFileItem kfi(startUrl);
-            specialDir = kfi.isDir();
-        }
-        KFileDialog dlg( specialDir ? startUrl : QUrl(), filter, 0 );
-        if ( !specialDir )
-            dlg.setSelection( startDir );
-        dlg.setOperationMode( KFileDialog::Saving );
+        QFileDialog dlg;
+        dlg.setAcceptMode(QFileDialog::AcceptSave);
+        dlg.setFileMode(QFileDialog::AnyFile);
+        dlg.setDirectoryUrl(startUrl);
+        setFileDialogFilter(dlg, filter);
         Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
-        dlg.exec();
+        if (!dlg.exec()) {
+            return 1; // canceled
+        }
 
         if ( parser.isSet("getsaveurl") ) {
-            const QUrl result = dlg.selectedUrl();
-            if ( result.isValid())  {
-                cout << result.url().toLocal8Bit().data() << endl;
+            const QList<QUrl> result = dlg.selectedUrls();
+            if (!result.isEmpty())  {
+                cout << result.at(0).toString().toLocal8Bit().data() << endl;
                 return 0;
             }
         } else { // getsavefilename
-            const QString result = dlg.selectedFile();
+            const QStringList result = dlg.selectedFiles();
             if (!result.isEmpty())  {
-                KRecentDocument::add(QUrl::fromLocalFile(result));
-                cout << result.toLocal8Bit().data() << endl;
+                const QString file = result.at(0);
+                KRecentDocument::add(QUrl::fromLocalFile(file));
+                cout << file.toLocal8Bit().data() << endl;
                 return 0;
             }
         }
@@ -756,43 +785,6 @@ int main(int argc, char *argv[])
         if (!result.isEmpty())  {
             cout << result.toLocal8Bit().data() << endl;
             return 0;
-        }
-        return 1; // canceled
-    }
-
-    // getopenurl [startDir] [filter]
-    if (parser.isSet("getopenurl")) {
-        QString startDir = args.count() > 0 ? args.at(0) : QString();
-        const QUrl startUrl = QUrl::fromUserInput(startDir);
-
-        QString filter;
-        if (args.count() > 1)  {
-            filter = Utils::parseString(args.at(1));
-        }
-        KFileDialog dlg( startUrl, filter, 0 );
-        dlg.setOperationMode( KFileDialog::Opening );
-
-        if (parser.isSet("multiple")) {
-            dlg.setMode(KFile::Files);
-        } else {
-            dlg.setMode(KFile::File);
-        }
-        Utils::handleXGeometry(&dlg);
-        dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Open") : title);
-        dlg.exec();
-
-        if (parser.isSet("multiple")) {
-            const QList<QUrl> result = dlg.selectedUrls();
-            if ( !result.isEmpty() ) {
-                outputStringList( result, separateOutput );
-                return 0;
-            }
-        } else {
-            const QUrl result = dlg.selectedUrl();
-            if (!result.isEmpty())  {
-                cout << result.url().toLocal8Bit().data() << endl;
-                return 0;
-            }
         }
         return 1; // canceled
     }
