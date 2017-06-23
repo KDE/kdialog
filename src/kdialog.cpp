@@ -30,10 +30,8 @@
 
 #include <kaboutdata.h>
 #include <kconfig.h>
-#include <kfiledialog.h>
 #include <kfileitem.h>
 #include <kicondialog.h>
-#include <kdirselectdialog.h>
 #include <kcolordialog.h>
 #include <kcolormimedata.h>
 #include <kwindowsystem.h>
@@ -762,28 +760,19 @@ int main(int argc, char *argv[])
     if (parser.isSet("getexistingdirectory")) {
         QString startDir = args.count() > 0 ? args.at(0) : QString();
         const QUrl startUrl = QUrl::fromUserInput(startDir);
-        QString result;
-#ifdef Q_WS_WIN
-        result = QFileDialog::getExistingDirectory( 0, title, startDir,
-                                                    QFileDialog::DontResolveSymlinks |
-                                                    QFileDialog::ShowDirsOnly);
-#else
-        QUrl url;
-        KDirSelectDialog myDialog( startUrl, true, 0 );
 
-
-        Utils::handleXGeometry(&myDialog);
-        if ( !title.isEmpty() )
-            myDialog.setWindowTitle( title );
-
-        if ( myDialog.exec() == QDialog::Accepted )
-            url = myDialog.url();
-
-        if ( url.isValid() )
-            result = url.path();
-#endif
-        if (!result.isEmpty())  {
-            cout << result.toLocal8Bit().data() << endl;
+        QFileDialog dlg;
+        dlg.setFileMode(QFileDialog::DirectoryOnly);
+        dlg.setOption(QFileDialog::ShowDirsOnly, true);
+        dlg.setDirectoryUrl(startUrl);
+        Utils::handleXGeometry(&dlg);
+        dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Select Directory") : title);
+        if (!dlg.exec()) {
+            return 1; // canceled
+        }
+        const QList<QUrl> urls = dlg.selectedUrls();
+        if (!urls.isEmpty()) {
+            cout << qPrintable(urls.at(0).toDisplayString(QUrl::PreferLocalFile)) << endl;
             return 0;
         }
         return 1; // canceled
