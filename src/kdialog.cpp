@@ -32,21 +32,23 @@
 #include <kconfig.h>
 #include <kfileitem.h>
 #include <kicondialog.h>
-#include <kcolordialog.h>
 #include <kcolormimedata.h>
 #include <kwindowsystem.h>
 #include <kiconloader.h>
 #include <KLocalizedString>
+#include <KDialog>
 
 #include <QApplication>
 #include <QDate>
 #include <QClipboard>
+#include <QColorDialog>
 #include <QDBusServiceWatcher>
 #include <QDebug>
 #include <QDesktopWidget>
 #include <QFileDialog>
 #include <QUrl>
 #include <QProcess>
+#include <QRegularExpression>
 #include <QTimer>
 
 #include <iostream>
@@ -896,25 +898,25 @@ int main(int argc, char *argv[])
 
     // --getcolor
     if (parser.isSet("getcolor")) {
-        KColorDialog dlg((QWidget*)0L, true);
+        QColorDialog dlg;
 
         if (parser.isSet("default")) {
             defaultEntry = parser.value("default");
-            dlg.setColor(defaultEntry);
+            dlg.setCurrentColor(defaultEntry);
         } else {
             QColor color = KColorMimeData::fromMimeData(QApplication::clipboard()->mimeData(QClipboard::Clipboard));
             if (color.isValid()) {
-                dlg.setColor(color);
+                dlg.setCurrentColor(color);
             }
         }
 
         Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Choose Color") : title);
 
-        if (dlg.exec() == KColorDialog::Accepted) {
+        if (dlg.exec()) {
             QString result;
-            QRegularExpressionMatch match;
-            if (dlg.color().isValid() && parser.isSet("format")) {
+            const QColor color = dlg.selectedColor();
+            if (color.isValid() && parser.isSet("format")) {
                 bool found = false;
                 QString format = parser.value("format");
                 format.remove(QChar('*')); // stripped out * for safety
@@ -936,9 +938,9 @@ int main(int argc, char *argv[])
                     if (3 == match_count) {
                         found = true;
                         if (match.captured(0).contains(QRegularExpression("[diouxX]"))) {
-                            result = QString::asprintf(format.toUtf8().constData(), dlg.color().red(), dlg.color().green(), dlg.color().blue());
+                            result = QString::asprintf(format.toUtf8().constData(), color.red(), color.green(), color.blue());
                         } else {
-                            result = QString::asprintf(format.toUtf8().constData(), dlg.color().redF(), dlg.color().greenF(), dlg.color().blueF());
+                            result = QString::asprintf(format.toUtf8().constData(), color.redF(), color.greenF(), color.blueF());
                         }
                         break;
                     }
@@ -947,7 +949,7 @@ int main(int argc, char *argv[])
                     cout << "Invalid format pattern";
                 }
             } else {
-                result = dlg.color().name();
+                result = color.name();
             }
             cout << result.toLocal8Bit().data() << endl;
             return 0;
