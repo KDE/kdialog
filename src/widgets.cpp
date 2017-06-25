@@ -30,12 +30,12 @@
 #include <QTextStream>
 #include <QTextCursor>
 #include <QLabel>
+#include <QVBoxLayout>
 
 // KDE
 #include <kinputdialog.h>
 #include <kpassworddialog.h>
 #include <kcombobox.h>
-#include <kdialog.h>
 #include <kcmdlineargs.h>
 #include <ktextedit.h>
 #include <kvbox.h>
@@ -45,6 +45,14 @@
 #include "klistboxdialog.h"
 #include "progressdialog.h"
 
+
+static void addButtonBox(QDialog &dlg, QDialogButtonBox::StandardButtons buttons = QDialogButtonBox::Ok | QDialogButtonBox::Cancel)
+{
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(buttons, &dlg);
+    dlg.layout()->addWidget(buttonBox);
+    QObject::connect(buttonBox, SIGNAL(accepted()), &dlg, SLOT(accept()));
+    QObject::connect(buttonBox, SIGNAL(rejected()), &dlg, SLOT(reject()));
+}
 
 bool Widgets::inputBox(QWidget *parent, const QString& title, const QString& text, const QString& init, QString &result)
 {
@@ -71,109 +79,102 @@ bool Widgets::passwordBox(QWidget *parent, const QString& title, const QString& 
 
 int Widgets::textBox(QWidget *parent, int width, int height, const QString& title, const QString& file)
 {
-//  KTextBox dlg(parent, 0, true, width, height, file);
-  KDialog dlg( parent );
-  dlg.setWindowTitle( title );
-  dlg.setButtons( KDialog::Ok );
-  dlg.setModal( true );
+    QDialog dlg(parent);
+    dlg.setWindowTitle(title);
 
-  KVBox* vbox = new KVBox(&dlg);
-  dlg.setMainWidget(vbox);
+    QVBoxLayout *mainLayout = new QVBoxLayout(&dlg);
 
-  KTextEdit *edit = new KTextEdit( vbox );
-  edit->setReadOnly(true);
-  edit->setFocus();
+    KTextEdit *edit = new KTextEdit(&dlg);
+    mainLayout->addWidget(edit);
+    edit->setReadOnly(true);
+    edit->setFocus();
 
-  if (file == QLatin1String("-")) {
-      QTextStream s(stdin, QIODevice::ReadOnly);
-      while (!s.atEnd())
-        edit->append(s.readLine());
-  } else {
-    QFile f(file);
-    if (!f.open(QIODevice::ReadOnly)) {
-        qWarning() << i18n("kdialog: could not open file %1", file);
-        return -1;
+    addButtonBox(dlg, QDialogButtonBox::Ok);
+
+    if (file == QLatin1String("-")) {
+        QTextStream s(stdin, QIODevice::ReadOnly);
+        while (!s.atEnd())
+            edit->append(s.readLine());
+    } else {
+        QFile f(file);
+        if (!f.open(QIODevice::ReadOnly)) {
+            qWarning() << i18n("kdialog: could not open file %1", file);
+            return -1;
+        }
+        QTextStream s(&f);
+        while (!s.atEnd())
+            edit->append(s.readLine());
     }
-    QTextStream s(&f);
-    while (!s.atEnd())
-        edit->append(s.readLine());
-  }
 
-  edit->setTextCursor(QTextCursor(edit->document()));
+    edit->setTextCursor(QTextCursor(edit->document()));
 
-  if ( width > 0 && height > 0 )
-      dlg.setInitialSize( QSize( width, height ) );
+    if (width > 0 && height > 0)
+        dlg.resize(QSize(width, height));
 
-  Utils::handleXGeometry(&dlg);
-  dlg.setWindowTitle(title);
-  return (dlg.exec() == KDialog::Accepted) ? 0 : 1;
+    Utils::handleXGeometry(&dlg);
+    dlg.setWindowTitle(title);
+    return (dlg.exec() == QDialog::Accepted) ? 0 : 1;
 }
 
 int Widgets::textInputBox(QWidget *parent, int width, int height, const QString& title, const QString& text, const QString& init, QString &result)
 {
-//  KTextBox dlg(parent, 0, true, width, height, file);
-  KDialog dlg( parent );
-  dlg.setWindowTitle( title );
-  dlg.setButtons( KDialog::Ok );
-  dlg.setModal( true );
+    QDialog dlg(parent);
+    dlg.setWindowTitle(title);
+    QVBoxLayout *mainLayout = new QVBoxLayout(&dlg);
 
-  KVBox* vbox = new KVBox(&dlg);
+    if (!text.isEmpty()) {
+        QLabel *label = new QLabel(&dlg);
+        mainLayout->addWidget(label);
+        label->setText(text);
+    }
 
-  dlg.setMainWidget(vbox);
+    KTextEdit *edit = new KTextEdit(&dlg);
+    mainLayout->addWidget(edit);
+    edit->setReadOnly(false);
+    edit->setFocus();
+    edit->insertPlainText(init);
 
-  if( !text.isEmpty() )
-  {
-    QLabel *label = new QLabel(vbox);
-    label->setText(text);
-  }
+    addButtonBox(dlg, QDialogButtonBox::Ok);
 
-  KTextEdit *edit = new KTextEdit( vbox );
-  edit->setReadOnly(false);
-  edit->setFocus();
+    if (width > 0 && height > 0)
+        dlg.resize(QSize(width, height));
 
-  edit->insertPlainText( init );
-
-  if ( width > 0 && height > 0 )
-    dlg.setInitialSize( QSize( width, height ) );
-
-  Utils::handleXGeometry(&dlg);
-  dlg.setWindowTitle(title);
-  const int returnDialogCode = dlg.exec();
-  result = edit->toPlainText();
-  return (returnDialogCode == KDialog::Accepted ? 0 : 1);
+    Utils::handleXGeometry(&dlg);
+    dlg.setWindowTitle(title);
+    const int returnDialogCode = dlg.exec();
+    result = edit->toPlainText();
+    return (returnDialogCode == QDialog::Accepted ? 0 : 1);
 }
 
 bool Widgets::comboBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args,
-		       const QString& defaultEntry, QString &result)
+                       const QString& defaultEntry, QString &result)
 {
-  KDialog dlg( parent );
-  dlg.setWindowTitle( title );
-  dlg.setButtons( KDialog::Ok|KDialog::Cancel );
-  dlg.setModal( true );
-  dlg.setDefaultButton( KDialog::Ok );
+    QDialog dlg(parent);
+    dlg.setWindowTitle(title);
 
-  KVBox* vbox = new KVBox( &dlg );
-  dlg.setMainWidget( vbox );
+    QVBoxLayout *mainLayout = new QVBoxLayout(&dlg);
 
-  QLabel label (vbox);
-  label.setText (text);
-  KComboBox combo (vbox);
-  combo.insertItems (0, args);
-  combo.setCurrentIndex( combo.findText( defaultEntry ) );
-  combo.setFocus();
+    QLabel *label = new QLabel(&dlg);
+    label->setText(text);
+    mainLayout->addWidget(label);
+    QComboBox *combo = new QComboBox(&dlg);
+    combo->addItems(args);
+    combo->setCurrentIndex(combo->findText(defaultEntry));
+    combo->setFocus();
+    mainLayout->addWidget(combo);
+    addButtonBox(dlg);
+    Utils::handleXGeometry(&dlg);
 
-  Utils::handleXGeometry(&dlg);
+    bool retcode = (dlg.exec() == QDialog::Accepted);
 
-  bool retcode = (dlg.exec() == QDialog::Accepted);
+    if (retcode)
+        result = combo->currentText();
 
-  if (retcode)
-    result = combo.currentText();
-
-  return retcode;
+    return retcode;
 }
 
 bool Widgets::listBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args,
-		      const QString& defaultEntry, QString &result)
+                      const QString& defaultEntry, QString &result)
 {
   KListBoxDialog box(text,parent);
 
@@ -270,57 +271,56 @@ bool Widgets::radioBox(QWidget *parent, const QString& title, const QString& tex
   return retcode;
 }
 
-bool Widgets::slider( QWidget *parent, const QString& title, const QString& text, int minValue, int maxValue, int step, int &result )
+bool Widgets::slider(QWidget *parent, const QString& title, const QString& text, int minValue, int maxValue, int step, int &result)
 {
-    KDialog dlg( parent );
-    dlg.setWindowTitle( title );
-    dlg.setButtons( KDialog::Ok|KDialog::Cancel );
-    dlg.setModal( true );
-    dlg.setDefaultButton( KDialog::Ok );
+    QDialog dlg(parent);
+    dlg.setWindowTitle(title);
 
-    KVBox* vbox = new KVBox( &dlg );
-    dlg.setMainWidget( vbox );
+    QVBoxLayout *mainLayout = new QVBoxLayout(&dlg);
 
-    QLabel label (vbox);
-    label.setText (text);
-    QSlider slider (vbox);
-    slider.setMinimum( minValue );
-    slider.setMaximum( maxValue );
-    slider.setSingleStep( step );
-    slider.setTickPosition ( QSlider::TicksAbove );
-    slider.setOrientation( Qt::Horizontal );
-    slider.setFocus();
+    QLabel *label = new QLabel(&dlg);
+    mainLayout->addWidget(label);
+    label->setText (text);
+    QSlider *slider = new QSlider(&dlg);
+    mainLayout->addWidget(slider);
+    slider->setMinimum(minValue);
+    slider->setMaximum(maxValue);
+    slider->setSingleStep(step);
+    slider->setTickPosition(QSlider::TicksAbove);
+    slider->setOrientation(Qt::Horizontal);
+    slider->setFocus();
     Utils::handleXGeometry(&dlg);
+
+    addButtonBox(dlg);
 
     const bool retcode = (dlg.exec() == QDialog::Accepted);
 
     if (retcode)
-        result = slider.value();
+        result = slider->value();
 
     return retcode;
 }
 
 bool Widgets::calendar( QWidget *parent, const QString &title, const QString &text, QDate & result )
 {
-    KDialog dlg( parent );
-    dlg.setWindowTitle( title );
-    dlg.setButtons( KDialog::Ok|KDialog::Cancel );
-    dlg.setModal( true );
-    dlg.setDefaultButton( KDialog::Ok );
+    QDialog dlg(parent);
+    dlg.setWindowTitle(title);
 
-    KVBox* vbox = new KVBox( &dlg );
-    dlg.setMainWidget( vbox );
+    QVBoxLayout *mainLayout = new QVBoxLayout(&dlg);
 
-    QLabel label (vbox);
-    label.setText (text);
-    KDatePicker dateWidget( vbox );
-    dateWidget.setFocus();
+    QLabel *label = new QLabel(&dlg);
+    mainLayout->addWidget(label);
+    label->setText(text);
+    KDatePicker *dateWidget = new KDatePicker(&dlg);
+    mainLayout->addWidget(dateWidget);
+    dateWidget->setFocus();
+    addButtonBox(dlg);
     Utils::handleXGeometry(&dlg);
 
     const bool retcode = (dlg.exec() == QDialog::Accepted);
 
     if (retcode)
-        result = dateWidget.date();
+        result = dateWidget->date();
 
     return retcode;
 }
