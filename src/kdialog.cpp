@@ -36,7 +36,6 @@
 #include <kwindowsystem.h>
 #include <kiconloader.h>
 #include <KLocalizedString>
-#include <KDialog>
 
 #include <QApplication>
 #include <QDate>
@@ -549,7 +548,6 @@ int main(int argc, char *argv[])
                                                        passiveicon,
                                                        (QWidget*)0UL, // parent
                                                        timeout );
-        KDialog::centerOnScreen( popup );
         QTimer *timer = new QTimer();
         QObject::connect( timer, SIGNAL(timeout()), qApp, SLOT(quit()) );
         QObject::connect( popup, SIGNAL(clicked()), qApp, SLOT(quit()) );

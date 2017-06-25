@@ -11,7 +11,11 @@ add_executable(kdialog ${kdialog_SRCS})
 
 target_link_libraries(kdialog
     KF5::KIOWidgets
-    KF5::KDELibs4Support
+    KF5::TextWidgets
+    KF5::Notifications
+    KF5::IconThemes
+    KF5::GuiAddons
+    KF5::WindowSystem
 )
 
 if(Qt5DBus_FOUND)
@@ -39,8 +43,8 @@ add_executable(kdialog_progress_helper ${kdialog_progress_helper_SRCS})
 
 target_link_libraries(kdialog_progress_helper
     KF5::DBusAddons
+    KF5::I18n
     Qt5::Widgets
-    KF5::KDELibs4Support
 )
 
 if (HAVE_X11)
