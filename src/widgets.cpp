@@ -24,6 +24,7 @@
 #include "utils.h"
 
 // Qt
+#include <QDebug>
 #include <QFile>
 #include <QDesktopWidget>
 #include <QTextStream>
@@ -34,9 +35,7 @@
 #include <kinputdialog.h>
 #include <kpassworddialog.h>
 #include <kcombobox.h>
-#include <kdebug.h>
 #include <kdialog.h>
-#include <kapplication.h>
 #include <kcmdlineargs.h>
 #include <ktextedit.h>
 #include <kvbox.h>
@@ -59,7 +58,6 @@ bool Widgets::inputBox(QWidget *parent, const QString& title, const QString& tex
 bool Widgets::passwordBox(QWidget *parent, const QString& title, const QString& text, QString &result)
 {
   KPasswordDialog dlg( parent );
-  kapp->setTopWidget( &dlg );
   dlg.setWindowTitle(title);
   dlg.setPrompt(text);
 
@@ -79,7 +77,6 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
   dlg.setButtons( KDialog::Ok );
   dlg.setModal( true );
 
-  kapp->setTopWidget( &dlg );
   KVBox* vbox = new KVBox(&dlg);
   dlg.setMainWidget(vbox);
 
@@ -94,7 +91,7 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
   } else {
     QFile f(file);
     if (!f.open(QIODevice::ReadOnly)) {
-        kError() << i18n("kdialog: could not open file %1", file) << endl;
+        qWarning() << i18n("kdialog: could not open file %1", file);
         return -1;
     }
     QTextStream s(&f);
@@ -120,7 +117,6 @@ int Widgets::textInputBox(QWidget *parent, int width, int height, const QString&
   dlg.setButtons( KDialog::Ok );
   dlg.setModal( true );
 
-  kapp->setTopWidget( &dlg );
   KVBox* vbox = new KVBox(&dlg);
 
   dlg.setMainWidget(vbox);
@@ -151,7 +147,6 @@ bool Widgets::comboBox(QWidget *parent, const QString& title, const QString& tex
 		       const QString& defaultEntry, QString &result)
 {
   KDialog dlg( parent );
-  kapp->setTopWidget( &dlg );
   dlg.setWindowTitle( title );
   dlg.setButtons( KDialog::Ok|KDialog::Cancel );
   dlg.setModal( true );
@@ -182,7 +177,6 @@ bool Widgets::listBox(QWidget *parent, const QString& title, const QString& text
 {
   KListBoxDialog box(text,parent);
 
-  kapp->setTopWidget( &box );
   box.setWindowTitle(title);
 
   for (int i = 0; i+1<args.count(); i += 2) {
@@ -210,7 +204,6 @@ bool Widgets::checkList(QWidget *parent, const QString& title, const QString& te
 
   QListWidget &table = box.getTable();
 
-  kapp->setTopWidget( &box );
   box.setWindowTitle(title);
 
   for (int i=0; i+2<args.count(); i += 3) {
@@ -254,7 +247,6 @@ bool Widgets::radioBox(QWidget *parent, const QString& title, const QString& tex
 
   QListWidget &table = box.getTable();
 
-  kapp->setTopWidget( &box );
   box.setWindowTitle(title);
 
   for (int i=0; i+2<args.count(); i += 3) {
@@ -281,7 +273,6 @@ bool Widgets::radioBox(QWidget *parent, const QString& title, const QString& tex
 bool Widgets::slider( QWidget *parent, const QString& title, const QString& text, int minValue, int maxValue, int step, int &result )
 {
     KDialog dlg( parent );
-    kapp->setTopWidget( &dlg );
     dlg.setWindowTitle( title );
     dlg.setButtons( KDialog::Ok|KDialog::Cancel );
     dlg.setModal( true );
@@ -312,7 +303,6 @@ bool Widgets::slider( QWidget *parent, const QString& title, const QString& text
 bool Widgets::calendar( QWidget *parent, const QString &title, const QString &text, QDate & result )
 {
     KDialog dlg( parent );
-    kapp->setTopWidget( &dlg );
     dlg.setWindowTitle( title );
     dlg.setButtons( KDialog::Ok|KDialog::Cancel );
     dlg.setModal( true );
