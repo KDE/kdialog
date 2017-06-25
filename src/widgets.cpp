@@ -35,6 +35,7 @@
 #include <kpassworddialog.h>
 #include <kcombobox.h>
 #include <kdebug.h>
+#include <kdialog.h>
 #include <kapplication.h>
 #include <kcmdlineargs.h>
 #include <ktextedit.h>

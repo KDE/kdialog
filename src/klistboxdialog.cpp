@@ -19,43 +19,48 @@
 #include "klistboxdialog.h"
 
 #include <QLabel>
-#include <kvbox.h>
-
-#include "klocale.h"
+#include <QVBoxLayout>
+#include <QDialogButtonBox>
 
 KListBoxDialog::KListBoxDialog(const QString &text, QWidget *parent)
-    : KDialog( parent )
+    : QDialog(parent)
 {
-  setModal(true);
-  setButtons( Ok | Cancel );
+    setModal(true);
+    QVBoxLayout *vLayout = new QVBoxLayout(this);
 
-  KVBox *page = new KVBox(this);
-  setMainWidget(page);
+    label = new QLabel(text, this);
+    vLayout->addWidget(label);
+    label->setAlignment(Qt::AlignCenter);
 
-  label = new QLabel(text, page);
-  label->setAlignment(Qt::AlignCenter);
+    table = new QListWidget(this);
+    vLayout->addWidget(table);
+    table->setFocus();
 
-  table = new QListWidget(page);
-  table->setFocus();
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    vLayout->addWidget(buttonBox);
+
+    connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+    connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+
 }
 
 void KListBoxDialog::insertItem(const QString& item)
 {
-  table->addItem(item);
-  table->setCurrentItem(0);
+    table->addItem(item);
+    table->setCurrentItem(0);
 }
 
 void KListBoxDialog::setCurrentItem(const QString& item)
 {
-  for ( int i=0; i < (int) table->count(); i++ ) {
-    if ( table->item(i)->text() == item ) {
-      table->setCurrentItem(table->item(i));
-      break;
+    for (int i=0; i < table->count(); ++i) {
+        if (table->item(i)->text() == item) {
+            table->setCurrentItem(table->item(i));
+            break;
+        }
     }
-  }
 }
 
 int KListBoxDialog::currentItem() const
 {
-  return table->currentRow();
+    return table->currentRow();
 }

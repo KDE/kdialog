@@ -21,13 +21,13 @@
 #ifndef KLISTBOXDIALOG_H
 #define KLISTBOXDIALOG_H
 
-#include <kdialog.h>
+#include <qdialog.h>
 
 #include <QListWidget>
 
 class QLabel;
 
-class KListBoxDialog : public KDialog
+class KListBoxDialog : public QDialog
 {
   Q_OBJECT
 
