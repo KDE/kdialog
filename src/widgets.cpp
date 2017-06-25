@@ -24,22 +24,21 @@
 #include "utils.h"
 
 // Qt
+#include <QComboBox>
 #include <QDebug>
 #include <QFile>
 #include <QDesktopWidget>
+#include <QInputDialog>
 #include <QTextStream>
 #include <QTextCursor>
 #include <QLabel>
 #include <QVBoxLayout>
 
 // KDE
-#include <kinputdialog.h>
 #include <kpassworddialog.h>
-#include <kcombobox.h>
-#include <kcmdlineargs.h>
 #include <ktextedit.h>
-#include <kvbox.h>
 #include <kdatepicker.h>
+#include <klocalizedstring.h>
 
 // Local
 #include "klistboxdialog.h"
@@ -56,11 +55,11 @@ static void addButtonBox(QDialog &dlg, QDialogButtonBox::StandardButtons buttons
 
 bool Widgets::inputBox(QWidget *parent, const QString& title, const QString& text, const QString& init, QString &result)
 {
-  bool ok;
-  const QString str = KInputDialog::getText( title, text, init, &ok, parent, 0, 0, QString() );
-  if ( ok )
-    result = str;
-  return ok;
+    bool ok;
+    const QString str = QInputDialog::getText(parent, title, text, QLineEdit::Normal, init, &ok);
+    if (ok)
+        result = str;
+    return ok;
 }
 
 bool Widgets::passwordBox(QWidget *parent, const QString& title, const QString& text, QString &result)
