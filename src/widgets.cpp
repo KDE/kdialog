@@ -36,6 +36,7 @@
 
 // KDE
 #include <kpassworddialog.h>
+#include <knewpassworddialog.h>
 #include <ktextedit.h>
 #include <kdatepicker.h>
 #include <klocalizedstring.h>
@@ -68,6 +69,20 @@ bool Widgets::passwordBox(QWidget *parent, const QString& title, const QString& 
   dlg.setWindowTitle(title);
   dlg.setPrompt(text);
 
+  Utils::handleXGeometry(&dlg);
+
+  bool retcode = (dlg.exec() == QDialog::Accepted);
+  if ( retcode )
+    result = dlg.password();
+  return retcode;
+}
+
+bool Widgets::newPasswordBox(QWidget *parent, const QString& title, const QString& text, QString &result)
+{
+  KNewPasswordDialog dlg( parent );
+  dlg.setWindowTitle(title);
+  dlg.setPrompt(text);
+  
   Utils::handleXGeometry(&dlg);
 
   bool retcode = (dlg.exec() == QDialog::Accepted);

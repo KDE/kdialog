@@ -300,6 +300,7 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("msgbox"), i18n("Message Box dialog"), QLatin1String("text")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("inputbox"), i18n("Input Box dialog"), QLatin1String("text> <init")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("password"), i18n("Password dialog"), QLatin1String("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("newpassword"), i18n("New Password dialog"), QLatin1String("text")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("textbox"), i18n("Text Box dialog"), QLatin1String("file")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("textinputbox"), i18n("Text Input Box dialog"), QLatin1String("text> <init")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("combobox"), i18n("ComboBox dialog"), QLatin1String("text")));
@@ -500,6 +501,15 @@ int main(int argc, char *argv[])
     {
       QString result;
       const bool retcode = Widgets::passwordBox(0, title, parser.value("password"), result);
+      cout << qPrintable(result) << endl;
+      return retcode ? 0 : 1;
+    }
+    
+    // --newpassword text
+    if (parser.isSet("newpassword"))
+    {
+      QString result;
+      const bool retcode = Widgets::newPasswordBox(0, title, parser.value("newpassword"), result);
       cout << qPrintable(result) << endl;
       return retcode ? 0 : 1;
     }
