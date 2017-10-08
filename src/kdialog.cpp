@@ -264,7 +264,7 @@ int main(int argc, char *argv[])
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     KAboutData aboutData( "kdialog", i18n("KDialog"),
-            "1.0", i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
+            "2.0", i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
             KAboutLicense::GPL,
             i18n("(C) 2000, Nick Thompson"));
     aboutData.addAuthor(i18n("David Faure"), i18n("Current maintainer"),"faure@kde.org");
