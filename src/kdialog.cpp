@@ -215,7 +215,8 @@ static KGuiItem configuredContinue(const QString &text)
 static void setFileDialogFilter(QFileDialog &dlg, const QString &filter)
 {
     if (filter.contains("*")) {
-        dlg.setNameFilter(filter);
+        QString qtFilter = filter;
+        dlg.setNameFilter(qtFilter.replace('|','\n'));
     } else if (!filter.isEmpty()) {
         dlg.setMimeTypeFilters(filter.trimmed().split(' '));
     }
