@@ -258,8 +258,8 @@ int main(int argc, char *argv[])
         rawArgs << QString::fromLocal8Bit(argv[i]);
     }
 
-    KLocalizedString::setApplicationDomain("kdialog");
     QApplication app(argc, argv);
+    KLocalizedString::setApplicationDomain("kdialog");
 
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
