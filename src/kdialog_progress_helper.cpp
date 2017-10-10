@@ -35,8 +35,6 @@ int main(int argc, char **argv)
         rawArgs << QString::fromLocal8Bit(argv[i]);
     }
 
-    KLocalizedString::setApplicationDomain("kdialog");
-
     // This code was given by Thiago as a solution for the issue that
     // otherwise bash waits for a SIGPIPE from kdialog that never comes in.
     int fd = open("/dev/null", O_RDWR);
@@ -48,6 +46,8 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     app.setApplicationName("kdialog");
     app.setOrganizationDomain("kde.org");
+    KLocalizedString::setApplicationDomain("kdialog");
+
     KDBusService dbusService(KDBusService::Multiple);
 
     QCommandLineParser parser;
