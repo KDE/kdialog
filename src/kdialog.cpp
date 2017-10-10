@@ -215,7 +215,8 @@ static KGuiItem configuredContinue(const QString &text)
 static void setFileDialogFilter(QFileDialog &dlg, const QString &filter)
 {
     if (filter.contains("*")) {
-        dlg.setNameFilter(filter);
+        QString qtFilter = filter;
+        dlg.setNameFilter(qtFilter.replace('|','\n'));
     } else if (!filter.isEmpty()) {
         dlg.setMimeTypeFilters(filter.trimmed().split(' '));
     }
@@ -257,14 +258,14 @@ int main(int argc, char *argv[])
         rawArgs << QString::fromLocal8Bit(argv[i]);
     }
 
-    KLocalizedString::setApplicationDomain("kdialog");
     QApplication app(argc, argv);
+    KLocalizedString::setApplicationDomain("kdialog");
 
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     KAboutData aboutData( "kdialog", i18n("KDialog"),
-            "1.0", i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
+            "2.0", i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
             KAboutLicense::GPL,
             i18n("(C) 2000, Nick Thompson"));
     aboutData.addAuthor(i18n("David Faure"), i18n("Current maintainer"),"faure@kde.org");
@@ -275,10 +276,10 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Richard Moore"),QString(),"rich@kde.org");
     aboutData.addAuthor(i18n("Dawit Alemayehu"),QString(),"adawit@kde.org");
     aboutData.addAuthor(i18n("Kai Uwe Broulik"),QString(),"kde@privat.broulik.de");
+    KAboutData::setApplicationData(aboutData);
     QApplication::setWindowIcon(QIcon::fromTheme("system-run"));
 
     QCommandLineParser parser;
-    KAboutData::setApplicationData(aboutData);
     parser.addVersionOption();
     parser.addHelpOption();
     aboutData.setupCommandLine(&parser);
