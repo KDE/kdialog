@@ -276,10 +276,10 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Richard Moore"),QString(),"rich@kde.org");
     aboutData.addAuthor(i18n("Dawit Alemayehu"),QString(),"adawit@kde.org");
     aboutData.addAuthor(i18n("Kai Uwe Broulik"),QString(),"kde@privat.broulik.de");
+    KAboutData::setApplicationData(aboutData);
     QApplication::setWindowIcon(QIcon::fromTheme("system-run"));
 
     QCommandLineParser parser;
-    KAboutData::setApplicationData(aboutData);
     parser.addVersionOption();
     parser.addHelpOption();
     aboutData.setupCommandLine(&parser);
