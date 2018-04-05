@@ -775,13 +775,17 @@ int main(int argc, char *argv[])
         dlg.setDirectoryUrl(initialDirectory(startUrl));
         dlg.selectFile(initialSelection(startUrl));
         setFileDialogFilter(dlg, filter);
+        const bool saveUrls = parser.isSet("getsaveurl");
+        if (!saveUrls) {
+            dlg.setSupportedSchemes({"file"});
+        }
         Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
         if (!dlg.exec()) {
             return 1; // canceled
         }
 
-        if ( parser.isSet("getsaveurl") ) {
+        if (saveUrls) {
             const QList<QUrl> result = dlg.selectedUrls();
             if (!result.isEmpty())  {
                 cout << result.at(0).toString().toLocal8Bit().data() << endl;
