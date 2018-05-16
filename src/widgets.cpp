@@ -228,7 +228,7 @@ bool Widgets::checkList(QWidget *parent, const QString& title, const QString& te
 
   table.addItems(entries);
   table.setSelectionMode(QListWidget::MultiSelection);
-  table.setCurrentItem(0); // This is to circumvent a Qt bug
+  table.setCurrentItem(nullptr); // This is to circumvent a Qt bug
 
   for (int i=0; i+2<args.count(); i += 3) {
     table.item( i/3 )->setSelected( args[i+2] == QLatin1String("on") );

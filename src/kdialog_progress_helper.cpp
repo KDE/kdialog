@@ -65,6 +65,6 @@ int main(int argc, char **argv)
     if (args.count() == 1)
         totalsteps = args.at(0).toInt();
 
-    ProgressDialog dlg(0, title, text, totalsteps);
+    ProgressDialog dlg(nullptr, title, text, totalsteps);
     return dlg.exec() ? 0 : 1;
 }

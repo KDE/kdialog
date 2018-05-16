@@ -270,7 +270,7 @@ int main(int argc, char *argv[])
             i18n("(C) 2000, Nick Thompson"));
     aboutData.addAuthor(i18n("David Faure"), i18n("Current maintainer"),"faure@kde.org");
     aboutData.addAuthor(i18n("Brad Hards"), QString(), "bradh@frogmouth.net");
-    aboutData.addAuthor(i18n("Nick Thompson"),QString(), 0/*"nickthompson@lucent.com" bounces*/);
+    aboutData.addAuthor(i18n("Nick Thompson"),QString(), nullptr/*"nickthompson@lucent.com" bounces*/);
     aboutData.addAuthor(i18n("Matthias Hölzer"),QString(),"hoelzer@kde.org");
     aboutData.addAuthor(i18n("David Gümbel"),QString(),"david.guembel@gmx.net");
     aboutData.addAuthor(i18n("Richard Moore"),QString(),"rich@kde.org");
@@ -438,7 +438,7 @@ int main(int argc, char *argv[])
 
     if ( !option.isEmpty() )
     {
-        KConfig* dontagaincfg = NULL;
+        KConfig* dontagaincfg = nullptr;
         // --dontagain
         QString dontagain; // QString()
         if (parser.isSet("dontagain"))
@@ -464,14 +464,14 @@ int main(int argc, char *argv[])
         }
 
         if ( type == KMessageBox::WarningContinueCancel ) {
-            ret = KMessageBox::messageBox( 0, type, text, title, continueButton,
+            ret = KMessageBox::messageBox( nullptr, type, text, title, continueButton,
                 noButton, cancelButton, dontagain );
         } else if (option == "detailedsorry") {
-            KMessageBox::detailedSorry( 0, text, details, title );
+            KMessageBox::detailedSorry( nullptr, text, details, title );
         } else if (option == "detailederror") {
-            KMessageBox::detailedError( 0, text, details, title );
+            KMessageBox::detailedError( nullptr, text, details, title );
         } else {
-            ret = KMessageBox::messageBox( 0, type, text, title,
+            ret = KMessageBox::messageBox( nullptr, type, text, title,
                 yesButton, noButton, cancelButton, dontagain );
         }
         delete dontagaincfg;
@@ -491,7 +491,7 @@ int main(int argc, char *argv[])
           init = args.at(0);
       }
 
-      const bool retcode = Widgets::inputBox(0, title, parser.value("inputbox"), init, result);
+      const bool retcode = Widgets::inputBox(nullptr, title, parser.value("inputbox"), init, result);
       cout << result.toLocal8Bit().data() << endl;
       return retcode ? 0 : 1;
     }
@@ -501,7 +501,7 @@ int main(int argc, char *argv[])
     if (parser.isSet("password"))
     {
       QString result;
-      const bool retcode = Widgets::passwordBox(0, title, parser.value("password"), result);
+      const bool retcode = Widgets::passwordBox(nullptr, title, parser.value("password"), result);
       cout << qPrintable(result) << endl;
       return retcode ? 0 : 1;
     }
@@ -510,7 +510,7 @@ int main(int argc, char *argv[])
     if (parser.isSet("newpassword"))
     {
       QString result;
-      const bool retcode = Widgets::newPasswordBox(0, title, parser.value("newpassword"), result);
+      const bool retcode = Widgets::newPasswordBox(nullptr, title, parser.value("newpassword"), result);
       cout << qPrintable(result) << endl;
       return retcode ? 0 : 1;
     }
@@ -592,7 +592,7 @@ int main(int argc, char *argv[])
             h = args.at(1).toInt();
         }
 
-        return Widgets::textBox(0, w, h, title, parser.value("textbox"));
+        return Widgets::textBox(nullptr, w, h, title, parser.value("textbox"));
     }
 
     // --textinputbox file [width] [height]
@@ -612,7 +612,7 @@ int main(int argc, char *argv[])
       }
 
       QString result;
-      int ret = Widgets::textInputBox(0, w, h, title, Utils::parseString(parser.value("textinputbox")), init, result);
+      int ret = Widgets::textInputBox(nullptr, w, h, title, Utils::parseString(parser.value("textinputbox")), init, result);
       cout << qPrintable(result) << endl;
       return ret;
     }
@@ -629,7 +629,7 @@ int main(int argc, char *argv[])
                 defaultEntry = parser.value("default");
             }
             QString result;
-            const bool retcode = Widgets::comboBox(0, title, text, list, defaultEntry, result);
+            const bool retcode = Widgets::comboBox(nullptr, title, text, list, defaultEntry, result);
             cout << result.toLocal8Bit().data() << endl;
             return retcode ? 0 : 1;
         }
@@ -649,7 +649,7 @@ int main(int argc, char *argv[])
                 defaultEntry = parser.value("default");
             }
             QString result;
-            const bool retcode = Widgets::listBox(0, title, text, list, defaultEntry, result);
+            const bool retcode = Widgets::listBox(nullptr, title, text, list, defaultEntry, result);
             if (1 == retcode) { // OK was selected
                 cout << result.toLocal8Bit().data() << endl;
             }
@@ -670,7 +670,7 @@ int main(int argc, char *argv[])
             const QString text = Utils::parseString(parser.value("checklist"));
             QStringList result;
 
-            const bool retcode = Widgets::checkList(0, title, text, list, separateOutput, result);
+            const bool retcode = Widgets::checkList(nullptr, title, text, list, separateOutput, result);
 
             for (int i=0; i<result.count(); i++)
                 if (!result.at(i).isEmpty()) {
@@ -692,7 +692,7 @@ int main(int argc, char *argv[])
 
             const QString text = Utils::parseString(parser.value("radiolist"));
             QString result;
-            const bool retcode = Widgets::radioBox(0, title, text, list, result);
+            const bool retcode = Widgets::radioBox(nullptr, title, text, list, result);
             cout << result.toLocal8Bit().data() << endl;
             return retcode ? 0 : 1;
         }
@@ -986,7 +986,7 @@ int main(int argc, char *argv[])
        }
        int result = 0;
 
-       const bool returnCode = Widgets::slider(0, title, text, miniValue, maxValue, step, result);
+       const bool returnCode = Widgets::slider(nullptr, title, text, miniValue, maxValue, step, result);
        if ( returnCode )
            cout << result << endl;
        return returnCode;
@@ -996,7 +996,7 @@ int main(int argc, char *argv[])
        const QString text = Utils::parseString(parser.value("calendar"));
        QDate result;
 
-       const bool returnCode = Widgets::calendar(0, title, text, result);
+       const bool returnCode = Widgets::calendar(nullptr, title, text, result);
        if ( returnCode )
            cout << result.toString().toLocal8Bit().data() << endl;
        return returnCode;

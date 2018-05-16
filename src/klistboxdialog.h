@@ -33,7 +33,7 @@ class KListBoxDialog : public QDialog
 
 public:
 
-  explicit KListBoxDialog(const QString &text, QWidget *parent=0);
+  explicit KListBoxDialog(const QString &text, QWidget *parent=nullptr);
   ~KListBoxDialog() {}
 
   QListWidget &getTable() { return *table; }
