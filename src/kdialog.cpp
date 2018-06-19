@@ -280,8 +280,6 @@ int main(int argc, char *argv[])
     QApplication::setWindowIcon(QIcon::fromTheme("system-run"));
 
     QCommandLineParser parser;
-    parser.addVersionOption();
-    parser.addHelpOption();
     aboutData.setupCommandLine(&parser);
 
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("yesno"), i18n("Question message box with yes/no buttons"), QLatin1String("text")));
