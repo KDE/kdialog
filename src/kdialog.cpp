@@ -551,7 +551,7 @@ int main(int argc, char *argv[])
                                                        title,
                                                        Utils::parseString(parser.value(QStringLiteral("passivepopup"))),
                                                        passiveicon,
-                                                       (QWidget*)0UL, // parent
+                                                       (QWidget*)nullptr, // parent
                                                        timeout );
         QTimer *timer = new QTimer();
         QObject::connect( timer, SIGNAL(timeout()), qApp, SLOT(quit()) );
