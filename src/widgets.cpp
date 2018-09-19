@@ -19,7 +19,7 @@
 
 
 // Own
-#include "config-kdialog.h"
+#include <config-kdialog.h>
 #include "widgets.h"
 #include "utils.h"
 

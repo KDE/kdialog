@@ -19,7 +19,7 @@
 #include <QApplication>
 #include <QDebug>
 #include <QDesktopWidget>
-#include "config-kdialog.h"
+#include <config-kdialog.h>
 
 #if defined HAVE_X11 && ! defined K_WS_QTONLY
 #include <X11/Xlib.h>

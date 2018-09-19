@@ -57,15 +57,11 @@
 #include <X11/Xutil.h>
 #endif
 
-#include "config-kdialog.h"
 #ifdef Qt5DBus_FOUND
 #include <QDBusConnection>
 #include <QDBusConnectionInterface>
 #endif
 
-#ifdef Q_WS_WIN
-#include <QFileDialog>
-#endif
 #include <unistd.h>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
@@ -139,7 +135,7 @@ static bool sendVisualNotification(const QString &text, const QString &title, co
   args.append(text); // body
   args.append(QStringList()); // actions - unused for plain passive popups
   args.append(QVariantMap()); // hints - unused atm
-  args.append(timeout); // expire timout
+  args.append(timeout); // expire timeout
 
   m.setArguments(args);
 
@@ -357,7 +353,7 @@ int main(int argc, char *argv[])
 #endif
     } else if(parser.isSet(QStringLiteral("embed"))) {
         /* KDialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
-         * For consistancy, we silently map --embed to --attach */
+         * For consistency, we silently map --embed to --attach */
         attach = true;
 #ifdef Q_WS_WIN
         winid = reinterpret_cast<WId>(parser.value(QStringLiteral("embed")).toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
@@ -969,7 +965,7 @@ int main(int argc, char *argv[])
             cout << result.toLocal8Bit().data() << endl;
             return 0;
         }
-        return 1; // cancelled
+        return 1; // canceled
     }
     if (parser.isSet(QStringLiteral("slider")))
     {
