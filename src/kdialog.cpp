@@ -114,9 +114,9 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
 static bool sendVisualNotification(const QString &text, const QString &title, const QString &icon, int timeout)
 {
 #ifdef Qt5DBus_FOUND
-  const QString dbusServiceName = "org.freedesktop.Notifications";
-  const QString dbusInterfaceName = "org.freedesktop.Notifications";
-  const QString dbusPath = "/org/freedesktop/Notifications";
+  const QString dbusServiceName = QStringLiteral("org.freedesktop.Notifications");
+  const QString dbusInterfaceName = QStringLiteral("org.freedesktop.Notifications");
+  const QString dbusPath = QStringLiteral("/org/freedesktop/Notifications");
 
   // check if service already exists on plugin instantiation
   QDBusConnectionInterface* interface = QDBusConnection::sessionBus().interface();
@@ -129,10 +129,10 @@ static bool sendVisualNotification(const QString &text, const QString &title, co
   if (timeout == 0)
     timeout = 10 * 1000;
 
-  QDBusMessage m = QDBusMessage::createMethodCall(dbusServiceName, dbusPath, dbusInterfaceName, "Notify");
+  QDBusMessage m = QDBusMessage::createMethodCall(dbusServiceName, dbusPath, dbusInterfaceName, QStringLiteral("Notify"));
   QList<QVariant> args;
 
-  args.append("kdialog"); // app_name
+  args.append(QStringLiteral("kdialog")); // app_name
   args.append(0U); // replaces_id
   args.append(icon); // app_icon
   args.append(title); // summary
@@ -194,31 +194,31 @@ static void outputStringList(const QList<QUrl> &list, bool separateOutput)
 
 static KGuiItem configuredYes(const QString &text)
 {
-  return KGuiItem( text, "dialog-ok" );
+  return KGuiItem( text, QStringLiteral("dialog-ok") );
 }
 
 static KGuiItem configuredNo(const QString &text)
 {
-  return KGuiItem( text, "process-stop" );
+  return KGuiItem( text, QStringLiteral("process-stop") );
 }
 
 static KGuiItem configuredCancel(const QString &text)
 {
-  return KGuiItem( text, "dialog-cancel" );
+  return KGuiItem( text, QStringLiteral("dialog-cancel") );
 }
 
 static KGuiItem configuredContinue(const QString &text)
 {
-  return KGuiItem( text, "arrow-right" );
+  return KGuiItem( text, QStringLiteral("arrow-right") );
 }
 
 static void setFileDialogFilter(QFileDialog &dlg, const QString &filter)
 {
-    if (filter.contains("*")) {
+    if (filter.contains(QStringLiteral("*"))) {
         QString qtFilter = filter;
-        dlg.setNameFilter(qtFilter.replace('|','\n'));
+        dlg.setNameFilter(qtFilter.replace(QLatin1Char('|'),QLatin1Char('\n')));
     } else if (!filter.isEmpty()) {
-        dlg.setMimeTypeFilters(filter.trimmed().split(' '));
+        dlg.setMimeTypeFilters(filter.trimmed().split(QLatin1Char(' ')));
     }
 }
 
@@ -264,20 +264,20 @@ int main(int argc, char *argv[])
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
-    KAboutData aboutData( "kdialog", i18n("KDialog"),
-            "2.0", i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
+    KAboutData aboutData( QStringLiteral("kdialog"), i18n("KDialog"),
+            QStringLiteral("2.0"), i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
             KAboutLicense::GPL,
             i18n("(C) 2000, Nick Thompson"));
-    aboutData.addAuthor(i18n("David Faure"), i18n("Current maintainer"),"faure@kde.org");
-    aboutData.addAuthor(i18n("Brad Hards"), QString(), "bradh@frogmouth.net");
-    aboutData.addAuthor(i18n("Nick Thompson"),QString(), nullptr/*"nickthompson@lucent.com" bounces*/);
-    aboutData.addAuthor(i18n("Matthias Hölzer"),QString(),"hoelzer@kde.org");
-    aboutData.addAuthor(i18n("David Gümbel"),QString(),"david.guembel@gmx.net");
-    aboutData.addAuthor(i18n("Richard Moore"),QString(),"rich@kde.org");
-    aboutData.addAuthor(i18n("Dawit Alemayehu"),QString(),"adawit@kde.org");
-    aboutData.addAuthor(i18n("Kai Uwe Broulik"),QString(),"kde@privat.broulik.de");
+    aboutData.addAuthor(i18n("David Faure"), i18n("Current maintainer"),QStringLiteral("faure@kde.org"));
+    aboutData.addAuthor(i18n("Brad Hards"), QString(), QStringLiteral("bradh@frogmouth.net"));
+    aboutData.addAuthor(i18n("Nick Thompson"),QString(), QString()/*"nickthompson@lucent.com" bounces*/);
+    aboutData.addAuthor(i18n("Matthias Hölzer"),QString(),QStringLiteral("hoelzer@kde.org"));
+    aboutData.addAuthor(i18n("David Gümbel"),QString(),QStringLiteral("david.guembel@gmx.net"));
+    aboutData.addAuthor(i18n("Richard Moore"),QString(),QStringLiteral("rich@kde.org"));
+    aboutData.addAuthor(i18n("Dawit Alemayehu"),QString(),QStringLiteral("adawit@kde.org"));
+    aboutData.addAuthor(i18n("Kai Uwe Broulik"),QString(),QStringLiteral("kde@privat.broulik.de"));
     KAboutData::setApplicationData(aboutData);
-    QApplication::setWindowIcon(QIcon::fromTheme("system-run"));
+    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("system-run")));
 
     QCommandLineParser parser;
     aboutData.setupCommandLine(&parser);
@@ -340,29 +340,29 @@ int main(int argc, char *argv[])
     // execute kdialog command
 
     const QStringList args = parser.positionalArguments();
-    const QString title = parser.value("title");
-    const bool separateOutput = parser.isSet("separate-output");
-    const bool printWId = parser.isSet("print-winid");
+    const QString title = parser.value(QStringLiteral("title"));
+    const bool separateOutput = parser.isSet(QStringLiteral("separate-output"));
+    const bool printWId = parser.isSet(QStringLiteral("print-winid"));
     QString defaultEntry;
-    const QString geometry = parser.value("geometry");
+    const QString geometry = parser.value(QStringLiteral("geometry"));
     Utils::setGeometry(geometry);
 
     WId winid = 0;
-    bool attach = parser.isSet("attach");
+    bool attach = parser.isSet(QStringLiteral("attach"));
     if(attach) {
 #ifdef Q_WS_WIN
-        winid = reinterpret_cast<WId>(parser.value("attach").toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
+        winid = reinterpret_cast<WId>(parser.value(QStringLiteral("attach")).toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
 #else
-        winid = parser.value("attach").toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
+        winid = parser.value(QStringLiteral("attach")).toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
 #endif
-    } else if(parser.isSet("embed")) {
+    } else if(parser.isSet(QStringLiteral("embed"))) {
         /* KDialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
          * For consistancy, we silently map --embed to --attach */
         attach = true;
 #ifdef Q_WS_WIN
-        winid = reinterpret_cast<WId>(parser.value("embed").toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
+        winid = reinterpret_cast<WId>(parser.value(QStringLiteral("embed")).toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
 #else
-        winid = parser.value("embed").toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
+        winid = parser.value(QStringLiteral("embed")).toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
 #endif
     }
 
@@ -379,57 +379,57 @@ int main(int argc, char *argv[])
     KGuiItem continueButton = KStandardGuiItem::cont();
 
     // Customize the asked labels
-    if (parser.isSet("yes-label")) {
-          yesButton = configuredYes( parser.value("yes-label") );
+    if (parser.isSet(QStringLiteral("yes-label"))) {
+          yesButton = configuredYes( parser.value(QStringLiteral("yes-label")) );
     }
-    if (parser.isSet("no-label")) {
-        noButton = configuredNo( parser.value("no-label") );
+    if (parser.isSet(QStringLiteral("no-label"))) {
+        noButton = configuredNo( parser.value(QStringLiteral("no-label")) );
     }
-    if (parser.isSet("cancel-label")) {
-        cancelButton = configuredCancel( parser.value("cancel-label") );
+    if (parser.isSet(QStringLiteral("cancel-label"))) {
+        cancelButton = configuredCancel( parser.value(QStringLiteral("cancel-label") ));
     }
-    if (parser.isSet("continue-label")) {
-        continueButton = configuredContinue( parser.value("continue-label") );
+    if (parser.isSet(QStringLiteral("continue-label"))) {
+        continueButton = configuredContinue( parser.value(QStringLiteral("continue-label")) );
     }
 
     // --yesno and other message boxes
     KMessageBox::DialogType type = static_cast<KMessageBox::DialogType>(0);
     QByteArray option;
-    if (parser.isSet("yesno")) {
+    if (parser.isSet(QStringLiteral("yesno"))) {
         option = "yesno";
         type = KMessageBox::QuestionYesNo;
     }
-    else if (parser.isSet("yesnocancel")) {
+    else if (parser.isSet(QStringLiteral("yesnocancel"))) {
         option = "yesnocancel";
         type = KMessageBox::QuestionYesNoCancel;
     }
-    else if (parser.isSet("warningyesno")) {
+    else if (parser.isSet(QStringLiteral("warningyesno"))) {
         option = "warningyesno";
         type = KMessageBox::WarningYesNo;
     }
-    else if (parser.isSet("warningcontinuecancel")) {
+    else if (parser.isSet(QStringLiteral("warningcontinuecancel"))) {
         option = "warningcontinuecancel";
         type = KMessageBox::WarningContinueCancel;
     }
-    else if (parser.isSet("warningyesnocancel")) {
+    else if (parser.isSet(QStringLiteral("warningyesnocancel"))) {
         option = "warningyesnocancel";
         type = KMessageBox::WarningYesNoCancel;
     }
-    else if (parser.isSet("sorry")) {
+    else if (parser.isSet(QStringLiteral("sorry"))) {
         option = "sorry";
         type = KMessageBox::Sorry;
     }
-    else if (parser.isSet("detailedsorry")) {
+    else if (parser.isSet(QStringLiteral("detailedsorry"))) {
         option = "detailedsorry";
     }
-    else if (parser.isSet("error")) {
+    else if (parser.isSet(QStringLiteral("error"))) {
         option = "error";
         type = KMessageBox::Error;
     }
-    else if (parser.isSet("detailederror")) {
+    else if (parser.isSet(QStringLiteral("detailederror"))) {
         option = "detailederror";
     }
-    else if (parser.isSet("msgbox")) {
+    else if (parser.isSet(QStringLiteral("msgbox"))) {
         option = "msgbox";
         type = KMessageBox::Information;
     }
@@ -439,10 +439,10 @@ int main(int argc, char *argv[])
         KConfig* dontagaincfg = nullptr;
         // --dontagain
         QString dontagain; // QString()
-        if (parser.isSet("dontagain"))
+        if (parser.isSet(QStringLiteral("dontagain")))
         {
-          QString value = parser.value("dontagain");
-          QStringList values = value.split( ':', QString::SkipEmptyParts );
+          QString value = parser.value(QStringLiteral("dontagain"));
+          QStringList values = value.split( QLatin1Char(':'), QString::SkipEmptyParts );
           if( values.count() == 2 )
           {
             dontagaincfg = new KConfig( values[ 0 ] );
@@ -454,7 +454,7 @@ int main(int argc, char *argv[])
         }
         int ret = 0;
 
-        QString text = Utils::parseString(parser.value(option));
+        QString text = Utils::parseString(parser.value(QString::fromLatin1(option)));
 
         QString details;
         if (args.count() == 1) {
@@ -480,7 +480,7 @@ int main(int argc, char *argv[])
     }
 
     // --inputbox text [init]
-    if (parser.isSet("inputbox"))
+    if (parser.isSet(QStringLiteral("inputbox")))
     {
       QString result;
       QString init;
@@ -489,32 +489,32 @@ int main(int argc, char *argv[])
           init = args.at(0);
       }
 
-      const bool retcode = Widgets::inputBox(nullptr, title, parser.value("inputbox"), init, result);
+      const bool retcode = Widgets::inputBox(nullptr, title, parser.value(QStringLiteral("inputbox")), init, result);
       cout << result.toLocal8Bit().data() << endl;
       return retcode ? 0 : 1;
     }
 
 
     // --password text
-    if (parser.isSet("password"))
+    if (parser.isSet(QStringLiteral("password")))
     {
       QString result;
-      const bool retcode = Widgets::passwordBox(nullptr, title, parser.value("password"), result);
+      const bool retcode = Widgets::passwordBox(nullptr, title, parser.value(QStringLiteral("password")), result);
       cout << qPrintable(result) << endl;
       return retcode ? 0 : 1;
     }
     
     // --newpassword text
-    if (parser.isSet("newpassword"))
+    if (parser.isSet(QStringLiteral("newpassword")))
     {
       QString result;
-      const bool retcode = Widgets::newPasswordBox(nullptr, title, parser.value("newpassword"), result);
+      const bool retcode = Widgets::newPasswordBox(nullptr, title, parser.value(QStringLiteral("newpassword")), result);
       cout << qPrintable(result) << endl;
       return retcode ? 0 : 1;
     }
 
     // --passivepopup
-    if (parser.isSet("passivepopup"))
+    if (parser.isSet(QStringLiteral("passivepopup")))
     {
         int timeout = 0;
         if (args.count() > 0) {
@@ -527,14 +527,14 @@ int main(int argc, char *argv[])
 
         // Use --icon parameter for passivepopup as well
         QString icon;
-        if (parser.isSet("icon")) {
-          icon = parser.value("icon");
+        if (parser.isSet(QStringLiteral("icon"))) {
+          icon = parser.value(QStringLiteral("icon"));
         } else {
-          icon = "dialog-information";        // Use generic (i)-icon if none specified
+          icon = QStringLiteral("dialog-information");        // Use generic (i)-icon if none specified
         }
 
         // try to use more stylish notifications
-        if (sendVisualNotification(Utils::parseString(parser.value("passivepopup")), title, icon, timeout))
+        if (sendVisualNotification(Utils::parseString(parser.value(QStringLiteral("passivepopup"))), title, icon, timeout))
           return 0;
 
         // ...did not work, use KPassivePopup as fallback
@@ -548,12 +548,12 @@ int main(int argc, char *argv[])
         }
 
         QPixmap passiveicon;
-        if (parser.isSet("icon")) {  // Only show icon if explicitly requested
+        if (parser.isSet(QStringLiteral("icon"))) {  // Only show icon if explicitly requested
             passiveicon = KIconLoader::global()->loadIcon(icon, KIconLoader::Dialog);
         }
         KPassivePopup *popup = KPassivePopup::message( KPassivePopup::Boxed, // style
                                                        title,
-                                                       Utils::parseString(parser.value("passivepopup")),
+                                                       Utils::parseString(parser.value(QStringLiteral("passivepopup"))),
                                                        passiveicon,
                                                        (QWidget*)0UL, // parent
                                                        timeout );
@@ -580,7 +580,7 @@ int main(int argc, char *argv[])
     }
 
     // --textbox file [width] [height]
-    if (parser.isSet("textbox"))
+    if (parser.isSet(QStringLiteral("textbox")))
     {
         int w = 0;
         int h = 0;
@@ -590,11 +590,11 @@ int main(int argc, char *argv[])
             h = args.at(1).toInt();
         }
 
-        return Widgets::textBox(nullptr, w, h, title, parser.value("textbox"));
+        return Widgets::textBox(nullptr, w, h, title, parser.value(QStringLiteral("textbox")));
     }
 
     // --textinputbox file [width] [height]
-    if (parser.isSet("textinputbox"))
+    if (parser.isSet(QStringLiteral("textinputbox")))
     {
       int w = 400;
       int h = 200;
@@ -610,21 +610,21 @@ int main(int argc, char *argv[])
       }
 
       QString result;
-      int ret = Widgets::textInputBox(nullptr, w, h, title, Utils::parseString(parser.value("textinputbox")), init, result);
+      int ret = Widgets::textInputBox(nullptr, w, h, title, Utils::parseString(parser.value(QStringLiteral("textinputbox"))), init, result);
       cout << qPrintable(result) << endl;
       return ret;
     }
 
     // --combobox <text> item [item] ..."
-    if (parser.isSet("combobox")) {
+    if (parser.isSet(QStringLiteral("combobox"))) {
         QStringList list;
         if (args.count() >= 1) {
             for (int i = 0; i < args.count(); i++) {
                 list.append(args.at(i));
             }
-            const QString text = Utils::parseString(parser.value("combobox"));
-            if (parser.isSet("default")) {
-                defaultEntry = parser.value("default");
+            const QString text = Utils::parseString(parser.value(QStringLiteral("combobox")));
+            if (parser.isSet(QStringLiteral("default"))) {
+                defaultEntry = parser.value(QStringLiteral("default"));
             }
             QString result;
             const bool retcode = Widgets::comboBox(nullptr, title, text, list, defaultEntry, result);
@@ -636,15 +636,15 @@ int main(int argc, char *argv[])
     }
 
     // --menu text [tag item] [tag item] ...
-    if (parser.isSet("menu")) {
+    if (parser.isSet(QStringLiteral("menu"))) {
         QStringList list;
         if (args.count() >= 2) {
             for (int i = 0; i < args.count(); i++) {
                 list.append(args.at(i));
             }
-            const QString text = Utils::parseString(parser.value("menu"));
-            if (parser.isSet("default")) {
-                defaultEntry = parser.value("default");
+            const QString text = Utils::parseString(parser.value(QStringLiteral("menu")));
+            if (parser.isSet(QStringLiteral("default"))) {
+                defaultEntry = parser.value(QStringLiteral("default"));
             }
             QString result;
             const bool retcode = Widgets::listBox(nullptr, title, text, list, defaultEntry, result);
@@ -658,14 +658,14 @@ int main(int argc, char *argv[])
     }
 
     // --checklist text [tag item status] [tag item status] ...
-    if (parser.isSet("checklist")) {
+    if (parser.isSet(QStringLiteral("checklist"))) {
         QStringList list;
         if (args.count() >= 3) {
             for (int i = 0; i < args.count(); i++) {
                 list.append(args.at(i));
             }
 
-            const QString text = Utils::parseString(parser.value("checklist"));
+            const QString text = Utils::parseString(parser.value(QStringLiteral("checklist")));
             QStringList result;
 
             const bool retcode = Widgets::checkList(nullptr, title, text, list, separateOutput, result);
@@ -681,14 +681,14 @@ int main(int argc, char *argv[])
     }
 
     // --radiolist text [tag item status] ...
-    if (parser.isSet("radiolist")) {
+    if (parser.isSet(QStringLiteral("radiolist"))) {
         QStringList list;
         if (args.count() >= 3) {
             for (int i = 0; i < args.count(); i++) {
                 list.append(args.at(i));
             }
 
-            const QString text = Utils::parseString(parser.value("radiolist"));
+            const QString text = Utils::parseString(parser.value(QStringLiteral("radiolist")));
             QString result;
             const bool retcode = Widgets::radioBox(nullptr, title, text, list, result);
             cout << result.toLocal8Bit().data() << endl;
@@ -700,14 +700,14 @@ int main(int argc, char *argv[])
 
     // getopenfilename [startDir] [filter]
     // getopenurl [startDir] [filter]
-    if (parser.isSet("getopenfilename") || parser.isSet("getopenurl")) {
+    if (parser.isSet(QStringLiteral("getopenfilename")) || parser.isSet(QStringLiteral("getopenurl"))) {
         QString startDir = args.count() > 0 ? args.at(0) : QString();
         const QUrl startUrl = QUrl::fromUserInput(startDir);
         QString filter;
         if (args.count() > 1)  {
             filter = Utils::parseString(args.at(1));
         }
-        const bool multiple = parser.isSet("multiple");
+        const bool multiple = parser.isSet(QStringLiteral("multiple"));
 
         QFileDialog dlg;
         dlg.setAcceptMode(QFileDialog::AcceptOpen);
@@ -719,9 +719,9 @@ int main(int argc, char *argv[])
         } else {
             dlg.setFileMode(QFileDialog::ExistingFile);
         }
-        const bool openUrls = parser.isSet("getopenurl");
+        const bool openUrls = parser.isSet(QStringLiteral("getopenurl"));
         if (!openUrls) {
-            dlg.setSupportedSchemes({"file"});
+            dlg.setSupportedSchemes({QStringLiteral("file")});
         }
         setFileDialogFilter(dlg, filter);
         Utils::handleXGeometry(&dlg);
@@ -759,7 +759,7 @@ int main(int argc, char *argv[])
 
     // getsaveurl [startDir] [filter]
     // getsavefilename [startDir] [filter]
-    if ( (parser.isSet("getsavefilename") ) || (parser.isSet("getsaveurl") ) ) {
+    if ( (parser.isSet(QStringLiteral("getsavefilename")) ) || (parser.isSet(QStringLiteral("getsaveurl")) ) ) {
         QString startDir = args.count() > 0 ? args.at(0) : QString();
         QString filter;
         const QUrl startUrl = QUrl::fromUserInput(startDir);
@@ -773,9 +773,9 @@ int main(int argc, char *argv[])
         dlg.setDirectoryUrl(initialDirectory(startUrl));
         dlg.selectFile(initialSelection(startUrl));
         setFileDialogFilter(dlg, filter);
-        const bool saveUrls = parser.isSet("getsaveurl");
+        const bool saveUrls = parser.isSet(QStringLiteral("getsaveurl"));
         if (!saveUrls) {
-            dlg.setSupportedSchemes({"file"});
+            dlg.setSupportedSchemes({QStringLiteral("file")});
         }
         Utils::handleXGeometry(&dlg);
         dlg.setWindowTitle(title.isEmpty() ? i18nc("@title:window", "Save As") : title);
@@ -802,7 +802,7 @@ int main(int argc, char *argv[])
     }
 
     // getexistingdirectory [startDir]
-    if (parser.isSet("getexistingdirectory")) {
+    if (parser.isSet(QStringLiteral("getexistingdirectory"))) {
         QString startDir = args.count() > 0 ? args.at(0) : QString();
         const QUrl startUrl = QUrl::fromUserInput(startDir);
 
@@ -825,9 +825,9 @@ int main(int argc, char *argv[])
     }
 
     // geticon [group] [context]
-    if (parser.isSet("geticon")) {
+    if (parser.isSet(QStringLiteral("geticon"))) {
         QString groupStr, contextStr;
-        groupStr = parser.value("geticon");
+        groupStr = parser.value(QStringLiteral("geticon"));
         if (args.count() >= 1)  {
             contextStr = args.at(0);
         }
@@ -882,9 +882,9 @@ int main(int argc, char *argv[])
     }
 
     // --progressbar text totalsteps
-    if (parser.isSet("progressbar"))
+    if (parser.isSet(QStringLiteral("progressbar")))
     {
-       const QString text = Utils::parseString(parser.value("progressbar"));
+       const QString text = Utils::parseString(parser.value(QStringLiteral("progressbar")));
 
        QProcess process;
        QStringList arguments;
@@ -896,7 +896,7 @@ int main(int argc, char *argv[])
            arguments << args.at(0);
        }
        qint64 pid = 0;
-       if (process.startDetached("kdialog_progress_helper", arguments, QString(), &pid)) {
+       if (process.startDetached(QStringLiteral("kdialog_progress_helper"), arguments, QString(), &pid)) {
            QDBusConnection dbus = QDBusConnection::sessionBus();
            const QString serviceName = QStringLiteral("org.kde.kdialog-") + QString::number(pid);
            QDBusServiceWatcher watcher(serviceName, dbus, QDBusServiceWatcher::WatchForRegistration);
@@ -912,11 +912,11 @@ int main(int argc, char *argv[])
     }
 
     // --getcolor
-    if (parser.isSet("getcolor")) {
+    if (parser.isSet(QStringLiteral("getcolor"))) {
         QColorDialog dlg;
 
-        if (parser.isSet("default")) {
-            defaultEntry = parser.value("default");
+        if (parser.isSet(QStringLiteral("default"))) {
+            defaultEntry = parser.value(QStringLiteral("default"));
             dlg.setCurrentColor(defaultEntry);
         } else {
             QColor color = KColorMimeData::fromMimeData(QApplication::clipboard()->mimeData(QClipboard::Clipboard));
@@ -931,13 +931,13 @@ int main(int argc, char *argv[])
         if (dlg.exec()) {
             QString result;
             const QColor color = dlg.selectedColor();
-            if (color.isValid() && parser.isSet("format")) {
+            if (color.isValid() && parser.isSet(QStringLiteral("format"))) {
                 bool found = false;
-                QString format = parser.value("format");
-                format.remove(QChar('*')); // stripped out * for safety
+                QString format = parser.value(QStringLiteral("format"));
+                format.remove(QLatin1Char('*')); // stripped out * for safety
                 QList<QRegularExpression> pattern_pool;
-                pattern_pool << QRegularExpression("(%#?[-+]?\\d*\\.?\\d*(?:ll|hh|l|h)?[diouxX])")
-                        << QRegularExpression("(%#?[-+]?\\d*\\.?\\d*[l]?[efgEFG])");
+                pattern_pool << QRegularExpression(QStringLiteral("(%#?[-+]?\\d*\\.?\\d*(?:ll|hh|l|h)?[diouxX])"))
+                        << QRegularExpression(QStringLiteral("(%#?[-+]?\\d*\\.?\\d*[l]?[efgEFG])"));
 
                 for (int i = 0; i < pattern_pool.size(); i++) {
                     QRegularExpressionMatchIterator itor = pattern_pool.at(i).globalMatch(format);
@@ -952,7 +952,7 @@ int main(int argc, char *argv[])
                     // currently only handle RGB, when alpha is ready, should hit 4
                     if (3 == match_count) {
                         found = true;
-                        if (match.captured(0).contains(QRegularExpression("[diouxX]"))) {
+                        if (match.captured(0).contains(QRegularExpression(QStringLiteral("[diouxX]")))) {
                             result = QString::asprintf(format.toUtf8().constData(), color.red(), color.green(), color.blue());
                         } else {
                             result = QString::asprintf(format.toUtf8().constData(), color.redF(), color.greenF(), color.blueF());
@@ -971,12 +971,12 @@ int main(int argc, char *argv[])
         }
         return 1; // cancelled
     }
-    if (parser.isSet("slider"))
+    if (parser.isSet(QStringLiteral("slider")))
     {
        int miniValue = 0;
        int maxValue = 0;
        int step = 0;
-       const QString text = Utils::parseString(parser.value("slider"));
+       const QString text = Utils::parseString(parser.value(QStringLiteral("slider")));
        if (args.count() == 3) {
            miniValue = args.at(0).toInt();
            maxValue = args.at( 1 ).toInt();
@@ -989,9 +989,9 @@ int main(int argc, char *argv[])
            cout << result << endl;
        return returnCode;
     }
-    if (parser.isSet("calendar"))
+    if (parser.isSet(QStringLiteral("calendar")))
     {
-       const QString text = Utils::parseString(parser.value("calendar"));
+       const QString text = Utils::parseString(parser.value(QStringLiteral("calendar")));
        QDate result;
 
        const bool returnCode = Widgets::calendar(nullptr, title, text, result);

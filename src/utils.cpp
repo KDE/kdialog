@@ -59,17 +59,17 @@ QString Utils::parseString(const QString &str)
        QChar c = str.at(i);
        if (escaped) {
            escaped = false;
-           if (c == '\\') {
+           if (c == QLatin1Char('\\')) {
                ret += c;
-           } else if (c == 'n') {
-               ret += '\n';
+           } else if (c == QLatin1Char('n')) {
+               ret += QLatin1Char('\n');
            } else {
                qWarning() << qPrintable(QString::fromLatin1("Unrecognized escape sequence \\%1").arg(c));
-               ret += '\\';
+               ret += QLatin1Char('\\');
                ret += c;
            }
        } else {
-           if (c == '\\') {
+           if (c == QLatin1Char('\\')) {
                escaped = true;
            } else {
                ret += c;
@@ -78,7 +78,7 @@ QString Utils::parseString(const QString &str)
     }
     if (escaped) {
         qWarning() << "Unterminated escape sequence";
-        ret += '\\';
+        ret += QLatin1Char('\\');
     }
     return ret;
 }

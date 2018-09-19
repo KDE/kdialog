@@ -44,8 +44,8 @@ int main(int argc, char **argv)
     close(fd);
 
     QApplication app(argc, argv);
-    app.setApplicationName("kdialog");
-    app.setOrganizationDomain("kde.org");
+    app.setApplicationName(QStringLiteral("kdialog"));
+    app.setOrganizationDomain(QStringLiteral("kde.org"));
     KLocalizedString::setApplicationDomain("kdialog");
 
     KDBusService dbusService(KDBusService::Multiple);
@@ -58,8 +58,8 @@ int main(int argc, char **argv)
 
     const QStringList args = parser.positionalArguments();
 
-    const QString text = Utils::parseString(parser.value("progressbar"));
-    const QString title = parser.value("title");
+    const QString text = Utils::parseString(parser.value(QStringLiteral("progressbar")));
+    const QString title = parser.value(QStringLiteral("title"));
 
     int totalsteps = 100;
     if (args.count() == 1)
