@@ -273,7 +273,6 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Dawit Alemayehu"),QString(),QStringLiteral("adawit@kde.org"));
     aboutData.addAuthor(i18n("Kai Uwe Broulik"),QString(),QStringLiteral("kde@privat.broulik.de"));
     KAboutData::setApplicationData(aboutData);
-    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("system-run")));
 
     QCommandLineParser parser;
     aboutData.setupCommandLine(&parser);
@@ -303,7 +302,7 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("checklist"), i18n("Check List dialog"), QLatin1String("text")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("radiolist"), i18n("Radio List dialog"), QLatin1String("text")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("passivepopup"), i18n("Passive Popup"), QLatin1String("text> <timeout")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("icon"), i18n("Passive popup icon"), QLatin1String("icon")));
+    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("icon"), i18n("Popup icon"), QLatin1String("icon")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getopenfilename"), i18n("File dialog to open an existing file (arguments [startDir] [filter])")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getsavefilename"), i18n("File dialog to save a file (arguments [startDir] [filter])")));
     parser.addOption(QCommandLineOption(QStringList() << QLatin1String("getexistingdirectory"), i18n("File dialog to select an existing directory (arguments [startDir])")));
@@ -334,6 +333,8 @@ int main(int argc, char *argv[])
     aboutData.processCommandLine(&parser);
 
     // execute kdialog command
+
+    QApplication::setWindowIcon(QIcon::fromTheme(parser.value(QStringLiteral("icon")), QIcon::fromTheme(QStringLiteral("system-run"))));
 
     const QStringList args = parser.positionalArguments();
     const QString title = parser.value(QStringLiteral("title"));
