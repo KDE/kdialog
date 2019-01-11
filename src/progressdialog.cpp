@@ -27,7 +27,7 @@ ProgressDialog::ProgressDialog(QWidget* parent, const QString& caption, const QS
     setWindowTitle(caption);
     setLabelText(text);
     (void)new ProgressDialogAdaptor( this );
-    QDBusConnection::sessionBus().registerObject( QLatin1String("/ProgressDialog"), this );
+    QDBusConnection::sessionBus().registerObject( QStringLiteral("/ProgressDialog"), this );
     setAutoClose( false );
     setMaximum( totalSteps );
     Utils::handleXGeometry(this);

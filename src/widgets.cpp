@@ -50,8 +50,8 @@ static void addButtonBox(QDialog &dlg, QDialogButtonBox::StandardButtons buttons
 {
     QDialogButtonBox *buttonBox = new QDialogButtonBox(buttons, &dlg);
     dlg.layout()->addWidget(buttonBox);
-    QObject::connect(buttonBox, SIGNAL(accepted()), &dlg, SLOT(accept()));
-    QObject::connect(buttonBox, SIGNAL(rejected()), &dlg, SLOT(reject()));
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, &dlg, &QDialog::accept);
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, &dlg, &QDialog::reject);
 }
 
 bool Widgets::inputBox(QWidget *parent, const QString& title, const QString& text, const QString& init, QString &result)

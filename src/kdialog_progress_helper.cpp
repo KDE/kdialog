@@ -51,9 +51,9 @@ int main(int argc, char **argv)
     KDBusService dbusService(KDBusService::Multiple);
 
     QCommandLineParser parser;
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("progressbar"), i18n("Progress bar dialog, returns a D-Bus reference for communication"), QLatin1String("text")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("title"), i18n("Dialog title"), QLatin1String("text")));
-    parser.addPositionalArgument(QLatin1String("[arg]"), i18n("Arguments - depending on main option"));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("progressbar"), i18n("Progress bar dialog, returns a D-Bus reference for communication"), QStringLiteral("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("title"), i18n("Dialog title"), QStringLiteral("text")));
+    parser.addPositionalArgument(QStringLiteral("[arg]"), i18n("Arguments - depending on main option"));
     parser.process(rawArgs);
 
     const QStringList args = parser.positionalArguments();
