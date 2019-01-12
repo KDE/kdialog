@@ -33,6 +33,7 @@
 #include <QTextCursor>
 #include <QLabel>
 #include <QVBoxLayout>
+#include <QPixmap>
 
 // KDE
 #include <kpassworddialog.h>
@@ -128,6 +129,67 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
     Utils::handleXGeometry(&dlg);
     dlg.setWindowTitle(title);
     return (dlg.exec() == QDialog::Accepted) ? 0 : 1;
+}
+
+int Widgets::imgBox(QWidget *parent, const QString& title, const QString& file)
+{
+    QDialog dlg(parent);
+    dlg.setWindowTitle(title);
+
+    QVBoxLayout *mainLayout = new QVBoxLayout(&dlg);
+
+    QLabel *label = new QLabel(&dlg);
+    mainLayout->addWidget(label);
+
+    addButtonBox(dlg, QDialogButtonBox::Ok);
+
+    QFile f(file);
+    if (!f.open(QIODevice::ReadOnly)) {
+        qWarning() << i18n("kdialog: could not open file %1", file);
+        return -1;
+    }
+
+    label->setPixmap(QPixmap(file));
+    return (dlg.exec() == QDialog::Accepted) ? 0 : 1;
+}
+
+int Widgets::imgInputBox(QWidget *parent, const QString& title, const QString& file, const QString& text, QString &result)
+{
+    QFile f(file);
+    if (!f.open(QIODevice::ReadOnly)) {
+        qWarning() << i18n("kdialog: could not open file %1", file);
+        return -1;
+    }
+
+    QDialog dlg(parent);
+    dlg.setWindowTitle(title);
+
+    QVBoxLayout *mainLayout = new QVBoxLayout(&dlg);
+
+    if (!text.isEmpty()) {
+        QLabel *head = new QLabel(&dlg);
+        head->setText(text);
+        mainLayout->addWidget(head);
+    }
+
+    QLabel *label = new QLabel(&dlg);
+    mainLayout->addWidget(label);
+
+    label->setPixmap(QPixmap(file));
+
+    QLineEdit *edit = new QLineEdit(&dlg);
+    mainLayout->addWidget(edit);
+    edit->setReadOnly(false);
+    edit->setFocus();
+
+    addButtonBox(dlg, QDialogButtonBox::Ok);
+
+    bool retcode = (dlg.exec() == QDialog::Accepted);
+
+    if (retcode)
+        result = edit->text();
+
+    return retcode;
 }
 
 int Widgets::textInputBox(QWidget *parent, int width, int height, const QString& title, const QString& text, const QString& init, QString &result)

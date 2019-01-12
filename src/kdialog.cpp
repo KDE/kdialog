@@ -293,6 +293,8 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("detailederror"), i18n("'Error' message box with expandable Details field"), QStringLiteral("text> <details")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("msgbox"), i18n("Message Box dialog"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("inputbox"), i18n("Input Box dialog"), QStringLiteral("text> <init")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("imgbox"), i18n("Image Box dialog"), QLatin1String("file")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("imginputbox"), i18n("Image Box Input dialog"), QLatin1String("file> <text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("password"), i18n("Password dialog"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("newpassword"), i18n("New Password dialog"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("textbox"), i18n("Text Box dialog"), QStringLiteral("file")));
@@ -588,6 +590,27 @@ int main(int argc, char *argv[])
         }
 
         return Widgets::textBox(nullptr, w, h, title, parser.value(QStringLiteral("textbox")));
+    }
+
+    // --imgbox <file>
+    if (parser.isSet(QStringLiteral("imgbox")))
+    {
+        return Widgets::imgBox(nullptr, title, parser.value(QStringLiteral("imgbox")));
+    }
+
+    // --imginputbox <file> [text]
+    if (parser.isSet(QStringLiteral("imginputbox")))
+    {
+        QString result;
+        QString text;
+
+        if (args.count() > 0) {
+            text = args.at(0);
+        }
+
+        const bool retcode = Widgets::imgInputBox(nullptr, title, parser.value(QStringLiteral("imginputbox")), text, result);
+        cout << result.toLocal8Bit().data() << endl;
+        return retcode ? 0 : 1;
     }
 
     // --textinputbox file [width] [height]
