@@ -35,12 +35,12 @@
 #include <QVBoxLayout>
 #include <QPixmap>
 
-// KDE
-#include <kpassworddialog.h>
-#include <knewpassworddialog.h>
-#include <ktextedit.h>
-#include <kdatepicker.h>
-#include <klocalizedstring.h>
+// KF
+#include <KPasswordDialog>
+#include <KNewPasswordDialog>
+#include <KTextEdit>
+#include <KDatePicker>
+#include <KLocalizedString>
 
 // Local
 #include "klistboxdialog.h"

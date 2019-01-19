@@ -24,19 +24,19 @@
 #include "widgets.h"
 #include "utils.h"
 
-#include <kmessagebox.h>
-#include <kpassivepopup.h>
-#include <krecentdocument.h>
-
-#include <kaboutdata.h>
-#include <kconfig.h>
-#include <kfileitem.h>
-#include <kicondialog.h>
-#include <kcolormimedata.h>
-#include <kwindowsystem.h>
-#include <kiconloader.h>
+// KF
+#include <KMessageBox>
+#include <KPassivePopup>
+#include <KRecentDocument>
+#include <KAboutData>
+#include <KConfig>
+#include <KIconDialog>
+#include <KColorMimeData>
+#include <KWindowSystem>
+#include <KIconLoader>
 #include <KLocalizedString>
 
+// Qt
 #include <QApplication>
 #include <QDate>
 #include <QClipboard>
