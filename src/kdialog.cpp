@@ -163,7 +163,7 @@ static void outputStringList(const QStringList &list, bool separateOutput)
 {
     if ( separateOutput) {
         for ( QStringList::ConstIterator it = list.constBegin(); it != list.constEnd(); ++it ) {
-            cout << (*it).toLocal8Bit().data() << endl;
+            cout << (*it).toLocal8Bit().data() << "\n";
         }
     } else {
         for ( QStringList::ConstIterator it = list.constBegin(); it != list.constEnd(); ++it ) {
