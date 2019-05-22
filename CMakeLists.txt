@@ -33,5 +33,6 @@ add_definitions(
 )
 
 add_subdirectory(src)
+install(FILES org.kde.kdialog.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
