@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="console-application">
+  <id>org.kde.kdialog</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>KDialog</name>
+  <summary>Display dialog boxes from shell scripts</summary>
+  <description>
+    <p>
+      kdialog allows you to display dialog boxes from shell scripts.
+      The syntax is very much inspired from the "dialog" command
+      (which shows text mode dialogs).
+    </p>
+  </description>
+  <icon type="stock">system-run</icon>
+  <url type="homepage">https://www.kde.org</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kdialog</url>
+  <url type="help">https://techbase.kde.org/Development/Tutorials/Shell_Scripting_with_KDE_Dialogs</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=kdialog&amp;source=appdata</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/kdialog/kdialog.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>KDE</project_group>
+  <provides>
+    <binary>kdialog</binary>
+  </provides>
+</component>
