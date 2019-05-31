@@ -8,6 +8,7 @@
   <name xml:lang="ca-valencia">KDialog</name>
   <name xml:lang="en-GB">KDialog</name>
   <name xml:lang="es">KDialog</name>
+  <name xml:lang="eu">KDialog</name>
   <name xml:lang="fr">KDialog</name>
   <name xml:lang="ko">KDialog</name>
   <name xml:lang="nl">KDialog</name>
@@ -22,6 +23,7 @@
   <summary xml:lang="ca-valencia">Mostra quadres de diàleg des de scripts del shell</summary>
   <summary xml:lang="en-GB">Display dialogue boxes from shell scripts</summary>
   <summary xml:lang="es">Mostrar cuadros de diálogo desde los scripts del intérprete de órdenes</summary>
+  <summary xml:lang="eu">Bistaratu elkarrizketa-koadroak «shell script»etatik</summary>
   <summary xml:lang="ko">셸 스크립트에서 대화 상자 표시</summary>
   <summary xml:lang="nl">Dialoogvensters uit shell-scripts</summary>
   <summary xml:lang="pt">Mostra janelas a partir de programas</summary>
@@ -40,6 +42,7 @@
     <p xml:lang="ca-valencia">El KDialog permet mostrar quadres de diàleg des de scripts del shell. La sintaxi està molt inspirada en l'ordre «dialog» (que mostra diàlegs en mode text).</p>
     <p xml:lang="en-GB">kdialog allows you to display dialogue boxes from shell scripts. The syntax is very much inspired from the "dialog" command (which shows text mode dialogues).</p>
     <p xml:lang="es">KDialog le permite mostrar cuadros de diálogo desde los scripts del intérprete de órdenes. Su sintaxis está muy inspirada en la orden «dialog» (que muestra diálogos en modo de texto).</p>
+    <p xml:lang="eu">kdialog-ek «shell script»etatik elkarrizketa-koadroak bistaratzen uzten dizu. Sintaxia «dialog» komandoaren antzerakoa egin da (testu moduan elkarrizketak erakusten dituena).</p>
     <p xml:lang="ko">KDialog를 사용하여 셸 스크립트에서 대화 상자를 표시할 수 있습니다. 텍스트 모드 대화 상자를 표시하는 "dialog" 명령의 문법에서 많은 영향을 받았습니다.</p>
     <p xml:lang="nl">kdialog biedt u dialoogvensters te tonen uit shell-scripts. De syntaxis is zeer geïnspireerd op het commando "dialog" (die dialogen toont in tekstmodus).</p>
     <p xml:lang="pt">O KDialog permite-lhe mostrar janelas interactivas a partir de programas na consola. A sintaxe é muito semelhante à do "dialog" (o qual mostra janelas em modo de texto).</p>
