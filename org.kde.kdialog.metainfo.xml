@@ -6,6 +6,7 @@
   <name>KDialog</name>
   <name xml:lang="ca">KDialog</name>
   <name xml:lang="ca-valencia">KDialog</name>
+  <name xml:lang="de">KDialog</name>
   <name xml:lang="en-GB">KDialog</name>
   <name xml:lang="es">KDialog</name>
   <name xml:lang="eu">KDialog</name>
@@ -23,6 +24,7 @@
   <summary>Display dialog boxes from shell scripts</summary>
   <summary xml:lang="ca">Mostra quadres de diàleg des de scripts del shell</summary>
   <summary xml:lang="ca-valencia">Mostra quadres de diàleg des de scripts del shell</summary>
+  <summary xml:lang="de">Anzeige von Dialogen aus Shell-Skripten</summary>
   <summary xml:lang="en-GB">Display dialogue boxes from shell scripts</summary>
   <summary xml:lang="es">Mostrar cuadros de diálogo desde los scripts del intérprete de órdenes</summary>
   <summary xml:lang="eu">Bistaratu elkarrizketa-koadroak «shell script»etatik</summary>
