@@ -58,6 +58,7 @@
     <p xml:lang="uk">За допомогою kdialog можна відкривати діалогові вікна зі скриптів командної оболонки. Синтаксис команд є дуже схожим на синтаксис команд програми «dialog» (яка показу діалогові вікна у текстовому режимі).</p>
     <p xml:lang="x-test">xxkdialog allows you to display dialog boxes from shell scripts. The syntax is very much inspired from the "dialog" command (which shows text mode dialogs).xx</p>
     <p xml:lang="zh-CN">kdialog 允许您从 Shell 脚本中显示一个对话框。语法深受 dialog 命令影响 (显示文本模式的对话框)。</p>
+    <p xml:lang="zh-TW">kdialog 讓你能使用 Shell 指令稿顯示對話框。語法不少啟發自「dialog」（顯示文字模式的對話框）指令。</p>
   </description>
   <icon type="stock">system-run</icon>
   <url type="homepage">https://www.kde.org</url>
