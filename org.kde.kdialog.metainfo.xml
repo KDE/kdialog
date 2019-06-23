@@ -14,6 +14,7 @@
   <name xml:lang="it">KDialog</name>
   <name xml:lang="ko">KDialog</name>
   <name xml:lang="nl">KDialog</name>
+  <name xml:lang="pl">KDialog</name>
   <name xml:lang="pt">KDialog</name>
   <name xml:lang="pt-BR">KDialog</name>
   <name xml:lang="sk">KDialog</name>
@@ -32,6 +33,7 @@
   <summary xml:lang="it">Visualizza finestre di dialogo da script di shell</summary>
   <summary xml:lang="ko">셸 스크립트에서 대화 상자 표시</summary>
   <summary xml:lang="nl">Dialoogvensters uit shell-scripts</summary>
+  <summary xml:lang="pl">Wyświetla okna dialogowe ze skryptów powłoki</summary>
   <summary xml:lang="pt">Mostra janelas a partir de programas</summary>
   <summary xml:lang="pt-BR">Mostra caixas de diálogo a partir scripts do shell</summary>
   <summary xml:lang="sk">Zobraziť dialógové okná zo shellových príkazov</summary>
@@ -54,6 +56,7 @@
     <p xml:lang="it">kdialog ti permette di visualizzare delle finestre di dialogo da script di shell. La sintassi prende decisamente ispirazione dal comando «dialog» (che mostra finestre in modalità testuale).</p>
     <p xml:lang="ko">KDialog를 사용하여 셸 스크립트에서 대화 상자를 표시할 수 있습니다. 텍스트 모드 대화 상자를 표시하는 "dialog" 명령의 문법에서 많은 영향을 받았습니다.</p>
     <p xml:lang="nl">kdialog biedt u dialoogvensters te tonen uit shell-scripts. De syntaxis is zeer geïnspireerd op het commando "dialog" (die dialogen toont in tekstmodus).</p>
+    <p xml:lang="pl">kdialog umożliwia wyświetlanie okien dialogowych ze skryptów powłoki. Składnia naśladuje polecenie "dialog" (które pokazuje tekstowe okna dialogowe).</p>
     <p xml:lang="pt">O KDialog permite-lhe mostrar janelas interactivas a partir de programas na consola. A sintaxe é muito semelhante à do "dialog" (o qual mostra janelas em modo de texto).</p>
     <p xml:lang="pt-BR">O KDialog permite-lhe mostrar caixas de diálogo a partir de scripts do shell. A sintaxe é muito semelhante à do comando "dialog" (que mostra caixa de diálogos em modo de texto).</p>
     <p xml:lang="sk">kdialog vám umožní zobraziť dialógové okná zo shellových skriptov. Syntax je inšpirovaná príkazom "dialog" (ktorý zobrazí textové dialógy)</p>
