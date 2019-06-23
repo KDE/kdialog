@@ -1,3 +1,5 @@
+ecm_setup_version(${KDE_APPLICATIONS_VERSION} VARIABLE_PREFIX KDIALOG VERSION_HEADER kdialog_version.h)
+
 configure_file(config-kdialog.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kdialog.h)
 
 set(kdialog_SRCS

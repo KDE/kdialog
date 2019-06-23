@@ -1,6 +1,12 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(KDialog)
+# KDE Application Version, managed by release script
+set(KDE_APPLICATIONS_VERSION_MAJOR "19")
+set(KDE_APPLICATIONS_VERSION_MINOR "07")
+set(KDE_APPLICATIONS_VERSION_MICRO "70")
+set(KDE_APPLICATIONS_VERSION "${KDE_APPLICATIONS_VERSION_MAJOR}.${KDE_APPLICATIONS_VERSION_MINOR}.${KDE_APPLICATIONS_VERSION_MICRO}")
+
+project(KDialog VERSION ${KDE_APPLICATIONS_VERSION})
 
 # ECM setup
 find_package(ECM 1.7.0 CONFIG REQUIRED)
@@ -10,6 +16,7 @@ include(FeatureSummary)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+include(ECMSetupVersion)
 
 # Build dependencies
 find_package(KF5 REQUIRED COMPONENTS TextWidgets Notifications GuiAddons IconThemes WindowSystem KIO DBusAddons)

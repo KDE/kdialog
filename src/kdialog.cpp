@@ -23,6 +23,7 @@
 #include "config-kdialog.h"
 #include "widgets.h"
 #include "utils.h"
+#include "kdialog_version.h"
 
 // KF
 #include <KMessageBox>
@@ -261,7 +262,7 @@ int main(int argc, char *argv[])
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     KAboutData aboutData( QStringLiteral("kdialog"), i18n("KDialog"),
-            QStringLiteral("2.0"), i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
+            QStringLiteral(KDIALOG_VERSION_STRING), i18n( "KDialog can be used to show nice dialog boxes from shell scripts" ),
             KAboutLicense::GPL,
             i18n("(C) 2000, Nick Thompson"));
     aboutData.addAuthor(i18n("David Faure"), i18n("Current maintainer"),QStringLiteral("faure@kde.org"));
