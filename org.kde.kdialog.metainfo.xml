@@ -10,6 +10,7 @@
   <name xml:lang="en-GB">KDialog</name>
   <name xml:lang="es">KDialog</name>
   <name xml:lang="eu">KDialog</name>
+  <name xml:lang="fi">KDialog</name>
   <name xml:lang="fr">KDialog</name>
   <name xml:lang="it">KDialog</name>
   <name xml:lang="ko">KDialog</name>
@@ -30,6 +31,7 @@
   <summary xml:lang="en-GB">Display dialogue boxes from shell scripts</summary>
   <summary xml:lang="es">Mostrar cuadros de diálogo desde los scripts del intérprete de órdenes</summary>
   <summary xml:lang="eu">Bistaratu elkarrizketa-koadroak «shell script»etatik</summary>
+  <summary xml:lang="fi">Näytä komentotulkkiskriptistä kyselyikkunoita</summary>
   <summary xml:lang="it">Visualizza finestre di dialogo da script di shell</summary>
   <summary xml:lang="ko">셸 스크립트에서 대화 상자 표시</summary>
   <summary xml:lang="nl">Dialoogvensters uit shell-scripts</summary>
@@ -53,6 +55,7 @@
     <p xml:lang="en-GB">kdialog allows you to display dialogue boxes from shell scripts. The syntax is very much inspired from the "dialog" command (which shows text mode dialogues).</p>
     <p xml:lang="es">KDialog le permite mostrar cuadros de diálogo desde los scripts del intérprete de órdenes. Su sintaxis está muy inspirada en la orden «dialog» (que muestra diálogos en modo de texto).</p>
     <p xml:lang="eu">kdialog-ek «shell script»etatik elkarrizketa-koadroak bistaratzen uzten dizu. Sintaxia «dialog» komandoaren antzerakoa egin da (testu moduan elkarrizketak erakusten dituena).</p>
+    <p xml:lang="fi">KDialogilla voi näyttää komentotulkkiskriptistä kyselyikkunoita. Syntaksi on saanut vaikutteita dialog-komennosta (joka näyttää tekstitilan kyselyikkunoita).</p>
     <p xml:lang="it">kdialog ti permette di visualizzare delle finestre di dialogo da script di shell. La sintassi prende decisamente ispirazione dal comando «dialog» (che mostra finestre in modalità testuale).</p>
     <p xml:lang="ko">KDialog를 사용하여 셸 스크립트에서 대화 상자를 표시할 수 있습니다. 텍스트 모드 대화 상자를 표시하는 "dialog" 명령의 문법에서 많은 영향을 받았습니다.</p>
     <p xml:lang="nl">kdialog biedt u dialoogvensters te tonen uit shell-scripts. De syntaxis is zeer geïnspireerd op het commando "dialog" (die dialogen toont in tekstmodus).</p>
