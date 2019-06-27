@@ -15,6 +15,7 @@
   <name xml:lang="it">KDialog</name>
   <name xml:lang="ko">KDialog</name>
   <name xml:lang="nl">KDialog</name>
+  <name xml:lang="nn">KDialog</name>
   <name xml:lang="pl">KDialog</name>
   <name xml:lang="pt">KDialog</name>
   <name xml:lang="pt-BR">KDialog</name>
@@ -35,6 +36,7 @@
   <summary xml:lang="it">Visualizza finestre di dialogo da script di shell</summary>
   <summary xml:lang="ko">셸 스크립트에서 대화 상자 표시</summary>
   <summary xml:lang="nl">Dialoogvensters uit shell-scripts</summary>
+  <summary xml:lang="nn">Vis dialogvindauge frå kommandolinjeskript</summary>
   <summary xml:lang="pl">Wyświetla okna dialogowe ze skryptów powłoki</summary>
   <summary xml:lang="pt">Mostra janelas a partir de programas</summary>
   <summary xml:lang="pt-BR">Mostra caixas de diálogo a partir scripts do shell</summary>
