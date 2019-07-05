@@ -19,6 +19,7 @@
   <name xml:lang="pl">KDialog</name>
   <name xml:lang="pt">KDialog</name>
   <name xml:lang="pt-BR">KDialog</name>
+  <name xml:lang="ru">KDialog</name>
   <name xml:lang="sk">KDialog</name>
   <name xml:lang="sv">Kdialog</name>
   <name xml:lang="uk">KDialog</name>
@@ -40,6 +41,7 @@
   <summary xml:lang="pl">Wyświetla okna dialogowe ze skryptów powłoki</summary>
   <summary xml:lang="pt">Mostra janelas a partir de programas</summary>
   <summary xml:lang="pt-BR">Mostra caixas de diálogo a partir scripts do shell</summary>
+  <summary xml:lang="ru">KDialog служит для показа диалоговых окон из сценариев оболочки</summary>
   <summary xml:lang="sk">Zobraziť dialógové okná zo shellových príkazov</summary>
   <summary xml:lang="sv">Visa dialogrutor från skalskript</summary>
   <summary xml:lang="uk">Відкриття діалогових вікон з скриптів командної оболонки</summary>
@@ -65,6 +67,7 @@
     <p xml:lang="pl">kdialog umożliwia wyświetlanie okien dialogowych ze skryptów powłoki. Składnia naśladuje polecenie "dialog" (które pokazuje tekstowe okna dialogowe).</p>
     <p xml:lang="pt">O KDialog permite-lhe mostrar janelas interactivas a partir de programas na consola. A sintaxe é muito semelhante à do "dialog" (o qual mostra janelas em modo de texto).</p>
     <p xml:lang="pt-BR">O KDialog permite-lhe mostrar caixas de diálogo a partir de scripts do shell. A sintaxe é muito semelhante à do comando "dialog" (que mostra caixa de diálogos em modo de texto).</p>
+    <p xml:lang="ru">KDialog служит для показа диалоговых окон из сценариев оболочки. Синтаксис основан на синтаксисе программы «dialog», предназначенной для показа диалоговых окон в текстовом режиме.</p>
     <p xml:lang="sk">kdialog vám umožní zobraziť dialógové okná zo shellových skriptov. Syntax je inšpirovaná príkazom "dialog" (ktorý zobrazí textové dialógy)</p>
     <p xml:lang="sv">Kdialog låter dig visa dialogrutor från skalskript. Syntaxen är i stor utsträckning inspirerad av kommandot "dialog" (som visar dialogrutor i textläge).</p>
     <p xml:lang="uk">За допомогою kdialog можна відкривати діалогові вікна зі скриптів командної оболонки. Синтаксис команд є дуже схожим на синтаксис команд програми «dialog» (яка показу діалогові вікна у текстовому режимі).</p>
