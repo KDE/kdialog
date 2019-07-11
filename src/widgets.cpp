@@ -27,7 +27,6 @@
 #include <QComboBox>
 #include <QDebug>
 #include <QFile>
-#include <QDesktopWidget>
 #include <QInputDialog>
 #include <QTextStream>
 #include <QTextCursor>
