@@ -7,6 +7,7 @@
   <name xml:lang="ca">KDialog</name>
   <name xml:lang="ca-valencia">KDialog</name>
   <name xml:lang="de">KDialog</name>
+  <name xml:lang="el">KDialog</name>
   <name xml:lang="en-GB">KDialog</name>
   <name xml:lang="es">KDialog</name>
   <name xml:lang="eu">KDialog</name>
@@ -30,6 +31,7 @@
   <summary xml:lang="ca">Mostra quadres de diàleg des de scripts del shell</summary>
   <summary xml:lang="ca-valencia">Mostra quadres de diàleg des de scripts del shell</summary>
   <summary xml:lang="de">Anzeige von Dialogen aus Shell-Skripten</summary>
+  <summary xml:lang="el">Εμφανίζει πλαίσια διαλόγου από σενάρια φλοιού</summary>
   <summary xml:lang="en-GB">Display dialogue boxes from shell scripts</summary>
   <summary xml:lang="es">Mostrar cuadros de diálogo desde los scripts del intérprete de órdenes</summary>
   <summary xml:lang="eu">Bistaratu elkarrizketa-koadroak «shell script»etatik</summary>
@@ -57,6 +59,7 @@
     </p>
     <p xml:lang="ca">El KDialog permet mostrar quadres de diàleg des de scripts del shell. La sintaxi està molt inspirada en l'ordre «dialog» (que mostra diàlegs en mode text).</p>
     <p xml:lang="ca-valencia">El KDialog permet mostrar quadres de diàleg des de scripts del shell. La sintaxi està molt inspirada en l'ordre «dialog» (que mostra diàlegs en mode text).</p>
+    <p xml:lang="el">Το kdialog σας επιτρέπει να εμφανίζετε πλαίσια διαλόγου από σενάρια φλοιού. Η σύνταξη έχει επηρεαστεί πολύ από την εντολή "dialog" (η οποία εμφανίζει κείμενο και διαλόγους).</p>
     <p xml:lang="en-GB">kdialog allows you to display dialogue boxes from shell scripts. The syntax is very much inspired from the "dialog" command (which shows text mode dialogues).</p>
     <p xml:lang="es">KDialog le permite mostrar cuadros de diálogo desde los scripts del intérprete de órdenes. Su sintaxis está muy inspirada en la orden «dialog» (que muestra diálogos en modo de texto).</p>
     <p xml:lang="eu">kdialog-ek «shell script»etatik elkarrizketa-koadroak bistaratzen uzten dizu. Sintaxia «dialog» komandoaren antzerakoa egin da (testu moduan elkarrizketak erakusten dituena).</p>
