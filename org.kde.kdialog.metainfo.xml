@@ -97,4 +97,8 @@
   <provides>
     <binary>kdialog</binary>
   </provides>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <icon type="stock">utilities-terminal</icon>
 </component>
