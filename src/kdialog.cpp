@@ -96,8 +96,10 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
         QWidget *w = static_cast<QWidget*>(o);
         if (print)
             cout << "winId: " << w->winId() << endl;
-        if (id)
-            KWindowSystem::setMainWindow(w, id);
+        if (id) {
+            w->setAttribute(Qt::WA_NativeWindow, true);
+            KWindowSystem::setMainWindow(w->windowHandle(), id);
+        }
         deleteLater(); // WinIdEmbedder is not needed anymore after the first dialog was shown
         return false;
     }

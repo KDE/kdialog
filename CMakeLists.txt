@@ -19,7 +19,7 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMSetupVersion)
 
 # Build dependencies
-find_package(KF5 REQUIRED COMPONENTS TextWidgets Notifications GuiAddons IconThemes WindowSystem KIO DBusAddons)
+find_package(KF5 5.62 REQUIRED COMPONENTS TextWidgets Notifications GuiAddons IconThemes WindowSystem KIO DBusAddons)
 find_package(Qt5DBus CONFIG)
 
 find_package(X11)
