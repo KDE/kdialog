@@ -56,11 +56,18 @@ static void addButtonBox(QDialog &dlg, QDialogButtonBox::StandardButtons buttons
 
 bool Widgets::inputBox(QWidget *parent, const QString& title, const QString& text, const QString& init, QString &result)
 {
-    bool ok;
-    const QString str = QInputDialog::getText(parent, title, text, QLineEdit::Normal, init, &ok);
-    if (ok)
-        result = str;
-    return ok;
+    QInputDialog dlg(parent);
+    dlg.setWindowTitle(title);
+    dlg.setLabelText(text);
+    dlg.setTextValue(init);
+
+    Utils::handleXGeometry(&dlg);
+
+    bool retcode = (dlg.exec() == QDialog::Accepted);
+    if (retcode) {
+        result = dlg.textValue();
+    }
+    return retcode;
 }
 
 bool Widgets::passwordBox(QWidget *parent, const QString& title, const QString& text, QString &result)
@@ -149,6 +156,7 @@ int Widgets::imgBox(QWidget *parent, const QString& title, const QString& file)
     }
 
     label->setPixmap(QPixmap(file));
+    Utils::handleXGeometry(&dlg);
     return (dlg.exec() == QDialog::Accepted) ? 0 : 1;
 }
 
@@ -182,6 +190,7 @@ int Widgets::imgInputBox(QWidget *parent, const QString& title, const QString& f
     edit->setFocus();
 
     addButtonBox(dlg, QDialogButtonBox::Ok);
+    Utils::handleXGeometry(&dlg);
 
     bool retcode = (dlg.exec() == QDialog::Accepted);
 
@@ -368,6 +377,7 @@ bool Widgets::slider(QWidget *parent, const QString& title, const QString& text,
 
     addButtonBox(dlg);
 
+    Utils::handleXGeometry(&dlg);
     const bool retcode = (dlg.exec() == QDialog::Accepted);
 
     if (retcode)
