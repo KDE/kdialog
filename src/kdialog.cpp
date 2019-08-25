@@ -40,6 +40,7 @@
 // Qt
 #include <QApplication>
 #include <QDate>
+#include <QCheckBox>
 #include <QClipboard>
 #include <QColorDialog>
 #include <QDBusServiceWatcher>
@@ -52,6 +53,7 @@
 #include <QTimer>
 
 #include <iostream>
+#include <memory>
 
 #if defined HAVE_X11
 #include <X11/Xlib.h>
@@ -396,6 +398,7 @@ int main(int argc, char *argv[])
 
     // --yesno and other message boxes
     KMessageBox::DialogType type = static_cast<KMessageBox::DialogType>(0);
+    QMessageBox::Icon icon = QMessageBox::Question;
     QByteArray option;
     if (parser.isSet(QStringLiteral("yesno"))) {
         option = "yesno";
@@ -408,53 +411,73 @@ int main(int argc, char *argv[])
     else if (parser.isSet(QStringLiteral("warningyesno"))) {
         option = "warningyesno";
         type = KMessageBox::WarningYesNo;
+        icon = QMessageBox::Warning;
     }
     else if (parser.isSet(QStringLiteral("warningcontinuecancel"))) {
         option = "warningcontinuecancel";
         type = KMessageBox::WarningContinueCancel;
+        icon = QMessageBox::Warning;
     }
     else if (parser.isSet(QStringLiteral("warningyesnocancel"))) {
         option = "warningyesnocancel";
         type = KMessageBox::WarningYesNoCancel;
+        icon = QMessageBox::Warning;
     }
     else if (parser.isSet(QStringLiteral("sorry"))) {
         option = "sorry";
         type = KMessageBox::Sorry;
+        icon = QMessageBox::Warning;
     }
     else if (parser.isSet(QStringLiteral("detailedsorry"))) {
         option = "detailedsorry";
+        type = KMessageBox::Sorry;
+        icon = QMessageBox::Warning;
     }
     else if (parser.isSet(QStringLiteral("error"))) {
         option = "error";
         type = KMessageBox::Error;
+        icon = QMessageBox::Critical;
     }
     else if (parser.isSet(QStringLiteral("detailederror"))) {
         option = "detailederror";
+        type = KMessageBox::Error;
+        icon = QMessageBox::Critical;
     }
     else if (parser.isSet(QStringLiteral("msgbox"))) {
         option = "msgbox";
         type = KMessageBox::Information;
+        icon = QMessageBox::Information;
     }
 
     if ( !option.isEmpty() )
     {
-        KConfig* dontagaincfg = nullptr;
+        std::unique_ptr<KConfig> dontagaincfg;
         // --dontagain
         QString dontagain; // QString()
         if (parser.isSet(QStringLiteral("dontagain")))
         {
           QString value = parser.value(QStringLiteral("dontagain"));
-          QStringList values = value.split( QLatin1Char(':'), QString::SkipEmptyParts );
+          const QStringList values = value.split(QLatin1Char(':'), QString::SkipEmptyParts);
           if( values.count() == 2 )
           {
-            dontagaincfg = new KConfig( values[ 0 ] );
-            KMessageBox::setDontShowAgainConfig( dontagaincfg );
+            dontagaincfg.reset(new KConfig(values[0]));
+            KMessageBox::setDontShowAgainConfig(dontagaincfg.get());
             dontagain = values[ 1 ];
+
+            if (type == KMessageBox::WarningContinueCancel) {
+                if (!KMessageBox::shouldBeShownContinue(dontagain)) {
+                    return 0;
+                }
+            } else {
+                KMessageBox::ButtonCode code;
+                if (!KMessageBox::shouldBeShownYesNo(dontagain, code)) {
+                    return code == KMessageBox::Yes ? 0 : 1;
+                }
+            }
           }
           else
             qDebug( "Incorrect --dontagain!" );
         }
-        int ret = 0;
 
         QString text = Utils::parseString(parser.value(QString::fromLatin1(option)));
 
@@ -463,22 +486,58 @@ int main(int argc, char *argv[])
             details = Utils::parseString(args.at(0));
         }
 
-        if ( type == KMessageBox::WarningContinueCancel ) {
-            ret = KMessageBox::messageBox( nullptr, type, text, title, continueButton,
-                noButton, cancelButton, dontagain );
-        } else if (option == "detailedsorry") {
-            KMessageBox::detailedSorry( nullptr, text, details, title );
-        } else if (option == "detailederror") {
-            KMessageBox::detailedError( nullptr, text, details, title );
-        } else {
-            ret = KMessageBox::messageBox( nullptr, type, text, title,
-                yesButton, noButton, cancelButton, dontagain );
+        QDialog dialog;
+        dialog.setWindowTitle(title);
+        QDialogButtonBox *buttonBox = new QDialogButtonBox(&dialog);
+        KMessageBox::Options options = KMessageBox::NoExec;
+
+        switch (type) {
+            case KMessageBox::QuestionYesNo:
+            case KMessageBox::WarningYesNo:
+                buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
+                KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), yesButton);
+                KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), noButton);
+                break;
+            case KMessageBox::QuestionYesNoCancel:
+            case KMessageBox::WarningYesNoCancel:
+                buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No | QDialogButtonBox::Cancel);
+                KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), yesButton);
+                KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), noButton);
+                KGuiItem::assign(buttonBox->button(QDialogButtonBox::Cancel), cancelButton);
+                break;
+            case KMessageBox::WarningContinueCancel:
+                buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
+                KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), continueButton);
+                KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), cancelButton);
+                break;
+            case KMessageBox::Sorry:
+            case KMessageBox::Error:
+            case KMessageBox::Information:
+                buttonBox->addButton(QDialogButtonBox::Ok);
+                buttonBox->button(QDialogButtonBox::Ok)->setFocus();
+                break;
         }
-        delete dontagaincfg;
-        // ret is 1 for Ok, 2 for Cancel, 3 for Yes, 4 for No and 5 for Continue.
+        (void)KMessageBox::createKMessageBox(&dialog, buttonBox, icon, text, {}, dontagain, nullptr, options, details);
+        Utils::handleXGeometry(&dialog);
+        const auto ret = QDialogButtonBox::StandardButton(dialog.exec());
+        if (!dontagain.isEmpty()) {
+            // We use NoExec in order to call handleXGeometry before exec
+            // But that means we need to query the state of the dontShowAgain checkbox ourselves too...
+            QCheckBox *cb = dialog.findChild<QCheckBox *>();
+            Q_ASSERT(cb);
+            if (cb && cb->isChecked()) {
+                if (type == KMessageBox::WarningContinueCancel) {
+                    if (ret == QDialogButtonBox::Yes) {
+                        KMessageBox::saveDontShowAgainContinue(dontagain);
+                    }
+                } else if (ret != QDialogButtonBox::Cancel) {
+                    KMessageBox::saveDontShowAgainYesNo(dontagain, ret == QDialogButtonBox::Yes ? KMessageBox::Yes : KMessageBox::No);
+                }
+            }
+        }
         // We want to return 0 for ok, yes and continue, 1 for no and 2 for cancel
-        return (ret == KMessageBox::Ok || ret == KMessageBox::Yes || ret == KMessageBox::Continue) ? 0
-                     : ( ret == KMessageBox::No ? 1 : 2 );
+        return (ret == QDialogButtonBox::Ok || ret == QDialogButtonBox::Yes) ? 0
+                     : ( ret == QDialogButtonBox::No ? 1 : 2 );
     }
 
     // --inputbox text [init]
@@ -505,7 +564,7 @@ int main(int argc, char *argv[])
       cout << qPrintable(result) << endl;
       return retcode ? 0 : 1;
     }
-    
+
     // --newpassword text
     if (parser.isSet(QStringLiteral("newpassword")))
     {
