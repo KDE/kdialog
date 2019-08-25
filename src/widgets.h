@@ -17,7 +17,6 @@
 //  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //
 
-
 #ifndef WIDGETS_H
 #define WIDGETS_H
 
@@ -25,21 +24,20 @@
 #include <QWidget>
 #include <QStringList>
 
-namespace Widgets
-{
-    bool inputBox(QWidget *parent, const QString& title, const QString& text, const QString& init, QString &result);
-    bool passwordBox(QWidget *parent, const QString& title, const QString& text, QString &result);
-    bool newPasswordBox(QWidget *parent, const QString& title, const QString& text, QString &result);
-    int textBox(QWidget *parent, int width, int height, const QString& title, const QString& file);
-    int imgBox(QWidget *parent, const QString& title, const QString& file);
-    int imgInputBox(QWidget *parent, const QString& title, const QString& file, const QString& init, QString &result);
-    int textInputBox(QWidget *parent, int width, int height, const QString& title, const QString& text, const QString& init, QString &result);
-    bool listBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args, const QString &defaultEntry, QString &result);
-    bool checkList(QWidget *parent, const QString& title, const QString& text, const QStringList& args, bool separateOutput, QStringList &result);
-    bool radioBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args, QString &result);
-    bool comboBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args, const QString& defaultEntry, QString &result);
-    bool slider( QWidget *parent, const QString& title, const QString& test, int minValue, int maxValue, int step, int &result );
-    bool calendar( QWidget *parent, const QString &title, const QString &text, QDate & result );
+namespace Widgets {
+bool inputBox(QWidget *parent, const QString &title, const QString &text, const QString &init, QString &result);
+bool passwordBox(QWidget *parent, const QString &title, const QString &text, QString &result);
+bool newPasswordBox(QWidget *parent, const QString &title, const QString &text, QString &result);
+int textBox(QWidget *parent, int width, int height, const QString &title, const QString &file);
+int imgBox(QWidget *parent, const QString &title, const QString &file);
+int imgInputBox(QWidget *parent, const QString &title, const QString &file, const QString &init, QString &result);
+int textInputBox(QWidget *parent, int width, int height, const QString &title, const QString &text, const QString &init, QString &result);
+bool listBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, const QString &defaultEntry, QString &result);
+bool checkList(QWidget *parent, const QString &title, const QString &text, const QStringList &args, bool separateOutput, QStringList &result);
+bool radioBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, QString &result);
+bool comboBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, const QString &defaultEntry, QString &result);
+bool slider(QWidget *parent, const QString &title, const QString &test, int minValue, int maxValue, int step, int &result);
+bool calendar(QWidget *parent, const QString &title, const QString &text, QDate &result);
 }
 
 #endif

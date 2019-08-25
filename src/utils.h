@@ -21,11 +21,10 @@
 #include <QString>
 class QWidget;
 
-namespace Utils
-{
-    void setGeometry(const QString &geometry);
-    void handleXGeometry(QWidget * dlg);
-    QString parseString(const QString &str);
+namespace Utils {
+void setGeometry(const QString &geometry);
+void handleXGeometry(QWidget *dlg);
+QString parseString(const QString &str);
 }
 
 #endif

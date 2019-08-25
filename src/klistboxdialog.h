@@ -17,7 +17,6 @@
 //  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //
 
-
 #ifndef KLISTBOXDIALOG_H
 #define KLISTBOXDIALOG_H
 
@@ -29,24 +28,28 @@ class QLabel;
 
 class KListBoxDialog : public QDialog
 {
-  Q_OBJECT
+    Q_OBJECT
 
 public:
 
-  explicit KListBoxDialog(const QString &text, QWidget *parent=nullptr);
-  ~KListBoxDialog() {}
+    explicit KListBoxDialog(const QString &text, QWidget *parent = nullptr);
+    ~KListBoxDialog()
+    {
+    }
 
-  QListWidget &getTable() { return *table; }
+    QListWidget &getTable()
+    {
+        return *table;
+    }
 
-  void insertItem( const QString& text );
-  void setCurrentItem ( const QString& text );
-  int currentItem() const;
+    void insertItem(const QString &text);
+    void setCurrentItem(const QString &text);
+    int currentItem() const;
 
 protected:
 
-  QListWidget *table;
-  QLabel *label;
-
+    QListWidget *table;
+    QLabel *label;
 };
 
 #endif

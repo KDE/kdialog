@@ -17,7 +17,6 @@
 //  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //
 
-
 // Own
 #include <config-kdialog.h>
 #include "widgets.h"
@@ -45,7 +44,6 @@
 #include "klistboxdialog.h"
 #include "progressdialog.h"
 
-
 static void addButtonBox(QDialog &dlg, QDialogButtonBox::StandardButtons buttons = QDialogButtonBox::Ok | QDialogButtonBox::Cancel)
 {
     QDialogButtonBox *buttonBox = new QDialogButtonBox(buttons, &dlg);
@@ -54,7 +52,7 @@ static void addButtonBox(QDialog &dlg, QDialogButtonBox::StandardButtons buttons
     QObject::connect(buttonBox, &QDialogButtonBox::rejected, &dlg, &QDialog::reject);
 }
 
-bool Widgets::inputBox(QWidget *parent, const QString& title, const QString& text, const QString& init, QString &result)
+bool Widgets::inputBox(QWidget *parent, const QString &title, const QString &text, const QString &init, QString &result)
 {
     QInputDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -70,35 +68,37 @@ bool Widgets::inputBox(QWidget *parent, const QString& title, const QString& tex
     return retcode;
 }
 
-bool Widgets::passwordBox(QWidget *parent, const QString& title, const QString& text, QString &result)
+bool Widgets::passwordBox(QWidget *parent, const QString &title, const QString &text, QString &result)
 {
-  KPasswordDialog dlg( parent );
-  dlg.setWindowTitle(title);
-  dlg.setPrompt(text);
+    KPasswordDialog dlg(parent);
+    dlg.setWindowTitle(title);
+    dlg.setPrompt(text);
 
-  Utils::handleXGeometry(&dlg);
+    Utils::handleXGeometry(&dlg);
 
-  bool retcode = (dlg.exec() == QDialog::Accepted);
-  if ( retcode )
-    result = dlg.password();
-  return retcode;
+    bool retcode = (dlg.exec() == QDialog::Accepted);
+    if (retcode) {
+        result = dlg.password();
+    }
+    return retcode;
 }
 
-bool Widgets::newPasswordBox(QWidget *parent, const QString& title, const QString& text, QString &result)
+bool Widgets::newPasswordBox(QWidget *parent, const QString &title, const QString &text, QString &result)
 {
-  KNewPasswordDialog dlg( parent );
-  dlg.setWindowTitle(title);
-  dlg.setPrompt(text);
-  
-  Utils::handleXGeometry(&dlg);
+    KNewPasswordDialog dlg(parent);
+    dlg.setWindowTitle(title);
+    dlg.setPrompt(text);
 
-  bool retcode = (dlg.exec() == QDialog::Accepted);
-  if ( retcode )
-    result = dlg.password();
-  return retcode;
+    Utils::handleXGeometry(&dlg);
+
+    bool retcode = (dlg.exec() == QDialog::Accepted);
+    if (retcode) {
+        result = dlg.password();
+    }
+    return retcode;
 }
 
-int Widgets::textBox(QWidget *parent, int width, int height, const QString& title, const QString& file)
+int Widgets::textBox(QWidget *parent, int width, int height, const QString &title, const QString &file)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -114,8 +114,9 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
 
     if (file == QLatin1String("-")) {
         QTextStream s(stdin, QIODevice::ReadOnly);
-        while (!s.atEnd())
+        while (!s.atEnd()) {
             edit->append(s.readLine());
+        }
     } else {
         QFile f(file);
         if (!f.open(QIODevice::ReadOnly)) {
@@ -123,21 +124,23 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString& titl
             return -1;
         }
         QTextStream s(&f);
-        while (!s.atEnd())
+        while (!s.atEnd()) {
             edit->append(s.readLine());
+        }
     }
 
     edit->setTextCursor(QTextCursor(edit->document()));
 
-    if (width > 0 && height > 0)
+    if (width > 0 && height > 0) {
         dlg.resize(QSize(width, height));
+    }
 
     Utils::handleXGeometry(&dlg);
     dlg.setWindowTitle(title);
     return (dlg.exec() == QDialog::Accepted) ? 0 : 1;
 }
 
-int Widgets::imgBox(QWidget *parent, const QString& title, const QString& file)
+int Widgets::imgBox(QWidget *parent, const QString &title, const QString &file)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -160,7 +163,7 @@ int Widgets::imgBox(QWidget *parent, const QString& title, const QString& file)
     return (dlg.exec() == QDialog::Accepted) ? 0 : 1;
 }
 
-int Widgets::imgInputBox(QWidget *parent, const QString& title, const QString& file, const QString& text, QString &result)
+int Widgets::imgInputBox(QWidget *parent, const QString &title, const QString &file, const QString &text, QString &result)
 {
     QFile f(file);
     if (!f.open(QIODevice::ReadOnly)) {
@@ -194,13 +197,14 @@ int Widgets::imgInputBox(QWidget *parent, const QString& title, const QString& f
 
     bool retcode = (dlg.exec() == QDialog::Accepted);
 
-    if (retcode)
+    if (retcode) {
         result = edit->text();
+    }
 
     return retcode;
 }
 
-int Widgets::textInputBox(QWidget *parent, int width, int height, const QString& title, const QString& text, const QString& init, QString &result)
+int Widgets::textInputBox(QWidget *parent, int width, int height, const QString &title, const QString &text, const QString &init, QString &result)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -220,18 +224,18 @@ int Widgets::textInputBox(QWidget *parent, int width, int height, const QString&
 
     addButtonBox(dlg, QDialogButtonBox::Ok);
 
-    if (width > 0 && height > 0)
+    if (width > 0 && height > 0) {
         dlg.resize(QSize(width, height));
+    }
 
     Utils::handleXGeometry(&dlg);
     dlg.setWindowTitle(title);
     const int returnDialogCode = dlg.exec();
     result = edit->toPlainText();
-    return (returnDialogCode == QDialog::Accepted ? 0 : 1);
+    return returnDialogCode == QDialog::Accepted ? 0 : 1;
 }
 
-bool Widgets::comboBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args,
-                       const QString& defaultEntry, QString &result)
+bool Widgets::comboBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, const QString &defaultEntry, QString &result)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -251,111 +255,115 @@ bool Widgets::comboBox(QWidget *parent, const QString& title, const QString& tex
 
     bool retcode = (dlg.exec() == QDialog::Accepted);
 
-    if (retcode)
+    if (retcode) {
         result = combo->currentText();
+    }
 
     return retcode;
 }
 
-bool Widgets::listBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args,
-                      const QString& defaultEntry, QString &result)
+bool Widgets::listBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, const QString &defaultEntry, QString &result)
 {
-  KListBoxDialog box(text,parent);
+    KListBoxDialog box(text, parent);
 
-  box.setWindowTitle(title);
+    box.setWindowTitle(title);
 
-  for (int i = 0; i+1<args.count(); i += 2) {
-    box.insertItem(args[i+1]);
-  }
-  box.setCurrentItem( defaultEntry );
-
-  Utils::handleXGeometry(&box);
-
-  const bool retcode = (box.exec() == QDialog::Accepted);
-  if ( retcode )
-    result = args[ box.currentItem()*2 ];
-  return retcode;
-}
-
-
-bool Widgets::checkList(QWidget *parent, const QString& title, const QString& text, const QStringList& args, bool separateOutput, QStringList &result)
-{
-  QStringList entries, tags;
-  QString rs;
-
-  result.clear();
-
-  KListBoxDialog box(text,parent);
-
-  QListWidget &table = box.getTable();
-
-  box.setWindowTitle(title);
-
-  for (int i=0; i+2<args.count(); i += 3) {
-    tags.append(args[i]);
-    entries.append(args[i+1]);
-  }
-
-  table.addItems(entries);
-  table.setSelectionMode(QListWidget::MultiSelection);
-  table.setCurrentItem(nullptr); // This is to circumvent a Qt bug
-
-  for (int i=0; i+2<args.count(); i += 3) {
-    table.item( i/3 )->setSelected( args[i+2] == QLatin1String("on") );
-  }
-
-  Utils::handleXGeometry(&box);
-
-  const bool retcode = (box.exec() == QDialog::Accepted);
-
-  if ( retcode ) {
-    if (separateOutput) {
-      for (int i=0; i<table.count(); i++)
-        if (table.item(i)->isSelected())
-          result.append(tags[i]);
-    } else {
-      for (int i=0; i<table.count(); i++)
-        if (table.item(i)->isSelected())
-          rs += QLatin1String("\"") + tags[i] + QLatin1String("\" ");
-      result.append(rs);
+    for (int i = 0; i+1 < args.count(); i += 2) {
+        box.insertItem(args[i+1]);
     }
-  }
-  return retcode;
-}
+    box.setCurrentItem(defaultEntry);
 
+    Utils::handleXGeometry(&box);
 
-bool Widgets::radioBox(QWidget *parent, const QString& title, const QString& text, const QStringList& args, QString &result)
-{
-  QStringList entries, tags;
-
-  KListBoxDialog box(text,parent);
-
-  QListWidget &table = box.getTable();
-
-  box.setWindowTitle(title);
-
-  for (int i=0; i+2<args.count(); i += 3) {
-    tags.append(args[i]);
-    entries.append(args[i+1]);
-  }
-
-  table.addItems(entries);
-
-  for (int i=0; i+2<args.count(); i += 3) {
-    if (args[i+2] == QLatin1String("on")) {
-      table.setCurrentRow(i/3);
+    const bool retcode = (box.exec() == QDialog::Accepted);
+    if (retcode) {
+        result = args[ box.currentItem()*2 ];
     }
-  }
-
-  Utils::handleXGeometry(&box);
-
-  const bool retcode = (box.exec() == QDialog::Accepted);
-  if ( retcode )
-    result = tags[ table.currentRow() ];
-  return retcode;
+    return retcode;
 }
 
-bool Widgets::slider(QWidget *parent, const QString& title, const QString& text, int minValue, int maxValue, int step, int &result)
+bool Widgets::checkList(QWidget *parent, const QString &title, const QString &text, const QStringList &args, bool separateOutput, QStringList &result)
+{
+    QStringList entries, tags;
+    QString rs;
+
+    result.clear();
+
+    KListBoxDialog box(text, parent);
+
+    QListWidget &table = box.getTable();
+
+    box.setWindowTitle(title);
+
+    for (int i = 0; i+2 < args.count(); i += 3) {
+        tags.append(args[i]);
+        entries.append(args[i+1]);
+    }
+
+    table.addItems(entries);
+    table.setSelectionMode(QListWidget::MultiSelection);
+    table.setCurrentItem(nullptr); // This is to circumvent a Qt bug
+
+    for (int i = 0; i+2 < args.count(); i += 3) {
+        table.item(i/3)->setSelected(args[i+2] == QLatin1String("on"));
+    }
+
+    Utils::handleXGeometry(&box);
+
+    const bool retcode = (box.exec() == QDialog::Accepted);
+
+    if (retcode) {
+        if (separateOutput) {
+            for (int i = 0; i < table.count(); i++) {
+                if (table.item(i)->isSelected()) {
+                    result.append(tags[i]);
+                }
+            }
+        } else {
+            for (int i = 0; i < table.count(); i++) {
+                if (table.item(i)->isSelected()) {
+                    rs += QLatin1String("\"") + tags[i] + QLatin1String("\" ");
+                }
+            }
+            result.append(rs);
+        }
+    }
+    return retcode;
+}
+
+bool Widgets::radioBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, QString &result)
+{
+    QStringList entries, tags;
+
+    KListBoxDialog box(text, parent);
+
+    QListWidget &table = box.getTable();
+
+    box.setWindowTitle(title);
+
+    for (int i = 0; i+2 < args.count(); i += 3) {
+        tags.append(args[i]);
+        entries.append(args[i+1]);
+    }
+
+    table.addItems(entries);
+
+    for (int i = 0; i+2 < args.count(); i += 3) {
+        if (args[i+2] == QLatin1String("on")) {
+            table.setCurrentRow(i/3);
+        }
+    }
+
+    Utils::handleXGeometry(&box);
+
+    const bool retcode = (box.exec() == QDialog::Accepted);
+    if (retcode) {
+        result = tags[ table.currentRow() ];
+    }
+    return retcode;
+}
+
+bool Widgets::slider(QWidget *parent, const QString &title, const QString &text, int minValue, int maxValue, int step, int &result)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -364,7 +372,7 @@ bool Widgets::slider(QWidget *parent, const QString& title, const QString& text,
 
     QLabel *label = new QLabel(&dlg);
     mainLayout->addWidget(label);
-    label->setText (text);
+    label->setText(text);
     QSlider *slider = new QSlider(&dlg);
     mainLayout->addWidget(slider);
     slider->setMinimum(minValue);
@@ -380,13 +388,14 @@ bool Widgets::slider(QWidget *parent, const QString& title, const QString& text,
     Utils::handleXGeometry(&dlg);
     const bool retcode = (dlg.exec() == QDialog::Accepted);
 
-    if (retcode)
+    if (retcode) {
         result = slider->value();
+    }
 
     return retcode;
 }
 
-bool Widgets::calendar( QWidget *parent, const QString &title, const QString &text, QDate & result )
+bool Widgets::calendar(QWidget *parent, const QString &title, const QString &text, QDate &result)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -404,9 +413,9 @@ bool Widgets::calendar( QWidget *parent, const QString &title, const QString &te
 
     const bool retcode = (dlg.exec() == QDialog::Accepted);
 
-    if (retcode)
+    if (retcode) {
         result = dateWidget->date();
+    }
 
     return retcode;
 }
-

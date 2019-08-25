@@ -41,18 +41,17 @@ KListBoxDialog::KListBoxDialog(const QString &text, QWidget *parent)
 
     connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
-
 }
 
-void KListBoxDialog::insertItem(const QString& item)
+void KListBoxDialog::insertItem(const QString &item)
 {
     table->addItem(item);
     table->setCurrentItem(nullptr);
 }
 
-void KListBoxDialog::setCurrentItem(const QString& item)
+void KListBoxDialog::setCurrentItem(const QString &item)
 {
-    for (int i=0; i < table->count(); ++i) {
+    for (int i = 0; i < table->count(); ++i) {
         if (table->item(i)->text() == item) {
             table->setCurrentItem(table->item(i));
             break;

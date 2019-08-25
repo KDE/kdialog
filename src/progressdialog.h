@@ -25,13 +25,14 @@ class ProgressDialog : public QProgressDialog
 {
     Q_OBJECT
 
- public:
-    explicit ProgressDialog(QWidget* parent = Q_NULLPTR,
-                            const QString& caption = QString(),
-                            const QString& text = QString(), int totalSteps = 100);
+public:
+    explicit ProgressDialog(QWidget *parent = Q_NULLPTR, const QString &caption = QString(), const QString &text = QString(), int totalSteps = 100);
 
     void showCancelButton(bool show);
-    bool wasCancelled() const { return wasCanceled(); }
+    bool wasCancelled() const
+    {
+        return wasCanceled();
+    }
 };
 
 #endif // PROGRESSDIALOG_H

@@ -27,7 +27,6 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-
 int main(int argc, char **argv)
 {
     QStringList rawArgs;
@@ -62,8 +61,9 @@ int main(int argc, char **argv)
     const QString title = parser.value(QStringLiteral("title"));
 
     int totalsteps = 100;
-    if (args.count() == 1)
+    if (args.count() == 1) {
         totalsteps = args.at(0).toInt();
+    }
 
     ProgressDialog dlg(nullptr, title, text, totalsteps);
     return dlg.exec() ? 0 : 1;

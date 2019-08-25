@@ -21,15 +21,15 @@
 #include "progressdialogadaptor.h"
 #include <KLocalizedString>
 
-ProgressDialog::ProgressDialog(QWidget* parent, const QString& caption, const QString& text, int totalSteps)
+ProgressDialog::ProgressDialog(QWidget *parent, const QString &caption, const QString &text, int totalSteps)
     : QProgressDialog(parent)
 {
     setWindowTitle(caption);
     setLabelText(text);
-    (void)new ProgressDialogAdaptor( this );
-    QDBusConnection::sessionBus().registerObject( QStringLiteral("/ProgressDialog"), this );
-    setAutoClose( false );
-    setMaximum( totalSteps );
+    (void)new ProgressDialogAdaptor(this);
+    QDBusConnection::sessionBus().registerObject(QStringLiteral("/ProgressDialog"), this);
+    setAutoClose(false);
+    setMaximum(totalSteps);
     Utils::handleXGeometry(this);
 }
 
