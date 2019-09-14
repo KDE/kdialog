@@ -22,6 +22,9 @@ include(ECMSetupVersion)
 # Build dependencies
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS TextWidgets Notifications GuiAddons IconThemes WindowSystem KIO DBusAddons)
 find_package(Qt5DBus CONFIG)
+if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
+   add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
+endif()
 
 find_package(X11)
 if(X11_FOUND)
