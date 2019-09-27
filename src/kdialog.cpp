@@ -36,6 +36,7 @@
 #include <KWindowSystem>
 #include <KIconLoader>
 #include <KLocalizedString>
+#include <kwidgetsaddons_version.h>
 
 // Qt
 #include <QApplication>
@@ -292,6 +293,7 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("warningcontinuecancel"), i18n("Warning message box with continue/cancel buttons"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("warningyesnocancel"), i18n("Warning message box with yes/no/cancel buttons"), QStringLiteral("text")));
 
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("ok-label"), i18n("Use text as OK button label"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("yes-label"), i18n("Use text as Yes button label"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("no-label"), i18n("Use text as No button label"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("cancel-label"), i18n("Use text as Cancel button label"), QStringLiteral("text")));
@@ -381,12 +383,16 @@ int main(int argc, char *argv[])
 
     // button labels
     // Initialize with default labels
+    KGuiItem okButton = KStandardGuiItem::ok();
     KGuiItem yesButton = KStandardGuiItem::yes();
     KGuiItem noButton = KStandardGuiItem::no();
     KGuiItem cancelButton = KStandardGuiItem::cancel();
     KGuiItem continueButton = KStandardGuiItem::cont();
 
     // Customize the asked labels
+    if (parser.isSet(QStringLiteral("ok-label"))) {
+        okButton = configuredYes( parser.value(QStringLiteral("ok-label")) );
+    }
     if (parser.isSet(QStringLiteral("yes-label"))) {
         yesButton = configuredYes(parser.value(QStringLiteral("yes-label")));
     }
@@ -506,6 +512,7 @@ int main(int argc, char *argv[])
         case KMessageBox::Error:
         case KMessageBox::Information:
             buttonBox->addButton(QDialogButtonBox::Ok);
+            KGuiItem::assign(buttonBox->button(QDialogButtonBox::Ok), okButton);
             buttonBox->button(QDialogButtonBox::Ok)->setFocus();
             break;
         }
