@@ -24,6 +24,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS TextWidgets Notification
 find_package(Qt5DBus CONFIG)
 if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
    add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
+   add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x060000)
 endif()
 
 find_package(X11)

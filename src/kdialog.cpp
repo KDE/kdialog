@@ -920,7 +920,7 @@ int main(int argc, char *argv[])
             = (contextStr == QLatin1String("Action")) ? KIconLoader::Action
               : (contextStr == QLatin1String("Application")) ? KIconLoader::Application
               : (contextStr == QLatin1String("Device")) ? KIconLoader::Device
-              : (contextStr == QLatin1String("FileSystem")) ? KIconLoader::FileSystem
+              : (contextStr == QLatin1String("FileSystem")) ? KIconLoader::Place
               : (contextStr == QLatin1String("MimeType")) ? KIconLoader::MimeType
               : (contextStr == QLatin1String("Animation")) ? KIconLoader::Animation
               : (contextStr == QLatin1String("Category")) ? KIconLoader::Category
@@ -932,7 +932,7 @@ int main(int argc, char *argv[])
               : // begin: KDE3 compatibility (useful?)
               (contextStr == QLatin1String("Devices")) ? KIconLoader::Device
               : (contextStr == QLatin1String("MimeTypes")) ? KIconLoader::MimeType
-              : (contextStr == QLatin1String("FileSystems")) ? KIconLoader::FileSystem
+              : (contextStr == QLatin1String("FileSystems")) ? KIconLoader::Place
               : (contextStr == QLatin1String("Applications")) ? KIconLoader::Application
               : (contextStr == QLatin1String("Actions")) ? KIconLoader::Action
               : // end: KDE3 compatibility
