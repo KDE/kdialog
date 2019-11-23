@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KDialog</name>
+  <name xml:lang="ast">KDialog</name>
   <name xml:lang="ca">KDialog</name>
   <name xml:lang="ca-valencia">KDialog</name>
   <name xml:lang="cs">KDialog</name>
@@ -33,6 +34,7 @@
   <name xml:lang="zh-CN">KDialog</name>
   <name xml:lang="zh-TW">KDialog</name>
   <summary>Display dialog boxes from shell scripts</summary>
+  <summary xml:lang="ast">Amuesa caxes de diálogu a partir de scripts de la shell</summary>
   <summary xml:lang="ca">Mostra quadres de diàleg des de scripts del shell</summary>
   <summary xml:lang="ca-valencia">Mostra quadres de diàleg des de scripts del shell</summary>
   <summary xml:lang="de">Anzeige von Dialogen aus Shell-Skripten</summary>
@@ -65,6 +67,7 @@
       The syntax is very much inspired from the "dialog" command
       (which shows text mode dialogs).
     </p>
+    <p xml:lang="ast">kdialog permítete amosar caxes de diálogu a partir de scripts de la shell. La sintaxis inspírase muncho na del comandu «dialog» (qu'amuesa dalgunos diálogos nel mou testu).</p>
     <p xml:lang="ca">El KDialog permet mostrar quadres de diàleg des de scripts del shell. La sintaxi està molt inspirada en l'ordre «dialog» (que mostra diàlegs en mode text).</p>
     <p xml:lang="ca-valencia">El KDialog permet mostrar quadres de diàleg des de scripts del shell. La sintaxi està molt inspirada en l'ordre «dialog» (que mostra diàlegs en mode text).</p>
     <p xml:lang="el">Το kdialog σας επιτρέπει να εμφανίζετε πλαίσια διαλόγου από σενάρια φλοιού. Η σύνταξη έχει επηρεαστεί πολύ από την εντολή "dialog" (η οποία εμφανίζει κείμενο και διαλόγους).</p>
