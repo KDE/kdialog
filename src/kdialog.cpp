@@ -456,7 +456,11 @@ int main(int argc, char *argv[])
         QString dontagain; // QString()
         if (parser.isSet(QStringLiteral("dontagain"))) {
             QString value = parser.value(QStringLiteral("dontagain"));
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
             const QStringList values = value.split(QLatin1Char(':'), QString::SkipEmptyParts);
+#else
+            const QStringList values = value.split(QLatin1Char(':'), Qt::SkipEmptyParts);
+#endif
             if (values.count() == 2) {
                 dontagaincfg.reset(new KConfig(values[0]));
                 KMessageBox::setDontShowAgainConfig(dontagaincfg.get());
