@@ -41,6 +41,7 @@
 // Qt
 #include <QApplication>
 #include <QDate>
+#include <QDateTime>
 #include <QCheckBox>
 #include <QClipboard>
 #include <QColorDialog>
@@ -327,7 +328,7 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("format"), i18n("Allow --getcolor to specify output format"), QStringLiteral("text")));
     // TODO gauge stuff, reading values from stdin
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("title"), i18n("Dialog title"), QStringLiteral("text")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("default"), i18n("Default entry to use for combobox, menu and color"), QStringLiteral("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("default"), i18n("Default entry to use for combobox, menu, color, and calendar"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("multiple"), i18n("Allows the --getopenurl and --getopenfilename options to return multiple files")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("separate-output"), i18n("Return list items on separate lines (for checklist option and file open with --multiple)")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("print-winid"), i18n("Outputs the winId of each dialog")));
@@ -1069,6 +1070,8 @@ int main(int argc, char *argv[])
         }
         return returnCode;
     }
+
+    // --calendar text [--default default] [--dateformat format]
     if (parser.isSet(QStringLiteral("calendar"))) {
         // The default format is weird and non-standard. Sadly, it's too late to change this now.
         QString dateFormat = QStringLiteral("ddd MMM d yyyy");
@@ -1076,10 +1079,16 @@ int main(int argc, char *argv[])
             dateFormat = parser.value(QStringLiteral("dateformat"));
         }
 
+        QDate defaultDate = QDateTime::currentDateTime().date(); // today
+        if (parser.isSet(QStringLiteral("default"))) {
+            defaultEntry = parser.value(QStringLiteral("default"));
+            defaultDate = QDate::fromString(defaultEntry, dateFormat);
+        }
+
         const QString text = Utils::parseString(parser.value(QStringLiteral("calendar")));
         QDate result;
 
-        const bool returnCode = Widgets::calendar(nullptr, title, text, result);
+        const bool returnCode = Widgets::calendar(nullptr, title, text, result, defaultDate);
         if (returnCode) {
             cout << result.toString(dateFormat).toLocal8Bit().data() << endl;
         }

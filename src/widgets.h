@@ -37,7 +37,7 @@ bool checkList(QWidget *parent, const QString &title, const QString &text, const
 bool radioBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, QString &result);
 bool comboBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, const QString &defaultEntry, QString &result);
 bool slider(QWidget *parent, const QString &title, const QString &test, int minValue, int maxValue, int step, int &result);
-bool calendar(QWidget *parent, const QString &title, const QString &text, QDate &result);
+bool calendar(QWidget *parent, const QString &title, const QString &text, QDate &result, const QDate &defaultEntry);
 }
 
 #endif

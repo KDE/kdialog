@@ -395,7 +395,7 @@ bool Widgets::slider(QWidget *parent, const QString &title, const QString &text,
     return retcode;
 }
 
-bool Widgets::calendar(QWidget *parent, const QString &title, const QString &text, QDate &result)
+bool Widgets::calendar(QWidget *parent, const QString &title, const QString &text, QDate &result, const QDate& defaultEntry)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -405,7 +405,7 @@ bool Widgets::calendar(QWidget *parent, const QString &title, const QString &tex
     QLabel *label = new QLabel(&dlg);
     mainLayout->addWidget(label);
     label->setText(text);
-    KDatePicker *dateWidget = new KDatePicker(&dlg);
+    KDatePicker *dateWidget = new KDatePicker(defaultEntry, &dlg);
     mainLayout->addWidget(dateWidget);
     dateWidget->setFocus();
     addButtonBox(dlg);
