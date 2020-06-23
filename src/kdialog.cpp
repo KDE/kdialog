@@ -334,6 +334,7 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("dontagain"), i18n("Config file and option name for saving the \"do-not-show/ask-again\" state"),
     QStringLiteral("file:entry")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("slider"), i18n("Slider dialog box, returns selected value"), QStringLiteral("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("dateformat"), i18n("Date format for calendar result and/or default value (Qt-style); defaults to 'ddd MMM d yyyy'"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("calendar"), i18n("Calendar dialog box, returns selected date"), QStringLiteral("text")));
     /* kdialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
      * For backwards compatibility, we silently map --embed to --attach */
@@ -1069,12 +1070,18 @@ int main(int argc, char *argv[])
         return returnCode;
     }
     if (parser.isSet(QStringLiteral("calendar"))) {
+        // The default format is weird and non-standard. Sadly, it's too late to change this now.
+        QString dateFormat = QStringLiteral("ddd MMM d yyyy");
+        if (parser.isSet(QStringLiteral("dateformat"))) {
+            dateFormat = parser.value(QStringLiteral("dateformat"));
+        }
+
         const QString text = Utils::parseString(parser.value(QStringLiteral("calendar")));
         QDate result;
 
         const bool returnCode = Widgets::calendar(nullptr, title, text, result);
         if (returnCode) {
-            cout << result.toString().toLocal8Bit().data() << endl;
+            cout << result.toString(dateFormat).toLocal8Bit().data() << endl;
         }
         return returnCode;
     }
