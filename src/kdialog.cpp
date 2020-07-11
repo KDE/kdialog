@@ -522,7 +522,15 @@ int main(int argc, char *argv[])
             buttonBox->button(QDialogButtonBox::Ok)->setFocus();
             break;
         }
-        (void)KMessageBox::createKMessageBox(&dialog, buttonBox, icon, text, {}, dontagain, nullptr, options, details);
+        (void)KMessageBox::createKMessageBox(&dialog,			// dialog
+                                             buttonBox,			// buttons
+                                             icon,			// icon
+                                             text,			// text
+                                             {},			// strlist
+                                             i18n("Do not ask again"),	// ask
+                                             nullptr,			// checkboxReturn
+                                             options,			// options
+                                             details);			// details
         Utils::handleXGeometry(&dialog);
         const auto ret = QDialogButtonBox::StandardButton(dialog.exec());
         if (!dontagain.isEmpty()) {
