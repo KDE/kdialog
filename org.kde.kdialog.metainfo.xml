@@ -29,6 +29,7 @@
   <name xml:lang="pt-BR">KDialog</name>
   <name xml:lang="ru">KDialog</name>
   <name xml:lang="sk">KDialog</name>
+  <name xml:lang="sl">KDialog</name>
   <name xml:lang="sv">Kdialog</name>
   <name xml:lang="uk">KDialog</name>
   <name xml:lang="x-test">xxKDialogxx</name>
@@ -58,6 +59,7 @@
   <summary xml:lang="pt-BR">Mostra caixas de diálogo a partir scripts do shell</summary>
   <summary xml:lang="ru">KDialog служит для показа диалоговых окон из сценариев оболочки</summary>
   <summary xml:lang="sk">Zobraziť dialógové okná zo shellových príkazov</summary>
+  <summary xml:lang="sl">Prikažite pogovorna okna iz shell skripta</summary>
   <summary xml:lang="sv">Visa dialogrutor från skalskript</summary>
   <summary xml:lang="uk">Відкриття діалогових вікон з скриптів командної оболонки</summary>
   <summary xml:lang="x-test">xxDisplay dialog boxes from shell scriptsxx</summary>
@@ -90,6 +92,7 @@
     <p xml:lang="pt-BR">O KDialog permite-lhe mostrar caixas de diálogo a partir de scripts do shell. A sintaxe é muito semelhante à do comando "dialog" (que mostra caixa de diálogos em modo de texto).</p>
     <p xml:lang="ru">KDialog служит для показа диалоговых окон из сценариев оболочки. Синтаксис основан на синтаксисе программы «dialog», предназначенной для показа диалоговых окон в текстовом режиме.</p>
     <p xml:lang="sk">kdialog vám umožní zobraziť dialógové okná zo shellových skriptov. Syntax je inšpirovaná príkazom "dialog" (ktorý zobrazí textové dialógy)</p>
+    <p xml:lang="sl">kdialog omogoča prikazovanje pogovornih oken iz shell skripta. Skladnja je navdihnjena iz ukaza "dialog" (ki prikazuje besedilni načindialogov).</p>
     <p xml:lang="sv">Kdialog låter dig visa dialogrutor från skalskript. Syntaxen är i stor utsträckning inspirerad av kommandot "dialog" (som visar dialogrutor i textläge).</p>
     <p xml:lang="uk">За допомогою kdialog можна відкривати діалогові вікна зі скриптів командної оболонки. Синтаксис команд є дуже схожим на синтаксис команд програми «dialog» (яка показу діалогові вікна у текстовому режимі).</p>
     <p xml:lang="x-test">xxkdialog allows you to display dialog boxes from shell scripts. The syntax is very much inspired from the "dialog" command (which shows text mode dialogs).xx</p>
