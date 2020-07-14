@@ -20,7 +20,7 @@
 #ifndef KLISTBOXDIALOG_H
 #define KLISTBOXDIALOG_H
 
-#include <qdialog.h>
+#include <QDialog>
 
 #include <QListWidget>
 

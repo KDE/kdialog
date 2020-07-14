@@ -19,7 +19,7 @@
 #ifndef PROGRESSDIALOG_H
 #define PROGRESSDIALOG_H
 
-#include <qprogressdialog.h>
+#include <QProgressDialog>
 
 class ProgressDialog : public QProgressDialog
 {
