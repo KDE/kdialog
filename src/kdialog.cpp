@@ -527,7 +527,7 @@ int main(int argc, char *argv[])
                                              icon,			// icon
                                              text,			// text
                                              {},			// strlist
-                                             i18n("Do not ask again"),	// ask
+                                             dontagain.isEmpty() ? QString() : i18n("Do not ask again"), // ask
                                              nullptr,			// checkboxReturn
                                              options,			// options
                                              details);			// details
