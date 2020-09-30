@@ -4,6 +4,7 @@
 //  Copyright (C) 2005 Brad Hards <bradh@frogmouth.net>
 //  Copyright (C) 2008 by Dmitry Suzdalev <dimsuz@gmail.com>
 //  Copyright (C) 2011 Kai Uwe Broulik <kde@privat.broulik.de>
+//  Copyright (C) 2020 Tristan Miller <psychonaut@nothingisreal.com>
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -562,7 +563,7 @@ int main(int argc, char *argv[])
             init = args.at(0);
         }
 
-        const bool retcode = Widgets::inputBox(nullptr, title, parser.value(QStringLiteral("inputbox")), init, result);
+        const bool retcode = Widgets::inputBox(nullptr, title, Utils::parseString(parser.value(QStringLiteral("inputbox"))), init, result);
         cout << result.toLocal8Bit().data() << endl;
         return retcode ? 0 : 1;
     }
@@ -570,7 +571,8 @@ int main(int argc, char *argv[])
     // --password text
     if (parser.isSet(QStringLiteral("password"))) {
         QString result;
-        const bool retcode = Widgets::passwordBox(nullptr, title, parser.value(QStringLiteral("password")), result);
+        // Note that KPasswordDialog (as of 5.73.0) word-wraps the prompt, so newlines will be converted to spaces
+        const bool retcode = Widgets::passwordBox(nullptr, title, Utils::parseString(parser.value(QStringLiteral("password"))), result);
         cout << qPrintable(result) << endl;
         return retcode ? 0 : 1;
     }
@@ -578,7 +580,7 @@ int main(int argc, char *argv[])
     // --newpassword text
     if (parser.isSet(QStringLiteral("newpassword"))) {
         QString result;
-        const bool retcode = Widgets::newPasswordBox(nullptr, title, parser.value(QStringLiteral("newpassword")), result);
+        const bool retcode = Widgets::newPasswordBox(nullptr, title, Utils::parseString(parser.value(QStringLiteral("newpassword"))), result);
         cout << qPrintable(result) << endl;
         return retcode ? 0 : 1;
     }
@@ -678,7 +680,7 @@ int main(int argc, char *argv[])
             text = args.at(0);
         }
 
-        const bool retcode = Widgets::imgInputBox(nullptr, title, parser.value(QStringLiteral("imginputbox")), text, result);
+        const bool retcode = Widgets::imgInputBox(nullptr, title, parser.value(QStringLiteral("imginputbox")), Utils::parseString(text), result);
         cout << result.toLocal8Bit().data() << endl;
         return retcode ? 0 : 1;
     }
