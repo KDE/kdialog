@@ -726,7 +726,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    // --menu text [tag item] [tag item] ...
+    // --menu text tag item [tag item] ...
     if (parser.isSet(QStringLiteral("menu"))) {
         QStringList list;
         if (args.count() >= 2) {
@@ -744,11 +744,11 @@ int main(int argc, char *argv[])
             }
             return retcode ? 0 : 1;
         }
-        cerr << qPrintable(i18n("Syntax: --menu text [tag item] [tag item] ...")) << endl;
+        cerr << qPrintable(i18n("Syntax: --menu text tag item [tag item] ...")) << endl;
         return -1;
     }
 
-    // --checklist text [tag item status] [tag item status] ...
+    // --checklist text tag item status [tag item status] ...
     if (parser.isSet(QStringLiteral("checklist"))) {
         QStringList list;
         if (args.count() >= 3) {
@@ -768,11 +768,11 @@ int main(int argc, char *argv[])
             }
             return retcode ? 0 : 1;
         }
-        cerr << qPrintable(i18n("Syntax: --checklist text [tag item on/off] [tag item on/off]")) << endl;
+        cerr << qPrintable(i18n("Syntax: --checklist text tag item on/off [tag item on/off] ...")) << endl;
         return -1;
     }
 
-    // --radiolist text [tag item status] ...
+    // --radiolist text tag item status [tag item status] ...
     if (parser.isSet(QStringLiteral("radiolist"))) {
         QStringList list;
         if (args.count() >= 3) {
@@ -786,7 +786,7 @@ int main(int argc, char *argv[])
             cout << result.toLocal8Bit().data() << endl;
             return retcode ? 0 : 1;
         }
-        cerr << qPrintable(i18n("Syntax: --radiolist text [tag item on/off] ...")) << endl;
+        cerr << qPrintable(i18n("Syntax: --radiolist text tag item on/off [tag item on/off] ...")) << endl;
         return -1;
     }
 
