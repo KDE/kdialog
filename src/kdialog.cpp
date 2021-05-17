@@ -306,8 +306,8 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("detailederror"), i18n("'Error' message box with expandable Details field"), QStringLiteral("text> <details")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("msgbox"), i18n("Message Box dialog"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("inputbox"), i18n("Input Box dialog"), QStringLiteral("text> <init")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("imgbox"), i18n("Image Box dialog"), QLatin1String("file")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("imginputbox"), i18n("Image Box Input dialog"), QLatin1String("file> <text")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("imgbox"), i18n("Image Box dialog"), QStringLiteral("file")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("imginputbox"), i18n("Image Box Input dialog"), QStringLiteral("file> <text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("password"), i18n("Password dialog"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("newpassword"), i18n("New Password dialog"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("textbox"), i18n("Text Box dialog"), QStringLiteral("file")));
@@ -631,7 +631,7 @@ int main(int argc, char *argv[])
                                                       timeout);
         QTimer *timer = new QTimer();
         QObject::connect(timer, SIGNAL(timeout()), qApp, SLOT(quit()));
-        QObject::connect(popup, SIGNAL(clicked()), qApp, SLOT(quit()));
+        QObject::connect(popup, QOverload<>::of(&KPassivePopup::clicked), qApp, &QApplication::quit);
         timer->setSingleShot(true);
         timer->start(timeout);
 

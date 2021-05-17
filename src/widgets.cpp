@@ -395,7 +395,7 @@ bool Widgets::slider(QWidget *parent, const QString &title, const QString &text,
     return retcode;
 }
 
-bool Widgets::calendar(QWidget *parent, const QString &title, const QString &text, QDate &result, const QDate& defaultEntry)
+bool Widgets::calendar(QWidget *parent, const QString &title, const QString &text, QDate &result, QDate defaultEntry)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);

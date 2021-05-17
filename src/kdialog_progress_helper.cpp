@@ -30,6 +30,7 @@
 int main(int argc, char **argv)
 {
     QStringList rawArgs;
+    rawArgs.reserve(argc);
     for (int i = 0; i < argc; ++i) {
         rawArgs << QString::fromLocal8Bit(argv[i]);
     }
