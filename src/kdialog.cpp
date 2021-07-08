@@ -488,6 +488,11 @@ int main(int argc, char *argv[])
             buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), yesButton);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), noButton);
+            if (type == KMessageBox::WarningYesNo) {
+                buttonBox->button(QDialogButtonBox::No)->setDefault(true);
+            } else {
+                buttonBox->button(QDialogButtonBox::Yes)->setDefault(true);
+            }
             break;
         case KMessageBox::QuestionYesNoCancel:
         case KMessageBox::WarningYesNoCancel:
@@ -495,11 +500,13 @@ int main(int argc, char *argv[])
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), yesButton);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), noButton);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::Cancel), cancelButton);
+            buttonBox->button(QDialogButtonBox::Cancel)->setDefault(true);
             break;
         case KMessageBox::WarningContinueCancel:
             buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), continueButton);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), cancelButton);
+            buttonBox->button(QDialogButtonBox::No)->setDefault(true);
             break;
         case KMessageBox::Sorry:
         case KMessageBox::Error:
@@ -507,6 +514,7 @@ int main(int argc, char *argv[])
             buttonBox->addButton(QDialogButtonBox::Ok);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::Ok), okButton);
             buttonBox->button(QDialogButtonBox::Ok)->setFocus();
+            buttonBox->button(QDialogButtonBox::Ok)->setDefault(true);
             break;
         }
         (void)KMessageBox::createKMessageBox(&dialog,			// dialog
