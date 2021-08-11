@@ -11,7 +11,7 @@ KListBoxDialog::KListBoxDialog(const QString &text, QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
-    QVBoxLayout *vLayout = new QVBoxLayout(this);
+    auto *vLayout = new QVBoxLayout(this);
 
     label = new QLabel(text, this);
     vLayout->addWidget(label);
@@ -21,7 +21,7 @@ KListBoxDialog::KListBoxDialog(const QString &text, QWidget *parent)
     vLayout->addWidget(table);
     table->setFocus();
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    auto *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
     vLayout->addWidget(buttonBox);
 
     connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);

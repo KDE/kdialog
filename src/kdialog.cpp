@@ -87,7 +87,7 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
 {
     if (e->type() == QEvent::Show && o->isWidgetType()
         && o->inherits("QDialog")) {
-        QWidget *w = static_cast<QWidget *>(o);
+        auto *w = static_cast<QWidget *>(o);
         if (print) {
             cout << "winId: " << w->winId() << endl;
         }
@@ -396,7 +396,7 @@ int main(int argc, char *argv[])
     }
 
     // --yesno and other message boxes
-    KMessageBox::DialogType type = static_cast<KMessageBox::DialogType>(0);
+    auto type = static_cast<KMessageBox::DialogType>(0);
     QMessageBox::Icon icon = QMessageBox::Question;
     QByteArray option;
     if (parser.isSet(QStringLiteral("yesno"))) {
@@ -479,7 +479,7 @@ int main(int argc, char *argv[])
 
         QDialog dialog;
         dialog.setWindowTitle(title);
-        QDialogButtonBox *buttonBox = new QDialogButtonBox(&dialog);
+        auto *buttonBox = new QDialogButtonBox(&dialog);
         KMessageBox::Options options = KMessageBox::NoExec;
 
         switch (type) {
@@ -523,7 +523,7 @@ int main(int argc, char *argv[])
         if (!dontagain.isEmpty()) {
             // We use NoExec in order to call handleXGeometry before exec
             // But that means we need to query the state of the dontShowAgain checkbox ourselves too...
-            QCheckBox *cb = dialog.findChild<QCheckBox *>();
+            auto *cb = dialog.findChild<QCheckBox *>();
             Q_ASSERT(cb);
             if (cb && cb->isChecked()) {
                 if (type == KMessageBox::WarningContinueCancel) {
@@ -615,7 +615,7 @@ int main(int argc, char *argv[])
                                                       passiveicon,
                                                       (QWidget *)nullptr, // parent
                                                       timeout);
-        QTimer *timer = new QTimer();
+        auto *timer = new QTimer();
         QObject::connect(timer, SIGNAL(timeout()), qApp, SLOT(quit()));
         QObject::connect(popup, QOverload<>::of(&KPassivePopup::clicked), qApp, &QApplication::quit);
         timer->setSingleShot(true);
