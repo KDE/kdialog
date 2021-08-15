@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.16)
 
 # KDE Application Version, managed by release script
 set(RELEASE_SERVICE_VERSION_MAJOR "21")
@@ -7,27 +7,38 @@ set(RELEASE_SERVICE_VERSION_MICRO "70")
 set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}.${RELEASE_SERVICE_VERSION_MICRO}")
 
 project(KDialog VERSION ${RELEASE_SERVICE_VERSION})
-set(KF5_MIN_VERSION "5.62.0")
+
+set(QT_MIN_VERSION "5.15.0")
+set(KF5_MIN_VERSION "5.85.0")
 
 # ECM setup
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-include(FeatureSummary)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
-include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+include(KDECompilerSettings NO_POLICY_SCOPE)
+
 include(ECMSetupVersion)
+include(FeatureSummary)
 
 # Build dependencies
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS TextWidgets Notifications GuiAddons IconThemes WindowSystem KIO DBusAddons)
-find_package(Qt5DBus CONFIG)
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS DBus)
 
 
 find_package(X11)
 if(X11_FOUND)
    set(HAVE_X11 1)
 endif()
+
+add_definitions(
+    -DQT_DISABLE_DEPRECATED_BEFORE=0x050F00
+    -DQT_DEPRECATED_WARNINGS_SINCE=0x060000
+    -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055500
+    -DKNOTIFICATIONS_DISABLE_DEPRECATED_BEFORE_AND_AT=0x054E00 # KPassivePopup
+    -DKF_DEPRECATED_WARNINGS_SINCE=0x060000
+)
 
 add_subdirectory(src)
 install(FILES org.kde.kdialog.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
