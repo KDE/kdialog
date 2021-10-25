@@ -18,7 +18,7 @@ class KListBoxDialog : public QDialog
 public:
 
     explicit KListBoxDialog(const QString &text, QWidget *parent = nullptr);
-    ~KListBoxDialog()
+    ~KListBoxDialog() override
     {
     }
 
