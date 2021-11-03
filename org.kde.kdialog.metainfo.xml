@@ -18,6 +18,7 @@
   <name xml:lang="fi">KDialog</name>
   <name xml:lang="fr">KDialog</name>
   <name xml:lang="gl">KDialog</name>
+  <name xml:lang="hu">KDialog</name>
   <name xml:lang="ia">KDialog</name>
   <name xml:lang="id">KDialog</name>
   <name xml:lang="it">KDialog</name>
@@ -50,6 +51,7 @@
   <summary xml:lang="fi">Näytä komentotulkkiskriptistä kyselyikkunoita</summary>
   <summary xml:lang="fr">Affiche des boîtes de dialogue depuis un script shell</summary>
   <summary xml:lang="gl">Mostrar cadros de diálogo a partir de scripts de intérprete de ordes</summary>
+  <summary xml:lang="hu">Párbeszédablakok megjelenítése parancsfájlokból</summary>
   <summary xml:lang="ia">Monstra quadratos de dialogo ex scripts de shell</summary>
   <summary xml:lang="id">Displai kotak dialog dari skrip shell</summary>
   <summary xml:lang="it">Visualizza finestre di dialogo da script di shell</summary>
@@ -87,6 +89,7 @@
     <p xml:lang="fi">KDialogilla voi näyttää komentotulkkiskriptistä kyselyikkunoita. Syntaksi on saanut vaikutteita dialog-komennosta (joka näyttää tekstitilan kyselyikkunoita).</p>
     <p xml:lang="fr">kdialog vous permet d'afficher des boîtes de dialogue depuis des scripts shell. Sa syntaxe s'inspire de celle de la commande « dialog » (qui affiche des boîtes de dialogue en mode texte).</p>
     <p xml:lang="gl">kdialog permítelle mostrar cadros de diálogo a partir de scripts de intérprete de ordes. A sintaxe está inspirada en gran medida na orde «dialog» (que mostra diálogos en modo texto).</p>
+    <p xml:lang="hu">A kdialog lehetővé teszi párbeszédablakok megjelenítését parancsfájlokból. A szintaxisára nagy hatással volt a „dialog” parancs (amely szöveges párbeszédablakokat jelenít meg).</p>
     <p xml:lang="ia">kdialog te permitte monstrar quadros de dialogo ex scripts de shell. Le synthaxe es multe inspirate al commando  "dialog"  (que monstra dialogos de modo texto).</p>
     <p xml:lang="id">kdialog memungkinkan kamu untuk mendisplaikan kotak dialog dari skrip shell. Sintaksnya sangat terinspirasi dari perintah "dialog" (yang menampilkan dialog mode teks).</p>
     <p xml:lang="it">kdialog ti permette di visualizzare delle finestre di dialogo da script di shell. La sintassi prende decisamente ispirazione dal comando «dialog» (che mostra finestre in modalità testuale).</p>
