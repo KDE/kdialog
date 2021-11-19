@@ -9,9 +9,12 @@ add_executable(kdialog)
 
 target_sources(kdialog PRIVATE
     kdialog.cpp
-    widgets.cpp
-    utils.cpp
     klistboxdialog.cpp
+    klistboxdialog.h
+    widgets.cpp
+    widgets.h
+    utils.cpp
+    utils.h
 )
 
 target_link_libraries(kdialog
@@ -46,7 +49,9 @@ target_sources(kdialog_progress_helper PRIVATE
     ${progressdialog_dbus_adaptor_SRCS}
     kdialog_progress_helper.cpp
     utils.cpp
+    utils.h
     progressdialog.cpp
+    progressdialog.h
 )
 
 target_link_libraries(kdialog_progress_helper
