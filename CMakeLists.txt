@@ -26,10 +26,10 @@ include(FeatureSummary)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS TextWidgets Notifications GuiAddons IconThemes WindowSystem KIO DBusAddons)
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS DBus)
 
-
-find_package(X11)
-if(X11_FOUND)
-   set(HAVE_X11 1)
+option(WITHOUT_X11 "Build without X11 integration (skips finding X11)" OFF)
+if (NOT WITHOUT_X11)
+    find_package(X11)
+    set(HAVE_X11 ${X11_FOUND})
 endif()
 
 add_definitions(
