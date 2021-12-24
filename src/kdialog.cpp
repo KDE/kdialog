@@ -884,7 +884,6 @@ int main(int argc, char *argv[])
         const QUrl startUrl = QUrl::fromUserInput(startDir);
 
         QFileDialog dlg;
-        dlg.setFileMode(QFileDialog::DirectoryOnly);
         dlg.setOption(QFileDialog::ShowDirsOnly, true);
         dlg.setDirectoryUrl(initialDirectory(startUrl));
         dlg.selectFile(initialSelection(startUrl));
