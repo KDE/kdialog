@@ -968,7 +968,7 @@ int main(int argc, char *argv[])
             arguments << args.at(0);
         }
         qint64 pid = 0;
-        if (process.startDetached(QStringLiteral("kdialog_progress_helper"), arguments, QString(), &pid)) {
+        if (process.startDetached(QStandardPaths::findExecutable(QStringLiteral("kdialog_progress_helper")), arguments, QString(), &pid)) {
             QDBusConnection dbus = QDBusConnection::sessionBus();
             const QString serviceName = QStringLiteral("org.kde.kdialog-") + QString::number(pid);
             QDBusServiceWatcher watcher(serviceName, dbus, QDBusServiceWatcher::WatchForRegistration);
