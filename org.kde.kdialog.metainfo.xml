@@ -113,7 +113,7 @@
     <p xml:lang="zh-CN">kdialog 允许您从 Shell 脚本中显示一个对话框。语法深受 dialog 命令影响 (显示文本模式的对话框)。</p>
     <p xml:lang="zh-TW">kdialog 讓你能使用 Shell 指令稿顯示對話框。語法不少啟發自「dialog」（顯示文字模式的對話框）指令。</p>
   </description>
-  <icon type="stock">system-run</icon>
+  <icon type="stock">dialog-question</icon>
   <url type="homepage">https://www.kde.org</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kdialog</url>
   <url type="help">https://techbase.kde.org/Development/Tutorials/Shell_Scripting_with_KDE_Dialogs</url>
@@ -130,7 +130,6 @@
   <categories>
     <category>Utility</category>
   </categories>
-  <icon type="stock">utilities-terminal</icon>
   <releases>
     <release version="21.12.3" date="2022-03-03"/>
     <release version="21.12.2" date="2022-02-03"/>
