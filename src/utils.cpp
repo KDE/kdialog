@@ -2,9 +2,12 @@
 //  SPDX-License-Identifier: GPL-2.0-or-later
 
 #include "utils.h"
+
 #include <QApplication>
 #include <QDebug>
-#include <QDesktopWidget>
+#include <QScreen>
+#include <QWidget>
+
 #include <config-kdialog.h>
 
 #if defined HAVE_X11 && !defined K_WS_QTONLY
@@ -23,14 +26,17 @@ void Utils::handleXGeometry(QWidget *dlg)
 {
 #ifdef HAVE_X11
     if (!xGeometry.isEmpty()) {
-        int x, y;
-        int w, h;
-        int m = XParseGeometry(xGeometry.toLatin1().constData(), &x, &y, (unsigned int *)&w, (unsigned int *)&h);
+        const QRect screenGeom = dlg->screen()->availableGeometry();
+        int x;
+        int y;
+        int w;
+        int h;
+        const int m = XParseGeometry(xGeometry.toLatin1().constData(), &x, &y, (unsigned int *)&w, (unsigned int *)&h);
         if ((m & XNegative)) {
-            x = QApplication::desktop()->width() + x - w;
+            x = screenGeom.width() + x - w;
         }
         if ((m & YNegative)) {
-            y = QApplication::desktop()->height() + y - h;
+            y = screenGeom.height() + y - h;
         }
         dlg->setGeometry(x, y, w, h);
         qDebug() << "x: " << x << "  y: " << y << "  w: " << w << "  h: " << h;
