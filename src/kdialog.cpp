@@ -25,6 +25,11 @@
 #include <KLocalizedString>
 #include <kwidgetsaddons_version.h>
 
+#include <knotifications_export.h>
+#if KNOTIFICATIONS_BUILD_DEPRECATED_SINCE(5, 79)
+#include <QDesktopWidget>
+#endif
+
 // Qt
 #include <QApplication>
 #include <QDate>
@@ -34,7 +39,6 @@
 #include <QColorDialog>
 #include <QDBusServiceWatcher>
 #include <QDebug>
-#include <QDesktopWidget>
 #include <QFileDialog>
 #include <QUrl>
 #include <QProcess>
@@ -584,10 +588,15 @@ int main(int argc, char *argv[])
         }
 
         // try to use more stylish notifications
-        if (sendVisualNotification(Utils::parseString(parser.value(QStringLiteral("passivepopup"))), title, icon, timeout)) {
+        const bool result = sendVisualNotification(Utils::parseString(parser.value(QStringLiteral("passivepopup"))), title, icon, timeout);
+        if (result) {
             return 0;
         }
 
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
+QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
+#if KNOTIFICATIONS_BUILD_DEPRECATED_SINCE(5, 79)
         // ...did not work, use KPassivePopup as fallback
 
         // parse timeout time again, so it does not auto-close the fallback (timer cannot handle -1 time)
@@ -628,6 +637,8 @@ int main(int argc, char *argv[])
             popup->setAnchor(QPoint(x, y));
         }
 #endif
+#endif // KNOTIFICATIONS_BUILD_DEPRECATED
+QT_WARNING_POP
         qApp->exec();
         return 0;
     }
