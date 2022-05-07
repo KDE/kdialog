@@ -26,9 +26,7 @@ target_link_libraries(kdialog
     KF5::WindowSystem
 )
 
-if(Qt5DBus_FOUND)
-    target_link_libraries(kdialog Qt5::DBus)
-endif()
+target_link_libraries(kdialog Qt::DBus)
 
 if (HAVE_X11)
   target_link_libraries(kdialog ${X11_X11_LIB})

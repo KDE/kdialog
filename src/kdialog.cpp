@@ -49,10 +49,8 @@
 #include <X11/Xutil.h>
 #endif
 
-#ifdef Qt5DBus_FOUND
 #include <QDBusConnection>
 #include <QDBusConnectionInterface>
-#endif
 
 #include <unistd.h>
 #include <QCommandLineParser>
@@ -107,7 +105,6 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
  */
 static bool sendVisualNotification(const QString &text, const QString &title, const QString &icon, int timeout)
 {
-#ifdef Qt5DBus_FOUND
     const QString dbusServiceName = QStringLiteral("org.freedesktop.Notifications");
     const QString dbusInterfaceName = QStringLiteral("org.freedesktop.Notifications");
     const QString dbusPath = QStringLiteral("/org/freedesktop/Notifications");
@@ -154,7 +151,7 @@ static bool sendVisualNotification(const QString &text, const QString &title, co
     } else {
         //kDebug() << "Unexpected reply type";
     }
-#endif
+
     return false;
 }
 
