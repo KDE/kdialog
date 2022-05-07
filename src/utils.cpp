@@ -49,8 +49,7 @@ QString Utils::parseString(const QString &str)
     QString ret;
     ret.reserve(str.size());
     bool escaped = false;
-    for (int i = 0; i < str.size(); i++) {
-        QChar c = str.at(i);
+    for (const QChar c : str) {
         if (escaped) {
             escaped = false;
             if (c == QLatin1Char('\\')) {

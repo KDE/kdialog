@@ -580,15 +580,15 @@ int main(int argc, char *argv[])
         }
 
         // Use --icon parameter for passivepopup as well
-        QString icon;
+        QString iconArg;
         if (parser.isSet(QStringLiteral("icon"))) {
-            icon = parser.value(QStringLiteral("icon"));
+            iconArg = parser.value(QStringLiteral("icon"));
         } else {
-            icon = QStringLiteral("dialog-information");      // Use generic (i)-icon if none specified
+            iconArg = QStringLiteral("dialog-information");      // Use generic (i)-icon if none specified
         }
 
         // try to use more stylish notifications
-        const bool result = sendVisualNotification(Utils::parseString(parser.value(QStringLiteral("passivepopup"))), title, icon, timeout);
+        const bool result = sendVisualNotification(Utils::parseString(parser.value(QStringLiteral("passivepopup"))), title, iconArg, timeout);
         if (result) {
             return 0;
         }
@@ -609,7 +609,7 @@ QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
 
         QPixmap passiveicon;
         if (parser.isSet(QStringLiteral("icon"))) {  // Only show icon if explicitly requested
-            passiveicon = KIconLoader::global()->loadIcon(icon, KIconLoader::Dialog);
+            passiveicon = KIconLoader::global()->loadIcon(iconArg, KIconLoader::Dialog);
         }
         KPassivePopup *popup = KPassivePopup::message(KPassivePopup::Boxed,  // style
                                                       title,
@@ -943,7 +943,7 @@ QT_WARNING_POP
               : // end: KDE3 compatibility
                 /* else */ KIconLoader::Any;
 
-        KIconDialog dlg((QWidget *)Q_NULLPTR);
+        KIconDialog dlg;
         dlg.setup(group, context);
         dlg.setIconSize(KIconLoader::SizeHuge);
 
