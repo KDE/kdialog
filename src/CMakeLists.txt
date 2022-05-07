@@ -39,7 +39,7 @@ install(FILES org.kde.kdialog.ProgressDialog.xml DESTINATION ${KDE_INSTALL_DBUSI
 
 add_executable(kdialog_progress_helper)
 
-qt5_add_dbus_adaptor(progressdialog_dbus_adaptor_SRCS
+qt_add_dbus_adaptor(progressdialog_dbus_adaptor_SRCS
     org.kde.kdialog.ProgressDialog.xml progressdialog.h ProgressDialog
 )
 
@@ -55,7 +55,7 @@ target_sources(kdialog_progress_helper PRIVATE
 target_link_libraries(kdialog_progress_helper
     KF5::DBusAddons
     KF5::I18n
-    Qt5::Widgets
+    Qt::Widgets
 )
 
 if (HAVE_X11)
