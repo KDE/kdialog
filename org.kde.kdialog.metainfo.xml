@@ -42,7 +42,7 @@
   <summary>Display dialog boxes from shell scripts</summary>
   <summary xml:lang="ast">Amuesa caxes de diálogu a partir de scripts de la shell</summary>
   <summary xml:lang="ca">Mostra quadres de diàleg des de scripts de l'intèrpret d'ordres</summary>
-  <summary xml:lang="ca-valencia">Mostra quadres de diàleg des de scripts de l'intèrpret d'ordres</summary>
+  <summary xml:lang="ca-valencia">Mostra diàlegs des de scripts de l'intèrpret d'ordres</summary>
   <summary xml:lang="de">Anzeige von Dialogen aus Shell-Skripten</summary>
   <summary xml:lang="el">Εμφανίζει πλαίσια διαλόγου από σενάρια φλοιού</summary>
   <summary xml:lang="en-GB">Display dialogue boxes from shell scripts</summary>
@@ -81,7 +81,7 @@
     </p>
     <p xml:lang="ast">kdialog permítete amosar caxes de diálogu a partir de scripts de la shell. La sintaxis inspírase muncho na del comandu «dialog» (qu'amuesa dalgunos diálogos nel mou testu).</p>
     <p xml:lang="ca">El KDialog permet mostrar quadres de diàleg des de scripts de l'intèrpret d'ordres. La sintaxi està molt inspirada en l'ordre «dialog» (la qual mostra diàlegs en mode text).</p>
-    <p xml:lang="ca-valencia">KDialog permet mostrar quadres de diàleg des de scripts de l'intèrpret d'ordres. La sintaxi està molt inspirada en l'ordre «dialog» (la qual mostra diàlegs en mode text).</p>
+    <p xml:lang="ca-valencia">KDialog permet mostrar diàlegs des de scripts de l'intèrpret d'ordres. La sintaxi està molt inspirada en l'ordre «dialog» (la qual mostra diàlegs en mode text).</p>
     <p xml:lang="de">Mit KDialog können grafische Dialoge aus Shell-Skripten aufgerufen werden. Die Syntax ist vom Befehl „dialog“ inspiriert, das jedoch nur Dialoge im Textmodus anzeigt.</p>
     <p xml:lang="el">Το kdialog σας επιτρέπει να εμφανίζετε πλαίσια διαλόγου από σενάρια φλοιού. Η σύνταξη έχει επηρεαστεί πολύ από την εντολή "dialog" (η οποία εμφανίζει κείμενο και διαλόγους).</p>
     <p xml:lang="en-GB">kdialog allows you to display dialogue boxes from shell scripts. The syntax is very much inspired from the "dialog" command (which shows text mode dialogues).</p>
