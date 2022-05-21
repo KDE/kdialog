@@ -594,8 +594,7 @@ int main(int argc, char *argv[])
         }
 
 QT_WARNING_PUSH
-QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
-QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
+QT_WARNING_DISABLE_DEPRECATED
 #if KNOTIFICATIONS_BUILD_DEPRECATED_SINCE(5, 79)
         // ...did not work, use KPassivePopup as fallback
 
