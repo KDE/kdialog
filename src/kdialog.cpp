@@ -256,9 +256,10 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     KLocalizedString::setApplicationDomain("kdialog");
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-
+#endif
     KAboutData aboutData(QStringLiteral("kdialog"), i18n("KDialog"),
                          QStringLiteral(KDIALOG_VERSION_STRING), i18n("KDialog can be used to show nice dialog boxes from shell scripts"),
                          KAboutLicense::GPL,
