@@ -32,7 +32,7 @@ if (HAVE_X11)
   target_link_libraries(kdialog ${X11_X11_LIB})
 endif()
 
-install(TARGETS kdialog ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS kdialog ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.kdialog.ProgressDialog.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
 
 ################################################################################
@@ -62,4 +62,4 @@ if (HAVE_X11)
   target_link_libraries(kdialog_progress_helper ${X11_X11_LIB})
 endif()
 
-install(TARGETS kdialog_progress_helper ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS kdialog_progress_helper ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
