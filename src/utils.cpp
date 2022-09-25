@@ -3,7 +3,6 @@
 
 #include "utils.h"
 
-#include <QApplication>
 #include <QDebug>
 #include <QScreen>
 #include <QWidget>
