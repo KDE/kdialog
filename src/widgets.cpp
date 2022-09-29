@@ -27,7 +27,6 @@
 
 // Local
 #include "klistboxdialog.h"
-#include "progressdialog.h"
 
 static void addButtonBox(QDialog &dlg, QDialogButtonBox::StandardButtons buttons = QDialogButtonBox::Ok | QDialogButtonBox::Cancel)
 {
