@@ -421,11 +421,11 @@ int main(int argc, char *argv[])
         icon = QMessageBox::Warning;
     } else if (parser.isSet(QStringLiteral("sorry"))) {
         option = "sorry";
-        type = KMessageBox::Sorry;
+        type = KMessageBox::Error;
         icon = QMessageBox::Warning;
     } else if (parser.isSet(QStringLiteral("detailedsorry"))) {
         option = "detailedsorry";
-        type = KMessageBox::Sorry;
+        type = KMessageBox::Error;
         icon = QMessageBox::Warning;
     } else if (parser.isSet(QStringLiteral("error"))) {
         option = "error";
@@ -499,7 +499,6 @@ int main(int argc, char *argv[])
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), continueButton);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), cancelButton);
             break;
-        case KMessageBox::Sorry:
         case KMessageBox::Error:
         case KMessageBox::Information:
             buttonBox->addButton(QDialogButtonBox::Ok);
