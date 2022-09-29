@@ -89,7 +89,7 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
 {
     if (e->type() == QEvent::Show && o->isWidgetType()
         && o->inherits("QDialog")) {
-        auto *w = static_cast<QWidget *>(o);
+        auto w = static_cast<QWidget *>(o);
         if (print) {
             cout << "winId: " << w->winId() << endl;
         }
@@ -477,7 +477,7 @@ int main(int argc, char *argv[])
 
         QDialog dialog;
         dialog.setWindowTitle(title);
-        auto *buttonBox = new QDialogButtonBox(&dialog);
+        auto buttonBox = new QDialogButtonBox(&dialog);
         KMessageBox::Options options = KMessageBox::NoExec;
 
         switch (type) {
@@ -521,7 +521,7 @@ int main(int argc, char *argv[])
         if (!dontagain.isEmpty()) {
             // We use NoExec in order to call handleXGeometry before exec
             // But that means we need to query the state of the dontShowAgain checkbox ourselves too...
-            auto *cb = dialog.findChild<QCheckBox *>();
+            auto cb = dialog.findChild<QCheckBox *>();
             Q_ASSERT(cb);
             if (cb && cb->isChecked()) {
                 if (type == KMessageBox::WarningContinueCancel) {
@@ -617,7 +617,7 @@ QT_WARNING_DISABLE_DEPRECATED
                                                       passiveicon,
                                                       (QWidget *)nullptr, // parent
                                                       timeout);
-        auto *timer = new QTimer();
+        auto timer = new QTimer();
         QObject::connect(timer, SIGNAL(timeout()), qApp, SLOT(quit()));
         QObject::connect(popup, QOverload<>::of(&KPassivePopup::clicked), qApp, &QApplication::quit);
         timer->setSingleShot(true);

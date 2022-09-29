@@ -30,7 +30,7 @@
 
 static void addButtonBox(QDialog &dlg, QDialogButtonBox::StandardButtons buttons = QDialogButtonBox::Ok | QDialogButtonBox::Cancel)
 {
-    auto *buttonBox = new QDialogButtonBox(buttons, &dlg);
+    auto buttonBox = new QDialogButtonBox(buttons, &dlg);
     dlg.layout()->addWidget(buttonBox);
     QObject::connect(buttonBox, &QDialogButtonBox::accepted, &dlg, &QDialog::accept);
     QObject::connect(buttonBox, &QDialogButtonBox::rejected, &dlg, &QDialog::reject);
@@ -87,9 +87,9 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString &titl
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
 
-    auto *mainLayout = new QVBoxLayout(&dlg);
+    auto mainLayout = new QVBoxLayout(&dlg);
 
-    auto *edit = new KTextEdit(&dlg);
+    auto edit = new KTextEdit(&dlg);
     mainLayout->addWidget(edit);
     edit->setReadOnly(true);
     edit->setFocus();
@@ -129,9 +129,9 @@ int Widgets::imgBox(QWidget *parent, const QString &title, const QString &file)
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
 
-    auto *mainLayout = new QVBoxLayout(&dlg);
+    auto mainLayout = new QVBoxLayout(&dlg);
 
-    auto *label = new QLabel(&dlg);
+    auto label = new QLabel(&dlg);
     mainLayout->addWidget(label);
 
     addButtonBox(dlg, QDialogButtonBox::Ok);
@@ -158,20 +158,20 @@ int Widgets::imgInputBox(QWidget *parent, const QString &title, const QString &f
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
 
-    auto *mainLayout = new QVBoxLayout(&dlg);
+    auto mainLayout = new QVBoxLayout(&dlg);
 
     if (!text.isEmpty()) {
-        auto *head = new QLabel(&dlg);
+        auto head = new QLabel(&dlg);
         head->setText(text);
         mainLayout->addWidget(head);
     }
 
-    auto *label = new QLabel(&dlg);
+    auto label = new QLabel(&dlg);
     mainLayout->addWidget(label);
 
     label->setPixmap(QPixmap(file));
 
-    auto *edit = new QLineEdit(&dlg);
+    auto edit = new QLineEdit(&dlg);
     mainLayout->addWidget(edit);
     edit->setReadOnly(false);
     edit->setFocus();
@@ -192,15 +192,15 @@ int Widgets::textInputBox(QWidget *parent, int width, int height, const QString 
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
-    auto *mainLayout = new QVBoxLayout(&dlg);
+    auto mainLayout = new QVBoxLayout(&dlg);
 
     if (!text.isEmpty()) {
-        auto *label = new QLabel(&dlg);
+        auto label = new QLabel(&dlg);
         mainLayout->addWidget(label);
         label->setText(text);
     }
 
-    auto *edit = new KTextEdit(&dlg);
+    auto edit = new KTextEdit(&dlg);
     mainLayout->addWidget(edit);
     edit->setReadOnly(false);
     edit->setFocus();
@@ -224,12 +224,12 @@ bool Widgets::comboBox(QWidget *parent, const QString &title, const QString &tex
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
 
-    auto *mainLayout = new QVBoxLayout(&dlg);
+    auto mainLayout = new QVBoxLayout(&dlg);
 
-    auto *label = new QLabel(&dlg);
+    auto label = new QLabel(&dlg);
     label->setText(text);
     mainLayout->addWidget(label);
-    auto *combo = new QComboBox(&dlg);
+    auto combo = new QComboBox(&dlg);
     combo->addItems(args);
     combo->setCurrentIndex(combo->findText(defaultEntry));
     combo->setFocus();
@@ -352,12 +352,12 @@ bool Widgets::slider(QWidget *parent, const QString &title, const QString &text,
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
 
-    auto *mainLayout = new QVBoxLayout(&dlg);
+    auto mainLayout = new QVBoxLayout(&dlg);
 
-    auto *label = new QLabel(&dlg);
+    auto label = new QLabel(&dlg);
     mainLayout->addWidget(label);
     label->setText(text);
-    auto *slider = new QSlider(&dlg);
+    auto slider = new QSlider(&dlg);
     mainLayout->addWidget(slider);
     slider->setMinimum(minValue);
     slider->setMaximum(maxValue);
@@ -384,12 +384,12 @@ bool Widgets::calendar(QWidget *parent, const QString &title, const QString &tex
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
 
-    auto *mainLayout = new QVBoxLayout(&dlg);
+    auto mainLayout = new QVBoxLayout(&dlg);
 
-    auto *label = new QLabel(&dlg);
+    auto label = new QLabel(&dlg);
     mainLayout->addWidget(label);
     label->setText(text);
-    auto *dateWidget = new KDatePicker(defaultEntry, &dlg);
+    auto dateWidget = new KDatePicker(defaultEntry, &dlg);
     mainLayout->addWidget(dateWidget);
     dateWidget->setFocus();
     addButtonBox(dlg);
