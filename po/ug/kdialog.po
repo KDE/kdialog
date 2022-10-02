@@ -1,0 +1,431 @@
+# Uyghur translation for kdialog.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sahran <sahran.ug@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdialog\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2013-09-08 07:04+0900\n"
+"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+
+#: kdialog.cpp:263
+#, kde-format
+msgid "KDialog"
+msgstr "KDialog"
+
+#: kdialog.cpp:264
+#, kde-format
+msgid "KDialog can be used to show nice dialog boxes from shell scripts"
+msgstr ""
+"KDialog بولسا shell قوليازمادا دوستانە سۆزلەشكۈنى كۆرسىتىشكە ئىشلىتىلىدۇ"
+
+#: kdialog.cpp:266
+#, kde-format
+msgid "(C) 2000, Nick Thompson"
+msgstr "(C) 2000، Nick Thompson"
+
+#: kdialog.cpp:267
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: kdialog.cpp:267
+#, kde-format
+msgid "Current maintainer"
+msgstr "نۆۋەتتىكى مەسئۇلى"
+
+#: kdialog.cpp:268
+#, kde-format
+msgid "Brad Hards"
+msgstr "Brad Hards"
+
+#: kdialog.cpp:269
+#, kde-format
+msgid "Nick Thompson"
+msgstr "Nick Thompson"
+
+#: kdialog.cpp:270
+#, kde-format
+msgid "Matthias Hölzer"
+msgstr "Matthias Hölzer"
+
+#: kdialog.cpp:271
+#, kde-format
+msgid "David Gümbel"
+msgstr "David Gümbel"
+
+#: kdialog.cpp:272
+#, kde-format
+msgid "Richard Moore"
+msgstr "Richard Moore"
+
+#: kdialog.cpp:273
+#, kde-format
+msgid "Dawit Alemayehu"
+msgstr "Dawit Alemayehu"
+
+#: kdialog.cpp:274
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr "Kai Uwe Broulik"
+
+#: kdialog.cpp:280
+#, kde-format
+msgid "Question message box with yes/no buttons"
+msgstr "ھەئە/ياق توپچا بار سوئال ئۇچۇر قۇتاسى"
+
+#: kdialog.cpp:281
+#, kde-format
+msgid "Question message box with yes/no/cancel buttons"
+msgstr "ھەئە/ياق/ۋاز كەچ توپچا بار سوئال ئۇچۇر قۇتاسى"
+
+#: kdialog.cpp:282
+#, kde-format
+msgid "Warning message box with yes/no buttons"
+msgstr "ھەئە/ياق توپچا بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
+
+#: kdialog.cpp:283
+#, kde-format
+msgid "Warning message box with continue/cancel buttons"
+msgstr "داۋاملاشتۇر/ۋاز كەچ توپچا بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
+
+#: kdialog.cpp:284
+#, kde-format
+msgid "Warning message box with yes/no/cancel buttons"
+msgstr "ھەئە/ياق/ۋاز كەچ توپچا بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
+
+#: kdialog.cpp:286
+#, fuzzy, kde-format
+#| msgid "Use text as No button label"
+msgid "Use text as OK button label"
+msgstr "ياق توپچا بەلگىسى تېكىستىنى ئىشلەت"
+
+#: kdialog.cpp:287
+#, kde-format
+msgid "Use text as Yes button label"
+msgstr "ھەئە توپچا بەلگىسى تېكىستىنى ئىشلەت"
+
+#: kdialog.cpp:288
+#, kde-format
+msgid "Use text as No button label"
+msgstr "ياق توپچا بەلگىسى تېكىستىنى ئىشلەت"
+
+#: kdialog.cpp:289
+#, kde-format
+msgid "Use text as Cancel button label"
+msgstr "ۋاز كەچ توپچا بەلگىسى تېكىستىنى ئىشلەت"
+
+#: kdialog.cpp:290
+#, kde-format
+msgid "Use text as Continue button label"
+msgstr "داۋاملاشتۇر توپچا بەلگىسى تېكىستىنى ئىشلەت"
+
+#: kdialog.cpp:291
+#, kde-format
+msgid "'Sorry' message box"
+msgstr "«كەچۈرۈڭ» ئۇچۇر كۆزنەكچىسى"
+
+#: kdialog.cpp:292
+#, kde-format
+msgid "'Sorry' message box with expandable Details field"
+msgstr ""
+
+#: kdialog.cpp:293
+#, kde-format
+msgid "'Error' message box"
+msgstr "«خاتا» ئۇچۇر كۆزنەكچىسى"
+
+#: kdialog.cpp:294
+#, kde-format
+msgid "'Error' message box with expandable Details field"
+msgstr ""
+
+#: kdialog.cpp:295
+#, kde-format
+msgid "Message Box dialog"
+msgstr "ئۇچۇر قۇتا سۆزلەشكۈسى"
+
+#: kdialog.cpp:296
+#, kde-format
+msgid "Input Box dialog"
+msgstr "كىرگۈزۈش قۇتا سۆزلەشكۈسى"
+
+#: kdialog.cpp:297
+#, fuzzy, kde-format
+#| msgid "Message Box dialog"
+msgid "Image Box dialog"
+msgstr "ئۇچۇر قۇتا سۆزلەشكۈسى"
+
+#: kdialog.cpp:298
+#, fuzzy, kde-format
+#| msgid "Message Box dialog"
+msgid "Image Box Input dialog"
+msgstr "ئۇچۇر قۇتا سۆزلەشكۈسى"
+
+#: kdialog.cpp:299
+#, kde-format
+msgid "Password dialog"
+msgstr "ئىم سۆزلەشكۈسى"
+
+#: kdialog.cpp:300
+#, fuzzy, kde-format
+#| msgid "Password dialog"
+msgid "New Password dialog"
+msgstr "ئىم سۆزلەشكۈسى"
+
+#: kdialog.cpp:301
+#, kde-format
+msgid "Text Box dialog"
+msgstr "تېكىست كۆزنەكچە سۆزلەشكۈسى"
+
+#: kdialog.cpp:302
+#, kde-format
+msgid "Text Input Box dialog"
+msgstr "تېكىست كىرگۈزۈش قۇتا سۆزلەشكۈسى"
+
+#: kdialog.cpp:303
+#, kde-format
+msgid "ComboBox dialog"
+msgstr "بىرىكمە قۇتا سۆزلەشكۈسى"
+
+#: kdialog.cpp:304
+#, kde-format
+msgid "Menu dialog"
+msgstr "تىزىملىك سۆزلەشكۈسى"
+
+#: kdialog.cpp:305
+#, kde-format
+msgid "Check List dialog"
+msgstr "تىزىم سۆزلەشكۈسىنى تەكشۈر"
+
+#: kdialog.cpp:306
+#, kde-format
+msgid "Radio List dialog"
+msgstr "تاق تاللاش تىزىم سۆزلەشكۈسى"
+
+#: kdialog.cpp:307
+#, kde-format
+msgid "Passive Popup"
+msgstr "پاسسىپ قاڭقىش كۆزنەكى"
+
+#: kdialog.cpp:308
+#, fuzzy, kde-format
+#| msgid "Passive Popup"
+msgid "Popup icon"
+msgstr "پاسسىپ قاڭقىش كۆزنەكى"
+
+#: kdialog.cpp:309
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file"
+msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgstr "مەۋجۇت ھۆججەتنى ئاچىدىغان ھۆججەت سۆزلەشكۈ"
+
+#: kdialog.cpp:310
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file"
+msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgstr "ھۆججەت ساقلايدىغان ھۆججەت سۆزلەشكۈ"
+
+#: kdialog.cpp:311
+#, fuzzy, kde-format
+#| msgid "File dialog to select an existing directory"
+msgid "File dialog to select an existing directory (arguments [startDir])"
+msgstr "مەۋجۇت مۇندەرىجىنى تاللايدىغان ھۆججەت سۆزلەشكۈ"
+
+#: kdialog.cpp:312
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file"
+msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgstr "مەۋجۇت ھۆججەتنى ئاچىدىغان ھۆججەت سۆزلەشكۈ"
+
+#: kdialog.cpp:313
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file"
+msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgstr "ھۆججەت ساقلايدىغان ھۆججەت سۆزلەشكۈ"
+
+#: kdialog.cpp:314
+#, kde-format
+msgid "Icon chooser dialog (arguments [group] [context])"
+msgstr ""
+
+#: kdialog.cpp:315 kdialog_progress_helper.cpp:40
+#, kde-format
+msgid "Progress bar dialog, returns a D-Bus reference for communication"
+msgstr "سۈرئەت بالداق سۆزلەشكۈسى، D-Bus نەقىلنى قايتۇرۇپ ئالاقە قىلىدۇ"
+
+#: kdialog.cpp:316
+#, kde-format
+msgid "Color dialog to select a color"
+msgstr "رەڭ تاللايدىغان رەڭ سۆزلەشكۈسى"
+
+#: kdialog.cpp:317
+#, kde-format
+msgid "Allow --getcolor to specify output format"
+msgstr ""
+
+#: kdialog.cpp:319 kdialog_progress_helper.cpp:41
+#, kde-format
+msgid "Dialog title"
+msgstr "سۆزلەشكۈ ماۋزۇسى"
+
+#: kdialog.cpp:320
+#, fuzzy, kde-format
+#| msgid "Default entry to use for combobox, menu and color"
+msgid "Default entry to use for combobox, menu, color, and calendar"
+msgstr "بىرىكمە قۇتا، تىزىملىك ۋە رەڭگە ئىشلىتىدىغان كۆڭۈلدىكى تۈر"
+
+#: kdialog.cpp:321
+#, kde-format
+msgid ""
+"Allows the --getopenurl and --getopenfilename options to return multiple "
+"files"
+msgstr ""
+"--getopenurl ۋە --getopenfilename تاللانمىغا يول قويۇلسا كۆپ ھۆججەت قايتۇرىدۇ"
+
+#: kdialog.cpp:322
+#, kde-format
+msgid ""
+"Return list items on separate lines (for checklist option and file open with "
+"--multiple)"
+msgstr ""
+"يەككە قۇر بويىچە قايتۇرغان تۈر تىزىمى (كۆپ تاللاش تىزىمى تاللانمىسى تۈرى ۋە "
+"--multiple بىلەن ئېچىلغان ھۆججەتكە ماس كېلىدۇ)"
+
+#: kdialog.cpp:323
+#, kde-format
+msgid "Outputs the winId of each dialog"
+msgstr "ھەر بىر سۆزلەشكۈنىڭ winId چىقىرىشى"
+
+#: kdialog.cpp:324
+#, kde-format
+msgid ""
+"Config file and option name for saving the \"do-not-show/ask-again\" state"
+msgstr ""
+"«قايتا كۆرسەتمە/قايتا سورا» ھالىتىنىڭ سەپلىمە ھۆججىتى ۋە تۈر ئاتىنى ساقلايدۇ"
+
+#: kdialog.cpp:326
+#, kde-format
+msgid "Slider dialog box, returns selected value"
+msgstr "تام تەسۋىر سۆزلەشكۈ قۇتاسى، تاللانغان قىممەتنى قايتۇرىدۇ"
+
+#: kdialog.cpp:327
+#, kde-format
+msgid ""
+"Date format for calendar result and/or default value (Qt-style); defaults to "
+"'ddd MMM d yyyy'"
+msgstr ""
+
+#: kdialog.cpp:328
+#, kde-format
+msgid "Calendar dialog box, returns selected date"
+msgstr "يىلنامە سۆزلەشكۈسى، تاللانغان چېسلانى قايتۇرىدۇ"
+
+#: kdialog.cpp:331
+#, kde-format
+msgid "Makes the dialog transient for an X app specified by winid"
+msgstr ""
+"winid كۆرسەتكەن X پروگراممىلىرىنىڭ سۆزلەشكۈسى تېز سۈرئەتتە قىممىتىنى "
+"ئۆزگەرتىدۇ"
+
+#: kdialog.cpp:332
+#, kde-format
+msgid "A synonym for --attach"
+msgstr ""
+
+#: kdialog.cpp:333
+#, kde-format
+msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
+msgstr ""
+
+#: kdialog.cpp:335 kdialog_progress_helper.cpp:42
+#, kde-format
+msgid "Arguments - depending on main option"
+msgstr "پارامېتىر - ئاساسلىق تاللانمىغا باغلىق"
+
+#: kdialog.cpp:514
+#, kde-format
+msgid "Do not ask again"
+msgstr ""
+
+#: kdialog.cpp:714
+#, kde-format
+msgid "Syntax: --combobox <text> item [item] ..."
+msgstr ""
+
+#: kdialog.cpp:736
+#, kde-format
+msgid "Syntax: --menu text tag item [tag item] ..."
+msgstr ""
+
+#: kdialog.cpp:760
+#, kde-format
+msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
+msgstr ""
+
+#: kdialog.cpp:778
+#, kde-format
+msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
+msgstr ""
+
+#: kdialog.cpp:809
+#, kde-format
+msgctxt "@title:window"
+msgid "Open"
+msgstr "ئاچ"
+
+#: kdialog.cpp:861
+#, kde-format
+msgctxt "@title:window"
+msgid "Save As"
+msgstr "باشقا ئاتتا ساقلا"
+
+#: kdialog.cpp:894
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Directory"
+msgstr ""
+
+#: kdialog.cpp:1008
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Color"
+msgstr "رەڭ تاللا"
+
+#: progressdialog.cpp:23
+#, kde-format
+msgid "Cancel"
+msgstr ""
+
+#: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
+#, kde-format
+msgid "kdialog: could not open file %1"
+msgstr "kdialog: ھۆججەت %1 نى ئاچقىلى بولمىدى"
+
+#~ msgid "File dialog to open an existing URL"
+#~ msgstr "مەۋجۇت URL نى ئاچىدىغان ھۆججەت سۆزلەشكۈ"
+
+#~ msgid "File dialog to save a URL"
+#~ msgstr "URL نى ساقلاشتا ئىشلىتىدىغان ھۆججەت سۆزلەشكۈ"
+
+#~ msgid "Icon chooser dialog"
+#~ msgstr "سىنبەلگە تاللىغۇچ سۆزلەشكۈسى"

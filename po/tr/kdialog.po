@@ -1,0 +1,432 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Görkem Çetin <gorkem@kde.org>, 2002.
+# obsoleteman <tulliana@gmail.com>, 2008-2009,2011-2012.
+# Volkan Gezer <volkangezer@gmail.com>, 2013.
+# Yıldız Kardeşler <turkishprogram@xposta.com>, 2003.
+# Emir SARI <emir_sari@icloud.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: applications-kde4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2022-04-01 12:52+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Serdar Soytetir, Görkem Çetin"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tulliana@gmail.com, gorkem@kde.org"
+
+#: kdialog.cpp:263
+#, kde-format
+msgid "KDialog"
+msgstr "KDialog"
+
+#: kdialog.cpp:264
+#, kde-format
+msgid "KDialog can be used to show nice dialog boxes from shell scripts"
+msgstr ""
+"KDialog, kabuk betikleri kullanarak güzel görünümlü pencereler oluşturmanızı "
+"sağlar"
+
+#: kdialog.cpp:266
+#, kde-format
+msgid "(C) 2000, Nick Thompson"
+msgstr "(C) 2000, Nick Thompson"
+
+#: kdialog.cpp:267
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: kdialog.cpp:267
+#, kde-format
+msgid "Current maintainer"
+msgstr "Şu anki projeyi yürüten"
+
+#: kdialog.cpp:268
+#, kde-format
+msgid "Brad Hards"
+msgstr "Brad Hards"
+
+#: kdialog.cpp:269
+#, kde-format
+msgid "Nick Thompson"
+msgstr "Nick Thompson"
+
+#: kdialog.cpp:270
+#, kde-format
+msgid "Matthias Hölzer"
+msgstr "Matthias Hölzer"
+
+#: kdialog.cpp:271
+#, kde-format
+msgid "David Gümbel"
+msgstr "David Gümbel"
+
+#: kdialog.cpp:272
+#, kde-format
+msgid "Richard Moore"
+msgstr "Richard Moore"
+
+#: kdialog.cpp:273
+#, kde-format
+msgid "Dawit Alemayehu"
+msgstr "Dawit Alemayehu"
+
+#: kdialog.cpp:274
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr "Kai Uwe Broulik"
+
+#: kdialog.cpp:280
+#, kde-format
+msgid "Question message box with yes/no buttons"
+msgstr "Evet/hayır düğmeleri içeren soru penceresi"
+
+#: kdialog.cpp:281
+#, kde-format
+msgid "Question message box with yes/no/cancel buttons"
+msgstr "Evet/hayır/iptal düğmeleri içeren soru penceresi"
+
+#: kdialog.cpp:282
+#, kde-format
+msgid "Warning message box with yes/no buttons"
+msgstr "Evet/hayır düğmeleri içeren uyarı penceresi"
+
+#: kdialog.cpp:283
+#, kde-format
+msgid "Warning message box with continue/cancel buttons"
+msgstr "Sürdür/İptal düğmelerini içeren uyarı penceresi"
+
+#: kdialog.cpp:284
+#, kde-format
+msgid "Warning message box with yes/no/cancel buttons"
+msgstr "Evet/hayır/iptal düğmelerini içeren uyarı penceresi"
+
+#: kdialog.cpp:286
+#, kde-format
+msgid "Use text as OK button label"
+msgstr "Tamam düğmesi etiketi olarak metin kullan"
+
+#: kdialog.cpp:287
+#, kde-format
+msgid "Use text as Yes button label"
+msgstr "Metni Evet düğmesi etiketi olarak kullan"
+
+#: kdialog.cpp:288
+#, kde-format
+msgid "Use text as No button label"
+msgstr "Metni Hayır düğmesi etiketi olarak kullan"
+
+#: kdialog.cpp:289
+#, kde-format
+msgid "Use text as Cancel button label"
+msgstr "Metni İptal düğmesi etiketi olarak kullan"
+
+#: kdialog.cpp:290
+#, kde-format
+msgid "Use text as Continue button label"
+msgstr "Metni Sürdür düğmesi etiketi olarak kullan"
+
+#: kdialog.cpp:291
+#, kde-format
+msgid "'Sorry' message box"
+msgstr "'Üzgünüm' ileti kutusu"
+
+#: kdialog.cpp:292
+#, kde-format
+msgid "'Sorry' message box with expandable Details field"
+msgstr "Genişletilebilir Ayrıntılar alanı ile 'Üzgünüm' ileti kutusu"
+
+#: kdialog.cpp:293
+#, kde-format
+msgid "'Error' message box"
+msgstr "'Hata' ileti kutusu"
+
+#: kdialog.cpp:294
+#, kde-format
+msgid "'Error' message box with expandable Details field"
+msgstr "Genişletilebilir Ayrıntılar alanı ile 'Hata' ileti kutusu"
+
+#: kdialog.cpp:295
+#, kde-format
+msgid "Message Box dialog"
+msgstr "İleti Kutusu penceresi"
+
+#: kdialog.cpp:296
+#, kde-format
+msgid "Input Box dialog"
+msgstr "Girdi Kutusu penceresi"
+
+#: kdialog.cpp:297
+#, kde-format
+msgid "Image Box dialog"
+msgstr "Resim Kutusu penceresi"
+
+#: kdialog.cpp:298
+#, kde-format
+msgid "Image Box Input dialog"
+msgstr "Resim Kutusu Girdi Penceresi"
+
+#: kdialog.cpp:299
+#, kde-format
+msgid "Password dialog"
+msgstr "Parola penceresi"
+
+#: kdialog.cpp:300
+#, kde-format
+msgid "New Password dialog"
+msgstr "Yeni Parola penceresi"
+
+#: kdialog.cpp:301
+#, kde-format
+msgid "Text Box dialog"
+msgstr "Metin Kutusu penceresi"
+
+#: kdialog.cpp:302
+#, kde-format
+msgid "Text Input Box dialog"
+msgstr "Metin Girdi Kutusu penceresi"
+
+#: kdialog.cpp:303
+#, kde-format
+msgid "ComboBox dialog"
+msgstr "Açılır Menü penceresi"
+
+#: kdialog.cpp:304
+#, kde-format
+msgid "Menu dialog"
+msgstr "Menü penceresi"
+
+#: kdialog.cpp:305
+#, kde-format
+msgid "Check List dialog"
+msgstr "Onay Listesi penceresi"
+
+#: kdialog.cpp:306
+#, kde-format
+msgid "Radio List dialog"
+msgstr "Radyo Listesi penceresi"
+
+#: kdialog.cpp:307
+#, kde-format
+msgid "Passive Popup"
+msgstr "Pasif Açılabilir Pencere"
+
+#: kdialog.cpp:308
+#, kde-format
+msgid "Popup icon"
+msgstr "Açılır pencere simgesi"
+
+#: kdialog.cpp:309
+#, kde-format
+msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgstr ""
+"Mevcut bir dosyayı açmak için dosya penceresi (argümanlar [başlangıçDizini] "
+"[süzgeç])"
+
+#: kdialog.cpp:310
+#, kde-format
+msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgstr ""
+"Bir dosya kaydetmek için kaydet penceresi (argümanlar [başlangıçDizini] "
+"[süzgeç])"
+
+#: kdialog.cpp:311
+#, kde-format
+msgid "File dialog to select an existing directory (arguments [startDir])"
+msgstr ""
+"Mevcut bir dizini seçmek için dosya penceresi (argümanlar [başlangıçDizini] "
+"[süzgeç])"
+
+#: kdialog.cpp:312
+#, kde-format
+msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgstr ""
+"Mevcut bir bağlantıyı açmak için dosya penceresi (argümanlar "
+"[başlangıçDizini] [süzgeç])"
+
+#: kdialog.cpp:313
+#, kde-format
+msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgstr ""
+"Bir bağlantıyı(URL) kaydetmek için kaydet penceresi (argümanlar "
+"[başlangıçDizini] [süzgeç])"
+
+#: kdialog.cpp:314
+#, kde-format
+msgid "Icon chooser dialog (arguments [group] [context])"
+msgstr "Simge seçme penceresi (argümanlar [grup] [içerik])"
+
+#: kdialog.cpp:315 kdialog_progress_helper.cpp:40
+#, kde-format
+msgid "Progress bar dialog, returns a D-Bus reference for communication"
+msgstr "İlerleme çubuğu penceresi, iletişim için bir D-Bus referansı döndürür"
+
+#: kdialog.cpp:316
+#, kde-format
+msgid "Color dialog to select a color"
+msgstr "Renk seçmek için renk penceresi"
+
+#: kdialog.cpp:317
+#, kde-format
+msgid "Allow --getcolor to specify output format"
+msgstr "Çıktı formatını belirlemek için --getcolor parametresine izin ver"
+
+#: kdialog.cpp:319 kdialog_progress_helper.cpp:41
+#, kde-format
+msgid "Dialog title"
+msgstr "Pencere başlığı"
+
+#: kdialog.cpp:320
+#, kde-format
+msgid "Default entry to use for combobox, menu, color, and calendar"
+msgstr "Açılır menü, menü, renk ve takvim için öntanımlı girdi"
+
+#: kdialog.cpp:321
+#, kde-format
+msgid ""
+"Allows the --getopenurl and --getopenfilename options to return multiple "
+"files"
+msgstr ""
+"Birden fazla dosya için  --getopenurl ve --getopenfilename seçeneklerine "
+"izin verir"
+
+#: kdialog.cpp:322
+#, kde-format
+msgid ""
+"Return list items on separate lines (for checklist option and file open with "
+"--multiple)"
+msgstr ""
+"Liste ögelerini ayrı satırlarda döndür (işaretleme listesi seçeneği ve --"
+"multiple ile dosya açmak için)"
+
+#: kdialog.cpp:323
+#, kde-format
+msgid "Outputs the winId of each dialog"
+msgstr "Her pencerenin pencere numarasını çıkartır"
+
+#: kdialog.cpp:324
+#, kde-format
+msgid ""
+"Config file and option name for saving the \"do-not-show/ask-again\" state"
+msgstr ""
+"\"bir daha gösterme/sorma\"  durumunu kaydetmek için yapılandırma dosyası ve "
+"seçenek adı"
+
+#: kdialog.cpp:326
+#, kde-format
+msgid "Slider dialog box, returns selected value"
+msgstr "Ayırıcı kutu penceresi, seçilen değeri döndürür"
+
+#: kdialog.cpp:327
+#, kde-format
+msgid ""
+"Date format for calendar result and/or default value (Qt-style); defaults to "
+"'ddd MMM d yyyy'"
+msgstr ""
+"Takvim sonucu ve/veya öntanımlı değer (Qt stili) için tarih biçimi; "
+"öntanımlı: 'ggg AAA g yyyy'"
+
+#: kdialog.cpp:328
+#, kde-format
+msgid "Calendar dialog box, returns selected date"
+msgstr "Takvim kutu penceresi, seçilen günü döndürür"
+
+#: kdialog.cpp:331
+#, kde-format
+msgid "Makes the dialog transient for an X app specified by winid"
+msgstr "Pencereyi, pencere numarası belirtilen X uygulaması için geçici yapar"
+
+#: kdialog.cpp:332
+#, kde-format
+msgid "A synonym for --attach"
+msgstr "--attach ile eş anlamlı"
+
+#: kdialog.cpp:333
+#, kde-format
+msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
+msgstr ""
+"Pencere geometrisi: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
+
+#: kdialog.cpp:335 kdialog_progress_helper.cpp:42
+#, kde-format
+msgid "Arguments - depending on main option"
+msgstr "Argümanlar"
+
+#: kdialog.cpp:514
+#, kde-format
+msgid "Do not ask again"
+msgstr "Bir daha sorma"
+
+#: kdialog.cpp:714
+#, kde-format
+msgid "Syntax: --combobox <text> item [item] ..."
+msgstr "Sözdizim: --combobox <metin> öge [öge] ..."
+
+#: kdialog.cpp:736
+#, kde-format
+msgid "Syntax: --menu text tag item [tag item] ..."
+msgstr "Sözdizim: --menu metin [etiket ögesi] [etiket ögesi] ..."
+
+#: kdialog.cpp:760
+#, kde-format
+msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
+msgstr ""
+"Sözdizim: --checklist metin [etiket ögesi on/off] [etiket ögesi on/off] ..."
+
+#: kdialog.cpp:778
+#, kde-format
+msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
+msgstr ""
+"Sözdizim: --checklist metin [etiket ögesi on/off] [etiket ögesi on/off] ..."
+
+#: kdialog.cpp:809
+#, kde-format
+msgctxt "@title:window"
+msgid "Open"
+msgstr "Aç"
+
+#: kdialog.cpp:861
+#, kde-format
+msgctxt "@title:window"
+msgid "Save As"
+msgstr "Farklı Kaydet"
+
+#: kdialog.cpp:894
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Directory"
+msgstr "Dizin Seç"
+
+#: kdialog.cpp:1008
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Color"
+msgstr "Renk Seç"
+
+#: progressdialog.cpp:23
+#, kde-format
+msgid "Cancel"
+msgstr "İptal"
+
+#: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
+#, kde-format
+msgid "kdialog: could not open file %1"
+msgstr "kdialog: %1 dosyası açılamadı"

@@ -1,0 +1,439 @@
+# Translation of kdialog.po to Low Saxon
+# Copyright (C) 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Heiko Evermann <heiko@evermann.de>, 2004.
+# Volker Jockheck <volkae@gmx.net>, 2004.
+# Sönke Dibbern <s_dibbern@web.de>, 2005, 2006, 2007, 2008, 2009, 2014.
+# Manfred Wiese <m.j.wiese@web.de>, 2010, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdialog\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2014-02-25 01:24+0100\n"
+"Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sönke Dibbern"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "s_dibbern@web.de"
+
+#: kdialog.cpp:263
+#, kde-format
+msgid "KDialog"
+msgstr "KDialog"
+
+#: kdialog.cpp:264
+#, kde-format
+msgid "KDialog can be used to show nice dialog boxes from shell scripts"
+msgstr ""
+"KDialog kann bruukt warrn, üm smucke Dialogen vun Konsool-Skripten wiesen to "
+"laten"
+
+#: kdialog.cpp:266
+#, kde-format
+msgid "(C) 2000, Nick Thompson"
+msgstr "© 2000: Nick Thompson"
+
+#: kdialog.cpp:267
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: kdialog.cpp:267
+#, kde-format
+msgid "Current maintainer"
+msgstr "Aktuell Pleger"
+
+#: kdialog.cpp:268
+#, kde-format
+msgid "Brad Hards"
+msgstr "Brad Hards"
+
+#: kdialog.cpp:269
+#, kde-format
+msgid "Nick Thompson"
+msgstr "Nick Thompson"
+
+#: kdialog.cpp:270
+#, kde-format
+msgid "Matthias Hölzer"
+msgstr "Matthias Hölzer"
+
+#: kdialog.cpp:271
+#, kde-format
+msgid "David Gümbel"
+msgstr "David Gümbel"
+
+#: kdialog.cpp:272
+#, kde-format
+msgid "Richard Moore"
+msgstr "Richard Moore"
+
+#: kdialog.cpp:273
+#, kde-format
+msgid "Dawit Alemayehu"
+msgstr "Dawit Alemayehu"
+
+#: kdialog.cpp:274
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr "Kai Uwe Broulik"
+
+#: kdialog.cpp:280
+#, kde-format
+msgid "Question message box with yes/no buttons"
+msgstr "Fraag mit Jo- un Nee-Knoop"
+
+#: kdialog.cpp:281
+#, kde-format
+msgid "Question message box with yes/no/cancel buttons"
+msgstr "Fraag mit Jo-, Nee- un Afbreken-Knoop"
+
+#: kdialog.cpp:282
+#, kde-format
+msgid "Warning message box with yes/no buttons"
+msgstr "Wohrschoen mit Jo- un Nee-Knoop"
+
+#: kdialog.cpp:283
+#, kde-format
+msgid "Warning message box with continue/cancel buttons"
+msgstr "Wohrschoen mit Wiedermaken- un Afbreken-Knoop"
+
+#: kdialog.cpp:284
+#, kde-format
+msgid "Warning message box with yes/no/cancel buttons"
+msgstr "Wohrschoen mit Jo-, Nee- un Afbreken-Knoop"
+
+#: kdialog.cpp:286
+#, fuzzy, kde-format
+#| msgid "Use text as No button label"
+msgid "Use text as OK button label"
+msgstr "Text för den Nee-Knoop bruken"
+
+#: kdialog.cpp:287
+#, kde-format
+msgid "Use text as Yes button label"
+msgstr "Text för den Jo-Knoop bruken"
+
+#: kdialog.cpp:288
+#, kde-format
+msgid "Use text as No button label"
+msgstr "Text för den Nee-Knoop bruken"
+
+#: kdialog.cpp:289
+#, kde-format
+msgid "Use text as Cancel button label"
+msgstr "Text för den Afbreken-Knoop bruken"
+
+#: kdialog.cpp:290
+#, kde-format
+msgid "Use text as Continue button label"
+msgstr "Text för den Wiedermaken-Knoop bruken"
+
+#: kdialog.cpp:291
+#, kde-format
+msgid "'Sorry' message box"
+msgstr "\"Deit mi Leed\"-Naricht"
+
+#: kdialog.cpp:292
+#, kde-format
+msgid "'Sorry' message box with expandable Details field"
+msgstr "\"Deit mi Leed\"-Naricht mit utklappbor Enkelheiten"
+
+#: kdialog.cpp:293
+#, kde-format
+msgid "'Error' message box"
+msgstr "Fehlermellen"
+
+#: kdialog.cpp:294
+#, kde-format
+msgid "'Error' message box with expandable Details field"
+msgstr "\"Fehler\"-Naricht mit utklappbor Enkelheiten"
+
+#: kdialog.cpp:295
+#, kde-format
+msgid "Message Box dialog"
+msgstr "Naricht"
+
+#: kdialog.cpp:296
+#, kde-format
+msgid "Input Box dialog"
+msgstr "Ingaav-Dialoog"
+
+#: kdialog.cpp:297
+#, fuzzy, kde-format
+#| msgid "Message Box dialog"
+msgid "Image Box dialog"
+msgstr "Naricht"
+
+#: kdialog.cpp:298
+#, fuzzy, kde-format
+#| msgid "Message Box dialog"
+msgid "Image Box Input dialog"
+msgstr "Naricht"
+
+#: kdialog.cpp:299
+#, kde-format
+msgid "Password dialog"
+msgstr "Passwoort-Dialoog"
+
+#: kdialog.cpp:300
+#, fuzzy, kde-format
+#| msgid "Password dialog"
+msgid "New Password dialog"
+msgstr "Passwoort-Dialoog"
+
+#: kdialog.cpp:301
+#, kde-format
+msgid "Text Box dialog"
+msgstr "Textfeld-Dialoog"
+
+#: kdialog.cpp:302
+#, kde-format
+msgid "Text Input Box dialog"
+msgstr "Textingaav-Dialoog"
+
+#: kdialog.cpp:303
+#, kde-format
+msgid "ComboBox dialog"
+msgstr "Utsöökfeld"
+
+#: kdialog.cpp:304
+#, kde-format
+msgid "Menu dialog"
+msgstr "Menüdialoog"
+
+#: kdialog.cpp:305
+#, kde-format
+msgid "Check List dialog"
+msgstr "Ankrüüzlist"
+
+#: kdialog.cpp:306
+#, kde-format
+msgid "Radio List dialog"
+msgstr "Radiolist"
+
+#: kdialog.cpp:307
+#, kde-format
+msgid "Passive Popup"
+msgstr "Passiv Opduker"
+
+#: kdialog.cpp:308
+#, fuzzy, kde-format
+#| msgid "Passive Popup"
+msgid "Popup icon"
+msgstr "Passiv Opduker"
+
+#: kdialog.cpp:309
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file"
+msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgstr "\"Datei opmaken\"-Dialoog"
+
+#: kdialog.cpp:310
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file"
+msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgstr "\"Datei sekern\"-Dialoog"
+
+#: kdialog.cpp:311
+#, fuzzy, kde-format
+#| msgid "File dialog to select an existing directory"
+msgid "File dialog to select an existing directory (arguments [startDir])"
+msgstr "\"Orner utsöken\"-Dialoog"
+
+#: kdialog.cpp:312
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file"
+msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgstr "\"Datei opmaken\"-Dialoog"
+
+#: kdialog.cpp:313
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file"
+msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgstr "\"Datei sekern\"-Dialoog"
+
+#: kdialog.cpp:314
+#, kde-format
+msgid "Icon chooser dialog (arguments [group] [context])"
+msgstr ""
+
+#: kdialog.cpp:315 kdialog_progress_helper.cpp:40
+#, kde-format
+msgid "Progress bar dialog, returns a D-Bus reference for communication"
+msgstr ""
+"Vörankamenbalken-Dialoog, gifft een DBUS-Adress för de Kommunikatschoon "
+"torüch"
+
+#: kdialog.cpp:316
+#, kde-format
+msgid "Color dialog to select a color"
+msgstr "\"Klöör utsöken\"-Dialoog"
+
+#: kdialog.cpp:317
+#, kde-format
+msgid "Allow --getcolor to specify output format"
+msgstr ""
+
+#: kdialog.cpp:319 kdialog_progress_helper.cpp:41
+#, kde-format
+msgid "Dialog title"
+msgstr "Dialoogtitel"
+
+#: kdialog.cpp:320
+#, fuzzy, kde-format
+#| msgid "Default entry to use for combobox, menu and color"
+msgid "Default entry to use for combobox, menu, color, and calendar"
+msgstr "Vörinstellt Indrag för Utsöökfeld, Menü un Klöör"
+
+#: kdialog.cpp:321
+#, kde-format
+msgid ""
+"Allows the --getopenurl and --getopenfilename options to return multiple "
+"files"
+msgstr ""
+"Optschonen \"--getopenurl\" un \"--getopenfilename\" dörvt mehr as een Datei "
+"torüchgeven"
+
+#: kdialog.cpp:322
+#, kde-format
+msgid ""
+"Return list items on separate lines (for checklist option and file open with "
+"--multiple)"
+msgstr ""
+"Listindrääg op enkelte Regen torüchgeven (för de Optschonen \"--checklist\" "
+"un Datei opmaken mit \"--multiple\")"
+
+#: kdialog.cpp:323
+#, kde-format
+msgid "Outputs the winId of each dialog"
+msgstr "Gifft de \"WinID\" vör elkeen Dialoog ut"
+
+#: kdialog.cpp:324
+#, kde-format
+msgid ""
+"Config file and option name for saving the \"do-not-show/ask-again\" state"
+msgstr ""
+"Instellendatei un Optschoonnaam för't Sekern vun den \"Nich nochmaal wiesen/"
+"fragen\"-Status"
+
+#: kdialog.cpp:326
+#, kde-format
+msgid "Slider dialog box, returns selected value"
+msgstr "Schuver-Dialoog, gifftf den utsöchten Weert torüch"
+
+#: kdialog.cpp:327
+#, kde-format
+msgid ""
+"Date format for calendar result and/or default value (Qt-style); defaults to "
+"'ddd MMM d yyyy'"
+msgstr ""
+
+#: kdialog.cpp:328
+#, kde-format
+msgid "Calendar dialog box, returns selected date"
+msgstr "Kalenner-Dialoog, gifft dat utsöchte Datum torüch"
+
+#: kdialog.cpp:331
+#, kde-format
+msgid "Makes the dialog transient for an X app specified by winid"
+msgstr ""
+"Föögt den Dialoog temporeer na't X-Programm in, dat vun \"winid\" angeven "
+"warrt"
+
+#: kdialog.cpp:332
+#, kde-format
+msgid "A synonym for --attach"
+msgstr ""
+
+#: kdialog.cpp:333
+#, kde-format
+msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
+msgstr ""
+
+#: kdialog.cpp:335 kdialog_progress_helper.cpp:42
+#, kde-format
+msgid "Arguments - depending on main option"
+msgstr "Argumenten - hangt vun de Hööftoptschoon af"
+
+#: kdialog.cpp:514
+#, kde-format
+msgid "Do not ask again"
+msgstr ""
+
+#: kdialog.cpp:714
+#, kde-format
+msgid "Syntax: --combobox <text> item [item] ..."
+msgstr ""
+
+#: kdialog.cpp:736
+#, kde-format
+msgid "Syntax: --menu text tag item [tag item] ..."
+msgstr ""
+
+#: kdialog.cpp:760
+#, kde-format
+msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
+msgstr ""
+
+#: kdialog.cpp:778
+#, kde-format
+msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
+msgstr ""
+
+#: kdialog.cpp:809
+#, kde-format
+msgctxt "@title:window"
+msgid "Open"
+msgstr "Opmaken"
+
+#: kdialog.cpp:861
+#, kde-format
+msgctxt "@title:window"
+msgid "Save As"
+msgstr "Sekern as"
+
+#: kdialog.cpp:894
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Directory"
+msgstr ""
+
+#: kdialog.cpp:1008
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Color"
+msgstr "Klöör utsöken"
+
+#: progressdialog.cpp:23
+#, kde-format
+msgid "Cancel"
+msgstr ""
+
+#: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
+#, kde-format
+msgid "kdialog: could not open file %1"
+msgstr "kdialog: Datei \"%1\" lett sik nich opmaken"
+
+#~ msgid "File dialog to open an existing URL"
+#~ msgstr "\"Gah na Adress\"-Dialoog"
+
+#~ msgid "File dialog to save a URL"
+#~ msgstr "\"Na Adress sekern\"-Dialoog"
+
+#~ msgid "Icon chooser dialog"
+#~ msgstr "\"Lüttbild utsöken\"-Dialoog"

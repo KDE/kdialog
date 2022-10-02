@@ -1,0 +1,409 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Vít Pelčák <vit@pelcak.org>, 2011, 2014, 2016, 2017, 2019, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdialog\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2020-06-30 09:44+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Lukáš Tinkl"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "lukas@kde.org"
+
+#: kdialog.cpp:263
+#, kde-format
+msgid "KDialog"
+msgstr "KDialog"
+
+#: kdialog.cpp:264
+#, kde-format
+msgid "KDialog can be used to show nice dialog boxes from shell scripts"
+msgstr ""
+"KDialog lze použít pro zobrazení dialogových oken ze shellových skriptů"
+
+#: kdialog.cpp:266
+#, kde-format
+msgid "(C) 2000, Nick Thompson"
+msgstr "(C) 2000, Nick Thompson"
+
+#: kdialog.cpp:267
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: kdialog.cpp:267
+#, kde-format
+msgid "Current maintainer"
+msgstr "Současný správce"
+
+#: kdialog.cpp:268
+#, kde-format
+msgid "Brad Hards"
+msgstr "Brad Hards"
+
+#: kdialog.cpp:269
+#, kde-format
+msgid "Nick Thompson"
+msgstr "Nick Thompson"
+
+#: kdialog.cpp:270
+#, kde-format
+msgid "Matthias Hölzer"
+msgstr "Matthias Hölzer"
+
+#: kdialog.cpp:271
+#, kde-format
+msgid "David Gümbel"
+msgstr "David Gümbel"
+
+#: kdialog.cpp:272
+#, kde-format
+msgid "Richard Moore"
+msgstr "Richard Moore"
+
+#: kdialog.cpp:273
+#, kde-format
+msgid "Dawit Alemayehu"
+msgstr "Dawit Alemayehu"
+
+#: kdialog.cpp:274
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr "Kai Uwe Broulik"
+
+#: kdialog.cpp:280
+#, kde-format
+msgid "Question message box with yes/no buttons"
+msgstr "Dialog s dotazem a tlačítky ano/ne"
+
+#: kdialog.cpp:281
+#, kde-format
+msgid "Question message box with yes/no/cancel buttons"
+msgstr "Dialog s dotazem a tlačítky ano/ne/zrušit"
+
+#: kdialog.cpp:282
+#, kde-format
+msgid "Warning message box with yes/no buttons"
+msgstr "Dialog s varováním a tlačítky ano/ne"
+
+#: kdialog.cpp:283
+#, kde-format
+msgid "Warning message box with continue/cancel buttons"
+msgstr "Dialog s varováním a tlačítky pokračovat/zrušit"
+
+#: kdialog.cpp:284
+#, kde-format
+msgid "Warning message box with yes/no/cancel buttons"
+msgstr "Dialog s varováním a tlačítky ano/ne/zrušit"
+
+#: kdialog.cpp:286
+#, kde-format
+msgid "Use text as OK button label"
+msgstr "Použít text jako popisek tlačítka OK"
+
+#: kdialog.cpp:287
+#, kde-format
+msgid "Use text as Yes button label"
+msgstr "Použít text jako popisek tlačítka Ano"
+
+#: kdialog.cpp:288
+#, kde-format
+msgid "Use text as No button label"
+msgstr "Použít text jako popisek tlačítka Ne"
+
+#: kdialog.cpp:289
+#, kde-format
+msgid "Use text as Cancel button label"
+msgstr "Použít text jako popisek tlačítka Zrušit"
+
+#: kdialog.cpp:290
+#, kde-format
+msgid "Use text as Continue button label"
+msgstr "Použít text jako popisek tlačítka Pokračovat"
+
+#: kdialog.cpp:291
+#, kde-format
+msgid "'Sorry' message box"
+msgstr "Dialog s omluvou"
+
+#: kdialog.cpp:292
+#, kde-format
+msgid "'Sorry' message box with expandable Details field"
+msgstr ""
+
+#: kdialog.cpp:293
+#, kde-format
+msgid "'Error' message box"
+msgstr "Chybový dialog"
+
+#: kdialog.cpp:294
+#, kde-format
+msgid "'Error' message box with expandable Details field"
+msgstr ""
+
+#: kdialog.cpp:295
+#, kde-format
+msgid "Message Box dialog"
+msgstr "Dialog se zprávou"
+
+#: kdialog.cpp:296
+#, kde-format
+msgid "Input Box dialog"
+msgstr "Dialog se vstupem"
+
+#: kdialog.cpp:297
+#, kde-format
+msgid "Image Box dialog"
+msgstr ""
+
+#: kdialog.cpp:298
+#, kde-format
+msgid "Image Box Input dialog"
+msgstr ""
+
+#: kdialog.cpp:299
+#, kde-format
+msgid "Password dialog"
+msgstr "Dialog s heslem"
+
+#: kdialog.cpp:300
+#, kde-format
+msgid "New Password dialog"
+msgstr "Dialog pro nové heslo"
+
+#: kdialog.cpp:301
+#, kde-format
+msgid "Text Box dialog"
+msgstr "Dialog s textovým polem"
+
+#: kdialog.cpp:302
+#, kde-format
+msgid "Text Input Box dialog"
+msgstr "Dialog se vstupem textu"
+
+#: kdialog.cpp:303
+#, kde-format
+msgid "ComboBox dialog"
+msgstr "Dialog s rozbalovacím seznamem"
+
+#: kdialog.cpp:304
+#, kde-format
+msgid "Menu dialog"
+msgstr "Dialog s nabídkou"
+
+#: kdialog.cpp:305
+#, kde-format
+msgid "Check List dialog"
+msgstr "Dialog se zaškrtávacím seznamem"
+
+#: kdialog.cpp:306
+#, kde-format
+msgid "Radio List dialog"
+msgstr "Dialog se seznam přepínačů"
+
+#: kdialog.cpp:307
+#, kde-format
+msgid "Passive Popup"
+msgstr "Pasivní vyskakovací okno"
+
+#: kdialog.cpp:308
+#, kde-format
+msgid "Popup icon"
+msgstr "Vyskakovací ikona"
+
+#: kdialog.cpp:309
+#, kde-format
+msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgstr "Dialog pro otevření existujícího souboru (argumenty [počAdr] [filtr])"
+
+#: kdialog.cpp:310
+#, kde-format
+msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgstr "Dialog pro uložení souboru (argumenty [počAdr] [filtr])"
+
+#: kdialog.cpp:311
+#, kde-format
+msgid "File dialog to select an existing directory (arguments [startDir])"
+msgstr "Dialog pro výběr existujícího adresáře (argumenty [počAdr] [filtr])"
+
+#: kdialog.cpp:312
+#, kde-format
+msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgstr "Dialog pro otevření existující URL (argumenty [počAdr] [filtr])"
+
+#: kdialog.cpp:313
+#, kde-format
+msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgstr "Dialog pro uložení URL (argumenty [počAdr] [filtr])"
+
+#: kdialog.cpp:314
+#, kde-format
+msgid "Icon chooser dialog (arguments [group] [context])"
+msgstr ""
+
+#: kdialog.cpp:315 kdialog_progress_helper.cpp:40
+#, kde-format
+msgid "Progress bar dialog, returns a D-Bus reference for communication"
+msgstr "Dialog s panelem průběhu; vrací DBUS referenci pro komunikaci"
+
+#: kdialog.cpp:316
+#, kde-format
+msgid "Color dialog to select a color"
+msgstr "Dialog pro výběr barvy"
+
+#: kdialog.cpp:317
+#, kde-format
+msgid "Allow --getcolor to specify output format"
+msgstr ""
+
+#: kdialog.cpp:319 kdialog_progress_helper.cpp:41
+#, kde-format
+msgid "Dialog title"
+msgstr "Titulek dialogu"
+
+#: kdialog.cpp:320
+#, kde-format
+msgid "Default entry to use for combobox, menu, color, and calendar"
+msgstr "Výchozí položka pro rozbalovací seznam, nabídku, barvu a kalendář"
+
+#: kdialog.cpp:321
+#, kde-format
+msgid ""
+"Allows the --getopenurl and --getopenfilename options to return multiple "
+"files"
+msgstr "Umožní volbám --getopenurl a --getopenfilename výběr více souborů"
+
+#: kdialog.cpp:322
+#, kde-format
+msgid ""
+"Return list items on separate lines (for checklist option and file open with "
+"--multiple)"
+msgstr ""
+"Vrátit položky seznamu odděleně na řádcích (pro volbu zaškrtávacího seznamu "
+"a přepínač --multiple)"
+
+#: kdialog.cpp:323
+#, kde-format
+msgid "Outputs the winId of each dialog"
+msgstr "Vypíše ID okna každého dialogu"
+
+#: kdialog.cpp:324
+#, kde-format
+msgid ""
+"Config file and option name for saving the \"do-not-show/ask-again\" state"
+msgstr ""
+"Konfigurační soubor a název volby pro uložení stavu \"nezobrazovat/neptat se "
+"znovu\""
+
+#: kdialog.cpp:326
+#, kde-format
+msgid "Slider dialog box, returns selected value"
+msgstr "Dialog s posuvníkem. Vrací vybranou hodnotu"
+
+#: kdialog.cpp:327
+#, kde-format
+msgid ""
+"Date format for calendar result and/or default value (Qt-style); defaults to "
+"'ddd MMM d yyyy'"
+msgstr ""
+
+#: kdialog.cpp:328
+#, kde-format
+msgid "Calendar dialog box, returns selected date"
+msgstr "Dialog kalendáře. Vrací vybrané datum"
+
+#: kdialog.cpp:331
+#, kde-format
+msgid "Makes the dialog transient for an X app specified by winid"
+msgstr "Učiní okno modální pro aplikaci X, určenou pomocí ID okna"
+
+#: kdialog.cpp:332
+#, kde-format
+msgid "A synonym for --attach"
+msgstr "Synonymum pro --attach"
+
+#: kdialog.cpp:333
+#, kde-format
+msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
+msgstr ""
+
+#: kdialog.cpp:335 kdialog_progress_helper.cpp:42
+#, kde-format
+msgid "Arguments - depending on main option"
+msgstr "Argumenty - v závislosti na hlavní volbě"
+
+#: kdialog.cpp:514
+#, kde-format
+msgid "Do not ask again"
+msgstr "Znovu se nedotazovat"
+
+#: kdialog.cpp:714
+#, kde-format
+msgid "Syntax: --combobox <text> item [item] ..."
+msgstr ""
+
+#: kdialog.cpp:736
+#, kde-format
+msgid "Syntax: --menu text tag item [tag item] ..."
+msgstr ""
+
+#: kdialog.cpp:760
+#, kde-format
+msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
+msgstr ""
+
+#: kdialog.cpp:778
+#, kde-format
+msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
+msgstr ""
+
+#: kdialog.cpp:809
+#, kde-format
+msgctxt "@title:window"
+msgid "Open"
+msgstr "Otevřít"
+
+#: kdialog.cpp:861
+#, kde-format
+msgctxt "@title:window"
+msgid "Save As"
+msgstr "Uložit jako"
+
+#: kdialog.cpp:894
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Directory"
+msgstr "Vyberte adresář"
+
+#: kdialog.cpp:1008
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Color"
+msgstr "Vybrat barvu"
+
+#: progressdialog.cpp:23
+#, kde-format
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
+#, kde-format
+msgid "kdialog: could not open file %1"
+msgstr "kdialog: nelze otevřít soubor %1"
