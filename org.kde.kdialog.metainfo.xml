@@ -24,6 +24,7 @@
   <name xml:lang="id">KDialog</name>
   <name xml:lang="is">KDialog</name>
   <name xml:lang="it">KDialog</name>
+  <name xml:lang="ka">KDialog</name>
   <name xml:lang="ko">KDialog</name>
   <name xml:lang="nl">KDialog</name>
   <name xml:lang="nn">KDialog</name>
@@ -60,6 +61,7 @@
   <summary xml:lang="id">Displai kotak dialog dari skrip shell</summary>
   <summary xml:lang="is">Birtir samskiptaglugga frá skeljaskriftum</summary>
   <summary xml:lang="it">Visualizza finestre di dialogo da script di shell</summary>
+  <summary xml:lang="ka">სკრიპტებიდან ფანჯრების ჩვენება</summary>
   <summary xml:lang="ko">셸 스크립트에서 대화 상자 표시</summary>
   <summary xml:lang="nl">Dialoogvensters uit shell-scripts</summary>
   <summary xml:lang="nn">Vis dialogvindauge frå kommandolinjeskript</summary>
