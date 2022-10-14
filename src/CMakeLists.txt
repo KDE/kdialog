@@ -63,3 +63,5 @@ if (HAVE_X11)
 endif()
 
 install(TARGETS kdialog_progress_helper ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+
+install(FILES org.kde.kdialog.desktop DESTINATION ${KDE_INSTALL_APPDIR})

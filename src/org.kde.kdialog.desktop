@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=KDialog
+Icon=system-run
+Exec=kdialog
+NoDisplay=true
