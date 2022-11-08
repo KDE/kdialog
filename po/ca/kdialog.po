@@ -435,13 +435,3 @@ msgstr "Cancel·la"
 #, kde-format
 msgid "kdialog: could not open file %1"
 msgstr "kdialog: no s'ha pogut obrir el fitxer %1"
-
-# skip-rule: t-sp_pu
-#~ msgid "Syntax: --radiolist text [tag item on/off] ..."
-#~ msgstr "Sintaxi: --radiolist text [etiqueta element on/off] ..."
-
-#~ msgid "File dialog to open an existing URL"
-#~ msgstr "Diàleg de fitxer per a obrir un URL existent"
-
-#~ msgid "File dialog to save a URL"
-#~ msgstr "Diàleg de fitxer per a desar un URL"
