@@ -1,6 +1,14 @@
 [Desktop Entry]
 Type=Application
 Name=KDialog
+Name[ca]=KDialog
+Name[es]=KDialog
+Name[eu]=KDialog
+Name[nl]=KDialog
+Name[tr]=KDialog
+Name[uk]=KDialog
+Name[vi]=KDialog
+Name[x-test]=xxKDialogxx
 Icon=system-run
 Exec=kdialog
 NoDisplay=true
