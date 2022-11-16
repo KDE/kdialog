@@ -2,9 +2,12 @@
 Type=Application
 Name=KDialog
 Name[ca]=KDialog
+Name[ca@valencia]=KDialog
 Name[es]=KDialog
 Name[eu]=KDialog
 Name[nl]=KDialog
+Name[pt]=KDialog
+Name[sl]=KDialog
 Name[tr]=KDialog
 Name[uk]=KDialog
 Name[vi]=KDialog
