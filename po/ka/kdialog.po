@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-30 00:48+0000\n"
-"PO-Revision-Date: 2022-11-29 06:35+0100\n"
+"PO-Revision-Date: 2022-11-30 06:57+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -302,6 +302,8 @@ msgid ""
 "Return list items on separate lines (for checklist option and file open with "
 "--multiple)"
 msgstr ""
+"აბრუნებს ელემენტების სიას ცალ-ცალკე ხაზებზე (ჩასართავი პარამეტრებისა და "
+"ფაილის --multiple -ით გასახსნელად)"
 
 #: kdialog.cpp:323
 #, kde-format
@@ -313,6 +315,8 @@ msgstr "თითოეული ფანჯრის winId -ის გამ�
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr ""
+"კონფიგურაციის ფაილი და პარამეტრის სახელი \"არ-მაჩვენო/თავიდან-მკითხე\" "
+"მდგომარეობის შესანახად"
 
 #: kdialog.cpp:326
 #, kde-format
@@ -325,6 +329,8 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"თარიღის ფორმატი კალენდარის შედეგისთვის ან/და მისი ნაგულისხმები მნიშვნელობა "
+"(Qt-ის სტილი); ნაგულისხმები მნიშვნელობაა 'დდდ თთთ დ წწწწ'"
 
 #: kdialog.cpp:328
 #, kde-format
@@ -334,7 +340,7 @@ msgstr "კალენდარის ფანჯარა. აბრუნე
 #: kdialog.cpp:331
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
-msgstr ""
+msgstr "ფანჯრის winid-ით მითითებულ X-ის აპზე მიბმა"
 
 #: kdialog.cpp:332
 #, kde-format
