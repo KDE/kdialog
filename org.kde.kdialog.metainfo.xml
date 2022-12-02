@@ -102,6 +102,7 @@
     <p xml:lang="ia">kdialog te permitte monstrar quadros de dialogo ex scripts de shell. Le synthaxe es multe inspirate al commando  "dialog"  (que monstra dialogos de modo texto).</p>
     <p xml:lang="id">kdialog memungkinkan kamu untuk mendisplaikan kotak dialog dari skrip shell. Sintaksnya sangat terinspirasi dari perintah "dialog" (yang menampilkan dialog mode teks).</p>
     <p xml:lang="it">kdialog ti permette di visualizzare delle finestre di dialogo da script di shell. La sintassi prende decisamente ispirazione dal comando «dialog» (che mostra finestre in modalità testuale).</p>
+    <p xml:lang="ka">kdialog საშუალებას გაძლევთ, გრაფიკული ფანჯრები გარსის სკრიპტებიდან გამოიძახოთ. სინტაქსი ძალიან წააგავს "dialog" ბრძანებისას (რომელიც იგივეს ტექსტურ რეჟიმში აკეთებს).</p>
     <p xml:lang="ko">KDialog를 사용하여 셸 스크립트에서 대화 상자를 표시할 수 있습니다. 텍스트 모드 대화 상자를 표시하는 "dialog" 명령의 문법에서 많은 영향을 받았습니다.</p>
     <p xml:lang="nl">kdialog biedt u dialoogvensters te tonen uit shell-scripts. De syntaxis is zeer geïnspireerd op het commando "dialog" (die dialogen toont in tekstmodus).</p>
     <p xml:lang="nn">KDialog lèt deg visa dialogvindauge frå kommandolinjeskript. Syntaksen er sterkt inspirert av «dialog»-kommandoen (som viser tekstbaserte dialogvindauge).</p>
