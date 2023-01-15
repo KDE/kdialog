@@ -14,6 +14,7 @@ ProgressDialog::ProgressDialog(QWidget *parent, const QString &caption, const QS
     (void)new ProgressDialogAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/ProgressDialog"), this);
     setAutoClose(false);
+    setAutoReset(false);
     setMaximum(totalSteps);
     Utils::handleXGeometry(this);
 }
