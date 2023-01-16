@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=KDialog
+Name[be]=KDialog
 Name[bg]=KDialog
 Name[ca]=KDialog
 Name[ca@valencia]=KDialog
@@ -13,6 +14,7 @@ Name[ia]=KDialog
 Name[it]=KDialog
 Name[ka]=KDialog
 Name[nl]=KDialog
+Name[nn]=KDialog
 Name[pt]=KDialog
 Name[pt_BR]=KDialog
 Name[ru]=KDialog
