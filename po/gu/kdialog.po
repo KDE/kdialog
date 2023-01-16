@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"POT-Creation-Date: 2023-01-16 02:52+0000\n"
 "PO-Revision-Date: 2008-10-19 11:38+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati\n"
@@ -412,7 +412,7 @@ msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "રંગ પસંદ કરો"
 
-#: progressdialog.cpp:23
+#: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
 msgstr ""

@@ -1,7 +1,7 @@
 # Translation of kdialog.po to Slovenian
 # SLOVENIAN TRANSLATION OF KDEBASE.
 # Copyright (C) 2002, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kdialog.po 1634914 2022-09-30 01:34:15Z scripty $
+# $Id: kdialog.po 1642477 2023-01-16 03:21:13Z scripty $
 # $Source$
 #
 # Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2002.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"POT-Creation-Date: 2023-01-16 02:52+0000\n"
 "PO-Revision-Date: 2020-10-15 08:49+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -421,7 +421,7 @@ msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Izbor barve"
 
-#: progressdialog.cpp:23
+#: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
 msgstr "Prekliči"

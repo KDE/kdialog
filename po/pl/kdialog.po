@@ -1,6 +1,6 @@
 # translation of kdialog.po to
 # translation of kdialog.po to Polish
-# Version: $Revision: 1634905 $
+# Version: $Revision: 1642477 $
 # Copyright (C) 2004, 2005, 2008, 2009 Free Software Foundation, Inc.
 #
 # Wojciech Milewski <Wojciech.Milewski@wp.pl>, 2002.
@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"POT-Creation-Date: 2023-01-16 02:52+0000\n"
 "PO-Revision-Date: 2020-12-24 20:28+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -418,7 +418,7 @@ msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Wybierz kolor"
 
-#: progressdialog.cpp:23
+#: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
 msgstr "Anuluj"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"POT-Creation-Date: 2023-01-16 02:52+0000\n"
 "PO-Revision-Date: 2011-03-04 19:14+0100\n"
 "Last-Translator: Marko Dimjasevic <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -424,7 +424,7 @@ msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Odaberite boju"
 
-#: progressdialog.cpp:23
+#: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
 msgstr ""
