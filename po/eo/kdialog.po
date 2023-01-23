@@ -1,14 +1,16 @@
-# translation of kdialog.po to esperanto
-#
+# translation of kdialog.pot to esperanto
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the kdialog package.
 # Cindy McKee <cfmckee@gmail.com>, 2007.
-# Pierre-Marie Pédrot <pedrotpmx@wanadoo.fr>, 2007.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-16 01:01+0000\n"
-"PO-Revision-Date: 2007-11-25 23:10+0100\n"
-"Last-Translator: Pierre-Marie Pédrot <pedrotpmx@wanadoo.fr>\n"
+"PO-Revision-Date: 2023-01-22 23:30+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +22,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Cindy McKee"
+msgstr "Cindy McKee,Oliver Kellogg"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "cfmckee@gmail.com"
+msgstr "cfmckee@gmail.com,okellogg@users.sourceforge.net"
 
 #: kdialog.cpp:263
 #, kde-format
@@ -35,7 +37,8 @@ msgstr "KDialog"
 #: kdialog.cpp:264
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
-msgstr "KDialog povas montri dialogujojn pere de ŝelaj skriptoj"
+msgstr ""
+"KDialog povas esti uzata por montri belajn dialogujojn el ŝelaj skriptoj"
 
 #: kdialog.cpp:266
 #, kde-format
@@ -85,82 +88,82 @@ msgstr "Dawit Alemayehu"
 #: kdialog.cpp:274
 #, kde-format
 msgid "Kai Uwe Broulik"
-msgstr ""
+msgstr "Kai Uwe Broulik"
 
 #: kdialog.cpp:280
 #, kde-format
 msgid "Question message box with yes/no buttons"
-msgstr "Demanda dialogujo kun jes/ne butonoj"
+msgstr "Demanda mesaĝkesto kun jes/ne butonoj"
 
 #: kdialog.cpp:281
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
-msgstr "Demanda dialogujo kun jes/ne/rezigni butonoj"
+msgstr "Demanda mesaĝkesto kun jes/ne/nuligi butonoj"
 
 #: kdialog.cpp:282
 #, kde-format
 msgid "Warning message box with yes/no buttons"
-msgstr "Averta dialogujo kun /jes/ne butonoj"
+msgstr "Averta mesaĝkesto kun jes/ne butonoj"
 
 #: kdialog.cpp:283
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
-msgstr "Averta dialogujo kun /daŭri/rezigni butonoj"
+msgstr "Averta mesaĝkesto kun daŭrigi/nuligi butonoj"
 
 #: kdialog.cpp:284
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
-msgstr "Averta dialogujo kun jes/ne/rezigni butonoj"
+msgstr "Averta mesaĝo kun butonoj jes/ne/nuligi"
 
 #: kdialog.cpp:286
 #, kde-format
 msgid "Use text as OK button label"
-msgstr ""
+msgstr "Uzi tekston por OK butonetikedo"
 
 #: kdialog.cpp:287
 #, kde-format
 msgid "Use text as Yes button label"
-msgstr ""
+msgstr "Uzi tekston por Jes butonetikedo"
 
 #: kdialog.cpp:288
 #, kde-format
 msgid "Use text as No button label"
-msgstr ""
+msgstr "Uzi tekston por Neniu butonetikedo"
 
 #: kdialog.cpp:289
 #, kde-format
 msgid "Use text as Cancel button label"
-msgstr ""
+msgstr "Uzi tekston por Nuligi butonetikedon"
 
 #: kdialog.cpp:290
 #, kde-format
 msgid "Use text as Continue button label"
-msgstr ""
+msgstr "Uzi tekston kiel Daŭrigi butonetikedon"
 
 #: kdialog.cpp:291
 #, kde-format
 msgid "'Sorry' message box"
-msgstr "\"Pardonpeto\" dialogujo"
+msgstr "'Pardonu' mesaĝkesto"
 
 #: kdialog.cpp:292
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
-msgstr ""
+msgstr "'Pardonu' mesaĝkesto kun vastigebla kampo Detaloj"
 
 #: kdialog.cpp:293
 #, kde-format
 msgid "'Error' message box"
-msgstr "\"Eraro\" dialogujo"
+msgstr "'Eraro' mesaĝkesto"
 
 #: kdialog.cpp:294
 #, kde-format
 msgid "'Error' message box with expandable Details field"
-msgstr ""
+msgstr "'Eraro' mesaĝkesto kun vastigebla kampo Detaloj"
 
 #: kdialog.cpp:295
 #, kde-format
 msgid "Message Box dialog"
-msgstr "Informa dialogujo"
+msgstr "Mesaĝkesta dialogujo"
 
 #: kdialog.cpp:296
 #, kde-format
@@ -168,16 +171,14 @@ msgid "Input Box dialog"
 msgstr "Enmeta dialogujo"
 
 #: kdialog.cpp:297
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box dialog"
-msgstr "Informa dialogujo"
+msgstr "Bildkesta Dialogujo"
 
 #: kdialog.cpp:298
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box Input dialog"
-msgstr "Informa dialogujo"
+msgstr "Bildkest-Enmeta Dialogujo"
 
 #: kdialog.cpp:299
 #, kde-format
@@ -185,25 +186,24 @@ msgid "Password dialog"
 msgstr "Pasvorta dialogujo"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "Password dialog"
+#, kde-format
 msgid "New Password dialog"
-msgstr "Pasvorta dialogujo"
+msgstr "Novpasvorta dialogujo"
 
 #: kdialog.cpp:301
 #, kde-format
 msgid "Text Box dialog"
-msgstr "Dosiermontra dialogujo"
+msgstr "Tekstokesta dialogujo"
 
 #: kdialog.cpp:302
 #, kde-format
 msgid "Text Input Box dialog"
-msgstr "Enmeta dialogujo kun teksto"
+msgstr "Tekstenmeta dialogujo"
 
 #: kdialog.cpp:303
 #, kde-format
 msgid "ComboBox dialog"
-msgstr "Redaktebla falmenua dialogujo"
+msgstr "KomboBox-Dialogujo"
 
 #: kdialog.cpp:304
 #, kde-format
@@ -226,63 +226,60 @@ msgid "Passive Popup"
 msgstr "Senfokusa ŝpruc-dialogujo"
 
 #: kdialog.cpp:308
-#, fuzzy, kde-format
-#| msgid "Passive Popup"
+#, kde-format
 msgid "Popup icon"
-msgstr "Senfokusa ŝpruc-dialogujo"
+msgstr "Ŝprucfenestra piktogramo"
 
 #: kdialog.cpp:309
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
-msgstr "Dosiera dialogujo kiu malfermos dosieron"
+msgstr ""
+"Dosiera dialogo por malfermi ekzistantan dosieron (argumentoj [startDir] "
+"[filtrilo])"
 
 #: kdialog.cpp:310
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
-msgstr "Dosiera dialogujo kiu konservos novan dosieron"
+msgstr ""
+"Dosierdialogujo por konservi dosieron (argumentoj [startDir] [filtrilo])"
 
 #: kdialog.cpp:311
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
-msgstr "Dosiera dialogujo kiu elektos ekzistantan dosierujon"
+msgstr ""
+"Dosierdialogujo por elekti ekzistantan dosierujon (argumentoj [startDir])"
 
 #: kdialog.cpp:312
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
-msgstr "Dosiera dialogujo kiu malfermos dosieron"
+msgstr ""
+"Dosierdialogujo por malfermi ekzistantan URL (argumentoj [startDir] "
+"[filtrilo])"
 
 #: kdialog.cpp:313
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
-msgstr "Dosiera dialogujo kiu konservos novan dosieron"
+msgstr "Dosierdialogujo por konservi URL (argumentoj [startDir] [filtrilo])"
 
 #: kdialog.cpp:314
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
-msgstr ""
+msgstr "Piktogramelektila dialogujo (argumentoj [grupo] [kunteksto])"
 
 #: kdialog.cpp:315 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
-msgstr ""
-"Plenumindikila dialogujo, kiu liveras referencon uzante DCOP-on por montri "
-"ŝanĝojn en la indikilo"
+msgstr "Plenumindikila dialogujo, redonas referencon de D-Bus por komunikado"
 
 #: kdialog.cpp:316
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "Color dialog to select a color"
-msgstr "Dosiera dialogujo kiu elektos ekzistantan dosierujon"
+msgstr "Kolordialogujo por elekti koloron"
 
 #: kdialog.cpp:317
 #, kde-format
 msgid "Allow --getcolor to specify output format"
-msgstr ""
+msgstr "Permesi al --getcolor specifi eligformaton"
 
 #: kdialog.cpp:319 kdialog_progress_helper.cpp:41
 #, kde-format
@@ -290,10 +287,9 @@ msgid "Dialog title"
 msgstr "Dialoga titolo"
 
 #: kdialog.cpp:320
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox and menu"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "Defaŭlta teksto por redaktebla falmenuo kaj menuo"
+msgstr "Defaŭlta enigero uzenda por kombokesto, menuo, koloro kaj kalendaro"
 
 #: kdialog.cpp:321
 #, kde-format
@@ -301,7 +297,7 @@ msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
 "files"
 msgstr ""
-"Permesas ke la --getopenurl kaj --getopenfilename parametroj liveras plurajn "
+"Permesas al la opcioj --getopenurl kaj --getopenfilename redoni plurajn "
 "dosierojn"
 
 #: kdialog.cpp:322
@@ -310,8 +306,8 @@ msgid ""
 "Return list items on separate lines (for checklist option and file open with "
 "--multiple)"
 msgstr ""
-"Liveras listajn erojn sur apartaj linioj (por markolistaj elektoj kaj la "
-"malfermi dosieron kun la parametro --multiple)"
+"Liveri listajn erojn sur apartaj linioj (por marklistaj elektoj kaj dosier-"
+"malfermado kun parametro --multiple)"
 
 #: kdialog.cpp:323
 #, kde-format
@@ -323,14 +319,13 @@ msgstr "Liveras la fenestran identigilon (winId) por ĉiu dialogo"
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr ""
-"Agorda dosiero kaj parametra nomo por la konservo de la \"ne montri/demandi "
-"ree\" stato"
+"Agorda dosiero kaj opcionomo por konservi la staton \"ne-montri/demandi "
+"denove\""
 
 #: kdialog.cpp:326
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "Slider dialog box, returns selected value"
-msgstr "Dosiera dialogujo kiu elektos ekzistantan dosierujon"
+msgstr "Ŝovila dialogujo, liveras elektitan valoron"
 
 #: kdialog.cpp:327
 #, kde-format
@@ -338,54 +333,57 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"Datformato por kalendarrezulto kaj/aŭ defaŭlta valoro (Qt-stilo); defaŭlte "
+"al 'ddd MMM d jyyy'"
 
 #: kdialog.cpp:328
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "Calendar dialog box, returns selected date"
-msgstr "Dosiera dialogujo kiu elektos ekzistantan dosierujon"
+msgstr "Kalendara dialogujo, liveras elektitan daton"
 
 #: kdialog.cpp:331
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr ""
-"Igas la dialogujon pasema por X-aplikaĵo kiu estas difinita per winid "
-"(fenestra identigilo)"
+"Igas la dialogujon pasema por X-aplikaĵo difinita per winid (fenestra "
+"identigilo)"
 
 #: kdialog.cpp:332
 #, kde-format
 msgid "A synonym for --attach"
-msgstr ""
+msgstr "Sinonimo por --attach"
 
 #: kdialog.cpp:333
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
-msgstr ""
+msgstr "Dialogogeometrio: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 
 #: kdialog.cpp:335 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
-msgstr "Argumentoj - dependas de ĉefa opcio"
+msgstr "Argumentoj - depende de ĉefa opcio"
 
 #: kdialog.cpp:514
 #, kde-format
 msgid "Do not ask again"
-msgstr ""
+msgstr "Ne demandi denove"
 
 #: kdialog.cpp:714
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr ""
+msgstr "Sintakso: --combobox <teksto> ero [ero] ..."
 
 #: kdialog.cpp:736
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr ""
+msgstr "Sintakso: --menu teksto etikedo [etikedo] ..."
 
 #: kdialog.cpp:760
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"Sintakso: --checklist teksto etikedo-ŝaltita/malŝaltita [etikedo-ŝaltita/"
+"malŝaltita] ..."
 
 #: kdialog.cpp:778
 #, kde-format
@@ -408,30 +406,20 @@ msgstr "Konservi kiel"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
-msgstr ""
+msgstr "Elekti Dosierujon"
 
 #: kdialog.cpp:1008
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
-msgstr ""
+msgstr "Elekti Koloron"
 
 #: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Nuligi"
 
 #: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
-#, fuzzy, kde-format
-#| msgid "kdialog: could not open file "
+#, kde-format
 msgid "kdialog: could not open file %1"
-msgstr "kdialog: ne povas malfermi dosieron"
-
-#~ msgid "File dialog to open an existing URL"
-#~ msgstr "Dosiera dialogujo kiu malfermos ekzistantan retadreson"
-
-#~ msgid "File dialog to save a URL"
-#~ msgstr "Dosiera dialogujo kiu konservos retadreson"
-
-#~ msgid "Icon chooser dialog"
-#~ msgstr "Dialogujo por elekti piktogramon"
+msgstr "kdialog: ne povis malfermi la dosieron %1"
