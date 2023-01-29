@@ -18,12 +18,12 @@ target_sources(kdialog PRIVATE
 )
 
 target_link_libraries(kdialog
-    KF5::KIOWidgets
-    KF5::TextWidgets
-    KF5::Notifications
-    KF5::IconThemes
-    KF5::GuiAddons
-    KF5::WindowSystem
+    KF${KF_MAJOR_VERSION}::KIOWidgets
+    KF${KF_MAJOR_VERSION}::TextWidgets
+    KF${KF_MAJOR_VERSION}::Notifications
+    KF${KF_MAJOR_VERSION}::IconThemes
+    KF${KF_MAJOR_VERSION}::GuiAddons
+    KF${KF_MAJOR_VERSION}::WindowSystem
 )
 
 target_link_libraries(kdialog Qt::DBus)
@@ -53,8 +53,8 @@ target_sources(kdialog_progress_helper PRIVATE
 )
 
 target_link_libraries(kdialog_progress_helper
-    KF5::DBusAddons
-    KF5::I18n
+    KF${KF_MAJOR_VERSION}::DBusAddons
+    KF${KF_MAJOR_VERSION}::I18n
     Qt::Widgets
 )
 

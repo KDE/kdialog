@@ -14,7 +14,10 @@
 
 // KF
 #include <KMessageBox>
+#include <knotifications_export.h>
+#if KNOTIFICATIONS_BUILD_DEPRECATED_SINCE(5, 79)
 #include <KPassivePopup>
+#endif
 #include <KRecentDocument>
 #include <KAboutData>
 #include <KConfig>
@@ -25,7 +28,6 @@
 #include <KLocalizedString>
 #include <kwidgetsaddons_version.h>
 
-#include <knotifications_export.h>
 #if KNOTIFICATIONS_BUILD_DEPRECATED_SINCE(5, 79)
 #include <QDesktopWidget>
 #endif
