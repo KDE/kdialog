@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-16 01:01+0000\n"
+"POT-Creation-Date: 2023-01-30 01:01+0000\n"
 "PO-Revision-Date: 2021-05-16 21:29+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -28,264 +28,264 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
 
-#: kdialog.cpp:263
+#: kdialog.cpp:265
 #, kde-format
 msgid "KDialog"
 msgstr "KDialog"
 
-#: kdialog.cpp:264
+#: kdialog.cpp:266
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr "KDialog는 셸 스크립트에서 대화 상자를 보여 줄 수 있습니다"
 
-#: kdialog.cpp:266
+#: kdialog.cpp:268
 #, kde-format
 msgid "(C) 2000, Nick Thompson"
 msgstr "(C) 2000, Nick Thompson"
 
-#: kdialog.cpp:267
+#: kdialog.cpp:269
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: kdialog.cpp:267
+#: kdialog.cpp:269
 #, kde-format
 msgid "Current maintainer"
 msgstr "현재 관리자"
 
-#: kdialog.cpp:268
+#: kdialog.cpp:270
 #, kde-format
 msgid "Brad Hards"
 msgstr "Brad Hards"
 
-#: kdialog.cpp:269
+#: kdialog.cpp:271
 #, kde-format
 msgid "Nick Thompson"
 msgstr "Nick Thompson"
 
-#: kdialog.cpp:270
+#: kdialog.cpp:272
 #, kde-format
 msgid "Matthias Hölzer"
 msgstr "Matthias Hölzer"
 
-#: kdialog.cpp:271
+#: kdialog.cpp:273
 #, kde-format
 msgid "David Gümbel"
 msgstr "David Gümbel"
 
-#: kdialog.cpp:272
+#: kdialog.cpp:274
 #, kde-format
 msgid "Richard Moore"
 msgstr "Richard Moore"
 
-#: kdialog.cpp:273
+#: kdialog.cpp:275
 #, kde-format
 msgid "Dawit Alemayehu"
 msgstr "Dawit Alemayehu"
 
-#: kdialog.cpp:274
+#: kdialog.cpp:276
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
 
-#: kdialog.cpp:280
+#: kdialog.cpp:282
 #, kde-format
 msgid "Question message box with yes/no buttons"
 msgstr "예/아니요 단추가 있는 질문 메시지 상자"
 
-#: kdialog.cpp:281
+#: kdialog.cpp:283
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
 msgstr "예/아니요/취소 단추가 있는 질문 메시지 상자"
 
-#: kdialog.cpp:282
+#: kdialog.cpp:284
 #, kde-format
 msgid "Warning message box with yes/no buttons"
 msgstr "예/아니요 단추가 있는 경고 메시지 상자"
 
-#: kdialog.cpp:283
+#: kdialog.cpp:285
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
 msgstr "계속/취소 단추가 있는 경고 메시지 상자"
 
-#: kdialog.cpp:284
+#: kdialog.cpp:286
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
 msgstr "예/아니요/취소 단추가 있는 경고 메시지 상자"
 
-#: kdialog.cpp:286
+#: kdialog.cpp:288
 #, kde-format
 msgid "Use text as OK button label"
 msgstr "text를 확인 단추 이름표로 사용하기"
 
-#: kdialog.cpp:287
+#: kdialog.cpp:289
 #, kde-format
 msgid "Use text as Yes button label"
 msgstr "text를 예 단추 이름표로 사용하기"
 
-#: kdialog.cpp:288
+#: kdialog.cpp:290
 #, kde-format
 msgid "Use text as No button label"
 msgstr "text를 아니요 단추 이름표로 사용하기"
 
-#: kdialog.cpp:289
+#: kdialog.cpp:291
 #, kde-format
 msgid "Use text as Cancel button label"
 msgstr "text를 취소 단추 이름표로 사용하기"
 
-#: kdialog.cpp:290
+#: kdialog.cpp:292
 #, kde-format
 msgid "Use text as Continue button label"
 msgstr "text를 계속 단추 이름표로 사용하기"
 
-#: kdialog.cpp:291
+#: kdialog.cpp:293
 #, kde-format
 msgid "'Sorry' message box"
 msgstr "'죄송합니다' 메시지 상자"
 
-#: kdialog.cpp:292
+#: kdialog.cpp:294
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
 msgstr "확장 가능한 자세히 필드가 있는 '죄송합니다' 메시지 상자"
 
-#: kdialog.cpp:293
+#: kdialog.cpp:295
 #, kde-format
 msgid "'Error' message box"
 msgstr "'오류' 메시지 상자"
 
-#: kdialog.cpp:294
+#: kdialog.cpp:296
 #, kde-format
 msgid "'Error' message box with expandable Details field"
 msgstr "확장 가능한 자세히 필드가 있는 '오류' 메시지 상자"
 
-#: kdialog.cpp:295
+#: kdialog.cpp:297
 #, kde-format
 msgid "Message Box dialog"
 msgstr "메시지 상자 대화 상자"
 
-#: kdialog.cpp:296
+#: kdialog.cpp:298
 #, kde-format
 msgid "Input Box dialog"
 msgstr "입력 상자 대화 상자"
 
-#: kdialog.cpp:297
+#: kdialog.cpp:299
 #, kde-format
 msgid "Image Box dialog"
 msgstr "그림 상자 대화 상자"
 
-#: kdialog.cpp:298
+#: kdialog.cpp:300
 #, kde-format
 msgid "Image Box Input dialog"
 msgstr "그림 상자 입력 대화 상자"
 
-#: kdialog.cpp:299
+#: kdialog.cpp:301
 #, kde-format
 msgid "Password dialog"
 msgstr "암호 대화 상자"
 
-#: kdialog.cpp:300
+#: kdialog.cpp:302
 #, kde-format
 msgid "New Password dialog"
 msgstr "새 암호 대화 상자"
 
-#: kdialog.cpp:301
+#: kdialog.cpp:303
 #, kde-format
 msgid "Text Box dialog"
 msgstr "텍스트 상자 대화 상자"
 
-#: kdialog.cpp:302
+#: kdialog.cpp:304
 #, kde-format
 msgid "Text Input Box dialog"
 msgstr "텍스트 입력 상자 대화 상자"
 
-#: kdialog.cpp:303
+#: kdialog.cpp:305
 #, kde-format
 msgid "ComboBox dialog"
 msgstr "콤보 상자 대화 상자"
 
-#: kdialog.cpp:304
+#: kdialog.cpp:306
 #, kde-format
 msgid "Menu dialog"
 msgstr "메뉴 대화 상자"
 
-#: kdialog.cpp:305
+#: kdialog.cpp:307
 #, kde-format
 msgid "Check List dialog"
 msgstr "체크 목록 대화 상자"
 
-#: kdialog.cpp:306
+#: kdialog.cpp:308
 #, kde-format
 msgid "Radio List dialog"
 msgstr "라디오 목록 대화 상자"
 
-#: kdialog.cpp:307
+#: kdialog.cpp:309
 #, kde-format
 msgid "Passive Popup"
 msgstr "수동적 팝업"
 
-#: kdialog.cpp:308
+#: kdialog.cpp:310
 #, kde-format
 msgid "Popup icon"
 msgstr "팝업 아이콘"
 
-#: kdialog.cpp:309
+#: kdialog.cpp:311
 #, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
 msgstr ""
 "존재하는 파일을 열 수 있는 파일 대화 상자 (arguments [startDir] [filter])"
 
-#: kdialog.cpp:310
+#: kdialog.cpp:312
 #, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
 msgstr "파일 저장 대화 상자 (arguments [startDir] [filter])"
 
-#: kdialog.cpp:311
+#: kdialog.cpp:313
 #, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "존재하는 디렉터리를 선택하는 대화 상자 (arguments [startDir])"
 
-#: kdialog.cpp:312
+#: kdialog.cpp:314
 #, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
 msgstr ""
 "존재하는 파일을 열 수 있는 파일 대화 상자 (arguments [startDir] [filter])"
 
-#: kdialog.cpp:313
+#: kdialog.cpp:315
 #, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
 msgstr "파일 저장 대화 상자 (arguments [startDir] [filter])"
 
-#: kdialog.cpp:314
+#: kdialog.cpp:316
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr "아이콘 선택기 대화 상자 (arguments [group] [context])"
 
-#: kdialog.cpp:315 kdialog_progress_helper.cpp:40
+#: kdialog.cpp:317 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr "진행 표시줄 대화 상자, 통신에 사용할 D-Bus 참조 반환"
 
-#: kdialog.cpp:316
+#: kdialog.cpp:318
 #, kde-format
 msgid "Color dialog to select a color"
 msgstr "색을 선택하는 대화 상자"
 
-#: kdialog.cpp:317
+#: kdialog.cpp:319
 #, kde-format
 msgid "Allow --getcolor to specify output format"
 msgstr "--getcolor에서 출력 형식을 지정하도록 허용"
 
-#: kdialog.cpp:319 kdialog_progress_helper.cpp:41
+#: kdialog.cpp:321 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
 msgstr "대화 상자 제목"
 
-#: kdialog.cpp:320
+#: kdialog.cpp:322
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr "콤보 상자, 메뉴, 색, 달력의 기본 항목"
 
-#: kdialog.cpp:321
+#: kdialog.cpp:323
 #, kde-format
 msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
@@ -294,7 +294,7 @@ msgstr ""
 "--getopenurl과 --getopenfilename 옵션이 파일 여러 개를 되돌려 줄 수 있도록 하"
 "기"
 
-#: kdialog.cpp:322
+#: kdialog.cpp:324
 #, kde-format
 msgid ""
 "Return list items on separate lines (for checklist option and file open with "
@@ -303,98 +303,98 @@ msgstr ""
 "목록 항목을 다른 줄로 나눠서 반환하기 (체크 목록 옵션이나 파일 열기 옵션을 --"
 "multiple과 같이 사용했을 때"
 
-#: kdialog.cpp:323
+#: kdialog.cpp:325
 #, kde-format
 msgid "Outputs the winId of each dialog"
 msgstr "각각 대화 상자의 winId 출력하기"
 
-#: kdialog.cpp:324
+#: kdialog.cpp:326
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr "\"다시 보이거나 묻지 않기\" 상태를 저장할 설정 파일과 옵션 이름"
 
-#: kdialog.cpp:326
+#: kdialog.cpp:328
 #, kde-format
 msgid "Slider dialog box, returns selected value"
 msgstr "슬라이더 대화 상자, 선택한 값을 반환함"
 
-#: kdialog.cpp:327
+#: kdialog.cpp:329
 #, kde-format
 msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr "달력 결과 및 기본값의 날짜 형식(Qt 스타일). 기본값은 'ddd MMM d yyyy'"
 
-#: kdialog.cpp:328
+#: kdialog.cpp:330
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
 msgstr "달력 대화 상자, 선택한 날짜를 반환함"
 
-#: kdialog.cpp:331
+#: kdialog.cpp:333
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr "대화 상자를 winid로 지정한 X 프로그램에 연결하기"
 
-#: kdialog.cpp:332
+#: kdialog.cpp:334
 #, kde-format
 msgid "A synonym for --attach"
 msgstr "--attach와 같은 역할 수행"
 
-#: kdialog.cpp:333
+#: kdialog.cpp:335
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr "대화 상자 크기: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 
-#: kdialog.cpp:335 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:337 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "인자 - 주 옵션과 관계 있음"
 
-#: kdialog.cpp:514
+#: kdialog.cpp:516
 #, kde-format
 msgid "Do not ask again"
 msgstr "다시 묻지 않기"
 
-#: kdialog.cpp:714
+#: kdialog.cpp:716
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "문법: --combobox <text> item [item] ..."
 
-#: kdialog.cpp:736
+#: kdialog.cpp:738
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "문법: --menu text tag item [tag item] ..."
 
-#: kdialog.cpp:760
+#: kdialog.cpp:762
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr "문법: --checklist text tag item on/off [tag item on/off]"
 
-#: kdialog.cpp:778
+#: kdialog.cpp:780
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "문법: --checklist text tag item on/off [tag item on/off]"
 
-#: kdialog.cpp:809
+#: kdialog.cpp:811
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "열기"
 
-#: kdialog.cpp:861
+#: kdialog.cpp:863
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "다른 이름으로 저장"
 
-#: kdialog.cpp:894
+#: kdialog.cpp:896
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "디렉터리 선택"
 
-#: kdialog.cpp:1008
+#: kdialog.cpp:1010
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"

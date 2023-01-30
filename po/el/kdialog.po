@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-16 01:01+0000\n"
+"POT-Creation-Date: 2023-01-30 01:01+0000\n"
 "PO-Revision-Date: 2020-10-18 09:43+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -36,271 +36,271 @@ msgstr ""
 "sdramis@egnatia.ee.auth.gr,sngeorgaras@otenet.gr,manolis@koppermind."
 "homelinux.org"
 
-#: kdialog.cpp:263
+#: kdialog.cpp:265
 #, kde-format
 msgid "KDialog"
 msgstr "KDialog"
 
-#: kdialog.cpp:264
+#: kdialog.cpp:266
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
 "Το KDialog χρησιμεύει στην εμφάνιση ευπαρουσίαστων διαλόγων μέσα από σενάρια "
 "κελύφους"
 
-#: kdialog.cpp:266
+#: kdialog.cpp:268
 #, kde-format
 msgid "(C) 2000, Nick Thompson"
 msgstr "(C) 2000, Nick Thompson"
 
-#: kdialog.cpp:267
+#: kdialog.cpp:269
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: kdialog.cpp:267
+#: kdialog.cpp:269
 #, kde-format
 msgid "Current maintainer"
 msgstr "Τρέχων συντηρητής"
 
-#: kdialog.cpp:268
+#: kdialog.cpp:270
 #, kde-format
 msgid "Brad Hards"
 msgstr "Brad Hards"
 
-#: kdialog.cpp:269
+#: kdialog.cpp:271
 #, kde-format
 msgid "Nick Thompson"
 msgstr "Nick Thompson"
 
-#: kdialog.cpp:270
+#: kdialog.cpp:272
 #, kde-format
 msgid "Matthias Hölzer"
 msgstr "Matthias Hölzer"
 
-#: kdialog.cpp:271
+#: kdialog.cpp:273
 #, kde-format
 msgid "David Gümbel"
 msgstr "David Gümbel"
 
-#: kdialog.cpp:272
+#: kdialog.cpp:274
 #, kde-format
 msgid "Richard Moore"
 msgstr "Richard Moore"
 
-#: kdialog.cpp:273
+#: kdialog.cpp:275
 #, kde-format
 msgid "Dawit Alemayehu"
 msgstr "Dawit Alemayehu"
 
-#: kdialog.cpp:274
+#: kdialog.cpp:276
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
 
-#: kdialog.cpp:280
+#: kdialog.cpp:282
 #, kde-format
 msgid "Question message box with yes/no buttons"
 msgstr "Πλαίσιο μηνύματος ερώτησης με κουμπιά ναι/όχι"
 
-#: kdialog.cpp:281
+#: kdialog.cpp:283
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
 msgstr "Πλαίσιο μηνύματος ερώτησης με κουμπιά ναι/όχι/ακύρωση"
 
-#: kdialog.cpp:282
+#: kdialog.cpp:284
 #, kde-format
 msgid "Warning message box with yes/no buttons"
 msgstr "Πλαίσιο μηνύματος ειδοποίησης με κουμπιά ναι/όχι"
 
-#: kdialog.cpp:283
+#: kdialog.cpp:285
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
 msgstr "Πλαίσιο μηνύματος ειδοποίησης με κουμπιά συνέχεια/ακύρωση"
 
-#: kdialog.cpp:284
+#: kdialog.cpp:286
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
 msgstr "Πλαίσιο μηνύματος ειδοποίησης με κουμπιά ναι/όχι/ακύρωση"
 
-#: kdialog.cpp:286
+#: kdialog.cpp:288
 #, kde-format
 msgid "Use text as OK button label"
 msgstr "Χρήση κειμένου ως ετικέτα για το κουμπί Εντάξει"
 
-#: kdialog.cpp:287
+#: kdialog.cpp:289
 #, kde-format
 msgid "Use text as Yes button label"
 msgstr "Χρήση κειμένου ως ετικέτα για το κουμπί Ναι"
 
-#: kdialog.cpp:288
+#: kdialog.cpp:290
 #, kde-format
 msgid "Use text as No button label"
 msgstr "Χρήση κειμένου ως ετικέτα για το κουμπί Όχι"
 
-#: kdialog.cpp:289
+#: kdialog.cpp:291
 #, kde-format
 msgid "Use text as Cancel button label"
 msgstr "Χρήση κειμένου ως ετικέτα για το κουμπί Ακύρωση"
 
-#: kdialog.cpp:290
+#: kdialog.cpp:292
 #, kde-format
 msgid "Use text as Continue button label"
 msgstr "Χρήση κειμένου ως ετικέτα για το κουμπί Συνέχεια"
 
-#: kdialog.cpp:291
+#: kdialog.cpp:293
 #, kde-format
 msgid "'Sorry' message box"
 msgstr "Πλαίσιο μηνύματος 'Λυπάμαι'"
 
-#: kdialog.cpp:292
+#: kdialog.cpp:294
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
 msgstr "Πλαίσιο μηνύματος 'Λυπάμαι' με επεκτάσιμο πεδίο λεπτομερειών"
 
-#: kdialog.cpp:293
+#: kdialog.cpp:295
 #, kde-format
 msgid "'Error' message box"
 msgstr "Πλαίσιο μηνύματος 'Σφάλμα'"
 
-#: kdialog.cpp:294
+#: kdialog.cpp:296
 #, kde-format
 msgid "'Error' message box with expandable Details field"
 msgstr "Πλαίσιο μηνύματος 'Σφάλμα' με επεκτάσιμο πεδίο λεπτομερειών"
 
-#: kdialog.cpp:295
+#: kdialog.cpp:297
 #, kde-format
 msgid "Message Box dialog"
 msgstr "Διάλογος μηνύματος"
 
-#: kdialog.cpp:296
+#: kdialog.cpp:298
 #, kde-format
 msgid "Input Box dialog"
 msgstr "Διάλογος πλαισίου εισαγωγής"
 
-#: kdialog.cpp:297
+#: kdialog.cpp:299
 #, kde-format
 msgid "Image Box dialog"
 msgstr "Διάλογος πλαισίου εικόνας"
 
-#: kdialog.cpp:298
+#: kdialog.cpp:300
 #, kde-format
 msgid "Image Box Input dialog"
 msgstr "Διάλογος εισαγωγής πλαισίου εικόνας"
 
-#: kdialog.cpp:299
+#: kdialog.cpp:301
 #, kde-format
 msgid "Password dialog"
 msgstr "Διάλογος κωδικού πρόσβασης"
 
-#: kdialog.cpp:300
+#: kdialog.cpp:302
 #, kde-format
 msgid "New Password dialog"
 msgstr "Διάλογος νέου κωδικού πρόσβασης"
 
-#: kdialog.cpp:301
+#: kdialog.cpp:303
 #, kde-format
 msgid "Text Box dialog"
 msgstr "Διάλογος κειμένου"
 
-#: kdialog.cpp:302
+#: kdialog.cpp:304
 #, kde-format
 msgid "Text Input Box dialog"
 msgstr "Διάλογος εισαγωγής κειμένου"
 
-#: kdialog.cpp:303
+#: kdialog.cpp:305
 #, kde-format
 msgid "ComboBox dialog"
 msgstr "Διάλογος λίστας συνδυασμών"
 
-#: kdialog.cpp:304
+#: kdialog.cpp:306
 #, kde-format
 msgid "Menu dialog"
 msgstr "Διάλογος μενού"
 
-#: kdialog.cpp:305
+#: kdialog.cpp:307
 #, kde-format
 msgid "Check List dialog"
 msgstr "Διάλογος λίστας επιλογών"
 
-#: kdialog.cpp:306
+#: kdialog.cpp:308
 #, kde-format
 msgid "Radio List dialog"
 msgstr "Διάλογος λίστας επιλογής"
 
-#: kdialog.cpp:307
+#: kdialog.cpp:309
 #, kde-format
 msgid "Passive Popup"
 msgstr "Παθητική αναπήδηση"
 
-#: kdialog.cpp:308
+#: kdialog.cpp:310
 #, kde-format
 msgid "Popup icon"
 msgstr "Εικονίδιο σε αναπήδηση"
 
-#: kdialog.cpp:309
+#: kdialog.cpp:311
 #, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
 msgstr ""
 "Διάλογος για το άνοιγμα ενός υπάρχοντος αρχείου (ορίσματα [startDir] "
 "[filter])"
 
-#: kdialog.cpp:310
+#: kdialog.cpp:312
 #, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
 msgstr ""
 "Διάλογος για την αποθήκευση ενός αρχείου (ορίσματα [startDir] [filter])"
 
-#: kdialog.cpp:311
+#: kdialog.cpp:313
 #, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr ""
 "Διάλογος για την επιλογή ενός υπάρχοντος καταλόγου (ορίσματα [startDir]"
 
-#: kdialog.cpp:312
+#: kdialog.cpp:314
 #, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
 msgstr ""
 "Διάλογος για το άνοιγμα ενός υπάρχοντος URL (ορίσματα [startDir] [filter])"
 
-#: kdialog.cpp:313
+#: kdialog.cpp:315
 #, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
 msgstr "Διάλογος για την αποθήκευση ενός URL (ορίσματα [startDir] [filter])"
 
-#: kdialog.cpp:314
+#: kdialog.cpp:316
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr "Διάλογος επιλογής εικονιδίου (ορίσματα [group] [context])"
 
-#: kdialog.cpp:315 kdialog_progress_helper.cpp:40
+#: kdialog.cpp:317 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr "Διάλογος γραμμής προόδου, επιστρέφει μια αναφορά D-Bus για επικοινωνία"
 
-#: kdialog.cpp:316
+#: kdialog.cpp:318
 #, kde-format
 msgid "Color dialog to select a color"
 msgstr "Διάλογος για την επιλογή ενός χρώματος"
 
-#: kdialog.cpp:317
+#: kdialog.cpp:319
 #, kde-format
 msgid "Allow --getcolor to specify output format"
 msgstr "Να επιτρέπεται --getcolor για τον ορισμό τύπου αποτελέσματος"
 
-#: kdialog.cpp:319 kdialog_progress_helper.cpp:41
+#: kdialog.cpp:321 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
 msgstr "Τίτλος διαλόγου"
 
-#: kdialog.cpp:320
+#: kdialog.cpp:322
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr ""
 "Προκαθορισμένη καταχώρηση για χρήση σε λίστα συνδυασμών, μενού, χρώμα και "
 "ημερολόγιο"
 
-#: kdialog.cpp:321
+#: kdialog.cpp:323
 #, kde-format
 msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
@@ -309,7 +309,7 @@ msgstr ""
 "Επιτρέπει στις επιλογές --getopenurl και --getopenfilename να επιστρέφουν "
 "πολλαπλά αρχεία"
 
-#: kdialog.cpp:322
+#: kdialog.cpp:324
 #, kde-format
 msgid ""
 "Return list items on separate lines (for checklist option and file open with "
@@ -318,12 +318,12 @@ msgstr ""
 "Επιστροφή αντικειμένων λίστας σε διαφορετικές γραμμές (για τη λίστα επιλογών "
 "και το άνοιγμα αρχείων με την επιλογή --multiple)"
 
-#: kdialog.cpp:323
+#: kdialog.cpp:325
 #, kde-format
 msgid "Outputs the winId of each dialog"
 msgstr "Επιστρέφει το winId (ταυτότητα παραθύρου) κάθε διαλόγου"
 
-#: kdialog.cpp:324
+#: kdialog.cpp:326
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
@@ -331,12 +331,12 @@ msgstr ""
 "Αρχείο διαμόρφωσης και όνομα επιλογής για αποθήκευση της κατάστασης του \"μη "
 "εμφάνιση/ερώτηση ξανά\""
 
-#: kdialog.cpp:326
+#: kdialog.cpp:328
 #, kde-format
 msgid "Slider dialog box, returns selected value"
 msgstr "Πλαίσιο διαλόγου κύλισης, επιστρέφει την επιλεγμένη τιμή"
 
-#: kdialog.cpp:327
+#: kdialog.cpp:329
 #, kde-format
 msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
@@ -345,78 +345,78 @@ msgstr ""
 "Μορφή ημερομηνίας για αποτελέσματα ημερολογίου ή/και προκαθορισμένη τιμή (σε "
 "στιλ Qt), η προκαθορισμένη τιμή είναι 'ηηη ΜΜΜ η εεεε'"
 
-#: kdialog.cpp:328
+#: kdialog.cpp:330
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
 msgstr "Πλαίσιο διαλόγου ημερολογίου, επιστρέφει την επιλεγμένη ημερομηνία"
 
-#: kdialog.cpp:331
+#: kdialog.cpp:333
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr ""
 "Κάνει το διάλογο μεταβατικό για μία εφαρμογή X που καθορίζεται από το winId"
 
-#: kdialog.cpp:332
+#: kdialog.cpp:334
 #, kde-format
 msgid "A synonym for --attach"
 msgstr "Συνώνυμο του --attach"
 
-#: kdialog.cpp:333
+#: kdialog.cpp:335
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 "Γεωμετρία παραθύρου διαλόγου: [=][<width>{xX}<height>][{+-}<xoffset>{+-}"
 "<yoffset>]"
 
-#: kdialog.cpp:335 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:337 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "Ορίσματα - εξαρτώνται από την κύρια επιλογή"
 
-#: kdialog.cpp:514
+#: kdialog.cpp:516
 #, kde-format
 msgid "Do not ask again"
 msgstr "Να μην ξαναγίνει ερώτηση"
 
-#: kdialog.cpp:714
+#: kdialog.cpp:716
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Σύνταξη: --combobox <text> item [item] ..."
 
-#: kdialog.cpp:736
+#: kdialog.cpp:738
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Σύνταξη: --menu text tag item [tag item] ..."
 
-#: kdialog.cpp:760
+#: kdialog.cpp:762
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr "Σύνταξη: --checklist text tag item on/off [tag item on/off] ..."
 
-#: kdialog.cpp:778
+#: kdialog.cpp:780
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "Σύνταξη: --radiolist text tag item on/off [tag item on/off] ..."
 
-#: kdialog.cpp:809
+#: kdialog.cpp:811
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Άνοιγμα"
 
-#: kdialog.cpp:861
+#: kdialog.cpp:863
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Αποθήκευση ως"
 
-#: kdialog.cpp:894
+#: kdialog.cpp:896
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Επιλογή καταλόγου"
 
-#: kdialog.cpp:1008
+#: kdialog.cpp:1010
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
