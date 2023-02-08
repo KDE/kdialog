@@ -26,6 +26,7 @@ Name[tr]=KDialog
 Name[uk]=KDialog
 Name[vi]=KDialog
 Name[x-test]=xxKDialogxx
+Name[zh_CN]=KDialog
 Icon=system-run
 Exec=kdialog
 NoDisplay=true
