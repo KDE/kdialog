@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-16 02:52+0000\n"
-"PO-Revision-Date: 2023-01-15 15:27\n"
+"PO-Revision-Date: 2023-02-07 11:05\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -318,7 +318,7 @@ msgstr "可滑动对话框，返回所选值"
 msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
-msgstr "日历结果和/或默认值的日期格式 (Qt-style); 默认为'ddd MMM d yyyyy'"
+msgstr "日历结果和默认值 (Qt-style) 的日期格式；默认为“ddd MMM d yyyyy”"
 
 #: kdialog.cpp:328
 #, kde-format
@@ -348,27 +348,27 @@ msgstr "参数 - 根据主选项"
 #: kdialog.cpp:514
 #, kde-format
 msgid "Do not ask again"
-msgstr "下次不再提醒"
+msgstr "不再询问"
 
 #: kdialog.cpp:714
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr "语法： --combobox <text> item [item] ..."
+msgstr "语法：--combobox <text> item [item] ..."
 
 #: kdialog.cpp:736
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr "语法： --menu 文本 [标签] [标签] ..."
+msgstr "语法：--menu 文本 [标签] [标签] ..."
 
 #: kdialog.cpp:760
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
-msgstr "语法： --checklist 文本 [标签 on/off] [标签 on/off] ..."
+msgstr "语法：--checklist 文本 [标签 on/off] [标签 on/off] ..."
 
 #: kdialog.cpp:778
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
-msgstr "语法： --checklist 文本 [标签 on/off] [标签 on/off] ..."
+msgstr "语法：--radiolist 文本 [标签 on/off] [标签 on/off] ..."
 
 #: kdialog.cpp:809
 #, kde-format
