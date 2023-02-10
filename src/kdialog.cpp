@@ -14,8 +14,8 @@
 
 // KF
 #include <KMessageBox>
-#include <knotifications_export.h>
-#if KNOTIFICATIONS_BUILD_DEPRECATED_SINCE(5, 79)
+#include <knotifications_version.h>
+#if KNOTIFICATIONS_VERSION < QT_VERSION_CHECK(5, 240, 0)
 #include <KPassivePopup>
 #endif
 #include <KRecentDocument>
@@ -28,7 +28,7 @@
 #include <KLocalizedString>
 #include <kwidgetsaddons_version.h>
 
-#if KNOTIFICATIONS_BUILD_DEPRECATED_SINCE(5, 79)
+#if KNOTIFICATIONS_VERSION < QT_VERSION_CHECK(5, 240, 0)
 #include <QDesktopWidget>
 #endif
 
@@ -597,7 +597,7 @@ int main(int argc, char *argv[])
 
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-#if KNOTIFICATIONS_BUILD_DEPRECATED_SINCE(5, 79)
+#if KNOTIFICATIONS_VERSION < QT_VERSION_CHECK(5, 240, 0)
         // ...did not work, use KPassivePopup as fallback
 
         // parse timeout time again, so it does not auto-close the fallback (timer cannot handle -1 time)
