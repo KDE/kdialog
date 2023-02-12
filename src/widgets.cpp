@@ -269,7 +269,6 @@ bool Widgets::listBox(QWidget *parent, const QString &title, const QString &text
 bool Widgets::checkList(QWidget *parent, const QString &title, const QString &text, const QStringList &args, bool separateOutput, QStringList &result)
 {
     QStringList entries, tags;
-    QString rs;
 
     result.clear();
 
@@ -304,6 +303,7 @@ bool Widgets::checkList(QWidget *parent, const QString &title, const QString &te
                 }
             }
         } else {
+            QString rs;
             for (int i = 0; i < table.count(); i++) {
                 if (table.item(i)->isSelected()) {
                     rs += QLatin1String("\"") + tags[i] + QLatin1String("\" ");
