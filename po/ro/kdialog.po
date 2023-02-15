@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 01:01+0000\n"
+"POT-Creation-Date: 2023-02-15 01:02+0000\n"
 "PO-Revision-Date: 2020-12-19 17:05+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -414,13 +414,13 @@ msgctxt "@title:window"
 msgid "Save As"
 msgstr "Salvează ca"
 
-#: kdialog.cpp:896
+#: kdialog.cpp:897
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Alege dosar"
 
-#: kdialog.cpp:1010
+#: kdialog.cpp:1011
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"

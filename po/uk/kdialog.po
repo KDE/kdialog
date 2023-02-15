@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 01:01+0000\n"
+"POT-Creation-Date: 2023-02-15 01:02+0000\n"
 "PO-Revision-Date: 2020-10-13 09:50+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -407,13 +407,13 @@ msgctxt "@title:window"
 msgid "Save As"
 msgstr "Збереження з новою назвою"
 
-#: kdialog.cpp:896
+#: kdialog.cpp:897
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Виберіть каталог"
 
-#: kdialog.cpp:1010
+#: kdialog.cpp:1011
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"

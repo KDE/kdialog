@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 01:01+0000\n"
+"POT-Creation-Date: 2023-02-15 01:02+0000\n"
 "PO-Revision-Date: 2020-06-30 09:44+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -386,13 +386,13 @@ msgctxt "@title:window"
 msgid "Save As"
 msgstr "Uložit jako"
 
-#: kdialog.cpp:896
+#: kdialog.cpp:897
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Vyberte adresář"
 
-#: kdialog.cpp:1010
+#: kdialog.cpp:1011
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"

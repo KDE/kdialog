@@ -1,7 +1,7 @@
 # Translation of kdialog.po to Slovenian
 # SLOVENIAN TRANSLATION OF KDEBASE.
 # Copyright (C) 2002, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kdialog.po 1643532 2023-01-30 01:46:57Z scripty $
+# $Id: kdialog.po 1644634 2023-02-15 01:49:16Z scripty $
 # $Source$
 #
 # Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2002.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 01:01+0000\n"
+"POT-Creation-Date: 2023-02-15 01:02+0000\n"
 "PO-Revision-Date: 2020-10-15 08:49+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -409,13 +409,13 @@ msgctxt "@title:window"
 msgid "Save As"
 msgstr "Shrani kot"
 
-#: kdialog.cpp:896
+#: kdialog.cpp:897
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Izberite mapo"
 
-#: kdialog.cpp:1010
+#: kdialog.cpp:1011
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"

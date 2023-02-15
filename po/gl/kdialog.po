@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 01:01+0000\n"
+"POT-Creation-Date: 2023-02-15 01:02+0000\n"
 "PO-Revision-Date: 2019-10-26 13:57+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -422,13 +422,13 @@ msgctxt "@title:window"
 msgid "Save As"
 msgstr "Gardar como"
 
-#: kdialog.cpp:896
+#: kdialog.cpp:897
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Seleccionar un cartafol"
 
-#: kdialog.cpp:1010
+#: kdialog.cpp:1011
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"

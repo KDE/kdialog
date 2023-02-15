@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 01:01+0000\n"
+"POT-Creation-Date: 2023-02-15 01:02+0000\n"
 "PO-Revision-Date: 2019-12-12 21:21+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -393,13 +393,13 @@ msgctxt "@title:window"
 msgid "Save As"
 msgstr "പേരു് മാറ്റി സൂക്ഷിയ്ക്കുക"
 
-#: kdialog.cpp:896
+#: kdialog.cpp:897
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr ""
 
-#: kdialog.cpp:1010
+#: kdialog.cpp:1011
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"

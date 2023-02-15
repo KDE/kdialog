@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 01:01+0000\n"
+"POT-Creation-Date: 2023-02-15 01:02+0000\n"
 "PO-Revision-Date: 2011-01-06 22:23+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -405,13 +405,13 @@ msgctxt "@title:window"
 msgid "Save As"
 msgstr "Schaper et rlomer"
 
-#: kdialog.cpp:896
+#: kdialog.cpp:897
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr ""
 
-#: kdialog.cpp:1010
+#: kdialog.cpp:1011
 #, fuzzy, kde-format
 #| msgid "Choose Color"
 msgctxt "@title:window"
