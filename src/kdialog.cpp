@@ -910,8 +910,8 @@ QT_WARNING_POP
     if (parser.isSet(QStringLiteral("geticon"))) {
         QString groupStr, contextStr;
         groupStr = parser.value(QStringLiteral("geticon"));
-        if (args.count() >= 1) {
-            contextStr = args.at(0);
+        if (args.count() > 1) {
+            contextStr = args.at(1);
         }
         const KIconLoader::Group group
             = (groupStr == QLatin1String("Desktop")) ? KIconLoader::Desktop
