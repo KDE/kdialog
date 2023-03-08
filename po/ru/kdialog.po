@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-15 01:02+0000\n"
+"POT-Creation-Date: 2023-03-08 00:50+0000\n"
 "PO-Revision-Date: 2021-02-05 21:36+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -422,7 +422,7 @@ msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Выбор папки"
 
-#: kdialog.cpp:1011
+#: kdialog.cpp:1013
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
