@@ -377,8 +377,8 @@ int main(int argc, char *argv[])
     // button labels
     // Initialize with default labels
     KGuiItem okButton = KStandardGuiItem::ok();
-    KGuiItem yesButton = KStandardGuiItem::yes();
-    KGuiItem noButton = KStandardGuiItem::no();
+    KGuiItem yesButton = configuredYes(i18nc("@action:button", "&Yes"));
+    KGuiItem noButton = configuredNo(i18nc("@action:button", "&No"));
     KGuiItem cancelButton = KStandardGuiItem::cancel();
     KGuiItem continueButton = KStandardGuiItem::cont();
 
@@ -405,13 +405,13 @@ int main(int argc, char *argv[])
     QByteArray option;
     if (parser.isSet(QStringLiteral("yesno"))) {
         option = "yesno";
-        type = KMessageBox::QuestionYesNo;
+        type = KMessageBox::QuestionTwoActions;
     } else if (parser.isSet(QStringLiteral("yesnocancel"))) {
         option = "yesnocancel";
-        type = KMessageBox::QuestionYesNoCancel;
+        type = KMessageBox::QuestionTwoActionsCancel;
     } else if (parser.isSet(QStringLiteral("warningyesno"))) {
         option = "warningyesno";
-        type = KMessageBox::WarningYesNo;
+        type = KMessageBox::WarningTwoActions;
         icon = QMessageBox::Warning;
     } else if (parser.isSet(QStringLiteral("warningcontinuecancel"))) {
         option = "warningcontinuecancel";
@@ -419,7 +419,7 @@ int main(int argc, char *argv[])
         icon = QMessageBox::Warning;
     } else if (parser.isSet(QStringLiteral("warningyesnocancel"))) {
         option = "warningyesnocancel";
-        type = KMessageBox::WarningYesNoCancel;
+        type = KMessageBox::WarningTwoActionsCancel;
         icon = QMessageBox::Warning;
     } else if (parser.isSet(QStringLiteral("sorry"))) {
         option = "sorry";
@@ -461,8 +461,8 @@ int main(int argc, char *argv[])
                     }
                 } else {
                     KMessageBox::ButtonCode code;
-                    if (!KMessageBox::shouldBeShownYesNo(dontagain, code)) {
-                        return code == KMessageBox::Yes ? 0 : 1;
+                    if (!KMessageBox::shouldBeShownTwoActions(dontagain, code)) {
+                        return code == KMessageBox::PrimaryAction ? 0 : 1;
                     }
                 }
             } else {
@@ -483,14 +483,14 @@ int main(int argc, char *argv[])
         KMessageBox::Options options = KMessageBox::NoExec;
 
         switch (type) {
-        case KMessageBox::QuestionYesNo:
-        case KMessageBox::WarningYesNo:
+        case KMessageBox::QuestionTwoActions:
+        case KMessageBox::WarningTwoActions:
             buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), yesButton);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), noButton);
             break;
-        case KMessageBox::QuestionYesNoCancel:
-        case KMessageBox::WarningYesNoCancel:
+        case KMessageBox::QuestionTwoActionsCancel:
+        case KMessageBox::WarningTwoActionsCancel:
             buttonBox->setStandardButtons(QDialogButtonBox::Yes | QDialogButtonBox::No | QDialogButtonBox::Cancel);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::Yes), yesButton);
             KGuiItem::assign(buttonBox->button(QDialogButtonBox::No), noButton);
@@ -530,7 +530,7 @@ int main(int argc, char *argv[])
                         KMessageBox::saveDontShowAgainContinue(dontagain);
                     }
                 } else if (ret != QDialogButtonBox::Cancel) {
-                    KMessageBox::saveDontShowAgainYesNo(dontagain, ret == QDialogButtonBox::Yes ? KMessageBox::Yes : KMessageBox::No);
+                    KMessageBox::saveDontShowAgainTwoActions(dontagain, ret == QDialogButtonBox::Yes ? KMessageBox::PrimaryAction : KMessageBox::SecondaryAction);
                 }
             }
         }
