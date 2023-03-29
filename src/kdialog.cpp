@@ -262,7 +262,7 @@ int main(int argc, char *argv[])
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 #endif
-    KAboutData aboutData(QStringLiteral("kdialog"), i18n("KDialog"),
+    KAboutData aboutData(QStringLiteral("kdialog"), QString(),
                          QStringLiteral(KDIALOG_VERSION_STRING), i18n("KDialog can be used to show nice dialog boxes from shell scripts"),
                          KAboutLicense::GPL,
                          i18n("(C) 2000, Nick Thompson"));
@@ -275,6 +275,7 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Dawit Alemayehu"), QString(), QStringLiteral("adawit@kde.org"));
     aboutData.addAuthor(i18n("Kai Uwe Broulik"), QString(), QStringLiteral("kde@privat.broulik.de"));
     KAboutData::setApplicationData(aboutData);
+    QGuiApplication::setApplicationDisplayName(QString());
 
     QCommandLineParser parser;
     aboutData.setupCommandLine(&parser);
@@ -344,7 +345,10 @@ int main(int argc, char *argv[])
     QApplication::setWindowIcon(QIcon::fromTheme(parser.value(QStringLiteral("icon")), QIcon::fromTheme(QStringLiteral("system-run"))));
 
     const QStringList args = parser.positionalArguments();
-    const QString title = parser.value(QStringLiteral("title"));
+    QString title = parser.value(QStringLiteral("title"));
+    if (title.isEmpty()) {
+        title = i18n("KDialog");
+    }
     const bool separateOutput = parser.isSet(QStringLiteral("separate-output"));
     const bool printWId = parser.isSet(QStringLiteral("print-winid"));
     QString defaultEntry;
