@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-08 00:50+0000\n"
+"POT-Creation-Date: 2023-03-29 00:50+0000\n"
 "PO-Revision-Date: 2019-10-26 22:55+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -351,6 +351,18 @@ msgstr "對話框位置：[=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "程式引數 - 由主要選項決定"
+
+#: kdialog.cpp:380
+#, kde-format
+msgctxt "@action:button"
+msgid "&Yes"
+msgstr ""
+
+#: kdialog.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "&No"
+msgstr ""
 
 #: kdialog.cpp:516
 #, kde-format

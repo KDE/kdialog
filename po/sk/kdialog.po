@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-08 00:50+0000\n"
+"POT-Creation-Date: 2023-03-29 00:50+0000\n"
 "PO-Revision-Date: 2021-07-20 17:50+0200\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -367,6 +367,18 @@ msgstr ""
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "Argumenty - v závislosti na hlavnej možnosti"
+
+#: kdialog.cpp:380
+#, kde-format
+msgctxt "@action:button"
+msgid "&Yes"
+msgstr ""
+
+#: kdialog.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "&No"
+msgstr ""
 
 #: kdialog.cpp:516
 #, kde-format

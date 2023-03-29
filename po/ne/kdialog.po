@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-08 00:50+0000\n"
+"POT-Creation-Date: 2023-03-29 00:50+0000\n"
 "PO-Revision-Date: 2007-08-20 10:47+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -363,6 +363,18 @@ msgstr ""
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "तर्क - मुख्य विकल्पमा आश्रित"
+
+#: kdialog.cpp:380
+#, kde-format
+msgctxt "@action:button"
+msgid "&Yes"
+msgstr ""
+
+#: kdialog.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "&No"
+msgstr ""
 
 #: kdialog.cpp:516
 #, kde-format

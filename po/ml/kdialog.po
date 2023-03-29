@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-08 00:50+0000\n"
+"POT-Creation-Date: 2023-03-29 00:50+0000\n"
 "PO-Revision-Date: 2019-12-12 21:21+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -355,6 +355,18 @@ msgstr ""
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "പ്രധാന ഐച്ഛികത്തിനനുസരിച്ചുള്ള ആര്‍ഗ്യുമെന്റുകള്‍"
+
+#: kdialog.cpp:380
+#, kde-format
+msgctxt "@action:button"
+msgid "&Yes"
+msgstr ""
+
+#: kdialog.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "&No"
+msgstr ""
 
 #: kdialog.cpp:516
 #, kde-format
