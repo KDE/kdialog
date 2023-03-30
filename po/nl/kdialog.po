@@ -8,26 +8,26 @@
 # Wilbert Berendsen <wbsoft@xs4all.nl>, 2003.
 # Rinse de Vries <rinsedevries@kde.nl>, 2004, 2005, 2007, 2008.
 # Freek de Kruijf <f.de.kruijf@hetnet.nl>, 2009.
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2010, 2011, 2013, 2015, 2016, 2017, 2018, 2019, 2020.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2010, 2011, 2013, 2015, 2016, 2017, 2018, 2019, 2020, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-29 00:50+0000\n"
-"PO-Revision-Date: 2020-10-13 10:51+0200\n"
+"PO-Revision-Date: 2023-03-29 20:31+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Rinse de Vries,Freek de Kruijf - t/m 2020"
+msgstr "Rinse de Vries,Freek de Kruijf - t/m 2020;2023"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -375,13 +375,13 @@ msgstr "Argumenten - afhankelijk van de hoofdoptie"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&Ja"
 
 #: kdialog.cpp:381
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&Nee"
 
 #: kdialog.cpp:516
 #, kde-format

@@ -1,20 +1,20 @@
 # Translation of kdialog.po to Slovenian
 # SLOVENIAN TRANSLATION OF KDEBASE.
 # Copyright (C) 2002, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kdialog.po 1648287 2023-03-29 01:30:20Z scripty $
+# $Id: kdialog.po 1648307 2023-03-29 06:45:53Z matjazjeran $
 # $Source$
 #
 # Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2002.
 # Gregor Rakar <gregor.rakar@kiss.si>, 2003, 2004, 2005.
 # Jure Repinc <jlp@holodeck1.com>, 2007, 2008, 2009, 2010, 2011.
 # Andrej Mernik <andrejm@ubuntu.si>, 2013, 2016, 2017, 2018.
-# Matjaž Jeran <matjaz.jeran@amis.net>, 2019, 2020.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2019, 2020, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-29 00:50+0000\n"
-"PO-Revision-Date: 2020-10-15 08:49+0200\n"
+"PO-Revision-Date: 2023-03-29 08:14+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Lokalize 19.12.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 
@@ -376,13 +376,13 @@ msgstr "Argumenti – odvisni od glavne možnosti"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "Da"
 
 #: kdialog.cpp:381
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "Ne"
 
 #: kdialog.cpp:516
 #, kde-format
