@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-29 00:50+0000\n"
+"POT-Creation-Date: 2023-03-31 00:49+0000\n"
 "PO-Revision-Date: 2006-02-06 01:28-0600\n"
 "Last-Translator: Deepayan Sarkar <deepayan@bengalinux.org>\n"
 "Language-Team: Bengali <kde-translation@bengalinux.org>\n"
@@ -31,11 +31,6 @@ msgstr "দীপায়ন সরকার"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "deepayan@bengalinux.org"
-
-#: kdialog.cpp:265
-#, kde-format
-msgid "KDialog"
-msgstr "কে-ডায়ালগ"
 
 #: kdialog.cpp:266
 #, kde-format
@@ -93,328 +88,333 @@ msgstr ""
 msgid "Kai Uwe Broulik"
 msgstr ""
 
-#: kdialog.cpp:282
+#: kdialog.cpp:283
 #, kde-format
 msgid "Question message box with yes/no buttons"
 msgstr "\"হ্যাঁ/না\" বাটন সহ প্রশ্ন বার্তা-বাক্স "
 
-#: kdialog.cpp:283
+#: kdialog.cpp:284
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
 msgstr "\"হ্যাঁ/না/বাতিল করো\" বাটন সহ প্রশ্ন বার্তা-বাক্স"
 
-#: kdialog.cpp:284
+#: kdialog.cpp:285
 #, kde-format
 msgid "Warning message box with yes/no buttons"
 msgstr "\"হ্যাঁ/না\" বাটন সহ সাবধান বার্তা-বাক্স"
 
-#: kdialog.cpp:285
+#: kdialog.cpp:286
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
 msgstr "\"চালিয়ে যাও/বাতিল করো\" বাটন সহ সাবধান বার্তা-বাক্স"
 
-#: kdialog.cpp:286
+#: kdialog.cpp:287
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
 msgstr "\"হ্যাঁ/না/বাতিল করো\" বাটন সহ সাবধান বার্তা-বাক্স"
 
-#: kdialog.cpp:288
+#: kdialog.cpp:289
 #, kde-format
 msgid "Use text as OK button label"
 msgstr ""
 
-#: kdialog.cpp:289
+#: kdialog.cpp:290
 #, kde-format
 msgid "Use text as Yes button label"
 msgstr ""
 
-#: kdialog.cpp:290
+#: kdialog.cpp:291
 #, kde-format
 msgid "Use text as No button label"
 msgstr ""
 
-#: kdialog.cpp:291
+#: kdialog.cpp:292
 #, kde-format
 msgid "Use text as Cancel button label"
 msgstr ""
 
-#: kdialog.cpp:292
+#: kdialog.cpp:293
 #, kde-format
 msgid "Use text as Continue button label"
 msgstr ""
 
-#: kdialog.cpp:293
+#: kdialog.cpp:294
 #, kde-format
 msgid "'Sorry' message box"
 msgstr "'দুঃখিত' বার্তা বাক্স"
 
-#: kdialog.cpp:294
+#: kdialog.cpp:295
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
 msgstr ""
 
-#: kdialog.cpp:295
+#: kdialog.cpp:296
 #, kde-format
 msgid "'Error' message box"
 msgstr "'সমস্যা' বার্তা বাক্স"
 
-#: kdialog.cpp:296
+#: kdialog.cpp:297
 #, kde-format
 msgid "'Error' message box with expandable Details field"
 msgstr ""
 
-#: kdialog.cpp:297
+#: kdialog.cpp:298
 #, kde-format
 msgid "Message Box dialog"
 msgstr "বার্তা বাক্স ডায়ালগ"
 
-#: kdialog.cpp:298
+#: kdialog.cpp:299
 #, kde-format
 msgid "Input Box dialog"
 msgstr "ইনপুট বাক্স ডায়ালগ"
 
-#: kdialog.cpp:299
+#: kdialog.cpp:300
 #, fuzzy, kde-format
 #| msgid "Message Box dialog"
 msgid "Image Box dialog"
 msgstr "বার্তা বাক্স ডায়ালগ"
 
-#: kdialog.cpp:300
+#: kdialog.cpp:301
 #, fuzzy, kde-format
 #| msgid "Message Box dialog"
 msgid "Image Box Input dialog"
 msgstr "বার্তা বাক্স ডায়ালগ"
 
-#: kdialog.cpp:301
+#: kdialog.cpp:302
 #, kde-format
 msgid "Password dialog"
 msgstr "পাসওয়ার্ড ডায়ালগ"
 
-#: kdialog.cpp:302
+#: kdialog.cpp:303
 #, fuzzy, kde-format
 #| msgid "Password dialog"
 msgid "New Password dialog"
 msgstr "পাসওয়ার্ড ডায়ালগ"
 
-#: kdialog.cpp:303
+#: kdialog.cpp:304
 #, kde-format
 msgid "Text Box dialog"
 msgstr "টেক্সট বাক্স ডায়ালগ"
 
-#: kdialog.cpp:304
+#: kdialog.cpp:305
 #, kde-format
 msgid "Text Input Box dialog"
 msgstr "টেক্সট ইনপুট বাক্স ডায়ালগ"
 
-#: kdialog.cpp:305
+#: kdialog.cpp:306
 #, kde-format
 msgid "ComboBox dialog"
 msgstr "কম্বো-বাক্স ডায়ালগ"
 
-#: kdialog.cpp:306
+#: kdialog.cpp:307
 #, kde-format
 msgid "Menu dialog"
 msgstr "মেনু ডায়ালগ"
 
-#: kdialog.cpp:307
+#: kdialog.cpp:308
 #, kde-format
 msgid "Check List dialog"
 msgstr "চেক-লিস্ট ডায়ালগ"
 
-#: kdialog.cpp:308
+#: kdialog.cpp:309
 #, kde-format
 msgid "Radio List dialog"
 msgstr "রেডিও-লিস্ট ডায়ালগ"
 
-#: kdialog.cpp:309
+#: kdialog.cpp:310
 #, kde-format
 msgid "Passive Popup"
 msgstr "পাসিভ পপ-আপ"
 
-#: kdialog.cpp:310
+#: kdialog.cpp:311
 #, fuzzy, kde-format
 #| msgid "Passive Popup"
 msgid "Popup icon"
 msgstr "পাসিভ পপ-আপ"
 
-#: kdialog.cpp:311
+#: kdialog.cpp:312
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
 msgstr "একটি বিদ্যমান ফাইল খোলার জন্য ডায়ালগ"
 
-#: kdialog.cpp:312
+#: kdialog.cpp:313
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
 msgid "File dialog to save a file (arguments [startDir] [filter])"
 msgstr "একটি ফাইল সংরক্ষণ করার জন্য ডায়ালগ"
 
-#: kdialog.cpp:313
+#: kdialog.cpp:314
 #, fuzzy, kde-format
 #| msgid "File dialog to select an existing directory"
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "একটি বিদ্যমান ডিরেক্টরী নির্বাচন করার জন্য ডায়ালগ"
 
-#: kdialog.cpp:314
+#: kdialog.cpp:315
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
 msgstr "একটি বিদ্যমান ফাইল খোলার জন্য ডায়ালগ"
 
-#: kdialog.cpp:315
+#: kdialog.cpp:316
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
 msgstr "একটি ফাইল সংরক্ষণ করার জন্য ডায়ালগ"
 
-#: kdialog.cpp:316
+#: kdialog.cpp:317
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr ""
 
-#: kdialog.cpp:317 kdialog_progress_helper.cpp:40
+#: kdialog.cpp:318 kdialog_progress_helper.cpp:40
 #, fuzzy, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr "অগ্রগতি বার ডায়ালগ, যোগাযোগের জন্য একটি ডিকপ রেফারেন্স ফেরত পাঠায়"
 
-#: kdialog.cpp:318
+#: kdialog.cpp:319
 #, fuzzy, kde-format
 msgid "Color dialog to select a color"
 msgstr "একটি বিদ্যমান ডিরেক্টরী নির্বাচন করার জন্য ডায়ালগ"
 
-#: kdialog.cpp:319
+#: kdialog.cpp:320
 #, kde-format
 msgid "Allow --getcolor to specify output format"
 msgstr ""
 
-#: kdialog.cpp:321 kdialog_progress_helper.cpp:41
+#: kdialog.cpp:322 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
 msgstr "ডায়ালগ শিরোনাম"
 
-#: kdialog.cpp:322
+#: kdialog.cpp:323
 #, fuzzy, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr "কম্বো-বক্স এবং মেনুর জন্য ডিফল্ট এন্ট্রি"
 
-#: kdialog.cpp:323
+#: kdialog.cpp:324
 #, kde-format
 msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
 "files"
 msgstr ""
 
-#: kdialog.cpp:324
+#: kdialog.cpp:325
 #, kde-format
 msgid ""
 "Return list items on separate lines (for checklist option and file open with "
 "--multiple)"
 msgstr ""
 
-#: kdialog.cpp:325
+#: kdialog.cpp:326
 #, kde-format
 msgid "Outputs the winId of each dialog"
 msgstr "প্রত্যেক ডায়ালগের winId আউটপুট করে"
 
-#: kdialog.cpp:326
+#: kdialog.cpp:327
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr ""
 
-#: kdialog.cpp:328
+#: kdialog.cpp:329
 #, fuzzy, kde-format
 msgid "Slider dialog box, returns selected value"
 msgstr "একটি বিদ্যমান ডিরেক্টরী নির্বাচন করার জন্য ডায়ালগ"
 
-#: kdialog.cpp:329
+#: kdialog.cpp:330
 #, kde-format
 msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
 
-#: kdialog.cpp:330
+#: kdialog.cpp:331
 #, fuzzy, kde-format
 msgid "Calendar dialog box, returns selected date"
 msgstr "একটি বিদ্যমান ডিরেক্টরী নির্বাচন করার জন্য ডায়ালগ"
 
-#: kdialog.cpp:333
+#: kdialog.cpp:334
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr ""
 
-#: kdialog.cpp:334
+#: kdialog.cpp:335
 #, kde-format
 msgid "A synonym for --attach"
 msgstr ""
 
-#: kdialog.cpp:335
+#: kdialog.cpp:336
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 
-#: kdialog.cpp:337 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:338 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr ""
 
-#: kdialog.cpp:380
+#: kdialog.cpp:350
+#, kde-format
+msgid "KDialog"
+msgstr "কে-ডায়ালগ"
+
+#: kdialog.cpp:384
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr ""
 
-#: kdialog.cpp:381
+#: kdialog.cpp:385
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr ""
 
-#: kdialog.cpp:516
+#: kdialog.cpp:520
 #, kde-format
 msgid "Do not ask again"
 msgstr ""
 
-#: kdialog.cpp:716
+#: kdialog.cpp:720
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr ""
 
-#: kdialog.cpp:738
+#: kdialog.cpp:742
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr ""
 
-#: kdialog.cpp:762
+#: kdialog.cpp:766
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 
-#: kdialog.cpp:780
+#: kdialog.cpp:784
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
 
-#: kdialog.cpp:811
+#: kdialog.cpp:815
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr ""
 
-#: kdialog.cpp:863
+#: kdialog.cpp:867
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr ""
 
-#: kdialog.cpp:897
+#: kdialog.cpp:901
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr ""
 
-#: kdialog.cpp:1013
+#: kdialog.cpp:1017
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
