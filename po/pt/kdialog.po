@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-31 00:49+0000\n"
-"PO-Revision-Date: 2020-10-13 11:51+0100\n"
+"PO-Revision-Date: 2023-04-01 11:58+0100\n"
 "Last-Translator: José Nuno Pires <zepires@gmail.com>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -370,13 +370,13 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&Sim"
 
 #: kdialog.cpp:385
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&Não"
 
 #: kdialog.cpp:520
 #, kde-format
