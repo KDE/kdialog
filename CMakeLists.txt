@@ -19,6 +19,7 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 
+include(ECMDeprecationSettings)
 include(ECMSetupVersion)
 include(FeatureSummary)
 if (QT_MAJOR_VERSION STREQUAL "6")
@@ -38,12 +39,10 @@ if (NOT WITHOUT_X11)
     set(HAVE_X11 ${X11_FOUND})
 endif()
 
-add_definitions(
-    -DQT_DISABLE_DEPRECATED_BEFORE=0x050F00
-    -DQT_DEPRECATED_WARNINGS_SINCE=0x060000
-    -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x056400
-    -DKNOTIFICATIONS_DISABLE_DEPRECATED_BEFORE_AND_AT=0x054E00 # KPassivePopup
-    -DKF_DEPRECATED_WARNINGS_SINCE=0x060000
+ecm_set_disabled_deprecation_versions(
+    QT 5.15
+    KF 5.100
+    KNOTIFICATIONS 5.78 # KPassivePopup
 )
 
 add_subdirectory(src)
