@@ -4,14 +4,14 @@
 # Andrea RIZZI <arizzi@pi.infn.it>, 2004.
 # Dario Panico <Dareus_Persarumrex@fastwebnet.it>, 2008.
 # Pino Toscano <toscano.pino@tiscali.it>, 2011.
-# Vincenzo Reale <smart2128vr@gmail.com>, 2013, 2018, 2019, 2020.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2013, 2018, 2019, 2020, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-31 00:49+0000\n"
-"PO-Revision-Date: 2020-10-14 08:13+0200\n"
+"PO-Revision-Date: 2023-03-29 20:23+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.08.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -378,13 +378,13 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&Sì"
 
 #: kdialog.cpp:385
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&No"
 
 #: kdialog.cpp:520
 #, kde-format
