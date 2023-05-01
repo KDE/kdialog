@@ -1,19 +1,19 @@
 # translation of kdialog.po to galician
 # Copyright (C) 2004, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
-#
 # Javier Jardón <javierjc@mundo-r.com>, 2004.
 # Xabi G. Feal <xabigf@gmx.net>, 2006.
 # mvillarino <mvillarino@users.sourceforge.net>, 2007, 2008, 2009.
 # Marce Villarino <mvillarino@kde-espana.es>, 2009.
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@kde-espana.es>, 2009, 2012, 2013.
-# Adrián Chaves <adrian@chaves.io>, 2017, 2018, 2019.
+# Adrián Chaves <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-08 00:50+0000\n"
-"PO-Revision-Date: 2019-10-26 13:57+0200\n"
+"PO-Revision-Date: 2023-04-30 11:42+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.2\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -239,14 +239,14 @@ msgstr "Icona emerxente"
 #, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
 msgstr ""
-"Diálogo de ficheiros para abrir un ficheiro existente (argumentos "
-"[cartadolInicial] [filtro])"
+"Diálogo de ficheiros para abrir un ficheiro existente (argumentos [cartafol "
+"inicial] [filtro])"
 
 #: kdialog.cpp:312
 #, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
 msgstr ""
-"Diálogo de ficheiros para gardar un ficheiro (argumentos [cartadolInicial] "
+"Diálogo de ficheiros para gardar un ficheiro (argumentos [cartafol inicial] "
 "[filtro])"
 
 #: kdialog.cpp:313
@@ -254,20 +254,20 @@ msgstr ""
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr ""
 "Diálogo de ficheiros para escoller un directorio existente (argumentos "
-"[cartafolInicial])"
+"[cartafol inicial])"
 
 #: kdialog.cpp:314
 #, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
 msgstr ""
-"Diálogo de ficheiros para abrir un URL existente (argumentos "
-"[cartadolInicial] [filtro])"
+"Diálogo de ficheiros para abrir un URL existente (argumentos [cartafol "
+"inicial] [filtro])"
 
 #: kdialog.cpp:315
 #, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
 msgstr ""
-"Diálogo de ficheiros para gardar un URL (argumentos [cartadolInicial] "
+"Diálogo de ficheiros para gardar un URL (argumentos [cartafol inicial] "
 "[filtro])"
 
 #: kdialog.cpp:316
@@ -298,11 +298,11 @@ msgid "Dialog title"
 msgstr "Título do diálogo"
 
 #: kdialog.cpp:322
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox, menu and color"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr ""
-"Entrada a empregar como predeterminada na lista despregábel, menú e cor"
+"Entrada para usar como predeterminada na lista despregábel, no menú, na cor "
+"e no calendario"
 
 #: kdialog.cpp:323
 #, kde-format
@@ -339,7 +339,7 @@ msgstr ""
 #: kdialog.cpp:328
 #, kde-format
 msgid "Slider dialog box, returns selected value"
-msgstr "Diálogo cunha barra deslizante, que devolve o valor escollido"
+msgstr "Diálogo esvaradío, devolve o valor escollido"
 
 #: kdialog.cpp:329
 #, kde-format
@@ -347,6 +347,8 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"Formato de data para o resultado do calendario e valor predeterminado "
+"(estilo de Qt). O seu valor predeterminado é «ddd MMM d yyyy»."
 
 #: kdialog.cpp:330
 #, kde-format
@@ -379,7 +381,7 @@ msgstr "Argumentos; depende da opción principal"
 #: kdialog.cpp:516
 #, kde-format
 msgid "Do not ask again"
-msgstr ""
+msgstr "Non preguntar máis"
 
 #: kdialog.cpp:716
 #, kde-format
@@ -387,28 +389,25 @@ msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Sintaxe: --combobox <texto> elemento [elemento] …"
 
 #: kdialog.cpp:738
-#, fuzzy, kde-format
-#| msgid "Syntax: --menu text [tag item] [tag item] ..."
+#, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr "Sintaxe: --menu texto [etiqueta elemento] [etiqueta elemento] …"
+msgstr "Sintaxe: --menu texto etiqueta elemento [etiqueta elemento] …"
 
 # skip-rule: trasno-check
 #: kdialog.cpp:762
-#, fuzzy, kde-format
-#| msgid "Syntax: --checklist text [tag item on/off] [tag item on/off]"
+#, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
-"Sintaxe: --checklist texto [etiqueta elemento on/off] [etiqueta elemento on/"
-"off]"
+"Sintaxe: --checklist texto etiqueta elemento on/off [etiqueta elemento on/"
+"off] …"
 
 # skip-rule: trasno-check
 #: kdialog.cpp:780
-#, fuzzy, kde-format
-#| msgid "Syntax: --checklist text [tag item on/off] [tag item on/off]"
+#, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
-"Sintaxe: --checklist texto [etiqueta elemento on/off] [etiqueta elemento on/"
-"off]"
+"Sintaxe: --radiolist texto etiqueta elemento on/off [etiqueta elemento on/"
+"off] …"
 
 #: kdialog.cpp:811
 #, kde-format
