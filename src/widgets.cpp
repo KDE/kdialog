@@ -362,6 +362,7 @@ bool Widgets::slider(QWidget *parent, const QString &title, const QString &text,
     slider->setMinimum(minValue);
     slider->setMaximum(maxValue);
     slider->setSingleStep(step);
+    slider->setTickInterval(step);
     slider->setTickPosition(QSlider::TicksAbove);
     slider->setOrientation(Qt::Horizontal);
     slider->setFocus();

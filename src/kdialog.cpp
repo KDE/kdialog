@@ -326,7 +326,7 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("print-winid"), i18n("Outputs the winId of each dialog")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("dontagain"), i18n("Config file and option name for saving the \"do-not-show/ask-again\" state"),
     QStringLiteral("file:entry")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("slider"), i18n("Slider dialog box, returns selected value"), QStringLiteral("text")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("slider"), i18n("Slider dialog box, returns selected value (arguments [text] [min] [max] [step])")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("dateformat"), i18n("Date format for calendar result and/or default value (Qt-style); defaults to 'ddd MMM d yyyy'"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("calendar"), i18n("Calendar dialog box, returns selected date"), QStringLiteral("text")));
     /* kdialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
@@ -1059,23 +1059,25 @@ QT_WARNING_POP
         }
         return 1; // canceled
     }
-    if (parser.isSet(QStringLiteral("slider"))) {
-        int miniValue = 0;
-        int maxValue = 0;
-        int step = 0;
-        const QString text = Utils::parseString(parser.value(QStringLiteral("slider")));
-        if (args.count() == 3) {
-            miniValue = args.at(0).toInt();
-            maxValue = args.at(1).toInt();
-            step = args.at(2).toInt();
-        }
-        int result = 0;
 
-        const bool returnCode = Widgets::slider(nullptr, title, text, miniValue, maxValue, step, result);
-        if (returnCode) {
-            cout << result << endl;
+    if (parser.isSet(QStringLiteral("slider"))) {
+        if (args.count() == 4) {
+            QString text = Utils::parseString(args.at(0));
+            int miniValue = args.at(1).toInt();
+            int maxValue = args.at(2).toInt();
+            int step = args.at(3).toInt();
+
+            int result = 0;
+
+            const bool returnCode = Widgets::slider(nullptr, title, text, miniValue, maxValue, step, result);
+            if (returnCode) {
+                cout << result << endl;
+            }
+            return returnCode;
+        } else {
+            cerr << qPrintable(i18n("Syntax: --slider <text> <min> <max> <step>")) << endl;
+            return -1;
         }
-        return returnCode;
     }
 
     // --calendar text [--default default] [--dateformat format]
