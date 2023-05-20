@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2023-04-22 00:50+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -310,8 +310,11 @@ msgid ""
 msgstr "\"다시 보이거나 묻지 않기\" 상태를 저장할 설정 파일과 옵션 이름"
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "슬라이더 대화 상자, 선택한 값을 반환함"
 
 #: kdialog.cpp:330
@@ -411,6 +414,11 @@ msgstr "디렉터리 선택"
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "색 선택"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2014-10-20 19:40+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: bosanski <bs@li.org>\n"
@@ -325,8 +325,11 @@ msgstr ""
 "pitaj opet“"
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "Dijalog sa klizačem, vraća izabranu vrijednost"
 
 #: kdialog.cpp:330
@@ -426,6 +429,11 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Izbor boje"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

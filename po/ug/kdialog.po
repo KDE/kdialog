@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2013-09-08 07:04+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -319,8 +319,11 @@ msgstr ""
 "«قايتا كۆرسەتمە/قايتا سورا» ھالىتىنىڭ سەپلىمە ھۆججىتى ۋە تۈر ئاتىنى ساقلايدۇ"
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "تام تەسۋىر سۆزلەشكۈ قۇتاسى، تاللانغان قىممەتنى قايتۇرىدۇ"
 
 #: kdialog.cpp:330
@@ -422,6 +425,11 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "رەڭ تاللا"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

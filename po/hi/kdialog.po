@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2021-09-17 20:07+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -311,8 +311,11 @@ msgstr ""
 " \"don't-show/ask-again\" स्थिति को सहेजने के लिए कॉन्फ़िग फ़ाइल तथा विकल्प नाम"
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "स्लाइडर संवाद बक्सा, चयनित मान लौटाता है"
 
 #: kdialog.cpp:330
@@ -415,6 +418,11 @@ msgstr "डिरेक्ट्री चुनें"
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "रंग चुनें"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

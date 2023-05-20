@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2009-01-06 10:54+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -321,7 +321,9 @@ msgstr ""
 #: kdialog.cpp:329
 #, fuzzy, kde-format
 #| msgid "Color dialog to select a color"
-msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "রং নির্বাচনের জন্য রংয়ের ডায়লগ"
 
 #: kdialog.cpp:330
@@ -425,6 +427,11 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "রং নির্বাচন করুন"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

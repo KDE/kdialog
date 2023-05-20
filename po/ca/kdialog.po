@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2023-03-29 13:32+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -323,8 +323,11 @@ msgstr ""
 "torna a preguntar»"
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "Diàleg de control lliscant, retorna el valor seleccionat"
 
 #: kdialog.cpp:330
@@ -437,6 +440,11 @@ msgstr "Selecció de directori"
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Selecció de color"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

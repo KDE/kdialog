@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2020-10-23 11:40+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -312,8 +312,11 @@ msgstr ""
 "Seadistustefail ja võtme nimi \"ära-näita/küsi-uuesti\" oleku salvestamiseks"
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "Liuguri dialoog, tagastab valitud väärtuse"
 
 #: kdialog.cpp:330
@@ -418,6 +421,11 @@ msgstr "Kataloogi valimine"
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Värvi valimine"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

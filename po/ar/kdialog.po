@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2021-07-26 23:31+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -313,8 +313,11 @@ msgid ""
 msgstr "ملف تضبيط واسم خيار لحفظ حالة \"لا تظهر/اسأل مجدّدًا\""
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "حواري مُنزلِقة، يُرجع القيمة المحدّدة"
 
 #: kdialog.cpp:330
@@ -414,6 +417,11 @@ msgstr "اختر دليلًا"
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "اختر لونًا"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

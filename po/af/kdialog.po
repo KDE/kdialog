@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog stable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2005-06-14 10:33+0200\n"
 "Last-Translator: JUANITA FRANZ <JUANITA.FRANZ@VR-WEB.DE>\n"
 "Language-Team: AFRIKAANS <translate-discuss-af@lists.sourceforge.net>\n"
@@ -324,7 +324,9 @@ msgstr ""
 #: kdialog.cpp:329
 #, fuzzy, kde-format
 #| msgid "File dialog to select an existing directory"
-msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "Lêer dialoog om 'n bestaande lêer te kies"
 
 #: kdialog.cpp:330
@@ -424,6 +426,11 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
+msgstr ""
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr ""
 
 #: progressdialog.cpp:24

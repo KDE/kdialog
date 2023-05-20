@@ -1,7 +1,7 @@
 # Translation of kdialog.po to Slovenian
 # SLOVENIAN TRANSLATION OF KDEBASE.
 # Copyright (C) 2002, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kdialog.po 1648429 2023-03-31 01:32:02Z scripty $
+# $Id: kdialog.po 1652005 2023-05-20 01:30:06Z scripty $
 # $Source$
 #
 # Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2002.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2023-03-29 08:14+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -327,8 +327,11 @@ msgstr ""
 "vprašaj več«"
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "Pogovorno okno z drsnikom, vrne izbrano vrednost"
 
 #: kdialog.cpp:330
@@ -432,6 +435,11 @@ msgstr "Izberite mapo"
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Izbor barve"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

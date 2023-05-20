@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2010-01-27 23:21+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn-IN <>\n"
@@ -321,8 +321,11 @@ msgstr ""
 "\"ಇನ್ನೊಮ್ಮೆ ತೋರಿಸಬೇಡ/ಕೇಳಬೇಡ\" ಸ್ಥಿತಿಯನ್ನು ಉಳಿಸಲು ಸಂರಚನಾ ಕಡತ ಹಾಗು ಆಯ್ಕೆಯ ಹೆಸರು"
 
 #: kdialog.cpp:329
-#, kde-format
-msgid "Slider dialog box, returns selected value"
+#, fuzzy, kde-format
+#| msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "ಸ್ಲೈಡರ್ ಸಂವಾದ ಚೌಕವು ಆಯ್ಕೆ ಮಾಡಿದ ದಿನಾಂಕವನ್ನು ಮರಳಿಸುತ್ತದೆ"
 
 #: kdialog.cpp:330
@@ -425,6 +428,11 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "ಬಣ್ಣವನ್ನು ಆಯ್ಕೆ ಮಾಡು"
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr ""
 
 #: progressdialog.cpp:24
 #, kde-format

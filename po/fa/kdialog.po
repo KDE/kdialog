@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:49+0000\n"
+"POT-Creation-Date: 2023-05-20 00:49+0000\n"
 "PO-Revision-Date: 2007-06-25 16:37+0330\n"
 "Last-Translator: Nazanin Kazemi <kazemi@itland.ir>\n"
 "Language-Team: Persian <kde-i18n-fa@kde.org>\n"
@@ -320,7 +320,9 @@ msgstr "پرونده پیکربندی و نام گزینه برای ذخیره �
 
 #: kdialog.cpp:329
 #, fuzzy, kde-format
-msgid "Slider dialog box, returns selected value"
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 msgstr "محاوره پرونده برای برگزیدن یک فهرست راهنمای موجود"
 
 #: kdialog.cpp:330
@@ -421,6 +423,11 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
+msgstr ""
+
+#: kdialog.cpp:1078
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr ""
 
 #: progressdialog.cpp:24
