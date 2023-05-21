@@ -15,14 +15,14 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-03-29 12:22+0200\n"
+"PO-Revision-Date: 2023-05-20 12:41+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.03.80\n"
+"X-Generator: Lokalize 23.04.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -323,12 +323,13 @@ msgstr ""
 "mostrar/volver-a-preguntar»"
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Diálogo con un deslizador que devuelve el valor seleccionado"
+msgstr ""
+"Diálogo con un deslizador que devuelve el valor seleccionado (argumentos "
+"[text] [min] [max] [step])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -441,7 +442,7 @@ msgstr "Seleccionar color"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Sintaxis: --slider <texto> <mín> <máx> <paso>"
 
 #: progressdialog.cpp:24
 #, kde-format

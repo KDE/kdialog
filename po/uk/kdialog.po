@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-03-29 07:57+0300\n"
+"PO-Revision-Date: 2023-05-20 08:41+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -324,12 +324,13 @@ msgstr ""
 "питати-знову»"
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Діалогова панель з повзунком, повертає обране значення"
+msgstr ""
+"Діалогова панель з повзунком, повертає обране значення (аргументи [текст] "
+"[мін] [макс] [крок])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -437,7 +438,7 @@ msgstr "Вибір кольору"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Синтаксис: --slider <текст> <мін> <макс> <крок>"
 
 #: progressdialog.cpp:24
 #, kde-format
