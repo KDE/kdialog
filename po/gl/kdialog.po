@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-04-30 11:42+0200\n"
+"PO-Revision-Date: 2023-05-21 22:16+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -332,12 +332,13 @@ msgstr ""
 "volver-a-preguntar»"
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Diálogo esvaradío, devolve o valor escollido"
+msgstr ""
+"Diálogo esvaradío, devolve o valor escollido (argumentos [texto] [mín] [máx] "
+"[paso])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -451,7 +452,7 @@ msgstr "Escoller unha cor"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Sintaxe: --slider <texto> <mín> <máx> <paso>"
 
 #: progressdialog.cpp:24
 #, kde-format

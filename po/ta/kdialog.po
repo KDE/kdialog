@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-04-02 17:10+0530\n"
+"PO-Revision-Date: 2023-05-21 15:15+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.03.90\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -226,39 +226,37 @@ msgid "Popup icon"
 msgstr "மேல்தோன்றுவதற்கான சின்னம்"
 
 #: kdialog.cpp:312
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
-msgstr "ஏற்கெனவே இருக்கும் கோப்பைத் திறப்பதற்கு கோப்பு உரையாடல்"
+msgstr ""
+"ஏற்கெனவே இருக்கும் கோப்பைத் திறப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [வடிகட்டி])"
 
 #: kdialog.cpp:313
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
-msgstr "ஒரு கோப்பை சேமிப்பதற்கான கோப்பு உரையாடல்"
+msgstr "ஒரு கோப்பை சேமிப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [வடிகட்டி])"
 
 #: kdialog.cpp:314
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
-msgstr "ஏற்கெனவே உள்ள அடைவை தேர்ந்தெடுப்பதற்கு கோப்பு உரையாடல்"
+msgstr "ஏற்கெனவே உள்ள அடைவை தேர்ந்தெடுப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு])"
 
 #: kdialog.cpp:315
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
-msgstr "ஏற்கெனவே இருக்கும் கோப்பைத் திறப்பதற்கு கோப்பு உரையாடல்"
+msgstr ""
+"ஏற்கெனவே இருக்கும் முகவரியைத் திறப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] "
+"[வடிகட்டி])"
 
 #: kdialog.cpp:316
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
-msgstr "ஒரு கோப்பை சேமிப்பதற்கான கோப்பு உரையாடல்"
+msgstr "ஒரு முகவரியை சேமிப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [வடிகட்டி])"
 
 #: kdialog.cpp:317
-#, kde-format
+#, fuzzy, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
-msgstr ""
+msgstr "சின்னத் தேர்வி சாளரம் (தருமதிப்புகள் [குழு] [சூழல்])"
 
 #: kdialog.cpp:318 kdialog_progress_helper.cpp:40
 #, fuzzy, kde-format

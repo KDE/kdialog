@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-04-01 11:58+0100\n"
+"PO-Revision-Date: 2023-05-20 22:26+0100\n"
 "Last-Translator: José Nuno Pires <zepires@gmail.com>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-POFile-SpellExtra: Hölzer Alemayehu Dawit Hards Kai Uwe Broulik attach\n"
 "X-POFile-SpellExtra: pastaInicial getcolor xX radiolist combobox text MMM\n"
-"X-POFile-SpellExtra: yyyy ddd\n"
+"X-POFile-SpellExtra: yyyy ddd mín máx slider\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -321,12 +321,13 @@ msgstr ""
 "perguntar/perguntar-de-novo\""
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Janela de barra deslizante; devolve o valor seleccionado"
+msgstr ""
+"Janela de barra deslizante; devolve o valor seleccionado (argumentos [texto] "
+"[mín] [máx])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -437,7 +438,7 @@ msgstr "Escolher a Cor"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Sintaxe: --slider <texto> <mín> <máx> <passo>"
 
 #: progressdialog.cpp:24
 #, kde-format

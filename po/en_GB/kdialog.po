@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-04-01 17:50+0100\n"
+"PO-Revision-Date: 2023-05-21 14:54+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -310,12 +310,13 @@ msgstr ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Slider dialogue box, returns selected value"
+msgstr ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -421,7 +422,7 @@ msgstr "Choose Colour"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Syntax: --slider <text> <min> <max> <step>"
 
 #: progressdialog.cpp:24
 #, kde-format
