@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-04-29 08:34\n"
+"PO-Revision-Date: 2023-05-22 14:00\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -304,12 +304,11 @@ msgid ""
 msgstr "保存“不再显示/再次询问”状态的配置文件和选项名称"
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "可滑动对话框，返回所选值"
+msgstr "滑动条对话框，返回选定的值 (参数 [text] [min] [max] [step])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -412,7 +411,7 @@ msgstr "选择颜色"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "语法：--slider <text> <min> <max> <step>"
 
 #: progressdialog.cpp:24
 #, kde-format
