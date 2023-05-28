@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-04-06 18:16+0200\n"
+"PO-Revision-Date: 2023-05-27 20:59+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -314,12 +314,13 @@ msgstr ""
 "пита повече\""
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Прозорец с плъзгач, връща избрания цвят"
+msgstr ""
+"Прозорец с плъзгач, връща избраната стойност (аргументи [text] [min] [max] "
+"[step])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -426,7 +427,7 @@ msgstr "Изберете цвят"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Синтаксис: --slider <text> <min> <max> <step>"
 
 #: progressdialog.cpp:24
 #, kde-format
