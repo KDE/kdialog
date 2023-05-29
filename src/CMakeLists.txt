@@ -26,6 +26,10 @@ target_link_libraries(kdialog
     KF${KF_MAJOR_VERSION}::WindowSystem
 )
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(kdialog KF6::IconWidgets)
+endif()
+
 target_link_libraries(kdialog Qt::DBus)
 
 if (HAVE_X11)
