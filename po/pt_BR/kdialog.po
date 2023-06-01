@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-04-05 09:54-0300\n"
+"PO-Revision-Date: 2023-05-31 14:23-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -322,12 +322,13 @@ msgstr ""
 "mostrar/perguntar-novamente\""
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Caixa de diálogo deslizante, retorna o valor selecionado"
+msgstr ""
+"Caixa de diálogo deslizante, retorna o valor selecionado (argumentos [texto] "
+"[mín] [máx] [passo])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -437,7 +438,7 @@ msgstr "Escolher a cor"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Sintaxe: --slider <texto> <mín> <máx> <passo>"
 
 #: progressdialog.cpp:24
 #, kde-format
