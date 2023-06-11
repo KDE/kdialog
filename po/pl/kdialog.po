@@ -1,6 +1,6 @@
 # translation of kdialog.po to
 # translation of kdialog.po to Polish
-# Version: $Revision: 1652005 $
+# Version: $Revision: 1653610 $
 # Copyright (C) 2004, 2005, 2008, 2009 Free Software Foundation, Inc.
 #
 # Wojciech Milewski <Wojciech.Milewski@wp.pl>, 2002.
@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-04-15 11:28+0200\n"
+"PO-Revision-Date: 2023-06-10 10:09+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -324,12 +324,13 @@ msgstr ""
 "Plik konfiguracyjny do zapisania statusu opcji \"Nie pokazuj/pytaj ponownie\""
 
 #: kdialog.cpp:329
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Okienko dialogowe z suwakiem, zwraca wybraną wartość"
+msgstr ""
+"Okienko dialogowe z suwakiem, zwraca wybraną wartość (argumenty [teks] [min] "
+"[maks] [krok])"
 
 #: kdialog.cpp:330
 #, kde-format
@@ -436,7 +437,7 @@ msgstr "Wybierz kolor"
 #: kdialog.cpp:1078
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Składnia: --slider <tekst> <min> <maks> <krok>"
 
 #: progressdialog.cpp:24
 #, kde-format
