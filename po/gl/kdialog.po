@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-20 00:49+0000\n"
-"PO-Revision-Date: 2023-05-21 22:16+0200\n"
+"PO-Revision-Date: 2023-06-17 09:09+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -93,27 +93,27 @@ msgstr "Kai Uwe Broulik"
 #: kdialog.cpp:283
 #, kde-format
 msgid "Question message box with yes/no buttons"
-msgstr "Xanela de pregunta con botóns de si/non"
+msgstr "Diálogo de pregunta con botóns de si/non"
 
 #: kdialog.cpp:284
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
-msgstr "Xanela de pregunta con botóns de si/non/cancelar"
+msgstr "Diálogo de pregunta con botóns de si/non/cancelar"
 
 #: kdialog.cpp:285
 #, kde-format
 msgid "Warning message box with yes/no buttons"
-msgstr "Xanela de aviso con botóns de si/non"
+msgstr "Diálogo de aviso con botóns de si/non"
 
 #: kdialog.cpp:286
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
-msgstr "Xanela de aviso con botóns de continuar/cancelar"
+msgstr "Diálogo de aviso con botóns de continuar/cancelar"
 
 #: kdialog.cpp:287
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
-msgstr "Xanela de aviso con botóns de si/non/cancelar"
+msgstr "Diálogo de aviso con botóns de si/non/cancelar"
 
 #: kdialog.cpp:289
 #, kde-format
@@ -143,7 +143,7 @@ msgstr "Usar un texto como etiqueta do botón Continuar"
 #: kdialog.cpp:294
 #, kde-format
 msgid "'Sorry' message box"
-msgstr "Xanela de desculpas"
+msgstr "Diálogo de desculpas"
 
 #: kdialog.cpp:295
 #, kde-format
@@ -153,7 +153,7 @@ msgstr "Mensaxe de «Sentímolo» cun campo de detalles ampliábel"
 #: kdialog.cpp:296
 #, kde-format
 msgid "'Error' message box"
-msgstr "Xanela de erro"
+msgstr "Diálogo de erro"
 
 #: kdialog.cpp:297
 #, kde-format
@@ -223,7 +223,7 @@ msgstr "Diálogo de lista de alternativas"
 #: kdialog.cpp:310
 #, kde-format
 msgid "Passive Popup"
-msgstr "Xanela emerxente pasiva"
+msgstr "Diálogo emerxente pasivo"
 
 #: kdialog.cpp:311
 #, kde-format
