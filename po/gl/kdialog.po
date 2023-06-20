@@ -37,8 +37,8 @@ msgstr "javierjc@mundo-r.com, mvillarino@users.sourceforge.net"
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
-"KDialog pódese empregar para mostrar cadros de diálogo a partir de scripts "
-"de intérprete de ordes."
+"KDialog pódese usar para amosar cadros de diálogo a partir de scripts de "
+"intérprete de ordes."
 
 #: kdialog.cpp:268
 #, kde-format
@@ -328,7 +328,7 @@ msgstr "Mostra o winId de cada diálogo"
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr ""
-"Ficheiro de configuración e nome da opción para gardar o estado «non-mostrar/"
+"Ficheiro de configuración e nome da opción para gardar o estado «non-amosar/"
 "volver-a-preguntar»"
 
 #: kdialog.cpp:329
