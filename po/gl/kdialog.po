@@ -42,7 +42,7 @@ msgstr "KDialog"
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
-"KDialog pódese usar para amosar cadros de diálogo a partir de scripts de "
+"KDialog pódese usar para amosar cadros de diálogo a partir de guións de "
 "intérprete de ordes."
 
 #: kdialog.cpp:268
