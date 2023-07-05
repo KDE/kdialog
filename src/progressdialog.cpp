@@ -23,3 +23,5 @@ void ProgressDialog::showCancelButton(bool show)
 {
     setCancelButtonText(show ? i18n("Cancel") : QString());
 }
+
+#include "moc_progressdialog.cpp"

@@ -48,3 +48,5 @@ int KListBoxDialog::currentItem() const
 {
     return table->currentRow();
 }
+
+#include "moc_klistboxdialog.cpp"
