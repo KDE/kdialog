@@ -484,7 +484,7 @@ int main(int argc, char *argv[])
         QDialog dialog;
         dialog.setWindowTitle(title);
         auto buttonBox = new QDialogButtonBox(&dialog);
-        KMessageBox::Options options = KMessageBox::NoExec;
+        KMessageBox::Options options = KMessageBox::NoExec | KMessageBox::Notify;
 
         switch (type) {
         case KMessageBox::QuestionTwoActions:
