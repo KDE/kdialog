@@ -893,8 +893,8 @@ QT_WARNING_POP
         const QUrl startUrl = QUrl::fromUserInput(startDir);
 
         QFileDialog dlg;
-        dlg.setOption(QFileDialog::ShowDirsOnly, true);
         dlg.setFileMode(QFileDialog::Directory);
+        dlg.setOption(QFileDialog::ShowDirsOnly, true);
         dlg.setDirectoryUrl(initialDirectory(startUrl));
         dlg.selectFile(initialSelection(startUrl));
         Utils::handleXGeometry(&dlg);
