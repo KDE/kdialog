@@ -13,16 +13,5 @@ Dependencies:
     'frameworks/kio': '@latest-kf6'
     'frameworks/kdbusaddons': '@latest-kf6'
 
-- 'on': ['Linux/Qt5', 'FreeBSD/Qt5', 'Windows/Qt5', 'Android/Qt5']
-  'require':
-    'frameworks/extra-cmake-modules': '@stable'
-    'frameworks/ktextwidgets': '@stable'
-    'frameworks/knotifications': '@stable'
-    'frameworks/kguiaddons': '@stable'
-    'frameworks/kiconthemes': '@stable'
-    'frameworks/kwindowsystem': '@stable'
-    'frameworks/kio': '@stable'
-    'frameworks/kdbusaddons': '@stable'
-
 Options:
     require-passing-tests-on: [ 'Linux', 'FreeBSD' ]

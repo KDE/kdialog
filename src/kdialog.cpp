@@ -15,9 +15,6 @@
 // KF
 #include <KMessageBox>
 #include <knotifications_version.h>
-#if KNOTIFICATIONS_VERSION < QT_VERSION_CHECK(5, 240, 0)
-#include <KPassivePopup>
-#endif
 #include <KRecentDocument>
 #include <KAboutData>
 #include <KConfig>
@@ -28,9 +25,6 @@
 #include <KLocalizedString>
 #include <kwidgetsaddons_version.h>
 
-#if KNOTIFICATIONS_VERSION < QT_VERSION_CHECK(5, 240, 0)
-#include <QDesktopWidget>
-#endif
 
 // Qt
 #include <QApplication>
@@ -258,10 +252,6 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     KLocalizedString::setApplicationDomain("kdialog");
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    // enable high dpi support
-    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-#endif
     KAboutData aboutData(QStringLiteral("kdialog"), QString(),
                          QStringLiteral(KDIALOG_VERSION_STRING), i18n("KDialog can be used to show nice dialog boxes from shell scripts"),
                          KAboutLicense::GPL,
@@ -599,51 +589,6 @@ int main(int argc, char *argv[])
             return 0;
         }
 
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_DEPRECATED
-#if KNOTIFICATIONS_VERSION < QT_VERSION_CHECK(5, 240, 0)
-        // ...did not work, use KPassivePopup as fallback
-
-        // parse timeout time again, so it does not auto-close the fallback (timer cannot handle -1 time)
-        if (args.count() > 0) {
-            timeout = 1000 * args.at(0).toInt();
-        }
-        if (timeout <= 0) {
-            timeout = 10*1000;    // 10 seconds should be a decent time for auto-closing (you can override this using a parameter)
-        }
-
-        QPixmap passiveicon;
-        if (parser.isSet(QStringLiteral("icon"))) {  // Only show icon if explicitly requested
-            passiveicon = KIconLoader::global()->loadIcon(iconArg, KIconLoader::Dialog);
-        }
-        KPassivePopup *popup = KPassivePopup::message(KPassivePopup::Boxed,  // style
-                                                      title,
-                                                      Utils::parseString(parser.value(QStringLiteral("passivepopup"))),
-                                                      passiveicon,
-                                                      (QWidget *)nullptr, // parent
-                                                      timeout);
-        auto timer = new QTimer();
-        QObject::connect(timer, SIGNAL(timeout()), qApp, SLOT(quit()));
-        QObject::connect(popup, QOverload<>::of(&KPassivePopup::clicked), qApp, &QApplication::quit);
-        timer->setSingleShot(true);
-        timer->start(timeout);
-
-#ifdef HAVE_X11
-        if (!geometry.isEmpty()) {
-            int x, y;
-            int w, h;
-            int m = XParseGeometry(geometry.toLatin1().constData(), &x, &y, (unsigned int *)&w, (unsigned int *)&h);
-            if ((m & XNegative)) {
-                x = QApplication::desktop()->width()  + x - w;
-            }
-            if ((m & YNegative)) {
-                y = QApplication::desktop()->height() + y - h;
-            }
-            popup->setAnchor(QPoint(x, y));
-        }
-#endif
-#endif // KNOTIFICATIONS_BUILD_DEPRECATED
-QT_WARNING_POP
         qApp->exec();
         return 0;
     }

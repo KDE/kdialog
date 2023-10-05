@@ -18,17 +18,14 @@ target_sources(kdialog PRIVATE
 )
 
 target_link_libraries(kdialog
-    KF${KF_MAJOR_VERSION}::KIOWidgets
-    KF${KF_MAJOR_VERSION}::TextWidgets
-    KF${KF_MAJOR_VERSION}::Notifications
-    KF${KF_MAJOR_VERSION}::IconThemes
-    KF${KF_MAJOR_VERSION}::GuiAddons
-    KF${KF_MAJOR_VERSION}::WindowSystem
+    KF6::KIOWidgets
+    KF6::TextWidgets
+    KF6::Notifications
+    KF6::IconThemes
+    KF6::GuiAddons
+    KF6::WindowSystem
+    KF6::IconWidgets
 )
-
-if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(kdialog KF6::IconWidgets)
-endif()
 
 target_link_libraries(kdialog Qt::DBus)
 
@@ -57,8 +54,8 @@ target_sources(kdialog_progress_helper PRIVATE
 )
 
 target_link_libraries(kdialog_progress_helper
-    KF${KF_MAJOR_VERSION}::DBusAddons
-    KF${KF_MAJOR_VERSION}::I18n
+    KF6::DBusAddons
+    KF6::I18n
     Qt::Widgets
 )
 
