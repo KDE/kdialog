@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-20 00:49+0000\n"
+"POT-Creation-Date: 2023-10-06 01:42+0000\n"
 "PO-Revision-Date: 2023-05-21 05:12+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -28,261 +28,261 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Temuri.doghonadze@gmail.com"
 
-#: kdialog.cpp:266
+#: kdialog.cpp:256
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
 "KDialog შეგიძლიათ სკრიპტებიდან სასიამოვნო ფანჯრების შესაქმნელად გამოიყენოთ"
 
-#: kdialog.cpp:268
+#: kdialog.cpp:258
 #, kde-format
 msgid "(C) 2000, Nick Thompson"
 msgstr "(C) 2000, Nick Thompson"
 
-#: kdialog.cpp:269
+#: kdialog.cpp:259
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: kdialog.cpp:269
+#: kdialog.cpp:259
 #, kde-format
 msgid "Current maintainer"
 msgstr "პროექტის მიმდინარე ხელმძღვანელი"
 
-#: kdialog.cpp:270
+#: kdialog.cpp:260
 #, kde-format
 msgid "Brad Hards"
 msgstr "Brad Hards"
 
-#: kdialog.cpp:271
+#: kdialog.cpp:261
 #, kde-format
 msgid "Nick Thompson"
 msgstr "Nick Thompson"
 
-#: kdialog.cpp:272
+#: kdialog.cpp:262
 #, kde-format
 msgid "Matthias Hölzer"
 msgstr "Matthias Hölzer"
 
-#: kdialog.cpp:273
+#: kdialog.cpp:263
 #, kde-format
 msgid "David Gümbel"
 msgstr "David Gümbel"
 
-#: kdialog.cpp:274
+#: kdialog.cpp:264
 #, kde-format
 msgid "Richard Moore"
 msgstr "Richard Moore"
 
-#: kdialog.cpp:275
+#: kdialog.cpp:265
 #, kde-format
 msgid "Dawit Alemayehu"
 msgstr "Dawit Alemayehu"
 
-#: kdialog.cpp:276
+#: kdialog.cpp:266
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr "კაი უვე ბროულიკი"
 
-#: kdialog.cpp:283
+#: kdialog.cpp:273
 #, kde-format
 msgid "Question message box with yes/no buttons"
 msgstr "კითხვის ფანჯარა დიახ/არას ღილაკებით"
 
-#: kdialog.cpp:284
+#: kdialog.cpp:274
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
 msgstr "კითხვის ფანჯარა დიახ/არა/გაუქმების ღილაკებით"
 
-#: kdialog.cpp:285
+#: kdialog.cpp:275
 #, kde-format
 msgid "Warning message box with yes/no buttons"
 msgstr "გაფრთხილების ფანჯარა დიახ/არას ღილაკებით"
 
-#: kdialog.cpp:286
+#: kdialog.cpp:276
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
 msgstr "გაფრთხილების ფანჯარა გაგრძელება/გაუქმების ღილაკებით"
 
-#: kdialog.cpp:287
+#: kdialog.cpp:277
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
 msgstr "გაფრთხილების ფანჯარა დიახ/არა/გაუქმების ღილაკებით"
 
-#: kdialog.cpp:289
+#: kdialog.cpp:279
 #, kde-format
 msgid "Use text as OK button label"
 msgstr "OK ღილაკის ჭდის დაყენება"
 
-#: kdialog.cpp:290
+#: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Yes button label"
 msgstr "Yes ღილაკის ჭდის დაყენება"
 
-#: kdialog.cpp:291
+#: kdialog.cpp:281
 #, kde-format
 msgid "Use text as No button label"
 msgstr "No ღილაკის ჭდის დაყენება"
 
-#: kdialog.cpp:292
+#: kdialog.cpp:282
 #, kde-format
 msgid "Use text as Cancel button label"
 msgstr "Cancel ღილაკის ჭდის დაყენება"
 
-#: kdialog.cpp:293
+#: kdialog.cpp:283
 #, kde-format
 msgid "Use text as Continue button label"
 msgstr "Continue ღილაკის ჭდის დაყენება"
 
-#: kdialog.cpp:294
+#: kdialog.cpp:284
 #, kde-format
 msgid "'Sorry' message box"
 msgstr "ფანჯარა 'ბოდიში'"
 
-#: kdialog.cpp:295
+#: kdialog.cpp:285
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
 msgstr "'ბოდიშის' ფანჯარა გაფართოებადი დეტალების ველით"
 
-#: kdialog.cpp:296
+#: kdialog.cpp:286
 #, kde-format
 msgid "'Error' message box"
 msgstr "ფანჯარა 'შეცდომა'"
 
-#: kdialog.cpp:297
+#: kdialog.cpp:287
 #, kde-format
 msgid "'Error' message box with expandable Details field"
 msgstr "'შეცდომის' ფანჯარა გაფართოებადი დეტალების ველით"
 
-#: kdialog.cpp:298
+#: kdialog.cpp:288
 #, kde-format
 msgid "Message Box dialog"
 msgstr "შეტყობინების ფანჯარა"
 
-#: kdialog.cpp:299
+#: kdialog.cpp:289
 #, kde-format
 msgid "Input Box dialog"
 msgstr "შეყვანის ფანჯარა"
 
-#: kdialog.cpp:300
+#: kdialog.cpp:290
 #, kde-format
 msgid "Image Box dialog"
 msgstr "გამოსახულების ფანჯარა"
 
-#: kdialog.cpp:301
+#: kdialog.cpp:291
 #, kde-format
 msgid "Image Box Input dialog"
 msgstr "გამოსახულების შეყვანის ფანჯარა"
 
-#: kdialog.cpp:302
+#: kdialog.cpp:292
 #, kde-format
 msgid "Password dialog"
 msgstr "პაროლის ფანჯარა"
 
-#: kdialog.cpp:303
+#: kdialog.cpp:293
 #, kde-format
 msgid "New Password dialog"
 msgstr "ახალი პაროლის ფანჯარა"
 
-#: kdialog.cpp:304
+#: kdialog.cpp:294
 #, kde-format
 msgid "Text Box dialog"
 msgstr "ტექსტს ფანჯარა"
 
-#: kdialog.cpp:305
+#: kdialog.cpp:295
 #, kde-format
 msgid "Text Input Box dialog"
 msgstr "ტექსტის შეყვანის ფანჯარა"
 
-#: kdialog.cpp:306
+#: kdialog.cpp:296
 #, kde-format
 msgid "ComboBox dialog"
 msgstr "კომბო ფანჯარა"
 
-#: kdialog.cpp:307
+#: kdialog.cpp:297
 #, kde-format
 msgid "Menu dialog"
 msgstr "მენიუს ფანჯარა"
 
-#: kdialog.cpp:308
+#: kdialog.cpp:298
 #, kde-format
 msgid "Check List dialog"
 msgstr "ჩასართავი სიის ფანჯარა"
 
-#: kdialog.cpp:309
+#: kdialog.cpp:299
 #, kde-format
 msgid "Radio List dialog"
 msgstr "რადიო სიის ფანჯარა"
 
-#: kdialog.cpp:310
+#: kdialog.cpp:300
 #, kde-format
 msgid "Passive Popup"
 msgstr "პასიური მხტუნარა"
 
-#: kdialog.cpp:311
+#: kdialog.cpp:301
 #, kde-format
 msgid "Popup icon"
 msgstr "მხტუნარა ხატულა"
 
-#: kdialog.cpp:312
+#: kdialog.cpp:302
 #, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
 msgstr ""
 "არსებული ფაილის გახსნის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [ფილტრი])"
 
-#: kdialog.cpp:313
+#: kdialog.cpp:303
 #, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
 msgstr "ფაილის შენახვის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [ფილტრი])"
 
-#: kdialog.cpp:314
+#: kdialog.cpp:304
 #, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "არსებული საქაღალდის ასარჩევი ფანჯარა (არგუმენტები [საწყისისაქაღალდე])"
 
-#: kdialog.cpp:315
+#: kdialog.cpp:305
 #, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
 msgstr ""
 "არსებული URL-ის გახსნის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [ფილტრი])"
 
-#: kdialog.cpp:316
+#: kdialog.cpp:306
 #, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
 msgstr "URL-ის შენახვის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [ფილტრი])"
 
-#: kdialog.cpp:317
+#: kdialog.cpp:307
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr "ხატულის არჩევის ფანჯარა (არგუმენტები [ჯგუფი] [კონტექსტი])"
 
-#: kdialog.cpp:318 kdialog_progress_helper.cpp:40
+#: kdialog.cpp:308 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr "პროგრესის ზოლის ფანჯარა. აბრუნებს D-Bus-ის მიმართვას კომუნიკაციისთვის"
 
-#: kdialog.cpp:319
+#: kdialog.cpp:309
 #, kde-format
 msgid "Color dialog to select a color"
 msgstr "ფერის ასარჩევი ფანჯარა"
 
-#: kdialog.cpp:320
+#: kdialog.cpp:310
 #, kde-format
 msgid "Allow --getcolor to specify output format"
 msgstr "გამოსატანი ფორმატის მისათითებლად გამოიყენეთ --getcolor"
 
-#: kdialog.cpp:322 kdialog_progress_helper.cpp:41
+#: kdialog.cpp:312 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
 msgstr "ფანჯრის სათაური"
 
-#: kdialog.cpp:323
+#: kdialog.cpp:313
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr ""
 "ნაგულისხმები ჩანაწერი კომბოს, მენიუს, ფერის და კალენდარისთვის გამოსაყენებლად"
 
-#: kdialog.cpp:324
+#: kdialog.cpp:314
 #, kde-format
 msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
@@ -291,7 +291,7 @@ msgstr ""
 "--getopenurl და --getopenfilename პარამეტრებისთვის ერთზე მეტი ფაილის "
 "დაბრუნების ნების დართვა"
 
-#: kdialog.cpp:325
+#: kdialog.cpp:315
 #, kde-format
 msgid ""
 "Return list items on separate lines (for checklist option and file open with "
@@ -300,12 +300,12 @@ msgstr ""
 "აბრუნებს ელემენტების სიას ცალ-ცალკე ხაზებზე (ჩასართავი პარამეტრებისა და "
 "ფაილის --multiple -ით გასახსნელად)"
 
-#: kdialog.cpp:326
+#: kdialog.cpp:316
 #, kde-format
 msgid "Outputs the winId of each dialog"
 msgstr "თითოეული ფანჯრის winId -ის გამოტანა"
 
-#: kdialog.cpp:327
+#: kdialog.cpp:317
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
@@ -313,7 +313,7 @@ msgstr ""
 "კონფიგურაციის ფაილი და პარამეტრის სახელი \"არ-მაჩვენო/თავიდან-მკითხე\" "
 "მდგომარეობის შესანახად"
 
-#: kdialog.cpp:329
+#: kdialog.cpp:319
 #, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
@@ -322,7 +322,7 @@ msgstr ""
 "სლაიდერის ფანჯარა. აბრუნებს არჩეულ მნიშვნელობას (არგუმენტები [ტექსტი] [მინ] "
 "[მაქს] [ბიჯი])"
 
-#: kdialog.cpp:330
+#: kdialog.cpp:320
 #, kde-format
 msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
@@ -331,104 +331,104 @@ msgstr ""
 "თარიღის ფორმატი კალენდარის შედეგისთვის ან/და მისი ნაგულისხმები მნიშვნელობა "
 "(Qt-ის სტილი); ნაგულისხმები მნიშვნელობაა 'დდდ თთთ დ წწწწ'"
 
-#: kdialog.cpp:331
+#: kdialog.cpp:321
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
 msgstr "კალენდარის ფანჯარა. აბრუნებს მონიშნულ თარიღს"
 
-#: kdialog.cpp:334
+#: kdialog.cpp:324
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr "ფანჯრის winid-ით მითითებულ X-ის აპზე მიბმა"
 
-#: kdialog.cpp:335
+#: kdialog.cpp:325
 #, kde-format
 msgid "A synonym for --attach"
 msgstr "--attach -ის სინონიმი"
 
-#: kdialog.cpp:336
+#: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 "ფანჯრის გეომეტრია: [=][<სიგანე>{xX}<სიმაღლე>][{+-}<xწანაცვლება>{+-}"
 "<yწანაცვლება>]"
 
-#: kdialog.cpp:338 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "არგუმენტები - მთავარ პარამეტრზეა დამოკიდებული"
 
-#: kdialog.cpp:350
+#: kdialog.cpp:340
 #, kde-format
 msgid "KDialog"
 msgstr "KDialog"
 
-#: kdialog.cpp:384
+#: kdialog.cpp:374
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr "&დიახ"
 
-#: kdialog.cpp:385
+#: kdialog.cpp:375
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr "&არა"
 
-#: kdialog.cpp:520
+#: kdialog.cpp:510
 #, kde-format
 msgid "Do not ask again"
 msgstr "აღარ მკითხო"
 
-#: kdialog.cpp:720
+#: kdialog.cpp:665
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "სინტაქსი: --combobox <text> ელემენტი [ელემენტი] ..."
 
-#: kdialog.cpp:742
+#: kdialog.cpp:687
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "სინტაქსი: --menu ტექსტური ჭდის ელემენტი [ჭდის ელემენტი] ..."
 
-#: kdialog.cpp:766
+#: kdialog.cpp:711
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "სინტაქსი: --checklist ტექსტური ჭდე ელემენტი ჩართ/გამორთ [ჭდე ელემენტი ჩართ/"
 "გამორთ] ..."
 
-#: kdialog.cpp:784
+#: kdialog.cpp:729
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "სინტაქსი: --radiolist ტექსტური ჭდე ელემენტი ჩართ/გამორთ [ჭდე ელემენტი ჩართ/"
 "გამორთ] ..."
 
-#: kdialog.cpp:815
+#: kdialog.cpp:760
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "გახსნა"
 
-#: kdialog.cpp:867
+#: kdialog.cpp:812
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "შენახვა როგორც"
 
-#: kdialog.cpp:901
+#: kdialog.cpp:846
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "აირჩიეთ საქაღალდე"
 
-#: kdialog.cpp:1017
+#: kdialog.cpp:962
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "აირჩიეთ ფერი"
 
-#: kdialog.cpp:1078
+#: kdialog.cpp:1023
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "სინტაქსი: --slider <ტექსტი> <მინ> <მაქს> <ბიჯი>"

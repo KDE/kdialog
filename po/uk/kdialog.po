@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-20 00:49+0000\n"
+"POT-Creation-Date: 2023-10-06 01:42+0000\n"
 "PO-Revision-Date: 2023-05-20 08:41+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -33,266 +33,266 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "oneugene@ukr.net,ivanpetrouchtchak@yahoo.com"
 
-#: kdialog.cpp:266
+#: kdialog.cpp:256
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
 "KDialog можна використовувати для виклику діалогових вікон зі скриптів "
 "оболонки"
 
-#: kdialog.cpp:268
+#: kdialog.cpp:258
 #, kde-format
 msgid "(C) 2000, Nick Thompson"
 msgstr "© Nick Thompson, 2000"
 
-#: kdialog.cpp:269
+#: kdialog.cpp:259
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: kdialog.cpp:269
+#: kdialog.cpp:259
 #, kde-format
 msgid "Current maintainer"
 msgstr "Поточний супровід"
 
-#: kdialog.cpp:270
+#: kdialog.cpp:260
 #, kde-format
 msgid "Brad Hards"
 msgstr "Brad Hards"
 
-#: kdialog.cpp:271
+#: kdialog.cpp:261
 #, kde-format
 msgid "Nick Thompson"
 msgstr "Nick Thompson"
 
-#: kdialog.cpp:272
+#: kdialog.cpp:262
 #, kde-format
 msgid "Matthias Hölzer"
 msgstr "Matthias Hölzer"
 
-#: kdialog.cpp:273
+#: kdialog.cpp:263
 #, kde-format
 msgid "David Gümbel"
 msgstr "David Gümbel"
 
-#: kdialog.cpp:274
+#: kdialog.cpp:264
 #, kde-format
 msgid "Richard Moore"
 msgstr "Richard Moore"
 
-#: kdialog.cpp:275
+#: kdialog.cpp:265
 #, kde-format
 msgid "Dawit Alemayehu"
 msgstr "Dawit Alemayehu"
 
-#: kdialog.cpp:276
+#: kdialog.cpp:266
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
 
-#: kdialog.cpp:283
+#: kdialog.cpp:273
 #, kde-format
 msgid "Question message box with yes/no buttons"
 msgstr "Вікно питання з кнопками Так/Ні"
 
-#: kdialog.cpp:284
+#: kdialog.cpp:274
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
 msgstr "Вікно питання з кнопками Так/Ні/Скасувати"
 
-#: kdialog.cpp:285
+#: kdialog.cpp:275
 #, kde-format
 msgid "Warning message box with yes/no buttons"
 msgstr "Вікно попередження з кнопками Так/Ні"
 
-#: kdialog.cpp:286
+#: kdialog.cpp:276
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
 msgstr "Вікно попередження з кнопками Продовжити/Скасувати"
 
-#: kdialog.cpp:287
+#: kdialog.cpp:277
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
 msgstr "Вікно попередження з кнопками Так/Ні/Скасувати"
 
-#: kdialog.cpp:289
+#: kdialog.cpp:279
 #, kde-format
 msgid "Use text as OK button label"
 msgstr "Використовувати текст для напису на кнопці «Гаразд»"
 
-#: kdialog.cpp:290
+#: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Yes button label"
 msgstr "Використовувати текст для напису на кнопці «Так»"
 
-#: kdialog.cpp:291
+#: kdialog.cpp:281
 #, kde-format
 msgid "Use text as No button label"
 msgstr "Використовувати текст для напису на кнопці «Ні»"
 
-#: kdialog.cpp:292
+#: kdialog.cpp:282
 #, kde-format
 msgid "Use text as Cancel button label"
 msgstr "Використовувати текст для напису на кнопці «Скасувати»"
 
-#: kdialog.cpp:293
+#: kdialog.cpp:283
 #, kde-format
 msgid "Use text as Continue button label"
 msgstr "Використовувати текст для напису на кнопці «Продовжити»"
 
-#: kdialog.cpp:294
+#: kdialog.cpp:284
 #, kde-format
 msgid "'Sorry' message box"
 msgstr "Вікно «Перепрошую»"
 
-#: kdialog.cpp:295
+#: kdialog.cpp:285
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
 msgstr "Вікно повідомлення «Вибачте» з полем «Подробиці», яке можна розгорнути"
 
-#: kdialog.cpp:296
+#: kdialog.cpp:286
 #, kde-format
 msgid "'Error' message box"
 msgstr "Вікно «Помилка»"
 
-#: kdialog.cpp:297
+#: kdialog.cpp:287
 #, kde-format
 msgid "'Error' message box with expandable Details field"
 msgstr "Вікно повідомлення «Помилка» з полем «Подробиці», яке можна розгорнути"
 
-#: kdialog.cpp:298
+#: kdialog.cpp:288
 #, kde-format
 msgid "Message Box dialog"
 msgstr "Звичайне вікно повідомлень"
 
-#: kdialog.cpp:299
+#: kdialog.cpp:289
 #, kde-format
 msgid "Input Box dialog"
 msgstr "Вікно для вводу рядка"
 
-#: kdialog.cpp:300
+#: kdialog.cpp:290
 #, kde-format
 msgid "Image Box dialog"
 msgstr "Вікно рамки зображення"
 
-#: kdialog.cpp:301
+#: kdialog.cpp:291
 #, kde-format
 msgid "Image Box Input dialog"
 msgstr "Вікно вхідних даних рамки зображення"
 
-#: kdialog.cpp:302
+#: kdialog.cpp:292
 #, kde-format
 msgid "Password dialog"
 msgstr "Вікно для вводу пароля"
 
-#: kdialog.cpp:303
+#: kdialog.cpp:293
 #, kde-format
 msgid "New Password dialog"
 msgstr "Вікно нового пароля"
 
-#: kdialog.cpp:304
+#: kdialog.cpp:294
 #, kde-format
 msgid "Text Box dialog"
 msgstr "Вікно з текстом"
 
-#: kdialog.cpp:305
+#: kdialog.cpp:295
 #, kde-format
 msgid "Text Input Box dialog"
 msgstr "Вікно для вводу тексту"
 
-#: kdialog.cpp:306
+#: kdialog.cpp:296
 #, kde-format
 msgid "ComboBox dialog"
 msgstr "Вікно з комбосписком"
 
-#: kdialog.cpp:307
+#: kdialog.cpp:297
 #, kde-format
 msgid "Menu dialog"
 msgstr "Вікно меню"
 
-#: kdialog.cpp:308
+#: kdialog.cpp:298
 #, kde-format
 msgid "Check List dialog"
 msgstr ""
 "Вікно для вибору\n"
 "(можна вибрати декілька елементів)"
 
-#: kdialog.cpp:309
+#: kdialog.cpp:299
 #, kde-format
 msgid "Radio List dialog"
 msgstr ""
 "Вікно для вибору\n"
 "(можна вибрати один елемент)"
 
-#: kdialog.cpp:310
+#: kdialog.cpp:300
 #, kde-format
 msgid "Passive Popup"
 msgstr "Пасивний вигульк"
 
-#: kdialog.cpp:311
+#: kdialog.cpp:301
 #, kde-format
 msgid "Popup icon"
 msgstr "Піктограма контекстного вікна"
 
-#: kdialog.cpp:312
+#: kdialog.cpp:302
 #, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
 msgstr ""
 "Вікно для відкриття наявного файла (параметри [початковий каталог] [фільтр])"
 
-#: kdialog.cpp:313
+#: kdialog.cpp:303
 #, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
 msgstr "Вікно для збереження файла (параметри [початковий каталог] [фільтр])"
 
-#: kdialog.cpp:314
+#: kdialog.cpp:304
 #, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Вікно для вибирання наявного каталогу (аргументи [початковий каталог])"
 
-#: kdialog.cpp:315
+#: kdialog.cpp:305
 #, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
 msgstr ""
 "Вікно для відкриття наявної адреси (параметри [початковий каталог] [фільтр])"
 
-#: kdialog.cpp:316
+#: kdialog.cpp:306
 #, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
 msgstr "Вікно для збереження адреси (параметри [початковий каталог] [фільтр])"
 
-#: kdialog.cpp:317
+#: kdialog.cpp:307
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr "Діалогове вікно вибору піктограми (аргументи [група] [контекст])"
 
-#: kdialog.cpp:318 kdialog_progress_helper.cpp:40
+#: kdialog.cpp:308 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr "Вікно смужки стану, повертає посилання D-Bus для зв'язку"
 
-#: kdialog.cpp:319
+#: kdialog.cpp:309
 #, kde-format
 msgid "Color dialog to select a color"
 msgstr "Вікно для вибирання кольору"
 
-#: kdialog.cpp:320
+#: kdialog.cpp:310
 #, kde-format
 msgid "Allow --getcolor to specify output format"
 msgstr "Дозволити --getcolor визначати формат виведення"
 
-#: kdialog.cpp:322 kdialog_progress_helper.cpp:41
+#: kdialog.cpp:312 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
 msgstr "Заголовок вікна"
 
-#: kdialog.cpp:323
+#: kdialog.cpp:313
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr ""
 "Типовий запис для використання в спадному списку, меню, кольорі та календарі"
 
-#: kdialog.cpp:324
+#: kdialog.cpp:314
 #, kde-format
 msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
@@ -301,7 +301,7 @@ msgstr ""
 "Дозволяє параметрам --getopenurl і --getopenfilename повертати декілька "
 "файлів"
 
-#: kdialog.cpp:325
+#: kdialog.cpp:315
 #, kde-format
 msgid ""
 "Return list items on separate lines (for checklist option and file open with "
@@ -310,12 +310,12 @@ msgstr ""
 "Повернути список елементи в окремих рядках (для параметра checklist та "
 "відкриття файлів з --multiple)"
 
-#: kdialog.cpp:326
+#: kdialog.cpp:316
 #, kde-format
 msgid "Outputs the winId of each dialog"
 msgstr "Виводить winId для кожного вікна"
 
-#: kdialog.cpp:327
+#: kdialog.cpp:317
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
@@ -323,7 +323,7 @@ msgstr ""
 "Файл налаштувань і назва параметра для збереження стану «не-показувати/"
 "питати-знову»"
 
-#: kdialog.cpp:329
+#: kdialog.cpp:319
 #, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
@@ -332,7 +332,7 @@ msgstr ""
 "Діалогова панель з повзунком, повертає обране значення (аргументи [текст] "
 "[мін] [макс] [крок])"
 
-#: kdialog.cpp:330
+#: kdialog.cpp:320
 #, kde-format
 msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
@@ -341,101 +341,101 @@ msgstr ""
 "Формат дати для результатів календаря та/або типового значення (Qt-стиль); "
 "типовим є «ddd MMM d yyyy»"
 
-#: kdialog.cpp:331
+#: kdialog.cpp:321
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
 msgstr "Діалогова панель календаря, повертає обрану дату"
 
-#: kdialog.cpp:334
+#: kdialog.cpp:324
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr "Робить вікно прозорим для програми X з вказаним winid"
 
-#: kdialog.cpp:335
+#: kdialog.cpp:325
 #, kde-format
 msgid "A synonym for --attach"
 msgstr "Синонім --attach"
 
-#: kdialog.cpp:336
+#: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 "Геометричні параметри вікна: [=][<ширина>{xX}<висота>][{+-}<зсув за x>{+-}"
 "<зсув за y>]"
 
-#: kdialog.cpp:338 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "Аргументи — залежать від головного параметра"
 
-#: kdialog.cpp:350
+#: kdialog.cpp:340
 #, kde-format
 msgid "KDialog"
 msgstr "KDialog"
 
-#: kdialog.cpp:384
+#: kdialog.cpp:374
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr "&Так"
 
-#: kdialog.cpp:385
+#: kdialog.cpp:375
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr "&Ні"
 
-#: kdialog.cpp:520
+#: kdialog.cpp:510
 #, kde-format
 msgid "Do not ask again"
 msgstr "Більше не питати"
 
-#: kdialog.cpp:720
+#: kdialog.cpp:665
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Синтаксис: --combobox <текст> пункт [пункт] ..."
 
-#: kdialog.cpp:742
+#: kdialog.cpp:687
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Синтаксис: --menu текст мітка пункт [мітка пункт] ..."
 
-#: kdialog.cpp:766
+#: kdialog.cpp:711
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Синтаксис: --checklist текст мітка пункт on/off [мітка пункт on/off] ..."
 
-#: kdialog.cpp:784
+#: kdialog.cpp:729
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "Синтаксис: --radiolist текст мітка пункт on/off [мітка пункт on/off]"
 
-#: kdialog.cpp:815
+#: kdialog.cpp:760
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Відкриття"
 
-#: kdialog.cpp:867
+#: kdialog.cpp:812
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Збереження з новою назвою"
 
-#: kdialog.cpp:901
+#: kdialog.cpp:846
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Виберіть каталог"
 
-#: kdialog.cpp:1017
+#: kdialog.cpp:962
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Вибір кольору"
 
-#: kdialog.cpp:1078
+#: kdialog.cpp:1023
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "Синтаксис: --slider <текст> <мін> <макс> <крок>"
