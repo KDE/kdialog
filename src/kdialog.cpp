@@ -14,7 +14,6 @@
 
 // KF
 #include <KMessageBox>
-#include <knotifications_version.h>
 #include <KRecentDocument>
 #include <KAboutData>
 #include <KConfig>
@@ -23,7 +22,6 @@
 #include <KWindowSystem>
 #include <KIconLoader>
 #include <KLocalizedString>
-#include <kwidgetsaddons_version.h>
 
 
 // Qt
