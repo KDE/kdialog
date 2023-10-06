@@ -867,9 +867,6 @@ int main(int argc, char *argv[])
               : (groupStr == QLatin1String("Toolbar")) ? KIconLoader::Toolbar
               : (groupStr == QLatin1String("MainToolbar")) ? KIconLoader::MainToolbar
               : (groupStr == QLatin1String("Small")) ? KIconLoader::Small
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-              : (groupStr == QLatin1String("Panel")) ? KIconLoader::Panel
-#endif
               : (groupStr == QLatin1String("Dialog")) ? KIconLoader::Dialog
               : (groupStr == QLatin1String("User")) ? KIconLoader::User
               : /* else */ KIconLoader::NoGroup;
