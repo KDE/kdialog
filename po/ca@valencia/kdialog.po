@@ -435,13 +435,13 @@ msgstr "Anomena i guarda"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
-msgstr "Seleccioneu el directori"
+msgstr "Seleccioneu un directori"
 
 #: kdialog.cpp:957
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
-msgstr "Seleccioneu el color"
+msgstr "Seleccioneu un color"
 
 #: kdialog.cpp:1018
 #, kde-format
