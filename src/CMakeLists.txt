@@ -3,7 +3,7 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION}
     VERSION_HEADER kdialog_version.h
 )
 
-configure_file(config-kdialog.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kdialog.h)
+configure_file(config-kdialog.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kdialog.h)
 
 add_executable(kdialog)
 
