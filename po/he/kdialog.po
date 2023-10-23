@@ -18,16 +18,16 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-08 01:40+0000\n"
-"PO-Revision-Date: 2017-05-24 07:10-0400\n"
+"PO-Revision-Date: 2023-10-22 09:28+0300\n"
 "Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
 "Language-Team: Hebrew <gezer@lists.launchpad.net>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -42,17 +42,17 @@ msgstr "kde-l10n-he@kde.org"
 #: kdialog.cpp:254
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
-msgstr "‏היישום KDialog יכול לשמש כדי להציג תיבות דו-שיח מתוך תסריטי מעטפת‬"
+msgstr "היישום KDialog יכול לשמש כדי להציג חלוניות דרך תסריטי מעטפת"
 
 #: kdialog.cpp:256
 #, kde-format
 msgid "(C) 2000, Nick Thompson"
-msgstr "כל הזכויות שמורות  ‎(c)‎‏ 2000‏ Nick Thompson"
+msgstr "(C) 2000, ניק תומפסון"
 
 #: kdialog.cpp:257
 #, kde-format
 msgid "David Faure"
-msgstr "David Faure"
+msgstr "דיויד פור"
 
 #: kdialog.cpp:257
 #, kde-format
@@ -62,244 +62,239 @@ msgstr "מתחזק נוכחי"
 #: kdialog.cpp:258
 #, kde-format
 msgid "Brad Hards"
-msgstr "Brad Hards"
+msgstr "בראד הארדס"
 
 #: kdialog.cpp:259
 #, kde-format
 msgid "Nick Thompson"
-msgstr "Nick Thompson"
+msgstr "ניק תומפסון"
 
 #: kdialog.cpp:260
 #, kde-format
 msgid "Matthias Hölzer"
-msgstr "Matthias Hölzer"
+msgstr "מטיאס הוילצר"
 
 #: kdialog.cpp:261
 #, kde-format
 msgid "David Gümbel"
-msgstr "David Gümbel"
+msgstr "דיויד גוימבל"
 
 #: kdialog.cpp:262
 #, kde-format
 msgid "Richard Moore"
-msgstr "Richard Moore"
+msgstr "ריצ׳ארד מור"
 
 #: kdialog.cpp:263
 #, kde-format
 msgid "Dawit Alemayehu"
-msgstr "Dawit Alemayehu"
+msgstr "דוויט אלמאיהו"
 
 #: kdialog.cpp:264
 #, kde-format
 msgid "Kai Uwe Broulik"
-msgstr ""
+msgstr "קאי אווה ברוליק"
 
 #: kdialog.cpp:271
 #, kde-format
 msgid "Question message box with yes/no buttons"
-msgstr "תיבת הודעה של שאלה עם כפתורים כן\\לא"
+msgstr "תיבת הודעה של שאלה עם כפתורי כן/לא"
 
 #: kdialog.cpp:272
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
-msgstr "תיבת הודעה של שאלה עם כפתורים כן\\לא\\ביטול"
+msgstr "תיבת הודעה של שאלה עם כפתורי כן/לא/ביטול"
 
 #: kdialog.cpp:273
 #, kde-format
 msgid "Warning message box with yes/no buttons"
-msgstr "תיבת הודעה של אזהרה עם כפתורים כן\\לא"
+msgstr "תיבת הודעה של אזהרה עם כפתורי כן/לא"
 
 #: kdialog.cpp:274
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
-msgstr "תיבת הודעה של אזהרה עם כפתורים המשך\\ביטול"
+msgstr "תיבת הודעה של אזהרה עם כפתורי המשך/ביטול"
 
 #: kdialog.cpp:275
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
-msgstr "תיבת הודעה של אזהרה עם כפתורים כן\\לא\\ביטול"
+msgstr "תיבת הודעה של אזהרה עם כפתורי כן/לא/ביטול"
 
 #: kdialog.cpp:277
-#, fuzzy, kde-format
-#| msgid "Use text as No button label"
+#, kde-format
 msgid "Use text as OK button label"
-msgstr "שימוש בטקסט כתווית הכפתור \"לא\""
+msgstr "להשתמש בטקסט כתווית כפתור האישור"
 
 #: kdialog.cpp:278
 #, kde-format
 msgid "Use text as Yes button label"
-msgstr "שימוש בטקסט כתווית הכפתור \"כן\""
+msgstr "שימוש בטקסט כתווית הכפתור „כן”"
 
 #: kdialog.cpp:279
 #, kde-format
 msgid "Use text as No button label"
-msgstr "שימוש בטקסט כתווית הכפתור \"לא\""
+msgstr "שימוש בטקסט כתווית הכפתור „לא”"
 
 #: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Cancel button label"
-msgstr "שימוש בטקסט כתווית הכפתור \"ביטול\""
+msgstr "שימוש בטקסט כתווית הכפתור „ביטול”"
 
 #: kdialog.cpp:281
 #, kde-format
 msgid "Use text as Continue button label"
-msgstr "שימוש בטקסט כתווית הכפתור \"המשך\""
+msgstr "שימוש בטקסט כתווית הכפתור „המשך”"
 
 #: kdialog.cpp:282
 #, kde-format
 msgid "'Sorry' message box"
-msgstr "תיבת הודעה \"צר לי\""
+msgstr "תיבת הודעת ‚עמך הסליחה’"
 
 #: kdialog.cpp:283
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
-msgstr ""
+msgstr "תיבת הודעת ‚התנצלות’ עם שדה פירוט נפתח"
 
 #: kdialog.cpp:284
 #, kde-format
 msgid "'Error' message box"
-msgstr "תיבת הודעה \"שגיאה\""
+msgstr "תיבת הודעת ‚שגיאה’"
 
 #: kdialog.cpp:285
 #, kde-format
 msgid "'Error' message box with expandable Details field"
-msgstr ""
+msgstr "תיבת הודעת ‚שגיאה’ עם שדה פירוט נפתח"
 
 #: kdialog.cpp:286
 #, kde-format
 msgid "Message Box dialog"
-msgstr "הודעת דו־שיח"
+msgstr "חלונית תיבת הודעה"
 
 #: kdialog.cpp:287
 #, kde-format
 msgid "Input Box dialog"
-msgstr "דו־שיח עם תיבת קלט"
+msgstr "חלונית תיבת קלט"
 
 #: kdialog.cpp:288
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box dialog"
-msgstr "הודעת דו־שיח"
+msgstr "חלונית תיבת תמונה"
 
 #: kdialog.cpp:289
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box Input dialog"
-msgstr "הודעת דו־שיח"
+msgstr "חלונית קלט תיבת תמונה"
 
 #: kdialog.cpp:290
 #, kde-format
 msgid "Password dialog"
-msgstr "דו־שיח ססמה"
+msgstr "חלונית סיסמה"
 
 #: kdialog.cpp:291
-#, fuzzy, kde-format
-#| msgid "Password dialog"
+#, kde-format
 msgid "New Password dialog"
-msgstr "דו־שיח ססמה"
+msgstr "חלונית סיסמה חדשה"
 
 #: kdialog.cpp:292
 #, kde-format
 msgid "Text Box dialog"
-msgstr "דו־שיח עם תיבת טקסט"
+msgstr "חלונית תיבת טקסט"
 
 #: kdialog.cpp:293
 #, kde-format
 msgid "Text Input Box dialog"
-msgstr "דו־שיח עם תיבת קלט"
+msgstr "חלונית תיבת קלט טקסט"
 
 #: kdialog.cpp:294
 #, kde-format
 msgid "ComboBox dialog"
-msgstr "דו־שיח תיבה משולבת"
+msgstr "חלונית תיבת בחירה משולבת"
 
 #: kdialog.cpp:295
 #, kde-format
 msgid "Menu dialog"
-msgstr "דו־שיח עם תפריט"
+msgstr "חלונית תפריט"
 
 #: kdialog.cpp:296
 #, kde-format
 msgid "Check List dialog"
-msgstr "דו־שיח עם רשימת תיבות סימון"
+msgstr "חלונית רשימת תיבות סימון"
 
 #: kdialog.cpp:297
 #, kde-format
 msgid "Radio List dialog"
-msgstr "דו־שיח עם רשימת כפתורי בחירה"
+msgstr "חלונית רשימת כפתורי בחירה"
 
 #: kdialog.cpp:298
 #, kde-format
 msgid "Passive Popup"
-msgstr "חלון־קופץ סביל"
+msgstr "חלונית־קופצת סבילה"
 
 #: kdialog.cpp:299
-#, fuzzy, kde-format
+#, kde-format
 msgid "Popup icon"
-msgstr "חלון־קופץ סביל"
+msgstr "סמל החלונית הקופצת"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
+#, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
-msgstr "דו־שיח לפתיחת קובץ קיים"
+msgstr "חלונית קבצים לפתיחת קובץ קיים (ארגומנטים ‎[startDir] [filter])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
+#, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
-msgstr "דו־שיח לשמירת קובץ"
+msgstr "חלונית קבצים לשמירת קובץ (ארגומנטים ‎[startDir] [filter])"
 
 #: kdialog.cpp:302
-#, fuzzy, kde-format
+#, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
-msgstr "חלון דו־שיח לסימון תיקייה קיימת"
+msgstr "חלונית קבצים לבחירת תיקייה קיימת (ארגומנטים ‎[startDir] [filter])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
+#, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
-msgstr "דו־שיח לפתיחת קובץ קיים"
+msgstr "חלונית קבצים לפתיחת כתובת קיימת (ארגומנטים ‎[startDir] [filter])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
+#, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
-msgstr "דו־שיח לשמירת קובץ"
+msgstr "חלונית קבצים לשמירת כתובת (ארגומנטים ‎[startDir] [filter])"
 
 #: kdialog.cpp:305
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
-msgstr ""
+msgstr "חלונית בחירת סמל (ארגומנטים ‎[group] [context])"
 
 #: kdialog.cpp:306 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
-msgstr "דו־שיח שורת התקדמות, מחזיר הפניית D-Bus לתקשורת"
+msgstr "חלונית פס התקדמות, מחזירה הפניית D-Bus לתקשורת"
 
 #: kdialog.cpp:307
 #, kde-format
 msgid "Color dialog to select a color"
-msgstr "דו־שיח לסימון תיקייה קיימת"
+msgstr "חלונית צבע לבחירת צבע"
 
 #: kdialog.cpp:308
 #, kde-format
 msgid "Allow --getcolor to specify output format"
-msgstr ""
+msgstr "לאפשר ל־‎--getcolor לציין את תסדיר הפלט"
 
 #: kdialog.cpp:310 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
-msgstr "כותרת הדו־שיח"
+msgstr "כותרת החלונית"
 
 #: kdialog.cpp:311
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox, menu and color"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "ערך ברירת־מחדל לשימוש בתיבה משולבת ותפריט"
+msgstr "רשומת ברירת־מחדל לשימוש בתיבה משולבת, תפריט, צבע ולוח שנה"
 
 #: kdialog.cpp:312
 #, kde-format
 msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
 "files"
-msgstr "‏מאשר לאפשרויות --getopenurl ו- --getopenfilename להחזיר קבצים מרובים‬"
+msgstr "מאשר לאפשרויות ‎--getopenurl ו־‎--getopenfilename להחזיר מגוון קבצים"
 
 #: kdialog.cpp:313
 #, kde-format
@@ -307,27 +302,27 @@ msgid ""
 "Return list items on separate lines (for checklist option and file open with "
 "--multiple)"
 msgstr ""
-"‏‏החזר פרטי רשימה בשורות נפרדות (בשביל אפשרות ה-checklist וקובץ נפתח עם ‎--"
-"multiple)‏‬"
+"החזרת פרטי רשימה בשורות נפרדות (לאפשרות checklist ולפתיחת קבצים עם ‎--"
+"multiple)"
 
 #: kdialog.cpp:314
 #, kde-format
 msgid "Outputs the winId of each dialog"
-msgstr "פולט את ה־winid של כל דו־שיח"
+msgstr "מציג את ה־winid של כל חלונית"
 
 #: kdialog.cpp:315
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
-msgstr "קובץ הגדרות ושם אפשרות לשמירת המצב ה־\"אל תראה/תשאל-שוב\" "
+msgstr "קובץ ההגדרות ושם האפשרות לשמירת מצב „לא להציג/לשאול שוב”"
 
 #: kdialog.cpp:317
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "תיבת דו־שיח מסוג מחוון, מחזירה את הערך הנבחר"
+msgstr ""
+"חלונית תיבת פס גלילה, מחזירה ערך נבחר (ארגומנטים ‎[text] [min] [max] [step])"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -335,26 +330,28 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"תבנית תאריך לתוצאת לוח שנה ו/או ערך ברירת מחדל (בסגנון Qt), ברירת המחדל היא "
+"‚ddd MMM d yyyy’"
 
 #: kdialog.cpp:319
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
-msgstr "תיבת דו־שיח מסוג לוח שנה, מחזירה את התאריך הנבחר"
+msgstr "חלונית תיבת לוח שנה, מחזירה את התאריך הנבחר"
 
 #: kdialog.cpp:322
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
-msgstr "‫משייך את החלון ליישום X המוגדר על ידי זיהוי חלון‬"
+msgstr "שיוך החלונית זמנית ליישום X המוגדר על ידי winid (מזהה חלון)"
 
 #: kdialog.cpp:323
 #, kde-format
 msgid "A synonym for --attach"
-msgstr ""
+msgstr "שם נרדף ל־‎--attach"
 
 #: kdialog.cpp:324
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
-msgstr ""
+msgstr "ממדי חלונית: ‎[=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 
 #: kdialog.cpp:326 kdialog_progress_helper.cpp:42
 #, kde-format
@@ -370,38 +367,38 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&כן"
 
 #: kdialog.cpp:373
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&לא"
 
 #: kdialog.cpp:508
 #, kde-format
 msgid "Do not ask again"
-msgstr ""
+msgstr "לא לשאול שוב"
 
 #: kdialog.cpp:663
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr ""
+msgstr "תחביר: ‎--combobox <text> item [item] …"
 
 #: kdialog.cpp:685
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr ""
+msgstr "תחביר: ‎--menu text tag item [tag item] ..."
 
 #: kdialog.cpp:709
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
-msgstr ""
+msgstr "תחביר: ‎--checklist text tag item on/off [tag item on/off] ..."
 
 #: kdialog.cpp:727
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
-msgstr ""
+msgstr "תחביר: ‎--radiolist text tag item on/off [tag item on/off] ..."
 
 #: kdialog.cpp:758
 #, kde-format
@@ -419,7 +416,7 @@ msgstr "שמירה בשם"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
-msgstr ""
+msgstr "בחירת תיקייה"
 
 #: kdialog.cpp:957
 #, kde-format
@@ -430,7 +427,7 @@ msgstr "בחירת צבע"
 #: kdialog.cpp:1018
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "בחירה: ‎--slider <text> <min> <max> <step>‎"
 
 #: progressdialog.cpp:24
 #, kde-format
@@ -440,4 +437,4 @@ msgstr "ביטול"
 #: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
 #, kde-format
 msgid "kdialog: could not open file %1"
-msgstr "kdialog: אין אפשרות לפתוח את הקובץ  %1"
+msgstr "kdialog: לא ניתן לפתוח את הקובץ %1"
