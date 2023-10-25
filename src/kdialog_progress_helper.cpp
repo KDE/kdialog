@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     app.setApplicationName(QStringLiteral("kdialog"));
     app.setOrganizationDomain(QStringLiteral("kde.org"));
-    KLocalizedString::setApplicationDomain("kdialog");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("kdialog"));
 
     KDBusService dbusService(KDBusService::Multiple);
 

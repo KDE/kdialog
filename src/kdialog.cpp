@@ -248,7 +248,7 @@ int main(int argc, char *argv[])
     }
 
     QApplication app(argc, argv);
-    KLocalizedString::setApplicationDomain("kdialog");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("kdialog"));
 
     KAboutData aboutData(QStringLiteral("kdialog"), QString(),
                          QStringLiteral(KDIALOG_VERSION_STRING), i18n("KDialog can be used to show nice dialog boxes from shell scripts"),
