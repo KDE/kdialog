@@ -4,20 +4,21 @@
 # Burkhard Lück <lueck@hube-lueck.de>, 2009, 2013, 2016, 2017, 2018, 2019, 2020.
 # Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011.
 # Frederik Schwarzer <schwarzer@kde.org>, 2011, 2016, 2023.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-08 01:40+0000\n"
-"PO-Revision-Date: 2023-04-03 16:25+0200\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"PO-Revision-Date: 2023-12-18 01:44+0100\n"
+"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -320,12 +321,13 @@ msgstr ""
 "einmal anzeigen/fragen“"
 
 #: kdialog.cpp:317
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Schieberegler-Dialog, gibt den ausgewählten Wert zurück"
+msgstr ""
+"Schieberegler-Dialog, gibt den ausgewählten Wert zurück (Argumente [Text] "
+"[min] [max] [Schritt])"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -431,7 +433,7 @@ msgstr "Farbe wählen"
 #: kdialog.cpp:1018
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Syntax: --slider <Text> <min> <max> <Schritt>"
 
 #: progressdialog.cpp:24
 #, kde-format
