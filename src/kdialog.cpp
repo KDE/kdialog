@@ -59,13 +59,13 @@ using namespace std;
 // this class hooks into the eventloop and outputs the id
 // of shown dialogs or makes the dialog transient for other winids.
 // Will destroy itself on app exit.
-class WinIdEmbedder : public QObject
+class ForeignWindowAttacher : public QObject
 {
 public:
-    WinIdEmbedder(bool printID, WId winId)
+    ForeignWindowAttacher(bool printID, const QString &parentHandle)
         : QObject(qApp)
         , print(printID)
-        , id(winId)
+        , parentHandle(parentHandle)
     {
         if (qApp) {
             qApp->installEventFilter(this);
@@ -76,10 +76,10 @@ protected:
     bool eventFilter(QObject *o, QEvent *e) override;
 private:
     bool print;
-    WId id;
+    QString parentHandle;
 };
 
-bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
+bool ForeignWindowAttacher::eventFilter(QObject *o, QEvent *e)
 {
     if (e->type() == QEvent::Show && o->isWidgetType()
         && o->inherits("QDialog")) {
@@ -87,11 +87,11 @@ bool WinIdEmbedder::eventFilter(QObject *o, QEvent *e)
         if (print) {
             cout << "winId: " << w->winId() << endl;
         }
-        if (id) {
+        if (!parentHandle.isEmpty()) {
             w->setAttribute(Qt::WA_NativeWindow, true);
-            KWindowSystem::setMainWindow(w->windowHandle(), id);
+            KWindowSystem::setMainWindow(w->windowHandle(), parentHandle);
         }
-        deleteLater(); // WinIdEmbedder is not needed anymore after the first dialog was shown
+        deleteLater(); // ForeignWindowAttacher is not needed anymore after the first dialog was shown
         return false;
     }
     return QObject::eventFilter(o, e);
@@ -345,27 +345,19 @@ int main(int argc, char *argv[])
     const QString geometry = parser.value(QStringLiteral("geometry"));
     Utils::setGeometry(geometry);
 
-    WId winid = 0;
+    QString parentHandle;
     bool attach = parser.isSet(QStringLiteral("attach"));
     if (attach) {
-#ifdef Q_WS_WIN
-        winid = reinterpret_cast<WId>(parser.value(QStringLiteral("attach")).toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
-#else
-        winid = parser.value(QStringLiteral("attach")).toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
-#endif
+        parentHandle = parser.value(QStringLiteral("attach"));
     } else if (parser.isSet(QStringLiteral("embed"))) {
         /* KDialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
          * For consistency, we silently map --embed to --attach */
         attach = true;
-#ifdef Q_WS_WIN
-        winid = reinterpret_cast<WId>(parser.value(QStringLiteral("embed")).toLong(&attach, 0));  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
-#else
-        winid = parser.value(QStringLiteral("embed")).toLong(&attach, 0);  //C style parsing.  If the string begins with "0x", base 16 is used; if the string begins with "0", base 8 is used; otherwise, base 10 is used.
-#endif
+        parentHandle = parser.value(QStringLiteral("embed"));
     }
 
     if (printWId || attach) {
-        (void)new WinIdEmbedder(printWId, winid);
+        (void)new ForeignWindowAttacher(printWId, parentHandle);
     }
 
     // button labels
