@@ -320,7 +320,9 @@ int main(int argc, char *argv[])
     /* kdialog originally used --embed for attaching the dialog box.  However this is misleading and so we changed to --attach.
      * For backwards compatibility, we silently map --embed to --attach */
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("attach"), i18n("Makes the dialog transient for an X app specified by winid"), QStringLiteral("winid")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("embed"), i18n("A synonym for --attach"), QStringLiteral("winid")));
+    QCommandLineOption embedOption(QStringList() << QStringLiteral("embed"), i18n("A synonym for --attach"), QStringLiteral("winid"));
+    embedOption.setFlags(QCommandLineOption::HiddenFromHelp);
+    parser.addOption(embedOption);
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("geometry"), i18n("Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"), QStringLiteral("geometry")));
 
     parser.addPositionalArgument(QStringLiteral("[arg]"), i18n("Arguments - depending on main option"));
