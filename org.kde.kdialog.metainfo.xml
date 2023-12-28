@@ -90,7 +90,7 @@
   <summary xml:lang="zh-TW">在 Shell 指令稿顯示對話框</summary>
   <description>
     <p>
-      kdialog allows you to display dialog boxes from shell scripts.
+      KDialog allows you to display dialog boxes from shell scripts.
       The syntax is very much inspired from the "dialog" command
       (which shows text mode dialogs).
     </p>
