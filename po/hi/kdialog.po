@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-08 01:40+0000\n"
+"POT-Creation-Date: 2023-12-29 01:39+0000\n"
 "PO-Revision-Date: 2021-09-17 20:07+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -343,83 +343,83 @@ msgstr ""
 msgid "A synonym for --attach"
 msgstr "--attach का समानार्थक शब्द"
 
-#: kdialog.cpp:324
+#: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr "संवाद ज्यामिती : [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 
-#: kdialog.cpp:326 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "आर्गुमेंट्स- मुख्य विकल्प पर निर्भर"
 
-#: kdialog.cpp:338
+#: kdialog.cpp:340
 #, kde-format
 msgid "KDialog"
 msgstr "के-डायलॉग"
 
-#: kdialog.cpp:372
+#: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr ""
 
-#: kdialog.cpp:373
+#: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr ""
 
-#: kdialog.cpp:508
+#: kdialog.cpp:502
 #, kde-format
 msgid "Do not ask again"
 msgstr "फिर नहीं पूछें"
 
-#: kdialog.cpp:663
+#: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "सिंटैक्स : --कॉम्बोबाक्स <पाठ> आइटम [आइटम] ..."
 
-#: kdialog.cpp:685
+#: kdialog.cpp:679
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "सिंटैक्स : --मेनू पाठ टैग आइटम [टैग आइटम] ..."
 
-#: kdialog.cpp:709
+#: kdialog.cpp:703
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr "सिंटैक्स : --चेकलिस्ट पाठ टैग आइटम चालू/बंद [टैग आइटम चालू/बंद] ..."
 
-#: kdialog.cpp:727
+#: kdialog.cpp:721
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "सिंटैक्स : --रेडियोलिस्ट पाठ टैग आइटम चालू/बंद [टैग आइटम चालू/बंद] ..."
 
-#: kdialog.cpp:758
+#: kdialog.cpp:752
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "खोलें"
 
-#: kdialog.cpp:810
+#: kdialog.cpp:804
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "ऐसे सहेजें"
 
-#: kdialog.cpp:844
+#: kdialog.cpp:838
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "डिरेक्ट्री चुनें"
 
-#: kdialog.cpp:957
+#: kdialog.cpp:951
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "रंग चुनें"
 
-#: kdialog.cpp:1018
+#: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr ""

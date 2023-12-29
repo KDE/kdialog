@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-08 01:40+0000\n"
+"POT-Creation-Date: 2023-12-29 01:39+0000\n"
 "PO-Revision-Date: 2023-05-21 19:35+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -361,85 +361,85 @@ msgstr ""
 msgid "A synonym for --attach"
 msgstr "Un sinonimo per --attach"
 
-#: kdialog.cpp:324
+#: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 "Geometria della finestra: [=][<larghezza>{xX}<altezza>][{+-}"
 "<scostamentox>{+-}<scostamentoy>]"
 
-#: kdialog.cpp:326 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "Argomenti - dipende dall'opzione principale"
 
-#: kdialog.cpp:338
+#: kdialog.cpp:340
 #, kde-format
 msgid "KDialog"
 msgstr "KDialog"
 
-#: kdialog.cpp:372
+#: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr "&Sì"
 
-#: kdialog.cpp:373
+#: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr "&No"
 
-#: kdialog.cpp:508
+#: kdialog.cpp:502
 #, kde-format
 msgid "Do not ask again"
 msgstr "Non chiedere più"
 
-#: kdialog.cpp:663
+#: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Sintassi: --combobox <text>elemento [elemento] ..."
 
-#: kdialog.cpp:685
+#: kdialog.cpp:679
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Sintassi: --menu testo elemento tag [elemento tag] ..."
 
-#: kdialog.cpp:709
+#: kdialog.cpp:703
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr "Sintassi: --checklist testo elemento tag on/off [elemento tag on/off]"
 
-#: kdialog.cpp:727
+#: kdialog.cpp:721
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "Sintassi: --checklist testo elemento tag on/off [elemento tag on/off]"
 
-#: kdialog.cpp:758
+#: kdialog.cpp:752
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Apri"
 
-#: kdialog.cpp:810
+#: kdialog.cpp:804
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Salva come"
 
-#: kdialog.cpp:844
+#: kdialog.cpp:838
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Seleziona cartella"
 
-#: kdialog.cpp:957
+#: kdialog.cpp:951
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Scegli colore"
 
-#: kdialog.cpp:1018
+#: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "Sintassi: --slider <text> <min> <max> <step>"

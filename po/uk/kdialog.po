@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-08 01:40+0000\n"
+"POT-Creation-Date: 2023-12-29 01:39+0000\n"
 "PO-Revision-Date: 2023-05-20 08:41+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -356,86 +356,86 @@ msgstr "Робить вікно прозорим для програми X з в
 msgid "A synonym for --attach"
 msgstr "Синонім --attach"
 
-#: kdialog.cpp:324
+#: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 "Геометричні параметри вікна: [=][<ширина>{xX}<висота>][{+-}<зсув за x>{+-}"
 "<зсув за y>]"
 
-#: kdialog.cpp:326 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "Аргументи — залежать від головного параметра"
 
-#: kdialog.cpp:338
+#: kdialog.cpp:340
 #, kde-format
 msgid "KDialog"
 msgstr "KDialog"
 
-#: kdialog.cpp:372
+#: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr "&Так"
 
-#: kdialog.cpp:373
+#: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr "&Ні"
 
-#: kdialog.cpp:508
+#: kdialog.cpp:502
 #, kde-format
 msgid "Do not ask again"
 msgstr "Більше не питати"
 
-#: kdialog.cpp:663
+#: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Синтаксис: --combobox <текст> пункт [пункт] ..."
 
-#: kdialog.cpp:685
+#: kdialog.cpp:679
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Синтаксис: --menu текст мітка пункт [мітка пункт] ..."
 
-#: kdialog.cpp:709
+#: kdialog.cpp:703
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Синтаксис: --checklist текст мітка пункт on/off [мітка пункт on/off] ..."
 
-#: kdialog.cpp:727
+#: kdialog.cpp:721
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "Синтаксис: --radiolist текст мітка пункт on/off [мітка пункт on/off]"
 
-#: kdialog.cpp:758
+#: kdialog.cpp:752
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Відкриття"
 
-#: kdialog.cpp:810
+#: kdialog.cpp:804
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Збереження з новою назвою"
 
-#: kdialog.cpp:844
+#: kdialog.cpp:838
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Виберіть каталог"
 
-#: kdialog.cpp:957
+#: kdialog.cpp:951
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Вибір кольору"
 
-#: kdialog.cpp:1018
+#: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "Синтаксис: --slider <текст> <мін> <макс> <крок>"

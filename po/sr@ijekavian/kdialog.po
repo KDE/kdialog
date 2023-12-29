@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-08 01:40+0000\n"
+"POT-Creation-Date: 2023-12-29 01:39+0000\n"
 "PO-Revision-Date: 2017-09-28 17:56+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -347,46 +347,46 @@ msgid "A synonym for --attach"
 msgstr "Синоним за --attach"
 
 # skip-rule: x-ediff-o, x-ediff-t
-#: kdialog.cpp:324
+#: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 "Геометрија дијалога: [=][<ширина>{xX}<висина>][{+-}<x‑помак>{+-}<y‑помак>]"
 
-#: kdialog.cpp:326 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "Аргументи, зависе од главне опције"
 
-#: kdialog.cpp:338
+#: kdialog.cpp:340
 #, kde-format
 msgid "KDialog"
 msgstr "К‑дијалог"
 
-#: kdialog.cpp:372
+#: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr ""
 
-#: kdialog.cpp:373
+#: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr ""
 
-#: kdialog.cpp:508
+#: kdialog.cpp:502
 #, kde-format
 msgid "Do not ask again"
 msgstr ""
 
 # rewrite-msgid: /<text>/text/
-#: kdialog.cpp:663
+#: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Синтакса: --combobox текст ставка [ставка] ..."
 
-#: kdialog.cpp:685
+#: kdialog.cpp:679
 #, fuzzy, kde-format
 #| msgid "Syntax: --menu text [tag item] [tag item] ..."
 msgid "Syntax: --menu text tag item [tag item] ..."
@@ -394,7 +394,7 @@ msgstr "Синтакса: --menu текст [ознака ставка] [озн�
 
 # rewrite-msgid: /$/.../
 # well-spelled: укљ, искљ
-#: kdialog.cpp:709
+#: kdialog.cpp:703
 #, fuzzy, kde-format
 #| msgid "Syntax: --checklist text [tag item on/off] [tag item on/off]"
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
@@ -404,7 +404,7 @@ msgstr ""
 
 # rewrite-msgid: /$/.../
 # well-spelled: укљ, искљ
-#: kdialog.cpp:727
+#: kdialog.cpp:721
 #, fuzzy, kde-format
 #| msgid "Syntax: --checklist text [tag item on/off] [tag item on/off]"
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
@@ -412,31 +412,31 @@ msgstr ""
 "Синтакса: --checklist текст [ознака ставка укљ/искљ] [ознака ставка укљ/"
 "искљ] ..."
 
-#: kdialog.cpp:758
+#: kdialog.cpp:752
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Отварање"
 
-#: kdialog.cpp:810
+#: kdialog.cpp:804
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Уписивање као"
 
-#: kdialog.cpp:844
+#: kdialog.cpp:838
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Избор фасцикле"
 
-#: kdialog.cpp:957
+#: kdialog.cpp:951
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Избор боје"
 
-#: kdialog.cpp:1018
+#: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr ""
