@@ -289,8 +289,8 @@ msgstr "Títol del diàleg"
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr ""
-"Entrada predeterminada per a utilitzar als quadros combinats, menús, colors "
-"i calendaris"
+"Entrada predeterminada per a utilitzar en els quadros combinats, menús, "
+"colors i calendaris"
 
 #: kdialog.cpp:324
 #, kde-format
