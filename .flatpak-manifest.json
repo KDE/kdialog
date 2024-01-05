@@ -1,0 +1,21 @@
+{
+    "id": "org.kde.kdialog",
+    "branch": "master",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.6-kf6preview",
+    "sdk": "org.kde.Sdk",
+    "command": "kdialog",
+    "tags": ["nightly"],
+    "desktop-file-name-suffix": " (Nightly)",
+    "finish-args": ["--share=ipc", "--socket=fallback-x11", "--socket=wayland" ],
+
+    "modules": [
+        {
+            "name": "kdialog",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                { "type": "dir", "path": "." }
+            ]
+        }
+    ]
+}
