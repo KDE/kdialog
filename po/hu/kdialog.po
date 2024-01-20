@@ -2,31 +2,31 @@
 # Tamas Szanto <tszanto@interware.hu>, 2002.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2011.
 # Balázs Úr <urbalazs@gmail.com>, 2013.
-# Kristof Kiszel <kiszel.kristof@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2021, 2024 Kristof Kiszel <kiszel.kristof@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-29 01:39+0000\n"
-"PO-Revision-Date: 2021-11-02 08:52+0100\n"
-"Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
+"PO-Revision-Date: 2024-01-18 11:16+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.08.3\n"
+"X-Generator: Lokalize 24.01.90\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Kiszel Kristóf,Szántó Tamás"
+msgstr "Kiszel Kristóf"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kiszel.kristof@gmail.com,tszanto@interware.hu"
+msgstr "ulysses@fsf.hu"
 
 #: kdialog.cpp:254
 #, kde-format
@@ -320,12 +320,13 @@ msgstr ""
 "állapotjelzőhöz"
 
 #: kdialog.cpp:317
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Csúszka párbeszédablak, a kijelölt értékkel tér vissza"
+msgstr ""
+"Csúszka párbeszédablak, a kijelölt értékkel tér vissza (argumentumok "
+"[szövegg] [min] [max] [lépés])"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -374,13 +375,13 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&Igen"
 
 #: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&Nem"
 
 #: kdialog.cpp:502
 #, kde-format
@@ -434,7 +435,7 @@ msgstr "Színválasztás"
 #: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Szintaxis: --slider <szöveg> <min> <max> <lépés>"
 
 #: progressdialog.cpp:24
 #, kde-format
