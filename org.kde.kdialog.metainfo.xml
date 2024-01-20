@@ -102,6 +102,7 @@
     <p xml:lang="eu">«KDialog»ek oskoleko gidoietatik elkarrizketa-koadroak azaltzen uzten dizu. Sintaxia "dialog" komandoan (testu-moduko elkarrizketa-koadroak erakusten dituena) oso inspiratua dago.</p>
     <p xml:lang="fr">KDialog vous permet d'afficher des boîtes de dialogue depuis des scripts shell. Sa syntaxe s'inspire largement de celle de la commande « dialog » (qui affiche des boîtes de dialogue en mode texte).</p>
     <p xml:lang="he">KDialog מאפשר לך להציג חלוניות מסקריפטים של מעטפת. התחביר מושפע למכביר מהפקודה „dialog” (שמציגה חלוניות במצב טקסט).</p>
+    <p xml:lang="hu">A KDialog lehetővé teszi párbeszédablakok megjelenítését parancsfájlokból. A szintaxisára nagy hatással volt a „dialog” parancs (amely szöveges párbeszédablakokat jelenít meg).</p>
     <p xml:lang="ia">KDialog te permitte monstrar quadros de dialogo ex scripts de shell. Le synthaxe es multe inspirate al commando  "dialog"  (que monstra dialogos de modo texto).</p>
     <p xml:lang="it">KDialog ti permette di visualizzare delle finestre di dialogo da script di shell. La sintassi prende decisamente ispirazione dal comando «dialog» (che mostra finestre in modalità testuale).</p>
     <p xml:lang="ka">KDialog საშუალებას გაძლევთ, გრაფიკული ფანჯრები გარსის სკრიპტებიდან გამოიძახოთ. სინტაქსი ძალიან წააგავს "dialog" ბრძანებისას (რომელიც იგივეს ტექსტურ რეჟიმში აკეთებს).</p>
