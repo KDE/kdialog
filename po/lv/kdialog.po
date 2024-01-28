@@ -6,36 +6,38 @@
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
 # Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011.
+# SPDX-FileCopyrightText: 2024 Toms Trasūns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-29 01:39+0000\n"
-"PO-Revision-Date: 2011-07-08 13:31+0300\n"
-"Last-Translator: Rūdofls Mazurs <rudolfs.mazurs@gmail.com>\n"
-"Language-Team: Latvian <locale@laka.lv>\n"
+"PO-Revision-Date: 2024-01-27 13:31+0200\n"
+"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Māris Nartišs"
+msgstr "Māris Nartišs, Toms Trasūns"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "maris.kde@gmail.com"
+msgstr "maris.kde@gmail.com, toms.trasuns@posteo.net"
 
 #: kdialog.cpp:254
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
-msgstr "KDialog ir paredzēts smuku dialogu parādīšanai no čaulas skriptiem"
+msgstr ""
+"„KDialog“ ir paredzēts glītu dialoglogu parādīšanai, izpildot čaulas skriptus"
 
 #: kdialog.cpp:256
 #, kde-format
@@ -113,55 +115,54 @@ msgid "Warning message box with yes/no/cancel buttons"
 msgstr "Brīdinājuma dialoglogs ar jā/nē/atcelt pogām"
 
 #: kdialog.cpp:277
-#, fuzzy, kde-format
-#| msgid "Use text as No button label"
+#, kde-format
 msgid "Use text as OK button label"
-msgstr "Lietot tekstu kā 'Nē' pogas etiķeti"
+msgstr "Lietot tekstu kā „Labi“ pogas etiķeti"
 
 #: kdialog.cpp:278
 #, kde-format
 msgid "Use text as Yes button label"
-msgstr "Lietot tekstu kā 'Jā' pogas etiķeti"
+msgstr "Lietot tekstu kā „Jā“ pogas etiķeti"
 
 #: kdialog.cpp:279
 #, kde-format
 msgid "Use text as No button label"
-msgstr "Lietot tekstu kā 'Nē' pogas etiķeti"
+msgstr "Lietot tekstu kā „Nē“ pogas etiķeti"
 
 #: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Cancel button label"
-msgstr "Lietot tekstu kā 'Atcelt' pogas etiķeti"
+msgstr "Lietot tekstu kā „Atcelt“ pogas etiķeti"
 
 #: kdialog.cpp:281
 #, kde-format
 msgid "Use text as Continue button label"
-msgstr "Lietot tekstu kā 'Turpināt' pogas etiķeti"
+msgstr "Lietot tekstu kā „Turpināt“ pogas etiķeti"
 
 #: kdialog.cpp:282
 #, kde-format
 msgid "'Sorry' message box"
-msgstr "'Atvainojiet' paziņojuma logs"
+msgstr "„Atvainojiet“ paziņojuma logs"
 
 #: kdialog.cpp:283
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
-msgstr ""
+msgstr "„Atvainojiet“ paziņojuma logs ar papildu informācijas lauku"
 
 #: kdialog.cpp:284
 #, kde-format
 msgid "'Error' message box"
-msgstr "'Kļūda' paziņojuma logs"
+msgstr "„Kļūda“ paziņojuma logs"
 
 #: kdialog.cpp:285
 #, kde-format
 msgid "'Error' message box with expandable Details field"
-msgstr ""
+msgstr "„Kļūda“ paziņojuma logs ar papildu informācijas lauku"
 
 #: kdialog.cpp:286
 #, kde-format
 msgid "Message Box dialog"
-msgstr "Paziņojuma logs"
+msgstr "Paziņojuma dialoglogs"
 
 #: kdialog.cpp:287
 #, kde-format
@@ -169,16 +170,14 @@ msgid "Input Box dialog"
 msgstr "Ievades dialoglogs"
 
 #: kdialog.cpp:288
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box dialog"
-msgstr "Paziņojuma logs"
+msgstr "Attēla dialoglogs"
 
 #: kdialog.cpp:289
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box Input dialog"
-msgstr "Paziņojuma logs"
+msgstr "Attēla pievienošanas dialoglogs"
 
 #: kdialog.cpp:290
 #, kde-format
@@ -186,10 +185,9 @@ msgid "Password dialog"
 msgstr "Paroles dialoglogs"
 
 #: kdialog.cpp:291
-#, fuzzy, kde-format
-#| msgid "Password dialog"
+#, kde-format
 msgid "New Password dialog"
-msgstr "Paroles dialoglogs"
+msgstr "Jaunas paroles dialoglogs"
 
 #: kdialog.cpp:292
 #, kde-format
@@ -204,7 +202,7 @@ msgstr "Teksta ievades dialoglogs"
 #: kdialog.cpp:294
 #, kde-format
 msgid "ComboBox dialog"
-msgstr "Kombo lauka dialoglogs"
+msgstr "Kombinētā lauka dialoglogs"
 
 #: kdialog.cpp:295
 #, kde-format
@@ -227,72 +225,72 @@ msgid "Passive Popup"
 msgstr "Pasīvs uzlecošais logs"
 
 #: kdialog.cpp:299
-#, fuzzy, kde-format
-#| msgid "Passive Popup"
+#, kde-format
 msgid "Popup icon"
-msgstr "Pasīvs uzlecošais logs"
+msgstr "Uzlecošā ikona"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid "File dialog to open an existing file (arguments [startDir] [filter])"
-msgstr "Faila dialoglogs eksistējoša faila atvēršanai"
+msgstr ""
+"Datnes dialoglogs eksistējošas datnes atvēršanai (argumenti [startDir] "
+"[filter])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid "File dialog to save a file (arguments [startDir] [filter])"
-msgstr "Faila dialoglogs faila saglabāšanai"
+msgstr "Datnes dialoglogs datnes saglabāšanai (argumenti [startDir] [filter])"
 
 #: kdialog.cpp:302
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
-msgstr "Faila dialoglogs eksistējošas mapes izvēlei"
+msgstr "Datnes dialoglogs eksistējošas mapes atlasei (argumenti [startDir])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
-msgstr "Faila dialoglogs eksistējoša faila atvēršanai"
+msgstr ""
+"Datnes dialoglogs eksistējošas URL adreses atvēršanai (argumenti [startDir] "
+"[filter])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid "File dialog to save a URL (arguments [startDir] [filter])"
-msgstr "Faila dialoglogs faila saglabāšanai"
+msgstr ""
+"Datnes dialoglogs URL adreses saglabāšanai (argumenti [startDir] [filter])"
 
 #: kdialog.cpp:305
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
-msgstr ""
+msgstr "Ikonas atlasīšanas dialoglogs (argumenti [group] [context])"
 
 #: kdialog.cpp:306 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr ""
-"Progresa joslas dialoglogs. Atgriež D-Bus norādi turpmākai komunikācijai"
+"Progresa joslas dialoglogs. Atgriež „D-Bus“ norādi turpmākai komunikācijai"
 
 #: kdialog.cpp:307
 #, kde-format
 msgid "Color dialog to select a color"
-msgstr "Krāsu izvēles dialogs"
+msgstr "Krāsas izvēles dialogs"
 
 #: kdialog.cpp:308
 #, kde-format
 msgid "Allow --getcolor to specify output format"
-msgstr ""
+msgstr "Atļaut „--getcolor“ precizēt izvades formātu"
 
 #: kdialog.cpp:310 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
-msgstr "Dialoga virsraksts"
+msgstr "Dialogloga virsraksts"
 
 #: kdialog.cpp:311
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox, menu and color"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "Noklusētā vērtība, ko izmantot kombo laukam, izvēlnei un krāsai"
+msgstr ""
+"Noklusētā vērtība, ko izmantot kombinētam laukam, izvēlnei, krāsai un "
+"kalendāram"
 
 #: kdialog.cpp:312
 #, kde-format
@@ -300,7 +298,7 @@ msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
 "files"
 msgstr ""
-"Atļauj --getopenurl un --getopenfilename opcijām atgriezt vairākus failus"
+"Atļauj „--getopenurl“ un „--getopenfilename“ opcijām atgriezt vairākas datnes"
 
 #: kdialog.cpp:313
 #, kde-format
@@ -309,28 +307,29 @@ msgid ""
 "--multiple)"
 msgstr ""
 "Atgriež saraksta elementus atsevišķās rindās (pārbaudes saraksta opcijām un "
-"faila atvēršanai ar --multiple)"
+"datnes atvēršanai ar --multiple)"
 
 #: kdialog.cpp:314
 #, kde-format
 msgid "Outputs the winId of each dialog"
-msgstr "Izvada winID katram dialogam"
+msgstr "Izvada „winID“ katram dialogam"
 
 #: kdialog.cpp:315
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr ""
-"Konfigurācijas faila un opcijas nosaukums, lai saglabātu \"turpmāk nerādīt/"
-"nejautāt\" statusu"
+"Konfigurācijas datnes un opcijas nosaukums, lai saglabātu „turpmāk nerādīt/"
+"nejautāt“ statusu"
 
 #: kdialog.cpp:317
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Slīdņa dialoga rūts, atgriež izvēlēto vērtību"
+msgstr ""
+"Slīdņa dialogloga rūts, atgriež izvēlēto vērtību (argumenti [text] [min] "
+"[max] [step])"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -338,31 +337,34 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"Datuma formāts kalendāra rezultātiem un/vai noklusējuma vērtībai (Qt stils). "
+"Noklusējums ir „ddd MMM d yyyy“"
 
 #: kdialog.cpp:319
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
-msgstr "Kalendāra dialoga rūts, atgriež izvēlēto datumu"
+msgstr "Kalendāra dialogloga rūts, atgriež izvēlēto datumu"
 
 #: kdialog.cpp:322
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
-msgstr "Padara dialogu pārejošu ar winid norādītajai X programmai"
+msgstr "Padara dialoglogu pārejošu ar „winid“ norādītajai X programmai"
 
 #: kdialog.cpp:323
 #, kde-format
 msgid "A synonym for --attach"
-msgstr ""
+msgstr "Sinonīms komandai „--attach“"
 
 #: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
+"Dialogloga ģeometrija: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 
 #: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
-msgstr "Argumenti - atkarīgi no galvenās opcijas"
+msgstr "Argumenti — atkarīgi no galvenās opcijas"
 
 #: kdialog.cpp:340
 #, kde-format
@@ -373,38 +375,40 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&Jā"
 
 #: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&Nē"
 
 #: kdialog.cpp:502
 #, kde-format
 msgid "Do not ask again"
-msgstr ""
+msgstr "Vairāk nejautāt"
 
 #: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr ""
+msgstr "Sintakse: --combobox <teksts> vienums [vienums] ..."
 
 #: kdialog.cpp:679
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr ""
+msgstr "Sintakse: --menu teksts birka vienums [birkas vienums] ..."
 
 #: kdialog.cpp:703
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"Sintakse: --checklist teksts birka vienums on/off [birka vienums on/off] ..."
 
 #: kdialog.cpp:721
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"Sintakse: --radiolist teksts birka vienums on/off [birka vienums on/off] ..."
 
 #: kdialog.cpp:752
 #, kde-format
@@ -422,7 +426,7 @@ msgstr "Saglabāt kā"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
-msgstr ""
+msgstr "Atlasīt mapi"
 
 #: kdialog.cpp:951
 #, kde-format
@@ -433,17 +437,17 @@ msgstr "Izvēlieties krāsu"
 #: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Sintakse: --slider <text> <min> <max> <step>"
 
 #: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Atcelt"
 
 #: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
 #, kde-format
 msgid "kdialog: could not open file %1"
-msgstr "kdialog: neizdevās atvērt failu %1"
+msgstr "„kdialog“: neizdevās atvērt datni %1"
 
 #~ msgid "File dialog to open an existing URL"
 #~ msgstr "Faila dialoglogs eksistējoša URL atvēršanai"
