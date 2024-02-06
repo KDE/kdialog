@@ -40,5 +40,7 @@ ecm_set_disabled_deprecation_versions(
 
 add_subdirectory(src)
 install(FILES org.kde.kdialog.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+install(FILES org.kde.kdialog.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
+install(FILES org.kde.kdialog.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/64x64/apps)
 ki18n_install(po)
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
