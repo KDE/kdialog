@@ -332,7 +332,7 @@ int main(int argc, char *argv[])
 
     // execute kdialog command
 
-    QApplication::setWindowIcon(QIcon::fromTheme(parser.value(QStringLiteral("icon")), QIcon::fromTheme(QStringLiteral("system-run"))));
+    QApplication::setWindowIcon(QIcon::fromTheme(parser.value(QStringLiteral("icon")), QIcon::fromTheme(QStringLiteral("org.kde.kdialog"))));
 
     const QStringList args = parser.positionalArguments();
     QString title = parser.value(QStringLiteral("title"));
