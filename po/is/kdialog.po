@@ -5,13 +5,13 @@
 # Arnar Leósson <leosson@frisurf.no>, 2003.
 # Svanur Palsson <svanur@tern.is>, 2004.
 # Arnar Leosson <leosson@frisurf.no>, 2005.
-# Sveinn í Felli <sveinki@nett.is>, 2007, 2008, 2009, 2011, 2014, 2018, 2019, 2022, 2023.
+# Sveinn í Felli <sveinki@nett.is>, 2007, 2008, 2009, 2011, 2014, 2018, 2019, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-29 01:39+0000\n"
-"PO-Revision-Date: 2023-09-20 16:06+0000\n"
+"PO-Revision-Date: 2024-02-19 09:38+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -333,6 +333,8 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"Snið dagsetninga á niðurstöðum í dagatali og/eða sjálfgefið gildi (Qt-"
+"stíll); er sjálfgefið 'ddd MMM d yyyy'"
 
 #: kdialog.cpp:319
 #, kde-format
