@@ -2,10 +2,10 @@
 # Darafei Praliaskouski <komzpa@licei2.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
+"Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-29 01:39+0000\n"
-"PO-Revision-Date: 2023-01-15 17:18\n"
+"PO-Revision-Date: 2024-02-21 13:30\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Crowdin-Project: 86ff119b1606fcaa910d6b44fc14b611\n"
-"X-Crowdin-Project-ID: 127\n"
+"X-Crowdin-Project: fc57ad16a28d02dea100ceb1c60de14e\n"
+"X-Crowdin-Project-ID: 136\n"
 "X-Crowdin-Language: be\n"
-"X-Crowdin-File: /main/be/kdialog/kdialog.po\n"
-"X-Crowdin-File-ID: 7891\n"
+"X-Crowdin-File: /[antikruk.KDE] main/KDE6/be/messages/kdialog/kdialog.po\n"
+"X-Crowdin-File-ID: 10028\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -320,12 +320,13 @@ msgstr ""
 "спытаць яшчэ раз\""
 
 #: kdialog.cpp:317
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Дыялогавае акно паўзунка, вяртае абранае значэнне"
+msgstr ""
+"Дыялогавае акно паўзунка, вяртае абранае значэнне (аргументы [тэкст] [мін] "
+"[макс] [крок])"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -372,13 +373,13 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&Так"
 
 #: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&Не"
 
 #: kdialog.cpp:502
 #, kde-format
@@ -432,7 +433,7 @@ msgstr "Абраць колер"
 #: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Сінтаксіс: --паўзунок <text> <min> <max> <step>"
 
 #: progressdialog.cpp:24
 #, kde-format
