@@ -111,6 +111,7 @@
     <p xml:lang="nl">KDialog biedt u dialoogvensters te tonen uit shell-scripts. De syntaxis is zeer geïnspireerd op het commando "dialog" (die dialogen toont in tekstmodus).</p>
     <p xml:lang="pl">KDialog umożliwia wyświetlanie okien dialogowych ze skryptów powłoki. Składnia naśladuje polecenie "dialog" (które pokazuje tekstowe okna dialogowe).</p>
     <p xml:lang="pt-BR">O KDialog permite-lhe mostrar caixas de diálogo a partir de scripts do shell. A sintaxe é muito semelhante à do comando "dialog" (que mostra caixa de diálogos em modo de texto).</p>
+    <p xml:lang="ro">KDialog permite afișarea casetelor de dialog din scripturi de consolă. Sintaxa e inspirată din comanda „dialog” (care arată dialoguri în regim textual).</p>
     <p xml:lang="ru">KDialog служит для показа диалоговых окон из сценариев оболочки. Синтаксис основан на синтаксисе программы «dialog», предназначенной для показа диалоговых окон в текстовом режиме.</p>
     <p xml:lang="sk">KDialog vám umožní zobraziť dialógové okná zo shellových skriptov. Syntax je inšpirovaná príkazom "dialog" (ktorý zobrazí textové dialógy)</p>
     <p xml:lang="sl">kdialog omogoča prikazovanje pogovornih oken iz shell skripta. Skladnja je navdihnjena iz ukaza "dialog" (ki prikazuje besedilni način dialogov).</p>
