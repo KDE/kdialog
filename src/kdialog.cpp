@@ -297,11 +297,11 @@ int main(int argc, char *argv[])
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("radiolist"), i18n("Radio List dialog"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("passivepopup"), i18n("Passive Popup"), QStringLiteral("text> <timeout")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("icon"), i18n("Popup icon"), QStringLiteral("icon")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getopenfilename"), i18n("File dialog to open an existing file (arguments [startDir] [filter])")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getsavefilename"), i18n("File dialog to save a file (arguments [startDir] [filter])")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getopenfilename"), i18n("File dialog to open an existing file (arguments [startDir] [name or mimetype filter])")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getsavefilename"), i18n("File dialog to save a file (arguments [startDir] [name or mimetype filter])")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getexistingdirectory"), i18n("File dialog to select an existing directory (arguments [startDir])")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getopenurl"), i18n("File dialog to open an existing URL (arguments [startDir] [filter])")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getsaveurl"), i18n("File dialog to save a URL (arguments [startDir] [filter])")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getopenurl"), i18n("File dialog to open an existing URL (arguments [startDir] [name or mimetype filter])")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getsaveurl"), i18n("File dialog to save a URL (arguments [startDir] [name or mimetype filter])")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("geticon"), i18n("Icon chooser dialog (arguments [group] [context])")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("progressbar"), i18n("Progress bar dialog, returns a D-Bus reference for communication"), QStringLiteral("text")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("getcolor"), i18n("Color dialog to select a color")));
