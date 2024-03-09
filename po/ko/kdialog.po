@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2023-07-23 00:50+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -224,14 +224,19 @@ msgid "Popup icon"
 msgstr "팝업 아이콘"
 
 #: kdialog.cpp:300
-#, kde-format
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr ""
 "존재하는 파일을 열 수 있는 파일 대화 상자 (arguments [startDir] [filter])"
 
 #: kdialog.cpp:301
-#, kde-format
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "파일 저장 대화 상자 (arguments [startDir] [filter])"
 
 #: kdialog.cpp:302
@@ -240,14 +245,19 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "존재하는 디렉터리를 선택하는 대화 상자 (arguments [startDir])"
 
 #: kdialog.cpp:303
-#, kde-format
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr ""
 "존재하는 파일을 열 수 있는 파일 대화 상자 (arguments [startDir] [filter])"
 
 #: kdialog.cpp:304
-#, kde-format
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "파일 저장 대화 상자 (arguments [startDir] [filter])"
 
 #: kdialog.cpp:305

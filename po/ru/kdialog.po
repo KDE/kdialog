@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2024-01-10 22:08+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -237,15 +237,20 @@ msgid "Popup icon"
 msgstr "Всплывающий значок."
 
 #: kdialog.cpp:300
-#, kde-format
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr ""
 "Диалог открытия существующего файла (аргументы: [начальный каталог] [фильтр "
 "отбора])."
 
 #: kdialog.cpp:301
-#, kde-format
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr ""
 "Диалог сохранения файла (аргументы: [начальный каталог] [фильтр отбора])."
 
@@ -255,15 +260,20 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Диалог выбора существующего каталога (аргумент: [начальный каталог])."
 
 #: kdialog.cpp:303
-#, kde-format
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr ""
 "Диалог открытия существующего файла, возвращает результат в виде URL "
 "(аргумент: [начальный каталог])."
 
 #: kdialog.cpp:304
-#, kde-format
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr ""
 "Диалог сохранения файла, возвращает результат в виде URL (аргумент: "
 "[начальный каталог])."

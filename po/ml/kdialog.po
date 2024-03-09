@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2019-12-12 21:21+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -227,12 +227,15 @@ msgstr "പാസ്സിവ് പോപ്പ് അപ്പ്"
 
 #: kdialog.cpp:300
 #, fuzzy, kde-format
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "നിലവിലുള്ള ഫയല്‍ തുറക്കുവാനുള്ള ഫയല്‍ ഡയലോഗ്"
 
 #: kdialog.cpp:301
 #, fuzzy, kde-format
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "ഫയല്‍ സൂക്ഷിക്കുവാനുള്ള ഫയല്‍ ഡയലോഗ്"
 
 #: kdialog.cpp:302
@@ -242,12 +245,15 @@ msgstr "നിലവിലുള്ള തട്ടു് തെരഞ്ഞെ�
 
 #: kdialog.cpp:303
 #, fuzzy, kde-format
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "നിലവിലുള്ള ഫയല്‍ തുറക്കുവാനുള്ള ഫയല്‍ ഡയലോഗ്"
 
 #: kdialog.cpp:304
 #, fuzzy, kde-format
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "ഫയല്‍ സൂക്ഷിക്കുവാനുള്ള ഫയല്‍ ഡയലോഗ്"
 
 #: kdialog.cpp:305

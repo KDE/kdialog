@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2014-02-25 01:24+0100\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -235,13 +235,16 @@ msgstr "Passiv Opduker"
 #: kdialog.cpp:300
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "\"Datei opmaken\"-Dialoog"
 
 #: kdialog.cpp:301
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "\"Datei sekern\"-Dialoog"
 
 #: kdialog.cpp:302
@@ -253,13 +256,16 @@ msgstr "\"Orner utsöken\"-Dialoog"
 #: kdialog.cpp:303
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "\"Datei opmaken\"-Dialoog"
 
 #: kdialog.cpp:304
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "\"Datei sekern\"-Dialoog"
 
 #: kdialog.cpp:305

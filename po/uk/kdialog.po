@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2023-05-20 08:41+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -235,14 +235,19 @@ msgid "Popup icon"
 msgstr "Піктограма контекстного вікна"
 
 #: kdialog.cpp:300
-#, kde-format
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr ""
 "Вікно для відкриття наявного файла (параметри [початковий каталог] [фільтр])"
 
 #: kdialog.cpp:301
-#, kde-format
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "Вікно для збереження файла (параметри [початковий каталог] [фільтр])"
 
 #: kdialog.cpp:302
@@ -251,14 +256,19 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Вікно для вибирання наявного каталогу (аргументи [початковий каталог])"
 
 #: kdialog.cpp:303
-#, kde-format
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr ""
 "Вікно для відкриття наявної адреси (параметри [початковий каталог] [фільтр])"
 
 #: kdialog.cpp:304
-#, kde-format
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "Вікно для збереження адреси (параметри [початковий каталог] [фільтр])"
 
 #: kdialog.cpp:305

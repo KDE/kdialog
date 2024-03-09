@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2022-01-03 09:49-0800\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -224,13 +224,18 @@ msgid "Popup icon"
 msgstr "ਪੌਪ-ਅੱਪ ਆਈਕਾਨ"
 
 #: kdialog.cpp:300
-#, kde-format
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "ਮੌਜੂਦ ਫਾਇਲ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਫਾਇਲ ਡਾਈਲਾਗ (arguments [startDir] [filter])"
 
 #: kdialog.cpp:301
-#, kde-format
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "ਫਾਇਲ ਸੰਭਾਲਣ ਲਈ ਫਾਇਲ ਡਾਈਲਾਗ (arguments [startDir] [filter])"
 
 #: kdialog.cpp:302
@@ -239,13 +244,18 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "ਮੌਜੂਦ ਡਾਇਰੈਕਟਰੀ ਚੁਣਨ ਲਈ ਫਾਇਲ ਡਾਈਲਾਗ (arguments [startDir])"
 
 #: kdialog.cpp:303
-#, kde-format
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "ਮੌਜੂਦਾ URL ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਫਾਇਲ ਡਾਈਲਾਗ (arguments [startDir] [filter])"
 
 #: kdialog.cpp:304
-#, kde-format
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "URL ਸੰਭਾਲਣ ਲਈ ਫਾਇਲ ਡਾਈਲਾਗ (arguments [startDir] [filter])"
 
 #: kdialog.cpp:305

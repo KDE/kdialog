@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2011-03-04 19:14+0100\n"
 "Last-Translator: Marko Dimjasevic <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -242,13 +242,16 @@ msgstr "Pasivno iskakanje"
 #: kdialog.cpp:300
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "Dijalog za otvaranje postojeće datoteke"
 
 #: kdialog.cpp:301
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "Dijalog za spremanje datoteke"
 
 #: kdialog.cpp:302
@@ -260,13 +263,16 @@ msgstr "Dijalog za biranje postojećeg direktorija"
 #: kdialog.cpp:303
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "Dijalog za otvaranje postojeće datoteke"
 
 #: kdialog.cpp:304
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "Dijalog za spremanje datoteke"
 
 #: kdialog.cpp:305

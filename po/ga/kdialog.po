@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase/kdialog.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2004-12-03 14:52-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -232,13 +232,16 @@ msgstr "Preabfhuinneog Éighníomhach"
 #: kdialog.cpp:300
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "Dialóg chomhaid chun comhad atá ann a oscailt"
 
 #: kdialog.cpp:301
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "Dialóg chomhaid chun comhad a shábháil"
 
 #: kdialog.cpp:302
@@ -250,13 +253,16 @@ msgstr "Dialóg chomhaid chun comhadlann atá ann a roghnú"
 #: kdialog.cpp:303
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "Dialóg chomhaid chun comhad atá ann a oscailt"
 
 #: kdialog.cpp:304
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "Dialóg chomhaid chun comhad a shábháil"
 
 #: kdialog.cpp:305

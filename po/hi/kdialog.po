@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2021-09-17 20:07+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -226,13 +226,18 @@ msgid "Popup icon"
 msgstr "पॉपअप प्रतीक"
 
 #: kdialog.cpp:300
-#, kde-format
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "मौजूदा फ़ाइल खोलने के लिए फ़ाइल संवाद (अरग्युमेंट्स [स्टार्टडिर] [फ़िल्टर])"
 
 #: kdialog.cpp:301
-#, kde-format
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "फ़ाइल को सहेजने के लिए फ़ाइल संवाद (अरग्युमेंट्स [स्टार्टडिर] [फ़िल्टर])"
 
 #: kdialog.cpp:302
@@ -241,13 +246,18 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "मौज़ूदा डिरेक्ट्री चुनने के लिए फ़ाइल संवाद (अरग्युमेंट्स [स्टार्टडिर])"
 
 #: kdialog.cpp:303
-#, kde-format
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "मौज़ूदा यूआरएल को खोलने के लिए फ़ाइल संवाद (अरग्युमेंट्स [स्टार्टडिर] [फ़िल्टर])"
 
 #: kdialog.cpp:304
-#, kde-format
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "यूआरएल को सहेजने के लिए फ़ाइल संवाद (अरग्युमेंट्स [स्टार्टडिर] [फ़िल्टर])"
 
 #: kdialog.cpp:305

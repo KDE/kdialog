@@ -6,19 +6,20 @@
 # Svanur Palsson <svanur@tern.is>, 2004.
 # Arnar Leosson <leosson@frisurf.no>, 2005.
 # Sveinn í Felli <sveinki@nett.is>, 2007, 2008, 2009, 2011, 2014, 2018, 2019, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2024 Guðmundur Erlingsson <gudmundure@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
-"PO-Revision-Date: 2024-02-19 09:38+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
+"PO-Revision-Date: 2024-03-05 20:45+0000\n"
+"Last-Translator: Guðmundur Erlingsson <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.04.3\n"
+"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 "\n"
@@ -27,19 +28,19 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Pjetur G. Hjaltason, Richard Allen, Sveinn í Felli"
+msgstr ""
+"Pjetur G. Hjaltason, Richard Allen, Sveinn í Felli, Guðmundur Erlingsson"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "pjetur@pjetur.net, ra@ra.is, sv1@fellsnet.is"
+msgstr "pjetur@pjetur.net, ra@ra.is, sv1@fellsnet.is, gudmundure@gmail.com"
 
 #: kdialog.cpp:254
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
-"KDialog er hægt að nota til að sýna snyrtilega samskiptaglugga frá "
-"skeljaskriftum"
+"KDialog er hægt að nota til að sýna snyrtilega svarglugga úr skeljaskriftum"
 
 #: kdialog.cpp:256
 #, kde-format
@@ -94,72 +95,72 @@ msgstr "Kai Uwe Broulik"
 #: kdialog.cpp:271
 #, kde-format
 msgid "Question message box with yes/no buttons"
-msgstr "Skilaboðagluggi - Spurning með já/nei hnöppum"
+msgstr "Spurningagluggi með já/nei-hnöppum"
 
 #: kdialog.cpp:272
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
-msgstr "Skilaboðagluggi - Spurning með já/nei/stöðva hnöppum"
+msgstr "Spurningagluggi með já/nei/hætta við-hnöppum"
 
 #: kdialog.cpp:273
 #, kde-format
 msgid "Warning message box with yes/no buttons"
-msgstr "Skilaboðagluggi - Viðvörun með já/nei hnöppum"
+msgstr "Viðvörunargluggi með já/nei-hnöppum"
 
 #: kdialog.cpp:274
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
-msgstr "Skilaboðagluggi - Viðvörun með áfram/stöðva hnöppum"
+msgstr "Viðvörunargluggi með halda áfram/hætta við-hnöppum"
 
 #: kdialog.cpp:275
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
-msgstr "Skilaboðagluggi - Viðvörun með já/nei/stöðva hnöppum"
+msgstr "Viðvörunargluggi með já/nei/hætta við-hnöppum"
 
 #: kdialog.cpp:277
 #, kde-format
 msgid "Use text as OK button label"
-msgstr "Nota texta sem skýringu á 'Í lagi'-hnappi"
+msgstr "Nota texta sem merkingu á 'Í lagi'-hnappi"
 
 #: kdialog.cpp:278
 #, kde-format
 msgid "Use text as Yes button label"
-msgstr "Nota texta sem skýringu á Já-hnapp"
+msgstr "Nota texta sem merkingu á Já-hnappi"
 
 #: kdialog.cpp:279
 #, kde-format
 msgid "Use text as No button label"
-msgstr "Nota texta sem skýringu á Nei-hnapp"
+msgstr "Nota texta sem merkingu á Nei-hnappi"
 
 #: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Cancel button label"
-msgstr "Nota texta sem skýringu á Hætta-við-hnapp"
+msgstr "Nota texta sem merkingu á 'Hætta við'-hnappi"
 
 #: kdialog.cpp:281
 #, kde-format
 msgid "Use text as Continue button label"
-msgstr "Nota texta sem skýringu á Halda-áfram-hnapp"
+msgstr "Nota texta sem merkingu á 'Halda áfram'-hnappi"
 
 #: kdialog.cpp:282
 #, kde-format
 msgid "'Sorry' message box"
-msgstr "Skilaboðagluggi - Því miður"
+msgstr "'Því miður' skilaboðagluggi"
 
 #: kdialog.cpp:283
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
-msgstr "'Því miður' - skilaboðagluggi með útvíkkanlegum nánari upplýsingareit"
+msgstr "'Því miður' skilaboðagluggi með útvíkkanlegum upplýsingareit"
 
 #: kdialog.cpp:284
 #, kde-format
 msgid "'Error' message box"
-msgstr "Skilaboðagluggi - Villa"
+msgstr "'Villa' skilaboðagluggi"
 
 #: kdialog.cpp:285
 #, kde-format
 msgid "'Error' message box with expandable Details field"
-msgstr "'Villa' - skilaboðagluggi með útvíkkanlegum nánari upplýsingareit"
+msgstr "'Villa' skilaboðagluggi með útvíkkanlegum upplýsingareit"
 
 #: kdialog.cpp:286
 #, kde-format
@@ -169,22 +170,22 @@ msgstr "Skilaboðagluggi"
 #: kdialog.cpp:287
 #, kde-format
 msgid "Input Box dialog"
-msgstr "Inntaksgluggi fyrir texta"
+msgstr "Gluggi með innsláttarreit"
 
 #: kdialog.cpp:288
 #, kde-format
 msgid "Image Box dialog"
-msgstr "Viðmótsgluggi myndar"
+msgstr "Myndagluggi"
 
 #: kdialog.cpp:289
 #, kde-format
 msgid "Image Box Input dialog"
-msgstr "Inntaksgluggi myndar"
+msgstr "Myndagluggi með innsláttarreit"
 
 #: kdialog.cpp:290
 #, kde-format
 msgid "Password dialog"
-msgstr "Inntaksgluggi fyrir lykilorð"
+msgstr "Lykilorðagluggi"
 
 #: kdialog.cpp:291
 #, kde-format
@@ -194,22 +195,22 @@ msgstr "Nýr lykilorðagluggi"
 #: kdialog.cpp:292
 #, kde-format
 msgid "Text Box dialog"
-msgstr "Inntaksgluggi fyrir texta"
+msgstr "Textagluggi"
 
 #: kdialog.cpp:293
 #, kde-format
 msgid "Text Input Box dialog"
-msgstr "Inntaksgluggi fyrir texta"
+msgstr "Textagluggi með innsláttarreit"
 
 #: kdialog.cpp:294
 #, kde-format
 msgid "ComboBox dialog"
-msgstr "Inntaksgluggi með fellivalsreit"
+msgstr "Svargluggi með fellilista"
 
 #: kdialog.cpp:295
 #, kde-format
 msgid "Menu dialog"
-msgstr "Valmyndagluggi"
+msgstr "Vallistagluggi"
 
 #: kdialog.cpp:296
 #, kde-format
@@ -224,22 +225,27 @@ msgstr "Einvalsgluggi"
 #: kdialog.cpp:298
 #, kde-format
 msgid "Passive Popup"
-msgstr "Hlutlaus gluggi"
+msgstr "Hlutlaus svargluggi"
 
 #: kdialog.cpp:299
 #, kde-format
 msgid "Popup icon"
-msgstr "Táknmynd sprettglugga"
+msgstr "Tákn á svarglugga"
 
 #: kdialog.cpp:300
-#, kde-format
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr ""
 "Skráagluggi til að opna fyrirliggjandi skrá (viðföng [startDir] [filter])"
 
 #: kdialog.cpp:301
-#, kde-format
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "Skráagluggi til að vista skrá (viðföng [startDir] [filter])"
 
 #: kdialog.cpp:302
@@ -248,45 +254,51 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Skráagluggi til að velja fyrirliggjandi möppu (viðföng [startDir])"
 
 #: kdialog.cpp:303
-#, kde-format
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr ""
 "Skráagluggi til að opna fyrirliggjandi slóð (viðföng [startDir] [filter])"
 
 #: kdialog.cpp:304
-#, kde-format
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, fuzzy, kde-format
+#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "Skráagluggi til að vista slóð (viðföng [startDir] [filter])"
 
 #: kdialog.cpp:305
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
-msgstr "Gluggi til að velja táknmynd (viðföng [group] [context])"
+msgstr "Svargluggi til að velja tákn (viðföng [group] [context])"
 
 #: kdialog.cpp:306 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
-msgstr "Framvindugluggi, skilar D-Bus samskiptavísun "
+msgstr "Svargluggi með framvindustiku, skilar D-Bus samskiptavísun "
 
 #: kdialog.cpp:307
 #, kde-format
 msgid "Color dialog to select a color"
-msgstr "Samskiptagluggi til að velja lit"
+msgstr "Litavalsgluggi til að velja lit"
 
 #: kdialog.cpp:308
 #, kde-format
 msgid "Allow --getcolor to specify output format"
-msgstr "Leyfa --getcolor til að tiltaka úttakssnið"
+msgstr "Leyfa --getcolor að tilgreina úttakssnið"
 
 #: kdialog.cpp:310 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
-msgstr "Gluggatitill"
+msgstr "Titill svarglugga"
 
 #: kdialog.cpp:311
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "Sjálfgefin færsla fyrir fjölvalsreit, valmynd, lit og dagatal"
+msgstr ""
+"Sjálfgefin færsla til að nota með fellilista, vallista, lit og dagatali"
 
 #: kdialog.cpp:312
 #, kde-format
@@ -294,7 +306,7 @@ msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
 "files"
 msgstr ""
-"Leyfa --getopenurl og --getopenfilename valkostunum að skila mörgum skrám"
+"Leyfa valkostunum --getopenurl og --getopenfilename að skila mörgum skrám"
 
 #: kdialog.cpp:313
 #, kde-format
@@ -302,21 +314,21 @@ msgid ""
 "Return list items on separate lines (for checklist option and file open with "
 "--multiple)"
 msgstr ""
-"Skila lista innihaldi á aðskildum línum (fyrir athugunarlista og skrár opnar "
+"Skila listaatriðum á aðskildum línum (fyrir gátlistavalkost og skráaopnun "
 "með --multiple)"
 
 #: kdialog.cpp:314
 #, kde-format
 msgid "Outputs the winId of each dialog"
-msgstr "Setur út auðkenni allra glugga"
+msgstr "Skilar gluggakenni (winId) hvers svarglugga"
 
 #: kdialog.cpp:315
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr ""
-"Stillingaskrá og nafn valkosts til að vista \"ekki-sýna/spyrja aftur\" "
-"stöðuna"
+"Grunnstillingaskrá og nafn valkosts til að vista stöðuna \"ekki-sýna/spyrja "
+"aftur\""
 
 #: kdialog.cpp:317
 #, kde-format
@@ -324,8 +336,7 @@ msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
 msgstr ""
-"Samskiptagluggi með rennislá, velur ákveðið gildi (breytur [text] [min] "
-"[max] [step])"
+"Svargluggi með sleða, skilar völdu gildi (viðföng [text] [min] [max] [step])"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -333,18 +344,20 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
-"Snið dagsetninga á niðurstöðum í dagatali og/eða sjálfgefið gildi (Qt-"
-"stíll); er sjálfgefið 'ddd MMM d yyyy'"
+"Dagsetningarsnið fyrir dagatal og/eða sjálfgefið gildi (í stíl við Qt). "
+"Sjálfgefið snið er 'ddd MMM d yyyy'"
 
 #: kdialog.cpp:319
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
-msgstr "Samskiptagluggi með dagatali, velur ákveðna dagsetningu"
+msgstr "Svargluggi með dagatali, skilar valinni dagsetningu"
 
 #: kdialog.cpp:322
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
-msgstr "Umbreytir glugganum fyrir X forrit sem skilgreint er með winid"
+msgstr ""
+"Gerir svargluggann skammvinnan fyrir X forrit sem skilgreint er með "
+"gluggakenni (winid)"
 
 #: kdialog.cpp:323
 #, kde-format
@@ -359,7 +372,7 @@ msgstr "Stærðir glugga: [=][<breidd>{xX}<hæð>][{+-}<xhliðrun>{+-}<yhliðrun
 #: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
-msgstr "Viðfang - veltur á vali"
+msgstr "Viðfang - veltur á aðalvalkosti"
 
 #: kdialog.cpp:340
 #, kde-format
@@ -407,7 +420,7 @@ msgstr "Notkun: --radiolist text tag item on/off [tag item on/off] ..."
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
-msgstr "Opna"
+msgstr "Opna mynd"
 
 #: kdialog.cpp:804
 #, kde-format
@@ -419,13 +432,13 @@ msgstr "Vista sem"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
-msgstr "Veldu möppu"
+msgstr "Velja möppu"
 
 #: kdialog.cpp:951
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
-msgstr "Veldu lit"
+msgstr "Velja lit"
 
 #: kdialog.cpp:1012
 #, kde-format

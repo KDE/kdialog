@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-29 01:39+0000\n"
+"POT-Creation-Date: 2024-03-09 00:40+0000\n"
 "PO-Revision-Date: 2010-01-29 15:08+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <maithili.sf.net>\n"
@@ -234,13 +234,16 @@ msgstr "पैसिव पापअप"
 #: kdialog.cpp:300
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
-msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "मोजुदा फाइल केँ खोलबा क' लेल फाइल संवाद"
 
 #: kdialog.cpp:301
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
-msgid "File dialog to save a file (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "फाइल केँ सहेजबा क' लेल फाइल संवाद"
 
 #: kdialog.cpp:302
@@ -252,13 +255,16 @@ msgstr "मोजुदा डिरेक्ट्री चुनबा क' �
 #: kdialog.cpp:303
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file"
-msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
 msgstr "मोजुदा फाइल केँ खोलबा क' लेल फाइल संवाद"
 
 #: kdialog.cpp:304
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file"
-msgid "File dialog to save a URL (arguments [startDir] [filter])"
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "फाइल केँ सहेजबा क' लेल फाइल संवाद"
 
 #: kdialog.cpp:305
