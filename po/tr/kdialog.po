@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2024-02-09 17:46+0300\n"
+"PO-Revision-Date: 2024-03-09 10:21+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.01.95\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -230,23 +230,21 @@ msgid "Popup icon"
 msgstr "Açılır Pencere simgesi"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Var olan bir dosyayı açmak için dosya iletişim kutusu (argümanlar "
-"[başlangıçDizini] [süzgeç])"
+"[başlangıçDizini] [ad veya MIME türü süzgeci])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr ""
 "Bir dosya kaydetmek için dosya iletişim kutusu (argümanlar [başlangıçDizini] "
-"[süzgeç])"
+"[ad veya MIME türü süzgeci])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -256,23 +254,21 @@ msgstr ""
 "[başlangıçDizini] [süzgeç])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Var olan bir bağlantıyı açmak için dosya iletişim kutusu (argümanlar "
-"[başlangıçDizini] [süzgeç])"
+"[başlangıçDizini] [ad veya MIME türü süzgeci])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr ""
 "Bir URL’yi kaydetmek için dosya iletişim kutusu (argümanlar "
-"[başlangıçDizini] [süzgeç])"
+"[başlangıçDizini] [ad veya MIME türü süzgeci])"
 
 #: kdialog.cpp:305
 #, kde-format
@@ -404,24 +400,24 @@ msgstr "Bir daha sorma"
 #: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr "Sözdizim: --combobox <metin> item [öge] ..."
+msgstr "Sözdizim: --combobox <metin> item [öge] …"
 
 #: kdialog.cpp:679
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr "Sözdizim: --menu metin [etiket ögesi] [etiket ögesi] ..."
+msgstr "Sözdizim: --menu metin [etiket ögesi] [etiket ögesi] …"
 
 #: kdialog.cpp:703
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
-"Sözdizim: --checklist metin [etiket ögesi on/off] [etiket ögesi on/off] ..."
+"Sözdizim: --checklist metin [etiket ögesi on/off] [etiket ögesi on/off] …"
 
 #: kdialog.cpp:721
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
-"Sözdizim: --checklist metin [etiket ögesi on/off] [etiket ögesi on/off] ..."
+"Sözdizim: --checklist metin [etiket ögesi on/off] [etiket ögesi on/off] …"
 
 #: kdialog.cpp:752
 #, kde-format

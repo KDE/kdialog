@@ -224,19 +224,17 @@ msgid "Popup icon"
 msgstr "Vyskakovací ikona"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "Dialog pro otevření existujícího souboru (argumenty [počAdr] [filtr])"
+msgstr ""
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "Dialog pro uložení souboru (argumenty [počAdr] [filtr])"
+msgstr ""
 
 #: kdialog.cpp:302
 #, kde-format
@@ -244,19 +242,17 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Dialog pro výběr existujícího adresáře (argumenty [počAdr] [filtr])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "Dialog pro otevření existující URL (argumenty [počAdr] [filtr])"
+msgstr ""
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Dialog pro uložení URL (argumenty [počAdr] [filtr])"
+msgstr ""
 
 #: kdialog.cpp:305
 #, kde-format

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2023-05-21 05:12+0200\n"
+"PO-Revision-Date: 2024-03-09 06:22+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -225,20 +225,21 @@ msgid "Popup icon"
 msgstr "მხტუნარა ხატულა"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"არსებული ფაილის გახსნის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [ფილტრი])"
+"არსებული ფაილის გახსნის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [სახელი ან "
+"mime ტიპის ფილტრი])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "ფაილის შენახვის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [ფილტრი])"
+msgstr ""
+"ფაილის შენახვის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [სახელი ან mime "
+"ტიპის ფილტრი])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -246,20 +247,21 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "არსებული საქაღალდის ასარჩევი ფანჯარა (არგუმენტები [საწყისისაქაღალდე])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"არსებული URL-ის გახსნის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [ფილტრი])"
+"არსებული URL-ის გახსნის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [სახელი ან "
+"mime ტიპის ფილტრი])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "URL-ის შენახვის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [ფილტრი])"
+msgstr ""
+"URL-ის შენახვის ფანჯარა (არგუმენტები [საწყისისაქაღალდე] [სახელი ან mime "
+"ტიპის ფილტრი])"
 
 #: kdialog.cpp:305
 #, kde-format

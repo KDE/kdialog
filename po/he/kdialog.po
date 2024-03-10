@@ -13,21 +13,22 @@
 # galion <galion.lum@gmail.com>, 2005.
 # Liel Fridman <lielft@gmail.com>, 2011.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2023-10-22 09:28+0300\n"
-"Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
-"Language-Team: Hebrew <gezer@lists.launchpad.net>\n"
+"PO-Revision-Date: 2024-03-09 17:54+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -235,19 +236,20 @@ msgid "Popup icon"
 msgstr "סמל החלונית הקופצת"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "חלונית קבצים לפתיחת קובץ קיים (ארגומנטים ‎[startDir] [filter])"
+msgstr ""
+"חלונית קבצים לפתיחת קובץ קיים (ארגומנטים ‎[startDir] [name or mimetype "
+"filter])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "חלונית קבצים לשמירת קובץ (ארגומנטים ‎[startDir] [filter])"
+msgstr ""
+"חלונית קבצים לשמירת קובץ (ארגומנטים ‎[startDir] [name or mimetype filter])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -255,19 +257,20 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "חלונית קבצים לבחירת תיקייה קיימת (ארגומנטים ‎[startDir] [filter])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "חלונית קבצים לפתיחת כתובת קיימת (ארגומנטים ‎[startDir] [filter])"
+msgstr ""
+"חלונית קבצים לפתיחת כתובת קיימת (ארגומנטים ‎[startDir] [name or mimetype "
+"filter])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "חלונית קבצים לשמירת כתובת (ארגומנטים ‎[startDir] [filter])"
+msgstr ""
+"חלונית קבצים לשמירת כתובת (ארגומנטים ‎[startDir] [name of mimetype filter])"
 
 #: kdialog.cpp:305
 #, kde-format

@@ -1,7 +1,7 @@
 # Translation of kdialog.po to Slovenian
 # SLOVENIAN TRANSLATION OF KDEBASE.
 # Copyright (C) 2002, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kdialog.po 1675153 2024-03-09 01:07:43Z scripty $
+# $Id: kdialog.po 1675241 2024-03-10 01:07:07Z scripty $
 # $Source$
 #
 # Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2002.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2023-05-21 23:45+0200\n"
+"PO-Revision-Date: 2024-03-09 09:00+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -235,22 +235,21 @@ msgid "Popup icon"
 msgstr "Pojavna ikona"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Datotečno okno za odprtje obstoječe datoteke (argumenti [začetnaMapa] "
-"[filter])"
+"Datotečno okno za odprtje obstoječe datoteke (argumenti [začetnaMapa] [ime "
+"ali filter vrste mime])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Datotečno okno za shranjevanje datoteke (argumenti [začetnaMapa] [filter])"
+"Datotečno okno za shranjevanje datoteke (argumenti [začetnaMapa] [ime ali "
+"filter vrste mime])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -258,22 +257,21 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Datotečno okno za izbiro obstoječe mape (argumenti [začetnaMapa])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Datotečno okno za odprtje obstoječega naslova URL (argumenti [začetnaMapa] "
-"[filter])"
+"[ime ali filter vrste mime])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Datotečno okno za shranjevanje naslova URL (argumenti [začetnaMapa] [filter])"
+"Datotečno okno za shranjevanje naslova URL (argumenti [začetnaMapa] [ime ali "
+"filter vrste mime])"
 
 #: kdialog.cpp:305
 #, kde-format

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2023-06-06 22:02+0100\n"
+"PO-Revision-Date: 2024-03-09 09:22+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -226,22 +226,21 @@ msgid "Popup icon"
 msgstr "Ŝprucfenestra piktogramo"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Dosiera dialogo por malfermi ekzistantan dosieron (argumentoj [startDir] "
-"[filtrilo])"
+"[filtrilo por nomo aŭ mime-tipo])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Dosierdialogujo por konservi dosieron (argumentoj [startDir] [filtrilo])"
+"Dosierdialogujo por konservi dosieron (argumentoj [startDir] [filtrilo por "
+"nomo aŭ mime-tipo])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -250,21 +249,21 @@ msgstr ""
 "Dosierdialogujo por elekti ekzistantan dosierujon (argumentoj [startDir])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Dosierdialogujo por malfermi ekzistantan URL (argumentoj [startDir] "
-"[filtrilo])"
+"[filtrilo por nomo aŭ mime-tipo])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Dosierdialogujo por konservi URL (argumentoj [startDir] [filtrilo])"
+msgstr ""
+"Dosierdialogujo por konservi URL (argumentoj [startDir] [filtrilopor nomo aŭ "
+"mime-tipo])"
 
 #: kdialog.cpp:305
 #, kde-format
