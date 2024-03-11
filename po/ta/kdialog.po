@@ -3,13 +3,13 @@
 #
 # Thuraiappah Vaseeharan <vasee@ieee.org>, 2002.
 # ஸ்ரீராமதாஸ் <shriramadhas@gmail.com>, 2008.
-# Kishore G <kishore96@gmail.com>, 2021, 2023.
+# SPDX-FileCopyrightText: 2021, 2023, 2024 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2023-05-21 15:15+0530\n"
+"PO-Revision-Date: 2024-03-10 11:30+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -226,20 +226,21 @@ msgid "Popup icon"
 msgstr "மேல்தோன்றுவதற்கான சின்னம்"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"ஏற்கெனவே இருக்கும் கோப்பைத் திறப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [வடிகட்டி])"
+"ஏற்கெனவே இருக்கும் கோப்பைத் திறப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [பெயர் "
+"அல்லது கோப்புவகை வடிகட்டி])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "ஒரு கோப்பை சேமிப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [வடிகட்டி])"
+msgstr ""
+"ஒரு கோப்பை சேமிப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [பெயர் அல்லது கோப்புவகை "
+"வடிகட்டி])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -247,37 +248,36 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "ஏற்கெனவே உள்ள அடைவை தேர்ந்தெடுப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"ஏற்கெனவே இருக்கும் முகவரியைத் திறப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] "
-"[வடிகட்டி])"
+"ஏற்கெனவே இருக்கும் முகவரியைத் திறப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [பெயர் "
+"அல்லது கோப்புவகை வடிகட்டி])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "ஒரு முகவரியை சேமிப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [வடிகட்டி])"
+msgstr ""
+"ஒரு முகவரியை சேமிப்பதற்கான சாளரம் (தருமதிப்புகள் [துவக்க அடைவு] [பெயர் அல்லது "
+"கோப்புவகை வடிகட்டி])"
 
 #: kdialog.cpp:305
-#, fuzzy, kde-format
+#, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr "சின்னத் தேர்வி சாளரம் (தருமதிப்புகள் [குழு] [சூழல்])"
 
 #: kdialog.cpp:306 kdialog_progress_helper.cpp:40
-#, fuzzy, kde-format
+#, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
-msgstr "முன்னேற்ற விவரப் பலகை, தகவல் பரிமாற்றத்திற்கான டி-பஸ் மேற்கோளைத் தரும்"
+msgstr "முன்னேற்ற விவரப் பலகை, தகவல் பரிமாற்றத்திற்கான D-Bus முகவரி ஒன்றைத் தரும்"
 
 #: kdialog.cpp:307
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "Color dialog to select a color"
-msgstr "ஏற்கெனவே உள்ள அடைவை தேர்ந்தெடுப்பதற்கு கோப்பு உரையாடல்"
+msgstr "நிறத்தேர்வு சாளரம்"
 
 #: kdialog.cpp:308
 #, kde-format
@@ -290,10 +290,10 @@ msgid "Dialog title"
 msgstr "சாளரத் தலைப்பு"
 
 #: kdialog.cpp:311
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox and menu"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "காம்போ பெட்டி மற்றும் பட்டி பயன்பாட்டுக்கான முன்னிருப்பு உள்ளீடு`"
+msgstr ""
+"காம்போப்பெட்டிக்கான, பட்டிக்கான, நிறத்திற்கான, மற்றும் நாள்காட்டிக்கான முன்னிருப்பு மதிப்பு"
 
 #: kdialog.cpp:312
 #, fuzzy, kde-format
@@ -343,10 +343,9 @@ msgid ""
 msgstr ""
 
 #: kdialog.cpp:319
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "Calendar dialog box, returns selected date"
-msgstr "ஏற்கெனவே உள்ள அடைவை தேர்ந்தெடுப்பதற்கு கோப்பு உரையாடல்"
+msgstr "நாள்காட்டி தேர்வுப்பெட்டி, தேர்ந்தெடுக்கும் தேதியைத் தரும்"
 
 #: kdialog.cpp:322
 #, fuzzy, kde-format
@@ -356,17 +355,19 @@ msgstr "உரையாடல் மாறுநிலையை an X app winid'�
 #: kdialog.cpp:323
 #, kde-format
 msgid "A synonym for --attach"
-msgstr ""
+msgstr "--attach என்பதற்கான மாற்றுப்பெயர்"
 
 #: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
+"சாளரத்தின் அளவு: [=][<அகலம்>{xX}<உயரம்>][{+-}<கிடைமட்ட இருப்பிடம்>{+-}<நெடுமட்ட "
+"இருப்பிடம்>]"
 
 #: kdialog.cpp:328 kdialog_progress_helper.cpp:42
-#, fuzzy, kde-format
+#, kde-format
 msgid "Arguments - depending on main option"
-msgstr "இணைப்புரு- முக்கிய விருப்பத்தேர்வுகளைப் பொருத்தது"
+msgstr "தருமதிப்புகள் - பிரதான தேர்வைப் பொறுத்து"
 
 #: kdialog.cpp:340
 #, fuzzy, kde-format
@@ -393,22 +394,24 @@ msgstr "மறுபடியும் கேட்காதே"
 #: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr ""
+msgstr "இலக்கணம்: --combobox <உரை> உருப்படி [உருப்படி] ..."
 
 #: kdialog.cpp:679
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr ""
+msgstr "இலக்கணம்: --menu உரை குறிச்சொல் உருப்படி [குறிச்சொல் உருப்படி] ..."
 
 #: kdialog.cpp:703
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"இலக்கணம்: --checklist உரை குறிச்சொல் உருப்படி on/off [குறிச்சொல் உருப்படி on/off] ..."
 
 #: kdialog.cpp:721
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"இலக்கணம்: --radiolist உரை குறிச்சொல் உருப்படி on/off [குறிச்சொல் உருப்படி on/off] ..."
 
 #: kdialog.cpp:752
 #, kde-format
@@ -437,7 +440,7 @@ msgstr "நிறத் தேர்வு"
 #: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "இலக்கணம்: --slider <உரை> <குறைந்தபட்சம்> <அதிகபட்சம்> <குறைந்தபட்ச நகர்வு>"
 
 #: progressdialog.cpp:24
 #, kde-format
