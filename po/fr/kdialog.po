@@ -8,7 +8,7 @@
 # Sébastien Renard <Sebastien.Renard@digitalfox.org>, 2007, 2008.
 # Sebastien Renard <Sebastien.Renard@Solucom.fr>, 2009.
 # Sébastien Renard <renard@kde.org>, 2011, 2013.
-# Xavier Besnard <xavier.besnard@kde.org>, 2013.
+# SPDX-FileCopyrightText: 2013, 2024 Xavier Besnard <xavier.besnard@kde.org>
 # Vincent Pinon <vpinon@kde.org>, 2017.
 # Simon Depiets <sdepiets@gmail.com>, 2018, 2019.
 # Xavier Besnard <xavier.besnard@kde.org>, 2020, 2021.
@@ -18,15 +18,15 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2023-05-21 07:24+0200\n"
-"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2024-03-10 09:36+0100\n"
+"Last-Translator: xavier <xyz@yahoo.com>\n"
+"Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -244,23 +244,21 @@ msgid "Popup icon"
 msgstr "Icône de la fenêtre surgissante"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Boîte de dialogue pour ouvrir un fichier existant (arguments "
-"[dossier_démarrage] [filtre])"
+"Boîte de dialogue pour l'ouverture d'un fichier existant (arguments [Dossier-"
+"source] [Filtre de nom ou de type « MIME »])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Boîte de dialogue pour enregistrer un fichier (arguments [dossier_démarrage] "
-"[filtre])"
+"Boîte de dialogue pour l'enregistrement d'un fichier  (arguments [Dossier-"
+"source] [Filtre de nom ou de type « MIME »])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -270,23 +268,21 @@ msgstr ""
 "[dossier_démarrage])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Boîte de dialogue pour ouvrir une URL existante (arguments "
-"[dossier_démarrage] [filtre])"
+"Boîte de dialogue pour l'ouverture d'une URL existante (arguments [Dossier-"
+"source] [Filtre de nom ou de type « MIME »])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Boîte de dialogue pour enregistrer une URL (arguments [dossier_démarrage] "
-"[filtre])"
+"Boîte de dialogue pour l'enregistrement d'une URL (arguments [Dossier-"
+"source] [Filtre de nom ou de type « MIME »])"
 
 #: kdialog.cpp:305
 #, kde-format
