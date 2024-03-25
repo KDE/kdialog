@@ -1,25 +1,25 @@
 # Translation for kdialog.po to Euskara/Basque (eu).
-# Copyright (C) 2003-2023 This file is copyright:
+# Copyright (C) 2003-2024 This file is copyright:
 # This file is distributed under the same license as the kdialog package.
-# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+# SPDX-FileCopyrightText: 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Marcos  <marcos@euskalgnu.org>, 2003, 2005, 2006, 2007, 2008.
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2011, 2018, 2019, 2020, 2023.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2011, 2018, 2019, 2020, 2023, 2024.
 # Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2023-07-21 10:40+0200\n"
+"PO-Revision-Date: 2024-03-24 11:42+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 24.02.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #, kde-format
@@ -230,49 +230,45 @@ msgid "Popup icon"
 msgstr "Ikono gainerakorra"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Fitxategi elkarrizketa-koadroa, dagoen fitxategi bat irekitzeko (argumentuak "
-"[hasiDir] [iragazkia])"
+"Fitxategi bat irekitzeko Fitxategi elkarrizketa-koadroa (argumentuak "
+"[hastekoDir] [izena edo MIME-mota iragazkia])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Fitxategi elkarrizketa-koadroa, fitxategi bat gordetzeko (argumentuak "
-"[hasiDir] [iragazkia])"
+"Fitxategi bat gordetzeko Fitxategi elkarrizketa-koadroa (argumentuak "
+"[hasekoDir] [izena edo MIME-mota iragazkia])"
 
 #: kdialog.cpp:302
 #, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr ""
-"Fitxategi elkarrizketa-koadroa, dagoen direktorio bat hautatzeko "
-"(argumentuak [hasiDir])"
+"Direktorio bat hautatzeko Fitxategi elkarrizketa-koadroa (argumentuak "
+"[hastekoDir])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Fitxategi elkarrizketa-koadroa, dagoen URL bat irekitzeko (argumentuak "
-"[hasiDir] [iragazkia])"
+"URL bat irekitzeko Fitxategi elkarrizketa-koadroa (argumentuak [hastekoDir] "
+"[izena edo MIME-mota iragazkia])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Fitxategi elkarrizketa-koadroa, URL bat gordetzeko (argumentuak [hasiDir] "
-"[iragazkia])"
+"URL bat gordetzeko Fitxategi elkarrizketa-koadroa (argumentuak [hastekoDir] "
+"[izena edo MIME-mota iragazkia])"
 
 #: kdialog.cpp:305
 #, kde-format
