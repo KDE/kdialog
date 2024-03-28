@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Johannes Obermayr <johannesobermayr@gmx.de>
+# SPDX-FileCopyrightText: 2023, 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
 # Stephan Johach <hunsum@gmx.de>, 2005.
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2006, 2007, 2008, 2009.
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2023-12-18 01:44+0100\n"
+"PO-Revision-Date: 2024-03-26 19:06+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -228,20 +228,21 @@ msgid "Popup icon"
 msgstr "Symbol für Aufklappfenster (Popup)"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Dialog zum Öffnen einer bestehenden Datei (Argumente [Start-Ordner] [Filter])"
+"Dialog zum Öffnen einer bestehenden Datei (Argumente [Start-Ordner] [Name- "
+"oder MIME-Type-Filter])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "Dialog zum Speichern einer Datei (Argumente [Start-Ordner] [Filter])"
+msgstr ""
+"Dialog zum Speichern einer Datei (Argumente [Start-Ordner] [Name- oder MIME-"
+"Type-Filter])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -250,21 +251,21 @@ msgstr ""
 "Dialog zur Auswahl eines bestehenden Ordners (Argumente [Start-Ordner])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Dialog zum Öffnen einer bestehenden Adresse (Argumente [Start-Ordner] "
-"[Filter])"
+"Dialog zum Öffnen einer bestehenden Adresse (Argumente [Start-Ordner] [Name- "
+"oder MIME-Type-Filter])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Dialog zum Speichern einer Adresse (Argumente [Start-Ordner] [Filter])"
+msgstr ""
+"Dialog zum Speichern einer Adresse (Argumente [Start-Ordner] [Name- oder "
+"MIME-Type-Filter])"
 
 #: kdialog.cpp:305
 #, kde-format
