@@ -6,23 +6,23 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # AbdulAziz AlSharif <a.a-a.s@hotmail.com>, 2007.
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
-# zayed <zayed.alsaidi@gmail.com>, 2008, 2012, 2021.
+# zayed <zayed.alsaidi@gmail.com>, 2008, 2012, 2021, 2024.
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-29 01:39+0000\n"
-"PO-Revision-Date: 2021-07-26 23:31+0400\n"
+"PO-Revision-Date: 2024-04-09 11:30+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
-"Language-Team: ar\n"
+"Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 21.07.70\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -257,7 +257,7 @@ msgstr "حواري ملفات لحفظ ملف ما (المعاملات [startDir
 #: kdialog.cpp:305
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
-msgstr ""
+msgstr "حواري منتقي الأيقونات (الوسيطات [مجموعة] [سياق])"
 
 #: kdialog.cpp:306 kdialog_progress_helper.cpp:40
 #, kde-format
@@ -272,7 +272,7 @@ msgstr "حواري ألوان لاختيار لون ما"
 #: kdialog.cpp:308
 #, kde-format
 msgid "Allow --getcolor to specify output format"
-msgstr ""
+msgstr "اسمح لـ--getcolor بتحديد تنسيق الإخراج"
 
 #: kdialog.cpp:310 kdialog_progress_helper.cpp:41
 #, kde-format
@@ -280,10 +280,9 @@ msgid "Dialog title"
 msgstr "عنوان الحواري"
 
 #: kdialog.cpp:311
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox, menu and color"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "المُدخلة الافتراضية المستخدَمة للمربع المُنسدل، والقائمة واللون"
+msgstr "المُدخلة الافتراضية المستخدَمة للمربع المُنسدل، والقائمة واللون والتقويم"
 
 #: kdialog.cpp:312
 #, kde-format
@@ -293,13 +292,13 @@ msgid ""
 msgstr "يسمح لخياريّ ‎--getopenurl و ‎--getopenfilename بإرجاع عدّة ملفات"
 
 #: kdialog.cpp:313
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Return list items on separate lines (for checklist option and file open with "
 "--multiple)"
 msgstr ""
-"يُرجع عناصر القائمة في أسطر منفصلة (for checklist option and file open with --"
-"multiple)"
+"يُرجع عناصر القائمة في أسطر منفصلة (لخيار قائمة التحقق وفتح الملف باستخدام --"
+"متعدد)"
 
 #: kdialog.cpp:314
 #, kde-format
@@ -313,12 +312,11 @@ msgid ""
 msgstr "ملف تضبيط واسم خيار لحفظ حالة \"لا تظهر/اسأل مجدّدًا\""
 
 #: kdialog.cpp:317
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "حواري مُنزلِقة، يُرجع القيمة المحدّدة"
+msgstr "حواري مُنزلِقة، يُرجع القيمة المحدّدة (وسيطات [text] [min] [max] [step])"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -326,6 +324,8 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"تنسيق التاريخ لنتيجة التقويم و / أو القيمة الافتراضية (نمط Qt)؛ الإعدادات "
+"الافتراضية إلى \"ي ي ي  ش ش ش  ي  س س س س\""
 
 #: kdialog.cpp:319
 #, kde-format
@@ -333,19 +333,19 @@ msgid "Calendar dialog box, returns selected date"
 msgstr "حواري تقويم، يُرجع التاريخ المحدّد"
 
 #: kdialog.cpp:322
-#, fuzzy, kde-format
+#, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr "يجعل مربع الحوار عابراً للتطبيق X المحدد بـ winid"
 
 #: kdialog.cpp:323
 #, kde-format
 msgid "A synonym for --attach"
-msgstr ""
+msgstr "مرادف لـ --إرفاق"
 
 #: kdialog.cpp:326
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
-msgstr ""
+msgstr "هندسة الحواري: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 
 #: kdialog.cpp:328 kdialog_progress_helper.cpp:42
 #, kde-format
@@ -361,13 +361,13 @@ msgstr "حواريك"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "نعم&"
 
 #: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&لا"
 
 #: kdialog.cpp:502
 #, kde-format
@@ -377,22 +377,26 @@ msgstr "لا تسأل مجدّدًا"
 #: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr ""
+msgstr "بناء الجملة: --صندوق التحرير <نص> العنصر [العنصر] ..."
 
 #: kdialog.cpp:679
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr ""
+msgstr "بناء الجملة: --قائمة نص علامة عنصر [علامة العنصر] ..."
 
 #: kdialog.cpp:703
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"بناء الجملة: --المرجعية نص علامة عنصر تشغيل/إيقاف [علامة عنصر تشغيل/"
+"إيقاف] ..."
 
 #: kdialog.cpp:721
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"بناء الجملة: --النص الراديوي عنصر علامة تشغيل/إيقاف [علامة عنصر تشغيل/"
+"إيقاف] ..."
 
 #: kdialog.cpp:752
 #, kde-format
@@ -421,7 +425,7 @@ msgstr "اختر لونًا"
 #: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "بناء الجملة: --شريط التمرير <text> <min> <max> <step>"
 
 #: progressdialog.cpp:24
 #, kde-format
