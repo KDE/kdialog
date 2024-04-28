@@ -5,21 +5,21 @@
 # Michal Sulek <misurel@gmail.com>, 2009, 2011.
 # Roman Paholík <wizzardsk@gmail.com>, 2013, 2016, 2017.
 # Mthw <jari_45@hotmail.com>, 2019.
-# Matej Mrenica <matejm98mthw@gmail.com>, 2019, 2020, 2021.
+# SPDX-FileCopyrightText: 2019, 2020, 2021, 2024 Matej Mrenica <matejm98mthw@gmail.com>
 # Dušan Kazik <prescott66@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2021-07-20 17:50+0200\n"
+"PO-Revision-Date: 2024-04-27 16:37+0200\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.07.80\n"
+"X-Generator: Lokalize 24.02.2\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #, kde-format
@@ -334,12 +334,13 @@ msgstr ""
 "nepýtať sa znovu\""
 
 #: kdialog.cpp:317
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Dialóg s posuvníkom, vracia vybranú hodnotu"
+msgstr ""
+"Dialóg s posuvníkom, vracia vybranú hodnotu (arguments [text] [min] [max] "
+"[step])"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -385,13 +386,13 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "Áno"
 
 #: kdialog.cpp:367
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "Nie"
 
 #: kdialog.cpp:502
 #, kde-format
@@ -445,7 +446,7 @@ msgstr "Vybrať farbu"
 #: kdialog.cpp:1012
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Syntax: --slider <text> <min> <max> <step>"
 
 #: progressdialog.cpp:24
 #, kde-format
