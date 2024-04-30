@@ -635,9 +635,9 @@ int main(int argc, char *argv[])
         }
 
         QString result;
-        int ret = Widgets::textInputBox(nullptr, w, h, title, Utils::parseString(parser.value(QStringLiteral("textinputbox"))), init, result);
+        const bool retcode = Widgets::textInputBox(nullptr, w, h, title, Utils::parseString(parser.value(QStringLiteral("textinputbox"))), init, result);
         cout << qPrintable(result) << endl;
-        return ret;
+        return retcode ? 0 : 1;
     }
 
     // --combobox <text> item [item] ..."
@@ -1009,7 +1009,7 @@ int main(int argc, char *argv[])
             if (returnCode) {
                 cout << result << endl;
             }
-            return returnCode;
+            return returnCode ? 0 : 1;
         } else {
             cerr << qPrintable(i18n("Syntax: --slider <text> <min> <max> <step>")) << endl;
             return -1;

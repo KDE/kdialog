@@ -16,7 +16,7 @@ bool newPasswordBox(QWidget *parent, const QString &title, const QString &text, 
 bool textBox(QWidget *parent, int width, int height, const QString &title, const QString &file);
 bool imgBox(QWidget *parent, const QString &title, const QString &file);
 bool imgInputBox(QWidget *parent, const QString &title, const QString &file, const QString &init, QString &result);
-int textInputBox(QWidget *parent, int width, int height, const QString &title, const QString &text, const QString &init, QString &result);
+bool textInputBox(QWidget *parent, int width, int height, const QString &title, const QString &text, const QString &init, QString &result);
 bool listBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, const QString &defaultEntry, QString &result);
 bool checkList(QWidget *parent, const QString &title, const QString &text, const QStringList &args, bool separateOutput, QStringList &result);
 bool radioBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, QString &result);

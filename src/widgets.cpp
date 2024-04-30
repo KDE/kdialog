@@ -188,7 +188,7 @@ bool Widgets::imgInputBox(QWidget *parent, const QString &title, const QString &
     return retcode;
 }
 
-int Widgets::textInputBox(QWidget *parent, int width, int height, const QString &title, const QString &text, const QString &init, QString &result)
+bool Widgets::textInputBox(QWidget *parent, int width, int height, const QString &title, const QString &text, const QString &init, QString &result)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -216,7 +216,7 @@ int Widgets::textInputBox(QWidget *parent, int width, int height, const QString 
     dlg.setWindowTitle(title);
     const int returnDialogCode = dlg.exec();
     result = edit->toPlainText();
-    return returnDialogCode == QDialog::Accepted ? 0 : 1;
+    return returnDialogCode == QDialog::Accepted;
 }
 
 bool Widgets::comboBox(QWidget *parent, const QString &title, const QString &text, const QStringList &args, const QString &defaultEntry, QString &result)
