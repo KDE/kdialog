@@ -124,7 +124,7 @@ bool Widgets::textBox(QWidget *parent, int width, int height, const QString &tit
     return dlg.exec() == QDialog::Accepted;
 }
 
-int Widgets::imgBox(QWidget *parent, const QString &title, const QString &file)
+bool Widgets::imgBox(QWidget *parent, const QString &title, const QString &file)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -144,7 +144,7 @@ int Widgets::imgBox(QWidget *parent, const QString &title, const QString &file)
 
     label->setPixmap(QPixmap(file));
     Utils::handleXGeometry(&dlg);
-    return (dlg.exec() == QDialog::Accepted) ? 0 : 1;
+    return dlg.exec() == QDialog::Accepted;
 }
 
 int Widgets::imgInputBox(QWidget *parent, const QString &title, const QString &file, const QString &text, QString &result)

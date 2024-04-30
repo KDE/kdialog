@@ -601,7 +601,8 @@ int main(int argc, char *argv[])
 
     // --imgbox <file>
     if (parser.isSet(QStringLiteral("imgbox"))) {
-        return Widgets::imgBox(nullptr, title, parser.value(QStringLiteral("imgbox")));
+        const bool retcode = Widgets::imgBox(nullptr, title, parser.value(QStringLiteral("imgbox")));
+        return retcode ? 0 : 1;
     }
 
     // --imginputbox <file> [text]
