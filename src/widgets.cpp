@@ -147,7 +147,7 @@ bool Widgets::imgBox(QWidget *parent, const QString &title, const QString &file)
     return dlg.exec() == QDialog::Accepted;
 }
 
-int Widgets::imgInputBox(QWidget *parent, const QString &title, const QString &file, const QString &text, QString &result)
+bool Widgets::imgInputBox(QWidget *parent, const QString &title, const QString &file, const QString &text, QString &result)
 {
     QFile f(file);
     if (!f.open(QIODevice::ReadOnly)) {
