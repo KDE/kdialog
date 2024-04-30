@@ -595,7 +595,8 @@ int main(int argc, char *argv[])
             h = args.at(1).toInt();
         }
 
-        return Widgets::textBox(nullptr, w, h, title, parser.value(QStringLiteral("textbox")));
+        const bool retcode = Widgets::textBox(nullptr, w, h, title, parser.value(QStringLiteral("textbox")));
+        return retcode ? 0 : 1;
     }
 
     // --imgbox <file>

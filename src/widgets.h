@@ -13,7 +13,7 @@ namespace Widgets {
 bool inputBox(QWidget *parent, const QString &title, const QString &text, const QString &init, QString &result);
 bool passwordBox(QWidget *parent, const QString &title, const QString &text, QString &result);
 bool newPasswordBox(QWidget *parent, const QString &title, const QString &text, QString &result);
-int textBox(QWidget *parent, int width, int height, const QString &title, const QString &file);
+bool textBox(QWidget *parent, int width, int height, const QString &title, const QString &file);
 int imgBox(QWidget *parent, const QString &title, const QString &file);
 int imgInputBox(QWidget *parent, const QString &title, const QString &file, const QString &init, QString &result);
 int textInputBox(QWidget *parent, int width, int height, const QString &title, const QString &text, const QString &init, QString &result);

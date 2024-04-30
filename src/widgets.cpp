@@ -82,7 +82,7 @@ bool Widgets::newPasswordBox(QWidget *parent, const QString &title, const QStrin
     return retcode;
 }
 
-int Widgets::textBox(QWidget *parent, int width, int height, const QString &title, const QString &file)
+bool Widgets::textBox(QWidget *parent, int width, int height, const QString &title, const QString &file)
 {
     QDialog dlg(parent);
     dlg.setWindowTitle(title);
@@ -121,7 +121,7 @@ int Widgets::textBox(QWidget *parent, int width, int height, const QString &titl
 
     Utils::handleXGeometry(&dlg);
     dlg.setWindowTitle(title);
-    return (dlg.exec() == QDialog::Accepted) ? 0 : 1;
+    return dlg.exec() == QDialog::Accepted;
 }
 
 int Widgets::imgBox(QWidget *parent, const QString &title, const QString &file)
