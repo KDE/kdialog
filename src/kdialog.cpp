@@ -1037,7 +1037,7 @@ int main(int argc, char *argv[])
         if (returnCode) {
             cout << result.toString(dateFormat).toLocal8Bit().data() << endl;
         }
-        return returnCode;
+        return returnCode ? 0 : 1;
     }
 
     parser.showHelp();
