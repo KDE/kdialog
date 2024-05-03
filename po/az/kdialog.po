@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-09 00:40+0000\n"
+"POT-Creation-Date: 2024-05-03 00:40+0000\n"
 "PO-Revision-Date: 2023-09-14 16:56+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -390,55 +390,55 @@ msgstr "&Xeyr"
 msgid "Do not ask again"
 msgstr "Bir daha soruşma"
 
-#: kdialog.cpp:657
+#: kdialog.cpp:659
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Söx süzülüşü: --combobox <mətn> element [element] ..."
 
-#: kdialog.cpp:679
+#: kdialog.cpp:681
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Söz düzülüşü: \"--menu\" etiket elementi mətni [etiket elementi] ..."
 
-#: kdialog.cpp:703
+#: kdialog.cpp:705
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Söz süzülüşü: --\"--checklist\" etiket elementi mətni on/off [etiket "
 "elementi on/off] ..."
 
-#: kdialog.cpp:721
+#: kdialog.cpp:723
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Söz düzülüşü: \"--radiolist\" etiket elementi mətni on/off [etiket elementi "
 "on/off] ..."
 
-#: kdialog.cpp:752
+#: kdialog.cpp:754
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Açın"
 
-#: kdialog.cpp:804
+#: kdialog.cpp:806
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Belə saxlayın"
 
-#: kdialog.cpp:838
+#: kdialog.cpp:840
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Kataloqu seçin"
 
-#: kdialog.cpp:951
+#: kdialog.cpp:953
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Rəngi seçin"
 
-#: kdialog.cpp:1012
+#: kdialog.cpp:1014
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "Söz düzülüşü: \"--slider\" <mətn> <ən az> <ən çox> <mərhələ>"

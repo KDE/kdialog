@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-09 00:40+0000\n"
+"POT-Creation-Date: 2024-05-03 00:40+0000\n"
 "PO-Revision-Date: 2024-01-10 22:08+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -409,52 +409,52 @@ msgstr "&Нет"
 msgid "Do not ask again"
 msgstr "Не задавать больше этот вопрос"
 
-#: kdialog.cpp:657
+#: kdialog.cpp:659
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Синтаксис: --combobox <текст> элемент [элемент]..."
 
-#: kdialog.cpp:679
+#: kdialog.cpp:681
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Синтаксис: --menu текст метка элемент [метка элемент]..."
 
-#: kdialog.cpp:703
+#: kdialog.cpp:705
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Cинтакис: --checklist текст метка элемент on/off [метка элемент on/off]..."
 
-#: kdialog.cpp:721
+#: kdialog.cpp:723
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "Cинтакис: --radiolist метка элемент on/off [метка элемент on/off]..."
 
-#: kdialog.cpp:752
+#: kdialog.cpp:754
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Открытие файла"
 
-#: kdialog.cpp:804
+#: kdialog.cpp:806
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Сохранение в файл"
 
-#: kdialog.cpp:838
+#: kdialog.cpp:840
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Выбор папки"
 
-#: kdialog.cpp:951
+#: kdialog.cpp:953
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Выбор цвета"
 
-#: kdialog.cpp:1012
+#: kdialog.cpp:1014
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "Синтаксис: --slider <текст> <мин> <макс> <шаг>"

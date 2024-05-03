@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-09 00:40+0000\n"
+"POT-Creation-Date: 2024-05-03 00:40+0000\n"
 "PO-Revision-Date: 2021-09-17 20:07+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -385,51 +385,51 @@ msgstr ""
 msgid "Do not ask again"
 msgstr "फिर नहीं पूछें"
 
-#: kdialog.cpp:657
+#: kdialog.cpp:659
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "सिंटैक्स : --कॉम्बोबाक्स <पाठ> आइटम [आइटम] ..."
 
-#: kdialog.cpp:679
+#: kdialog.cpp:681
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "सिंटैक्स : --मेनू पाठ टैग आइटम [टैग आइटम] ..."
 
-#: kdialog.cpp:703
+#: kdialog.cpp:705
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr "सिंटैक्स : --चेकलिस्ट पाठ टैग आइटम चालू/बंद [टैग आइटम चालू/बंद] ..."
 
-#: kdialog.cpp:721
+#: kdialog.cpp:723
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "सिंटैक्स : --रेडियोलिस्ट पाठ टैग आइटम चालू/बंद [टैग आइटम चालू/बंद] ..."
 
-#: kdialog.cpp:752
+#: kdialog.cpp:754
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "खोलें"
 
-#: kdialog.cpp:804
+#: kdialog.cpp:806
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "ऐसे सहेजें"
 
-#: kdialog.cpp:838
+#: kdialog.cpp:840
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "डिरेक्ट्री चुनें"
 
-#: kdialog.cpp:951
+#: kdialog.cpp:953
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "रंग चुनें"
 
-#: kdialog.cpp:1012
+#: kdialog.cpp:1014
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr ""

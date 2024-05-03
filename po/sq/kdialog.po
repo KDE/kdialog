@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-09 00:40+0000\n"
+"POT-Creation-Date: 2024-05-03 00:40+0000\n"
 "PO-Revision-Date: 2009-05-22 13:56+0000\n"
 "Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -371,53 +371,53 @@ msgstr ""
 msgid "Do not ask again"
 msgstr ""
 
-#: kdialog.cpp:657
+#: kdialog.cpp:659
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr ""
 
-#: kdialog.cpp:679
+#: kdialog.cpp:681
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr ""
 
-#: kdialog.cpp:703
+#: kdialog.cpp:705
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 
-#: kdialog.cpp:721
+#: kdialog.cpp:723
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
 
-#: kdialog.cpp:752
+#: kdialog.cpp:754
 #, fuzzy, kde-format
 #| msgid "Open"
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Hape"
 
-#: kdialog.cpp:804
+#: kdialog.cpp:806
 #, fuzzy, kde-format
 #| msgid "Save As"
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Ruaje Si"
 
-#: kdialog.cpp:838
+#: kdialog.cpp:840
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr ""
 
-#: kdialog.cpp:951
+#: kdialog.cpp:953
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr ""
 
-#: kdialog.cpp:1012
+#: kdialog.cpp:1014
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr ""

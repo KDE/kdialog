@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-09 00:40+0000\n"
+"POT-Creation-Date: 2024-05-03 00:40+0000\n"
 "PO-Revision-Date: 2024-04-23 00:34+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -397,53 +397,53 @@ msgstr "&Hayır"
 msgid "Do not ask again"
 msgstr "Bir daha sorma"
 
-#: kdialog.cpp:657
+#: kdialog.cpp:659
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Sözdizim: --combobox <metin> item [öge] …"
 
-#: kdialog.cpp:679
+#: kdialog.cpp:681
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Sözdizim: --menu metin [etiket ögesi] [etiket ögesi] …"
 
-#: kdialog.cpp:703
+#: kdialog.cpp:705
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Sözdizim: --checklist metin [etiket ögesi on/off] [etiket ögesi on/off] …"
 
-#: kdialog.cpp:721
+#: kdialog.cpp:723
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Sözdizim: --checklist metin [etiket ögesi on/off] [etiket ögesi on/off] …"
 
-#: kdialog.cpp:752
+#: kdialog.cpp:754
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Aç"
 
-#: kdialog.cpp:804
+#: kdialog.cpp:806
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Farklı Kaydet"
 
-#: kdialog.cpp:838
+#: kdialog.cpp:840
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Dizin Seç"
 
-#: kdialog.cpp:951
+#: kdialog.cpp:953
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Renk Seç"
 
-#: kdialog.cpp:1012
+#: kdialog.cpp:1014
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "Sözdizim: --slider <metin> <en az> <en çok> <adım>"

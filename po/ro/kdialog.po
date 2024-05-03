@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-09 00:40+0000\n"
+"POT-Creation-Date: 2024-05-03 00:40+0000\n"
 "PO-Revision-Date: 2024-02-24 14:49+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -406,53 +406,53 @@ msgstr "&Nu"
 msgid "Do not ask again"
 msgstr "Nu mai întreba"
 
-#: kdialog.cpp:657
+#: kdialog.cpp:659
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Sintaxă: --combobox <text> element [element] ..."
 
-#: kdialog.cpp:679
+#: kdialog.cpp:681
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Sintaxă: --menu text marcaj element [marcaj element] ..."
 
-#: kdialog.cpp:703
+#: kdialog.cpp:705
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Sintaxă: --checklist text marcaj element on/off [marcaj element on/off] ..."
 
-#: kdialog.cpp:721
+#: kdialog.cpp:723
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Sintaxă: --radiolist text marcaj element on/off [marcaj element on/off] ..."
 
-#: kdialog.cpp:752
+#: kdialog.cpp:754
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Deschide"
 
-#: kdialog.cpp:804
+#: kdialog.cpp:806
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Salvează ca"
 
-#: kdialog.cpp:838
+#: kdialog.cpp:840
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Alege dosar"
 
-#: kdialog.cpp:951
+#: kdialog.cpp:953
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Alege culoarea"
 
-#: kdialog.cpp:1012
+#: kdialog.cpp:1014
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "Sintaxă: --slider <text> <min> <max> <pas>"
