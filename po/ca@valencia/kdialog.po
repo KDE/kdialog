@@ -405,29 +405,27 @@ msgstr "No ho tornes a preguntar"
 #: kdialog.cpp:657
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr "Sintaxi: --combobox <text> element [element] ..."
+msgstr "Sintaxi: --combobox <text> element [element] …"
 
 # skip-rule: t-sp_pu
 #: kdialog.cpp:679
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr "Sintaxi: --menu text etiqueta element [etiqueta element] ..."
+msgstr "Sintaxi: --menu text etiqueta element [etiqueta element] …"
 
 # skip-rule: t-sp_pu
 #: kdialog.cpp:703
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
-"Sintaxi: --checklist text etiqueta element on/off [etiqueta element on/"
-"off] ..."
+"Sintaxi: --checklist text etiqueta element on/off [etiqueta element on/off] …"
 
 # skip-rule: t-sp_pu
 #: kdialog.cpp:721
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
-"Sintaxi: --radiolist text etiqueta element on/off [etiqueta element on/"
-"off] ..."
+"Sintaxi: --radiolist text etiqueta element on/off [etiqueta element on/off] …"
 
 #: kdialog.cpp:752
 #, kde-format
