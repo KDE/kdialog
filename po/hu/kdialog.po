@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2024-01-18 11:16+0100\n"
+"PO-Revision-Date: 2024-05-18 14:30+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.01.90\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -226,21 +226,21 @@ msgid "Popup icon"
 msgstr "Felugró ikon"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Fájl párbeszédablak létező fájl megnyitásához (argumentumok [kezdőmappa] "
-"[szűrő])"
+"[név- vagy MIME-típusszűrő])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "Fájlmentési párbeszédablak (argumentumok [kezdőmappa] [szűrő])"
+msgstr ""
+"Fájlmentési párbeszédablak (argumentumok [kezdőmappa] [név- vagy MIME-"
+"típusszűrő])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -250,21 +250,21 @@ msgstr ""
 "[kezdőmappa])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Fájl párbeszédablak létező URL megnyitásához (argumentumok [kezdőmappa] "
-"[szűrő])"
+"[név- vagy MIME-típusszűrő])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Fájl párbeszédablak URL mentéséhez (argumentumok [kezdőmappa] [szűrő])"
+msgstr ""
+"Fájl párbeszédablak URL mentéséhez (argumentumok [kezdőmappa] [név- vagy "
+"MIME-típusszűrő])"
 
 #: kdialog.cpp:305
 #, kde-format
