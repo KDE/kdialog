@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-09 00:40+0000\n"
-"PO-Revision-Date: 2024-03-05 20:45+0000\n"
-"Last-Translator: Guðmundur Erlingsson <gudmundure@gmail.com>\n"
+"PO-Revision-Date: 2024-05-12 21:07+0000\n"
+"Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
@@ -233,20 +233,21 @@ msgid "Popup icon"
 msgstr "Tákn á svarglugga"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Skráagluggi til að opna fyrirliggjandi skrá (viðföng [startDir] [filter])"
+"Skráagluggi til að opna fyrirliggjandi skrá (viðföng [startDir] [sía fyrir "
+"heiti eða mime-gerð])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "Skráagluggi til að vista skrá (viðföng [startDir] [filter])"
+msgstr ""
+"Skráagluggi til að vista skrá (viðföng [startDir] [sía fyrir heiti eða mime-"
+"gerð])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -254,20 +255,21 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Skráagluggi til að velja fyrirliggjandi möppu (viðföng [startDir])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Skráagluggi til að opna fyrirliggjandi slóð (viðföng [startDir] [filter])"
+"Skráagluggi til að opna fyrirliggjandi slóð (viðföng [startDir] [sía fyrir "
+"heiti eða mime-gerð])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Skráagluggi til að vista slóð (viðföng [startDir] [filter])"
+msgstr ""
+"Skráagluggi til að vista slóð (viðföng [startDir] [sía fyrir heiti eða mime-"
+"gerð])"
 
 #: kdialog.cpp:305
 #, kde-format
