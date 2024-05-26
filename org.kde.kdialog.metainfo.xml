@@ -50,7 +50,7 @@
   <name xml:lang="zh-CN">KDialog</name>
   <name xml:lang="zh-TW">KDialog</name>
   <summary>Display dialog boxes from shell scripts</summary>
-  <summary xml:lang="ar">عرض مربعات الحوار من البرامج النصية شل</summary>
+  <summary xml:lang="ar">عرض مربعات الحوار من الشل سكريبت</summary>
   <summary xml:lang="az">Dialoq qutusunu üz qabığı (shell) skriptindən göstərmək</summary>
   <summary xml:lang="be">Паказваць дыялогавыя вокны для скрыптоў праграмнай абалонкі</summary>
   <summary xml:lang="bg">Показване на диалогови прозорци от скриптове на обвивката</summary>
@@ -99,7 +99,7 @@
       The syntax is very much inspired from the "dialog" command
       (which shows text mode dialogs).
     </p>
-    <p xml:lang="ar">يتيح لك حواريك عرض مربعات الحوار من نصوص شل النصية. بناء الجملة مستوحى إلى حد كبير من أمر "الحوار" (الذي يعرض مربعات حوار وضع النص).</p>
+    <p xml:lang="ar">يسمح لك حواريك بعرض مربعات الحوار من الشل سكريبت. بناء الجملة مستوحى إلى حد كبير من الأمر "الحوار" (الذي يعرض مربعات حوار وضع النص).</p>
     <p xml:lang="be">KDialog дае вам магчымасць паказваць дыялогавыя вокны са скрыптоў абалонкі. Сінтаксіс шмат у чым узяты з загаду "dialog" (які паказвае дыялогі тэкставага рэжыму).</p>
     <p xml:lang="bg">KDialog ви позволява да показвате диалогови прозорци от шел скриптове. Синтаксисът е вдъхновен от командата "dialog" (която показва диалог  в текстов режим).</p>
     <p xml:lang="ca">El KDialog permet mostrar quadres de diàleg des de scripts de l'intèrpret d'ordres. La sintaxi està molt inspirada en l'ordre «dialog» (la qual mostra diàlegs en mode text).</p>
