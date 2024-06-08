@@ -8,7 +8,7 @@
 # Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
 # Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2008.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
-# Tommi Nieminen <translator@legisign.org>, 2011, 2016, 2017, 2019, 2020, 2021, 2023.
+# Tommi Nieminen <translator@legisign.org>, 2011, 2016, 2017, 2019, 2020, 2021, 2023, 2024.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2013, 2016.
 # Copyright © 2010 This_file_is_part_of_KDE.
 #
@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-03 00:40+0000\n"
-"PO-Revision-Date: 2023-06-07 16:08+0300\n"
+"PO-Revision-Date: 2024-03-11 15:21+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:22:02+0000\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -241,19 +241,21 @@ msgid "Popup icon"
 msgstr "Ponnahduskuvake"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "Tiedoston valintaikkuna (parametrit [alkukansio] [suodatin])"
+msgstr ""
+"Tiedoston avausikkuna (parametrit [aloituskansio] [nimi- tai MIME-"
+"tyyppisuodatin])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "Tiedoston tallennusikkuna (parametrit [alkukansio] [suodatin])"
+msgstr ""
+"Tiedoston tallennusikkuna (parametrit [aloituskansio] [nimi- tai MIME-"
+"tyyppisuodatin])"
 
 #: kdialog.cpp:302
 #, kde-format
@@ -261,19 +263,21 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Kansion valintaikkuna (parametrit [alkukansio])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "Verkko-osoitteen valintaikkuna (parametrit [alkukansio] [suodatin])"
+msgstr ""
+"Verkko-osoitteen avausikkuna (parametrit [aloituskansio] [nimi- tai MIME-"
+"tyyppisuodatin])"
 
 #: kdialog.cpp:304
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Verkko-osoitteen tallennusikkuna (parametrit [alkukansio] [suodatin])"
+msgstr ""
+"Verkko-osoitteen tallennusikkuna (parametrit [aloituskansio] [nimi- tai MIME-"
+"tyyppisuodatin])"
 
 #: kdialog.cpp:305
 #, kde-format
