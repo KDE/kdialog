@@ -21,8 +21,8 @@
             "name": "icon",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p /app/share/icons/hicolor/24x24/apps/",
-                "install -D /usr/share/icons/breeze/status/24/dialog-question.svg /app/share/icons/hicolor/24x24/apps/dialog-question.svg"
+                "mkdir -p /app/share/icons/hicolor/22x22/apps/",
+                "install -D /usr/share/icons/breeze/status/22/dialog-question.svg /app/share/icons/hicolor/22x22/apps/dialog-question.svg"
             ]
         }
 
