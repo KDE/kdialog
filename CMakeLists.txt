@@ -27,7 +27,7 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS TextWidgets Notifications
 find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS DBus)
 
 option(WITHOUT_X11 "Build without X11 integration (skips finding X11)" OFF)
-if (NOT WITHOUT_X11)
+if(NOT WITHOUT_X11)
     find_package(X11)
     set(HAVE_X11 ${X11_FOUND})
 endif()

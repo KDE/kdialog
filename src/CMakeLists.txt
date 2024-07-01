@@ -29,7 +29,7 @@ target_link_libraries(kdialog
 
 target_link_libraries(kdialog Qt::DBus)
 
-if (HAVE_X11)
+if(HAVE_X11)
   target_link_libraries(kdialog ${X11_X11_LIB})
 endif()
 
@@ -59,7 +59,7 @@ target_link_libraries(kdialog_progress_helper
     Qt::Widgets
 )
 
-if (HAVE_X11)
+if(HAVE_X11)
   target_link_libraries(kdialog_progress_helper ${X11_X11_LIB})
 endif()
 
