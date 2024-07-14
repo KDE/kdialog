@@ -35,7 +35,6 @@ endif()
 ecm_set_disabled_deprecation_versions(
     QT 6.7.0
     KF 6.4.0
-    KNOTIFICATIONS 5.78 # KPassivePopup
 )
 
 add_subdirectory(src)
