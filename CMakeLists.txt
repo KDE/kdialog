@@ -8,8 +8,8 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 
 project(KDialog VERSION ${RELEASE_SERVICE_VERSION})
 
-set(QT_MIN_VERSION "6.5.0")
-set(KF_MIN_VERSION "5.240.0")
+set(QT_MIN_VERSION "6.7.0")
+set(KF_MIN_VERSION "6.3.0")
 
 # ECM setup
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
@@ -33,8 +33,8 @@ if(NOT WITHOUT_X11)
 endif()
 
 ecm_set_disabled_deprecation_versions(
-    QT 5.15
-    KF 5.100
+    QT 6.7.0
+    KF 6.4.0
     KNOTIFICATIONS 5.78 # KPassivePopup
 )
 
