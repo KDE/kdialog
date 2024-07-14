@@ -37,7 +37,6 @@
 #include <QUrl>
 #include <QProcess>
 #include <QRegularExpression>
-#include <QTimer>
 
 #include <iostream>
 #include <memory>
