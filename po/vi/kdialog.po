@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-03 00:40+0000\n"
+"POT-Creation-Date: 2024-07-15 00:41+0000\n"
 "PO-Revision-Date: 2022-05-12 12:11+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -29,202 +29,202 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "phu.nguyen@kdemail.net,hieu.d.hoang@gmail.com,teppi82@gmail.com"
 
-#: kdialog.cpp:254
+#: kdialog.cpp:253
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr "KDialog dùng để hiển thị các hộp thoại từ các kịch bản hệ vỏ"
 
-#: kdialog.cpp:256
+#: kdialog.cpp:255
 #, kde-format
 msgid "(C) 2000, Nick Thompson"
 msgstr "(C) 2000, Nick Thompson"
 
-#: kdialog.cpp:257
+#: kdialog.cpp:256
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: kdialog.cpp:257
+#: kdialog.cpp:256
 #, kde-format
 msgid "Current maintainer"
 msgstr "Bảo trì viên hiện tại"
 
-#: kdialog.cpp:258
+#: kdialog.cpp:257
 #, kde-format
 msgid "Brad Hards"
 msgstr "Brad Hards"
 
-#: kdialog.cpp:259
+#: kdialog.cpp:258
 #, kde-format
 msgid "Nick Thompson"
 msgstr "Nick Thompson"
 
-#: kdialog.cpp:260
+#: kdialog.cpp:259
 #, kde-format
 msgid "Matthias Hölzer"
 msgstr "Matthias Hölzer"
 
-#: kdialog.cpp:261
+#: kdialog.cpp:260
 #, kde-format
 msgid "David Gümbel"
 msgstr "David Gümbel"
 
-#: kdialog.cpp:262
+#: kdialog.cpp:261
 #, kde-format
 msgid "Richard Moore"
 msgstr "Richard Moore"
 
-#: kdialog.cpp:263
+#: kdialog.cpp:262
 #, kde-format
 msgid "Dawit Alemayehu"
 msgstr "Dawit Alemayehu"
 
-#: kdialog.cpp:264
+#: kdialog.cpp:263
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
 
-#: kdialog.cpp:271
+#: kdialog.cpp:270
 #, kde-format
 msgid "Question message box with yes/no buttons"
 msgstr "Hộp thông điệp câu hỏi với các nút có/không"
 
-#: kdialog.cpp:272
+#: kdialog.cpp:271
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
 msgstr "Hộp thông điệp câu hỏi với các nút có/không/huỷ"
 
-#: kdialog.cpp:273
+#: kdialog.cpp:272
 #, kde-format
 msgid "Warning message box with yes/no buttons"
 msgstr "Hộp thông điệp cảnh báo với các nút có/không"
 
-#: kdialog.cpp:274
+#: kdialog.cpp:273
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
 msgstr "Hộp thông điệp cảnh báo với các nút tiếp tục / huỷ"
 
-#: kdialog.cpp:275
+#: kdialog.cpp:274
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
 msgstr "Hộp thông điệp cảnh báo với các nút có/không/huỷ"
 
-#: kdialog.cpp:277
+#: kdialog.cpp:276
 #, kde-format
 msgid "Use text as OK button label"
 msgstr "Dùng chữ làm nhãn của nút OK"
 
-#: kdialog.cpp:278
+#: kdialog.cpp:277
 #, kde-format
 msgid "Use text as Yes button label"
 msgstr "Dùng chữ làm nhãn của nút Có"
 
-#: kdialog.cpp:279
+#: kdialog.cpp:278
 #, kde-format
 msgid "Use text as No button label"
 msgstr "Dùng chữ làm nhãn của nút Không"
 
-#: kdialog.cpp:280
+#: kdialog.cpp:279
 #, kde-format
 msgid "Use text as Cancel button label"
 msgstr "Dùng chữ làm nhãn của nút Huỷ"
 
-#: kdialog.cpp:281
+#: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Continue button label"
 msgstr "Dùng chữ làm nhãn của nút Tiếp tục"
 
-#: kdialog.cpp:282
+#: kdialog.cpp:281
 #, kde-format
 msgid "'Sorry' message box"
 msgstr "Hộp thông điệp 'Rất tiếc'"
 
-#: kdialog.cpp:283
+#: kdialog.cpp:282
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
 msgstr "Hộp thông điệp 'Rất tiếc' với trường \"Chi tiết\" mở rộng được"
 
-#: kdialog.cpp:284
+#: kdialog.cpp:283
 #, kde-format
 msgid "'Error' message box"
 msgstr "Hộp thông điệp 'Lỗi'"
 
-#: kdialog.cpp:285
+#: kdialog.cpp:284
 #, kde-format
 msgid "'Error' message box with expandable Details field"
 msgstr "Hộp thông điệp 'Lỗi' với trường \"Chi tiết\" mở rộng được"
 
-#: kdialog.cpp:286
+#: kdialog.cpp:285
 #, kde-format
 msgid "Message Box dialog"
 msgstr "Hộp thoại \"Hộp thông điệp\""
 
-#: kdialog.cpp:287
+#: kdialog.cpp:286
 #, kde-format
 msgid "Input Box dialog"
 msgstr "Hộp thoại \"Ô nhập\""
 
-#: kdialog.cpp:288
+#: kdialog.cpp:287
 #, kde-format
 msgid "Image Box dialog"
 msgstr "Hộp thoại \"Hộp ảnh\""
 
-#: kdialog.cpp:289
+#: kdialog.cpp:288
 #, kde-format
 msgid "Image Box Input dialog"
 msgstr "Hộp thoại \"Đầu vào hộp ảnh\""
 
-#: kdialog.cpp:290
+#: kdialog.cpp:289
 #, kde-format
 msgid "Password dialog"
 msgstr "Hộp thoại \"Mật khẩu\""
 
-#: kdialog.cpp:291
+#: kdialog.cpp:290
 #, kde-format
 msgid "New Password dialog"
 msgstr "Hộp thoại \"Mật khẩu mới\""
 
-#: kdialog.cpp:292
+#: kdialog.cpp:291
 #, kde-format
 msgid "Text Box dialog"
 msgstr "Hộp thoại \"Hộp văn bản\""
 
-#: kdialog.cpp:293
+#: kdialog.cpp:292
 #, kde-format
 msgid "Text Input Box dialog"
 msgstr "Hộp thoại \"Ô nhập văn bản\""
 
-#: kdialog.cpp:294
+#: kdialog.cpp:293
 #, kde-format
 msgid "ComboBox dialog"
 msgstr "Hộp thoại \"Hộp kết hợp\""
 
-#: kdialog.cpp:295
+#: kdialog.cpp:294
 #, kde-format
 msgid "Menu dialog"
 msgstr "Hộp thoại \"Trình đơn\""
 
-#: kdialog.cpp:296
+#: kdialog.cpp:295
 #, kde-format
 msgid "Check List dialog"
 msgstr "Hộp thoại \"Danh sách chọn\""
 
-#: kdialog.cpp:297
+#: kdialog.cpp:296
 #, kde-format
 msgid "Radio List dialog"
 msgstr "Hộp thoại \"Danh sách chọn một\""
 
-#: kdialog.cpp:298
+#: kdialog.cpp:297
 #, kde-format
 msgid "Passive Popup"
 msgstr "Ô bật lên thụ động"
 
-#: kdialog.cpp:299
+#: kdialog.cpp:298
 #, kde-format
 msgid "Popup icon"
 msgstr "Biểu tượng ô bật lên"
 
-#: kdialog.cpp:300
+#: kdialog.cpp:299
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
 msgid ""
@@ -232,19 +232,19 @@ msgid ""
 "filter])"
 msgstr "Hộp thoại tệp để mở một tệp có sẵn (đối số [thư-mục-đầu] [lọc])"
 
-#: kdialog.cpp:301
+#: kdialog.cpp:300
 #, fuzzy, kde-format
 #| msgid "File dialog to save a file (arguments [startDir] [filter])"
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "Hộp thoại tệp để lưu tệp (đối số [thư-mục-đầu] [lọc])"
 
-#: kdialog.cpp:302
+#: kdialog.cpp:301
 #, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Hộp thoại tệp để chọn một thư mục có sẵn (đối số [thư-mục-đầu])"
 
-#: kdialog.cpp:303
+#: kdialog.cpp:302
 #, fuzzy, kde-format
 #| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
 msgid ""
@@ -252,44 +252,44 @@ msgid ""
 "filter])"
 msgstr "Hộp thoại tệp để mở một URL có sẵn (đối số [thư-mục-đầu] [lọc])"
 
-#: kdialog.cpp:304
+#: kdialog.cpp:303
 #, fuzzy, kde-format
 #| msgid "File dialog to save a URL (arguments [startDir] [filter])"
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "Hộp thoại tệp để lưu URL (đối số [thư-mục-đầu] [lọc])"
 
-#: kdialog.cpp:305
+#: kdialog.cpp:304
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr "Hộp thoại chọn biểu tượng (đối số [nhóm] [ngữ cảnh])"
 
-#: kdialog.cpp:306 kdialog_progress_helper.cpp:40
+#: kdialog.cpp:305 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr "Hộp thoại thanh tiến trình, trả về một tham chiếu D-Bus để giao tiếp"
 
-#: kdialog.cpp:307
+#: kdialog.cpp:306
 #, kde-format
 msgid "Color dialog to select a color"
 msgstr "Hộp thoại màu để chọn một màu"
 
-#: kdialog.cpp:308
+#: kdialog.cpp:307
 #, kde-format
 msgid "Allow --getcolor to specify output format"
 msgstr "Cho phép --getcolor chỉ định định dạng đầu ra"
 
-#: kdialog.cpp:310 kdialog_progress_helper.cpp:41
+#: kdialog.cpp:309 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
 msgstr "Tiêu đề hộp thoại"
 
-#: kdialog.cpp:311
+#: kdialog.cpp:310
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr "Mục mặc định dùng cho hộp kết hợp, trình đơn, màu, và lịch"
 
-#: kdialog.cpp:312
+#: kdialog.cpp:311
 #, kde-format
 msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
@@ -297,7 +297,7 @@ msgid ""
 msgstr ""
 "Cho phép các lựa chọn --getopenurl và --getopenfilename trả về nhiều tệp"
 
-#: kdialog.cpp:313
+#: kdialog.cpp:312
 #, kde-format
 msgid ""
 "Return list items on separate lines (for checklist option and file open with "
@@ -306,19 +306,19 @@ msgstr ""
 "Trả về danh sách mỗi mục trên một dòng (dùng cho các lựa chọn trong danh "
 "sách chọn và mở tệp bằng --multiple)"
 
-#: kdialog.cpp:314
+#: kdialog.cpp:313
 #, kde-format
 msgid "Outputs the winId of each dialog"
 msgstr "Xuất ra winId (mã cửa sổ) của mỗi hộp thoại"
 
-#: kdialog.cpp:315
+#: kdialog.cpp:314
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr ""
 "Tệp cấu hình và tên lựa chọn để lưu trạng thái \"đừng hiển thị / hỏi lại\""
 
-#: kdialog.cpp:317
+#: kdialog.cpp:316
 #, fuzzy, kde-format
 #| msgid "Slider dialog box, returns selected value"
 msgid ""
@@ -326,7 +326,7 @@ msgid ""
 "[step])"
 msgstr "Hộp thoại thanh trượt, trả về giá trị được chọn"
 
-#: kdialog.cpp:318
+#: kdialog.cpp:317
 #, kde-format
 msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
@@ -335,99 +335,99 @@ msgstr ""
 "Định dạng ngày cho kết quả của lịch và/hoặc giá trị mặc định (kiểu Qt); mặc "
 "định là 'ddd MMM d yyyy'"
 
-#: kdialog.cpp:319
+#: kdialog.cpp:318
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
 msgstr "Hộp thoại lịch, trả về ngày được chọn"
 
-#: kdialog.cpp:322
+#: kdialog.cpp:321
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr "Làm hộp thoại tạm thời cho một ứng dụng X được xác định bởi winid"
 
-#: kdialog.cpp:323
+#: kdialog.cpp:322
 #, kde-format
 msgid "A synonym for --attach"
 msgstr "Đồng nghĩa với --attach"
 
-#: kdialog.cpp:326
+#: kdialog.cpp:325
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 "Hình dạng của hộp thoại: [=][<rộng>{xX}<cao>][{+-}<lệch-x>{+-}<lệch-y>]"
 
-#: kdialog.cpp:328 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:327 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "Đối số - phụ thuộc vào lựa chọn chính"
 
-#: kdialog.cpp:340
+#: kdialog.cpp:339
 #, kde-format
 msgid "KDialog"
 msgstr "KDialog"
 
-#: kdialog.cpp:366
+#: kdialog.cpp:365
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr ""
 
-#: kdialog.cpp:367
+#: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr ""
 
-#: kdialog.cpp:502
+#: kdialog.cpp:501
 #, kde-format
 msgid "Do not ask again"
 msgstr "Đừng hỏi lại"
 
-#: kdialog.cpp:659
+#: kdialog.cpp:658
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Cú pháp: --combobox <chữ> mục [mục] ..."
 
-#: kdialog.cpp:681
+#: kdialog.cpp:680
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Cú pháp: --menu chữ thẻ mục [thẻ mục] ..."
 
-#: kdialog.cpp:705
+#: kdialog.cpp:704
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr "Cú pháp: --checklist chữ thẻ mục on/off [thẻ mục on/off] ..."
 
-#: kdialog.cpp:723
+#: kdialog.cpp:722
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "Cú pháp: --radiolist chữ thẻ mục on/off [thẻ mục on/off] ..."
 
-#: kdialog.cpp:754
+#: kdialog.cpp:753
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Mở"
 
-#: kdialog.cpp:806
+#: kdialog.cpp:805
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Lưu thành"
 
-#: kdialog.cpp:840
+#: kdialog.cpp:839
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Chọn thư mục"
 
-#: kdialog.cpp:953
+#: kdialog.cpp:952
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Chọn màu"
 
-#: kdialog.cpp:1014
+#: kdialog.cpp:1013
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr ""

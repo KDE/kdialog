@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-03 00:40+0000\n"
+"POT-Creation-Date: 2024-07-15 00:41+0000\n"
 "PO-Revision-Date: 2024-05-18 14:30+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -28,204 +28,204 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ulysses@fsf.hu"
 
-#: kdialog.cpp:254
+#: kdialog.cpp:253
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
 "A KDialog segítségével parancsfájlokból lehet párbeszédablakokat "
 "megjeleníteni"
 
-#: kdialog.cpp:256
+#: kdialog.cpp:255
 #, kde-format
 msgid "(C) 2000, Nick Thompson"
 msgstr "© Nick Thompson, 2000."
 
-#: kdialog.cpp:257
+#: kdialog.cpp:256
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: kdialog.cpp:257
+#: kdialog.cpp:256
 #, kde-format
 msgid "Current maintainer"
 msgstr "A jelenlegi karbantartó"
 
-#: kdialog.cpp:258
+#: kdialog.cpp:257
 #, kde-format
 msgid "Brad Hards"
 msgstr "Brad Hards"
 
-#: kdialog.cpp:259
+#: kdialog.cpp:258
 #, kde-format
 msgid "Nick Thompson"
 msgstr "Nick Thompson"
 
-#: kdialog.cpp:260
+#: kdialog.cpp:259
 #, kde-format
 msgid "Matthias Hölzer"
 msgstr "Matthias Hölzer"
 
-#: kdialog.cpp:261
+#: kdialog.cpp:260
 #, kde-format
 msgid "David Gümbel"
 msgstr "David Gümbel"
 
-#: kdialog.cpp:262
+#: kdialog.cpp:261
 #, kde-format
 msgid "Richard Moore"
 msgstr "Richard Moore"
 
-#: kdialog.cpp:263
+#: kdialog.cpp:262
 #, kde-format
 msgid "Dawit Alemayehu"
 msgstr "Dawit Alemayehu"
 
-#: kdialog.cpp:264
+#: kdialog.cpp:263
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
 
-#: kdialog.cpp:271
+#: kdialog.cpp:270
 #, kde-format
 msgid "Question message box with yes/no buttons"
 msgstr "Kérdező üzenetablak Igen/Nem nyomógombokkal"
 
-#: kdialog.cpp:272
+#: kdialog.cpp:271
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
 msgstr "Kérdező üzenetablak Igen/Nem/Mégsem nyomógombokkal"
 
-#: kdialog.cpp:273
+#: kdialog.cpp:272
 #, kde-format
 msgid "Warning message box with yes/no buttons"
 msgstr "Figyelmeztető ablak Igen/Nem gombokkal"
 
-#: kdialog.cpp:274
+#: kdialog.cpp:273
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
 msgstr "Figyelmeztető ablak Folytatás/Mégsem gombokkal"
 
-#: kdialog.cpp:275
+#: kdialog.cpp:274
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
 msgstr "Figyelmeztető ablak Igen/Nem/Mégsem gombokkal"
 
-#: kdialog.cpp:277
+#: kdialog.cpp:276
 #, kde-format
 msgid "Use text as OK button label"
 msgstr "Szöveg használata az OK gomb címkéjeként"
 
-#: kdialog.cpp:278
+#: kdialog.cpp:277
 #, kde-format
 msgid "Use text as Yes button label"
 msgstr "Szöveg használata az Igen gomb címkéjeként"
 
-#: kdialog.cpp:279
+#: kdialog.cpp:278
 #, kde-format
 msgid "Use text as No button label"
 msgstr "Szöveg használata a Nem gomb címkéjeként"
 
-#: kdialog.cpp:280
+#: kdialog.cpp:279
 #, kde-format
 msgid "Use text as Cancel button label"
 msgstr "Szöveg használata a Mégsem gomb címkéjeként"
 
-#: kdialog.cpp:281
+#: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Continue button label"
 msgstr "Szöveg használata a Folytatás gomb címkéjeként"
 
-#: kdialog.cpp:282
+#: kdialog.cpp:281
 #, kde-format
 msgid "'Sorry' message box"
 msgstr "„Elnézést” üzenetablak"
 
-#: kdialog.cpp:283
+#: kdialog.cpp:282
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
 msgstr "„Elnézést” üzenetablak kinyitható Részletek mezővel"
 
-#: kdialog.cpp:284
+#: kdialog.cpp:283
 #, kde-format
 msgid "'Error' message box"
 msgstr "„Hiba” üzenetablak"
 
-#: kdialog.cpp:285
+#: kdialog.cpp:284
 #, kde-format
 msgid "'Error' message box with expandable Details field"
 msgstr "„Hiba” üzenetablak kinyitható Részletek mezővel"
 
-#: kdialog.cpp:286
+#: kdialog.cpp:285
 #, kde-format
 msgid "Message Box dialog"
 msgstr "Üzenetablak-párbeszédablak"
 
-#: kdialog.cpp:287
+#: kdialog.cpp:286
 #, kde-format
 msgid "Input Box dialog"
 msgstr "Adatbeviteli ablak"
 
-#: kdialog.cpp:288
+#: kdialog.cpp:287
 #, kde-format
 msgid "Image Box dialog"
 msgstr "Képdoboz-párbeszédablak"
 
-#: kdialog.cpp:289
+#: kdialog.cpp:288
 #, kde-format
 msgid "Image Box Input dialog"
 msgstr "Képdoboz beviteli párbeszédablak"
 
-#: kdialog.cpp:290
+#: kdialog.cpp:289
 #, kde-format
 msgid "Password dialog"
 msgstr "Jelszóbeviteli ablak"
 
-#: kdialog.cpp:291
+#: kdialog.cpp:290
 #, kde-format
 msgid "New Password dialog"
 msgstr "Új jelszó párbeszédablak"
 
-#: kdialog.cpp:292
+#: kdialog.cpp:291
 #, kde-format
 msgid "Text Box dialog"
 msgstr "Szöveges üzenetablak"
 
-#: kdialog.cpp:293
+#: kdialog.cpp:292
 #, kde-format
 msgid "Text Input Box dialog"
 msgstr "Szövegbeviteli ablak"
 
-#: kdialog.cpp:294
+#: kdialog.cpp:293
 #, kde-format
 msgid "ComboBox dialog"
 msgstr "Kombinált listás ablak"
 
-#: kdialog.cpp:295
+#: kdialog.cpp:294
 #, kde-format
 msgid "Menu dialog"
 msgstr "Menüablak"
 
-#: kdialog.cpp:296
+#: kdialog.cpp:295
 #, kde-format
 msgid "Check List dialog"
 msgstr "Jelölőnégyzetes ablak"
 
-#: kdialog.cpp:297
+#: kdialog.cpp:296
 #, kde-format
 msgid "Radio List dialog"
 msgstr "Választógombos ablak"
 
-#: kdialog.cpp:298
+#: kdialog.cpp:297
 #, kde-format
 msgid "Passive Popup"
 msgstr "Passzív felbukkanó ablak"
 
-#: kdialog.cpp:299
+#: kdialog.cpp:298
 #, kde-format
 msgid "Popup icon"
 msgstr "Felugró ikon"
 
-#: kdialog.cpp:300
+#: kdialog.cpp:299
 #, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
@@ -234,7 +234,7 @@ msgstr ""
 "Fájl párbeszédablak létező fájl megnyitásához (argumentumok [kezdőmappa] "
 "[név- vagy MIME-típusszűrő])"
 
-#: kdialog.cpp:301
+#: kdialog.cpp:300
 #, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
@@ -242,14 +242,14 @@ msgstr ""
 "Fájlmentési párbeszédablak (argumentumok [kezdőmappa] [név- vagy MIME-"
 "típusszűrő])"
 
-#: kdialog.cpp:302
+#: kdialog.cpp:301
 #, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr ""
 "Párbeszédablak egy már létező könyvtár kiválasztásához (argumentumok "
 "[kezdőmappa])"
 
-#: kdialog.cpp:303
+#: kdialog.cpp:302
 #, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
@@ -258,7 +258,7 @@ msgstr ""
 "Fájl párbeszédablak létező URL megnyitásához (argumentumok [kezdőmappa] "
 "[név- vagy MIME-típusszűrő])"
 
-#: kdialog.cpp:304
+#: kdialog.cpp:303
 #, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
@@ -266,39 +266,39 @@ msgstr ""
 "Fájl párbeszédablak URL mentéséhez (argumentumok [kezdőmappa] [név- vagy "
 "MIME-típusszűrő])"
 
-#: kdialog.cpp:305
+#: kdialog.cpp:304
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr "Ikonválasztó párbeszédablak (argumentumok [csoport] [kontextus])"
 
-#: kdialog.cpp:306 kdialog_progress_helper.cpp:40
+#: kdialog.cpp:305 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr "Folyamatjelző ablak, D-Bus-hivatkozást ad vissza a kommunikációhoz"
 
-#: kdialog.cpp:307
+#: kdialog.cpp:306
 #, kde-format
 msgid "Color dialog to select a color"
 msgstr "Párbeszédablak szín kiválasztásához"
 
-#: kdialog.cpp:308
+#: kdialog.cpp:307
 #, kde-format
 msgid "Allow --getcolor to specify output format"
 msgstr "Lehetővé teszi a --getcolor opcióval a kimeneti formátum megadását"
 
-#: kdialog.cpp:310 kdialog_progress_helper.cpp:41
+#: kdialog.cpp:309 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
 msgstr "Az ablak felirata"
 
-#: kdialog.cpp:311
+#: kdialog.cpp:310
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr ""
 "Alapértelmezett bejegyzés kombinált listáknál, menüknél, színeknél és "
 "naptáraknál"
 
-#: kdialog.cpp:312
+#: kdialog.cpp:311
 #, kde-format
 msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
@@ -307,7 +307,7 @@ msgstr ""
 "Lehetővé teszi, hogy a --getopenurl és --getopenfilename opciókkal több "
 "fájlnevet lehessen visszaadni"
 
-#: kdialog.cpp:313
+#: kdialog.cpp:312
 #, kde-format
 msgid ""
 "Return list items on separate lines (for checklist option and file open with "
@@ -316,12 +316,12 @@ msgstr ""
 "A listaelemek visszaadása több sorban történjen (jelölőnégyzeteknél és --"
 "multiple opcióval való fájlmegnyitáskor)"
 
-#: kdialog.cpp:314
+#: kdialog.cpp:313
 #, kde-format
 msgid "Outputs the winId of each dialog"
 msgstr "Kiírja mindegyik párbeszédablak azonosítóját"
 
-#: kdialog.cpp:315
+#: kdialog.cpp:314
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
@@ -329,7 +329,7 @@ msgstr ""
 "Konfigurációs fájl és opciónév a „ne jelenjen meg/ne kérdezze meg újból” "
 "állapotjelzőhöz"
 
-#: kdialog.cpp:317
+#: kdialog.cpp:316
 #, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
@@ -338,7 +338,7 @@ msgstr ""
 "Csúszka párbeszédablak, a kijelölt értékkel tér vissza (argumentumok "
 "[szövegg] [min] [max] [lépés])"
 
-#: kdialog.cpp:318
+#: kdialog.cpp:317
 #, kde-format
 msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
@@ -347,102 +347,102 @@ msgstr ""
 "Dátumformátum naptár eredményekhez és/vagy alapértelmezett értékekhez (Qt "
 "stílus); alapértelmezetten „ddd MMM d yyyy”"
 
-#: kdialog.cpp:319
+#: kdialog.cpp:318
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
 msgstr "Naptár párbeszédablak, a kijelölt dátummal tér vissza"
 
-#: kdialog.cpp:322
+#: kdialog.cpp:321
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr ""
 "A párbeszédablakot tranzienssé teszi a megadott azonosítójú X-alkalmazás "
 "számára"
 
-#: kdialog.cpp:323
+#: kdialog.cpp:322
 #, kde-format
 msgid "A synonym for --attach"
 msgstr "Az --attach szinonímája"
 
-#: kdialog.cpp:326
+#: kdialog.cpp:325
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
 "Párbeszédablak méretei: [=][<szélesség>{xX}<magasság>][{+-}<x-eltolás>{+-}<y-"
 "eltolás>]"
 
-#: kdialog.cpp:328 kdialog_progress_helper.cpp:42
+#: kdialog.cpp:327 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
 msgstr "Argumentumok - a fő opciótól függően"
 
-#: kdialog.cpp:340
+#: kdialog.cpp:339
 #, kde-format
 msgid "KDialog"
 msgstr "KDialog"
 
-#: kdialog.cpp:366
+#: kdialog.cpp:365
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
 msgstr "&Igen"
 
-#: kdialog.cpp:367
+#: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
 msgstr "&Nem"
 
-#: kdialog.cpp:502
+#: kdialog.cpp:501
 #, kde-format
 msgid "Do not ask again"
 msgstr "Ne kérdezzen rá többször"
 
-#: kdialog.cpp:659
+#: kdialog.cpp:658
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Szintaxis: --combobox <szöveg> elem [elem] …"
 
-#: kdialog.cpp:681
+#: kdialog.cpp:680
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
 msgstr "Szintaxis: --menu szöveg címkeelem [címkeelem] …"
 
-#: kdialog.cpp:705
+#: kdialog.cpp:704
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr "Szintaxis: --checklist szöveg címkeelem be/ki [címkeelem be/ki] …"
 
-#: kdialog.cpp:723
+#: kdialog.cpp:722
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr "Szintaxis: --radiolist szöveg címkeelem be/ki [címkeelem be/ki] …"
 
-#: kdialog.cpp:754
+#: kdialog.cpp:753
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
 msgstr "Megnyitás"
 
-#: kdialog.cpp:806
+#: kdialog.cpp:805
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
 msgstr "Mentés másként"
 
-#: kdialog.cpp:840
+#: kdialog.cpp:839
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
 msgstr "Mappa kiválasztása"
 
-#: kdialog.cpp:953
+#: kdialog.cpp:952
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
 msgstr "Színválasztás"
 
-#: kdialog.cpp:1014
+#: kdialog.cpp:1013
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
 msgstr "Szintaxis: --slider <szöveg> <min> <max> <lépés>"
