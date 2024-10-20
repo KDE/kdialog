@@ -33,7 +33,7 @@ if(NOT WITHOUT_X11)
 endif()
 
 ecm_set_disabled_deprecation_versions(
-    QT 6.7.0
+    QT 6.8.0
     KF 6.7
 )
 
