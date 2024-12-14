@@ -1,0 +1,438 @@
+# Sanskrit translations for kdialog package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the kdialog package.
+# Kali <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdialog\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-07-15 00:41+0000\n"
+"PO-Revision-Date: 2024-12-13 19:10+0530\n"
+"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"Language-Team: Sanskrit\n"
+"Language: sa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: kdialog.cpp:253
+#, kde-format
+msgid "KDialog can be used to show nice dialog boxes from shell scripts"
+msgstr "KDialog इत्यस्य उपयोगः शेल् स्क्रिप्ट् तः सुन्दराणि संवादपेटिकाः दर्शयितुं शक्यते"
+
+#: kdialog.cpp:255
+#, kde-format
+msgid "(C) 2000, Nick Thompson"
+msgstr "(C) 2000, निक थॉम्पसन"
+
+#: kdialog.cpp:256
+#, kde-format
+msgid "David Faure"
+msgstr "डेविड फौरे"
+
+#: kdialog.cpp:256
+#, kde-format
+msgid "Current maintainer"
+msgstr "वर्तमान परिपालक"
+
+#: kdialog.cpp:257
+#, kde-format
+msgid "Brad Hards"
+msgstr "ब्रैड हार्ड्स्"
+
+#: kdialog.cpp:258
+#, kde-format
+msgid "Nick Thompson"
+msgstr "निक थॉम्पसन"
+
+#: kdialog.cpp:259
+#, kde-format
+msgid "Matthias Hölzer"
+msgstr "मथियस होल्जर"
+
+#: kdialog.cpp:260
+#, kde-format
+msgid "David Gümbel"
+msgstr "डेविड गुम्बेल"
+
+#: kdialog.cpp:261
+#, kde-format
+msgid "Richard Moore"
+msgstr "रिचर्ड मूर्"
+
+#: kdialog.cpp:262
+#, kde-format
+msgid "Dawit Alemayehu"
+msgstr "डेविड अलेमायेहु"
+
+#: kdialog.cpp:263
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr "कै उवे ब्रौलिक"
+
+#: kdialog.cpp:270
+#, kde-format
+msgid "Question message box with yes/no buttons"
+msgstr "हाँ/न बटनैः सह प्रश्नसन्देशपेटिका"
+
+#: kdialog.cpp:271
+#, kde-format
+msgid "Question message box with yes/no/cancel buttons"
+msgstr "हाँ/न/रद्द बटनैः सह प्रश्नसन्देशपेटिका"
+
+#: kdialog.cpp:272
+#, kde-format
+msgid "Warning message box with yes/no buttons"
+msgstr "हाँ/न बटनैः सह चेतावनीसन्देशपेटी"
+
+#: kdialog.cpp:273
+#, kde-format
+msgid "Warning message box with continue/cancel buttons"
+msgstr "निरन्तरं/रद्द बटनैः सह चेतावनीसन्देशपेटी"
+
+#: kdialog.cpp:274
+#, kde-format
+msgid "Warning message box with yes/no/cancel buttons"
+msgstr "हाँ/न/रद्द बटनैः सह चेतावनीसन्देशपेटी"
+
+#: kdialog.cpp:276
+#, kde-format
+msgid "Use text as OK button label"
+msgstr "पाठस्य उपयोगं OK बटनलेबलरूपेण कुर्वन्तु"
+
+#: kdialog.cpp:277
+#, kde-format
+msgid "Use text as Yes button label"
+msgstr "पाठस्य उपयोगं Yes बटन् लेबलरूपेण कुर्वन्तु"
+
+#: kdialog.cpp:278
+#, kde-format
+msgid "Use text as No button label"
+msgstr "पाठस्य उपयोगं No बटन लेबलरूपेण कुर्वन्तु"
+
+#: kdialog.cpp:279
+#, kde-format
+msgid "Use text as Cancel button label"
+msgstr "पाठस्य उपयोगं Cancel बटन् लेबलरूपेण कुर्वन्तु"
+
+#: kdialog.cpp:280
+#, kde-format
+msgid "Use text as Continue button label"
+msgstr "Continue बटन लेबलरूपेण पाठस्य उपयोगं कुर्वन्तु"
+
+#: kdialog.cpp:281
+#, kde-format
+msgid "'Sorry' message box"
+msgstr "'क्षम्यतां' सन्देशपेटिका"
+
+#: kdialog.cpp:282
+#, kde-format
+msgid "'Sorry' message box with expandable Details field"
+msgstr "विस्तारणीय Details क्षेत्रेण सह 'क्षम्यतां' सन्देशपेटिका"
+
+#: kdialog.cpp:283
+#, kde-format
+msgid "'Error' message box"
+msgstr "'दोषः' सन्देशपेटिका"
+
+#: kdialog.cpp:284
+#, kde-format
+msgid "'Error' message box with expandable Details field"
+msgstr "विस्तारणीय Details क्षेत्रेण सह 'Error' सन्देशपेटिका"
+
+#: kdialog.cpp:285
+#, kde-format
+msgid "Message Box dialog"
+msgstr "सन्देशपेटी संवादः"
+
+#: kdialog.cpp:286
+#, kde-format
+msgid "Input Box dialog"
+msgstr "Input Box संवादः"
+
+#: kdialog.cpp:287
+#, kde-format
+msgid "Image Box dialog"
+msgstr "Image Box संवादः"
+
+#: kdialog.cpp:288
+#, kde-format
+msgid "Image Box Input dialog"
+msgstr "Image Box Input संवादः"
+
+#: kdialog.cpp:289
+#, kde-format
+msgid "Password dialog"
+msgstr "गुप्तशब्दसंवादः"
+
+#: kdialog.cpp:290
+#, kde-format
+msgid "New Password dialog"
+msgstr "नवीनं गुप्तशब्दसंवादः"
+
+#: kdialog.cpp:291
+#, kde-format
+msgid "Text Box dialog"
+msgstr "Text Box संवादः"
+
+#: kdialog.cpp:292
+#, kde-format
+msgid "Text Input Box dialog"
+msgstr "Text Input Box संवादः"
+
+#: kdialog.cpp:293
+#, kde-format
+msgid "ComboBox dialog"
+msgstr "ComboBox संवादः"
+
+#: kdialog.cpp:294
+#, kde-format
+msgid "Menu dialog"
+msgstr "मेनू संवादः"
+
+#: kdialog.cpp:295
+#, kde-format
+msgid "Check List dialog"
+msgstr "List संवादं पश्यन्तु"
+
+#: kdialog.cpp:296
+#, kde-format
+msgid "Radio List dialog"
+msgstr "रेडियो सूची संवादः"
+
+#: kdialog.cpp:297
+#, kde-format
+msgid "Passive Popup"
+msgstr "निष्क्रिय पॉपअप"
+
+#: kdialog.cpp:298
+#, kde-format
+msgid "Popup icon"
+msgstr "पॉपअप चिह्न"
+
+#: kdialog.cpp:299
+#, kde-format
+msgid ""
+"File dialog to open an existing file (arguments [startDir] [name or mimetype "
+"filter])"
+msgstr ""
+"विद्यमानसञ्चिकां उद्घाटयितुं सञ्चिकासंवादः (arguments [startDir] [name or mimetype "
+"filter])"
+
+#: kdialog.cpp:300
+#, kde-format
+msgid ""
+"File dialog to save a file (arguments [startDir] [name or mimetype filter])"
+msgstr ""
+"सञ्चिकां रक्षितुं सञ्चिकासंवादः (arguments [startDir] [name or mimetype filter])"
+
+#: kdialog.cpp:301
+#, kde-format
+msgid "File dialog to select an existing directory (arguments [startDir])"
+msgstr "विद्यमाननिर्देशिकायाः चयनार्थं सञ्चिकासंवादः (arguments [startDir])"
+
+#: kdialog.cpp:302
+#, kde-format
+msgid ""
+"File dialog to open an existing URL (arguments [startDir] [name or mimetype "
+"filter])"
+msgstr ""
+"विद्यमानं URL उद्घाटयितुं सञ्चिकासंवादः (arguments [startDir] [name or mimetype "
+"filter])"
+
+#: kdialog.cpp:303
+#, kde-format
+msgid ""
+"File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
+msgstr "URL रक्षितुं सञ्चिकासंवादः (तर्काः [startDir] [नाम अथवा mimetype filter])"
+
+#: kdialog.cpp:304
+#, kde-format
+msgid "Icon chooser dialog (arguments [group] [context])"
+msgstr "चिह्नचयनकर्ता संवादः (तर्काः [समूहः] [सन्दर्भः])"
+
+#: kdialog.cpp:305 kdialog_progress_helper.cpp:40
+#, kde-format
+msgid "Progress bar dialog, returns a D-Bus reference for communication"
+msgstr "प्रगतिपट्टिकासंवादः, संचारार्थं D-Bus सन्दर्भं प्रत्यागच्छति"
+
+#: kdialog.cpp:306
+#, kde-format
+msgid "Color dialog to select a color"
+msgstr "वर्णं चयनं कर्तुं वर्णसंवादः"
+
+#: kdialog.cpp:307
+#, kde-format
+msgid "Allow --getcolor to specify output format"
+msgstr "--getcolor इत्यस्य आउटपुट् प्रारूपं निर्दिष्टुं अनुमतिं ददातु"
+
+#: kdialog.cpp:309 kdialog_progress_helper.cpp:41
+#, kde-format
+msgid "Dialog title"
+msgstr "संवादस्य शीर्षकम्"
+
+#: kdialog.cpp:310
+#, kde-format
+msgid "Default entry to use for combobox, menu, color, and calendar"
+msgstr "combobox, menu, color, calendar इत्येतयोः कृते उपयोक्तुं पूर्वनिर्धारितप्रविष्टिः"
+
+#: kdialog.cpp:311
+#, kde-format
+msgid ""
+"Allows the --getopenurl and --getopenfilename options to return multiple "
+"files"
+msgstr "--getopenurl तथा --getopenfilename विकल्पान् बहुसञ्चिकाः प्रत्यागन्तुं अनुमन्यते"
+
+#: kdialog.cpp:312
+#, kde-format
+msgid ""
+"Return list items on separate lines (for checklist option and file open with "
+"--multiple)"
+msgstr ""
+"पृथक् पङ्क्तौ सूचीवस्तूनाम् प्रत्यागच्छतु (चेकलिस्ट् विकल्पाय --multiple इत्यनेन उद्घाटितस्य "
+"सञ्चिकायाः च कृते)"
+
+#: kdialog.cpp:313
+#, kde-format
+msgid "Outputs the winId of each dialog"
+msgstr "प्रत्येकस्य संवादस्य winId निर्गच्छति"
+
+#: kdialog.cpp:314
+#, kde-format
+msgid ""
+"Config file and option name for saving the \"do-not-show/ask-again\" state"
+msgstr "\"do-not-show/ask-again\" इति अवस्थां रक्षितुं सञ्चिकां विकल्पनाम च विन्यस्यताम्"
+
+#: kdialog.cpp:316
+#, kde-format
+msgid ""
+"Slider dialog box, returns selected value (arguments [text] [min] [max] "
+"[step])"
+msgstr ""
+"स्लाइडर संवादपेटिका, चयनितं मूल्यं प्रत्यागच्छति (तर्काः [पाठः] [min] [अधिकतमः] [चरणम्])"
+
+#: kdialog.cpp:317
+#, kde-format
+msgid ""
+"Date format for calendar result and/or default value (Qt-style); defaults to "
+"'ddd MMM d yyyy'"
+msgstr ""
+"कैलेण्डरपरिणामस्य कृते तिथिस्वरूपं तथा/वा पूर्वनिर्धारितमूल्यं (Qt-शैली); पूर्वनिर्धारितं 'ddd "
+"MMM d yyyy' इति ।"
+
+#: kdialog.cpp:318
+#, kde-format
+msgid "Calendar dialog box, returns selected date"
+msgstr "पञ्चाङ्गसंवादपेटिका, चयनिततिथिं प्रत्यागच्छति"
+
+#: kdialog.cpp:321
+#, kde-format
+msgid "Makes the dialog transient for an X app specified by winid"
+msgstr "winid द्वारा निर्दिष्टस्य X app कृते संवादं क्षणिकं करोति"
+
+#: kdialog.cpp:322
+#, kde-format
+msgid "A synonym for --attach"
+msgstr "--सक्त इति पर्यायः"
+
+#: kdialog.cpp:325
+#, kde-format
+msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
+msgstr "संवाद ज्यामितिः [=][<चौड़ाई>{xX}<उच्चता>][{+-}<xoffset>{+-}<yoffset>]"
+
+#: kdialog.cpp:327 kdialog_progress_helper.cpp:42
+#, kde-format
+msgid "Arguments - depending on main option"
+msgstr "तर्काः - मुख्यविकल्पानुसारम्"
+
+#: kdialog.cpp:339
+#, kde-format
+msgid "KDialog"
+msgstr "केसंवादः"
+
+#: kdialog.cpp:365
+#, kde-format
+msgctxt "@action:button"
+msgid "&Yes"
+msgstr ""
+
+#: kdialog.cpp:366
+#, kde-format
+msgctxt "@action:button"
+msgid "&No"
+msgstr ""
+
+#: kdialog.cpp:501
+#, kde-format
+msgid "Do not ask again"
+msgstr "पुनः मा पृच्छतु"
+
+#: kdialog.cpp:658
+#, kde-format
+msgid "Syntax: --combobox <text> item [item] ..."
+msgstr "वाक्य रचना: --combobox <text> मद [वस्तु] ..."
+
+#: kdialog.cpp:680
+#, kde-format
+msgid "Syntax: --menu text tag item [tag item] ..."
+msgstr "वाक्य रचना: --मेनू पाठ टैग आइटम [टैग आइटम] ..."
+
+#: kdialog.cpp:704
+#, kde-format
+msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
+msgstr "वाक्यविन्यासः: --checklist text tag item on/off [tag item on/off] ..."
+
+#: kdialog.cpp:722
+#, kde-format
+msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
+msgstr "वाक्य रचना: --radiolist text tag item on/off [tag item on/off] ..."
+
+#: kdialog.cpp:753
+#, kde-format
+msgctxt "@title:window"
+msgid "Open"
+msgstr ""
+
+#: kdialog.cpp:805
+#, kde-format
+msgctxt "@title:window"
+msgid "Save As"
+msgstr ""
+
+#: kdialog.cpp:839
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Directory"
+msgstr ""
+
+#: kdialog.cpp:952
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Color"
+msgstr ""
+
+#: kdialog.cpp:1013
+#, kde-format
+msgid "Syntax: --slider <text> <min> <max> <step>"
+msgstr "वाक्यविन्यासः --स्लाइडर <पाठ> <min> <अधिकतम> <चरण>"
+
+#: progressdialog.cpp:24
+#, kde-format
+msgid "Cancel"
+msgstr "निरसयतु"
+
+#: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
+#, kde-format
+msgid "kdialog: could not open file %1"
+msgstr "kdialog: %1 सञ्चिकां उद्घाटयितुं न शक्तवान्"
