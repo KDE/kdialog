@@ -19,12 +19,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #: kdialog.cpp:253
 #, kde-format
@@ -365,13 +365,13 @@ msgstr "केसंवादः"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&आम्‌"
 
 #: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&नहि"
 
 #: kdialog.cpp:501
 #, kde-format
@@ -402,25 +402,25 @@ msgstr "वाक्य रचना: --radiolist text tag item on/off [tag item
 #, kde-format
 msgctxt "@title:window"
 msgid "Open"
-msgstr ""
+msgstr "उद्घाटित"
 
 #: kdialog.cpp:805
 #, kde-format
 msgctxt "@title:window"
 msgid "Save As"
-msgstr ""
+msgstr "यथा रक्षतु"
 
 #: kdialog.cpp:839
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
-msgstr ""
+msgstr "निर्देशिकां चिनोतु"
 
 #: kdialog.cpp:952
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
-msgstr ""
+msgstr "Color इति चिनोतु"
 
 #: kdialog.cpp:1013
 #, kde-format
