@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-15 00:41+0000\n"
-"PO-Revision-Date: 2024-05-30 19:17+0200\n"
+"PO-Revision-Date: 2024-11-09 20:04+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.08.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -450,4 +450,4 @@ msgstr "Отказ"
 #: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
 #, kde-format
 msgid "kdialog: could not open file %1"
-msgstr "kdialog: файлът \"%1\" не може да бъде отворен"
+msgstr "kdialog: файлът „%1“ не може да бъде отворен"
