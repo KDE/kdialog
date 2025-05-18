@@ -1,21 +1,20 @@
-# Translation of kdialog to Spanish
-# translation of kdialog.po to Spanish
-# Translation to spanish.
-# Copyright (C) 2001-2002.
+# Spanish translations for kdialog.po package.
+# Copyright (C) 2001-2025 This file is copyright:
+# This file is distributed under the same license as the kdialog package.
 #
-# Pablo de Vicente <vicente@oan.es>, 2001-2002.
-# Jaime Robles <jaime@kde.org>, 2003, 2005, 2008.
-# Miguel Revilla Rodríguez <yo@miguelrevilla.com>, 2003, 2004.
-# Pablo de Vicente <p.devicente@wanadoo.es>, 2004.
-# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
-# SPDX-FileCopyrightText: 2010, 2013, 2016, 2017, 2018, 2019, 2020, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
-# Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>, 2010, 2011.
+# SPDX-FileCopyrightText: 2001-2002 Pablo de Vicente <vicente@oan.es>
+# SPDX-FileCopyrightText: 2003, 2005, 2008 Jaime Robles <jaime@kde.org>
+# SPDX-FileCopyrightText: 2003, 2004 Miguel Revilla Rodríguez <yo@miguelrevilla.com>
+# SPDX-FileCopyrightText: 2004 Pablo de Vicente <p.devicente@wanadoo.es>
+# SPDX-FileCopyrightText: 2007 Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>
+# SPDX-FileCopyrightText: 2010, 2013, 2016, 2017, 2018, 2019, 2020, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2010, 2011 Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-15 00:41+0000\n"
-"PO-Revision-Date: 2024-03-10 17:47+0100\n"
+"PO-Revision-Date: 2025-05-17 12:25+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -407,26 +406,26 @@ msgstr "No volver a preguntar"
 #: kdialog.cpp:658
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr "Sintaxis: --combobox <texto> elemento [elemento] ..."
+msgstr "Sintaxis: --combobox <texto> elemento [elemento] …"
 
 #: kdialog.cpp:680
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr "Sintaxis: --menu texto elemento etiqueta [elemento etiqueta] ..."
+msgstr "Sintaxis: --menu texto elemento etiqueta [elemento etiqueta] …"
 
 #: kdialog.cpp:704
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Sintaxis: --checklist texto etiqueta elemento on/off [etiqueta elemento on/"
-"off] ..."
+"off] …"
 
 #: kdialog.cpp:722
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
 "Sintaxis: --radiolist texto etiqueta elemento on/off [etiqueta elemento on/"
-"off] ..."
+"off] …"
 
 #: kdialog.cpp:753
 #, kde-format
@@ -466,15 +465,3 @@ msgstr "Cancelar"
 #, kde-format
 msgid "kdialog: could not open file %1"
 msgstr "kdialog: no se ha podido abrir el archivo %1"
-
-#~ msgid "Syntax: --radiolist text [tag item on/off] ..."
-#~ msgstr "Sintaxis: --radiolist texto [etiqueta elemento on/off] ..."
-
-#~ msgid "File dialog to open an existing URL"
-#~ msgstr "Ventana de archivo para abrir un URL ya existente"
-
-#~ msgid "File dialog to save a URL"
-#~ msgstr "Ventana de archivo para guardar un URL"
-
-#~ msgid "Icon chooser dialog"
-#~ msgstr "Ventana de selección de iconos"
