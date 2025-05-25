@@ -115,27 +115,27 @@ msgstr "Quadro de missatge d'avís amb botons sí/no/cancel·la"
 #: kdialog.cpp:276
 #, kde-format
 msgid "Use text as OK button label"
-msgstr "Utilitza el text com a etiqueta del botó D'acord"
+msgstr "Utilitza el text com a etiqueta del botó «D'acord»"
 
 #: kdialog.cpp:277
 #, kde-format
 msgid "Use text as Yes button label"
-msgstr "Utilitza el text com a etiqueta del botó Sí"
+msgstr "Utilitza el text com a etiqueta del botó «Sí»"
 
 #: kdialog.cpp:278
 #, kde-format
 msgid "Use text as No button label"
-msgstr "Utilitza el text com a etiqueta del botó No"
+msgstr "Utilitza el text com a etiqueta del botó «No»"
 
 #: kdialog.cpp:279
 #, kde-format
 msgid "Use text as Cancel button label"
-msgstr "Utilitza el text com a etiqueta del botó Cancel·la"
+msgstr "Utilitza el text com a etiqueta del botó «Cancel·la»"
 
 #: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Continue button label"
-msgstr "Utilitza el text com a etiqueta del botó Continua"
+msgstr "Utilitza el text com a etiqueta del botó «Continua»"
 
 #: kdialog.cpp:281
 #, kde-format
