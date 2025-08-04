@@ -181,12 +181,12 @@ msgstr "حواري إدخال صندوق الصورة"
 #: kdialog.cpp:289
 #, kde-format
 msgid "Password dialog"
-msgstr "حواري كلمة المرور"
+msgstr "حواري كلمة السر"
 
 #: kdialog.cpp:290
 #, kde-format
 msgid "New Password dialog"
-msgstr "حواري كلمة المرور جديدة"
+msgstr "حواري كلمة السر جديدة"
 
 #: kdialog.cpp:291
 #, kde-format
