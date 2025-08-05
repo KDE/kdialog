@@ -51,7 +51,7 @@ msgstr "David Faure"
 #: kdialog.cpp:256
 #, kde-format
 msgid "Current maintainer"
-msgstr "المصين الحالي"
+msgstr "الصائن الحالي"
 
 #: kdialog.cpp:257
 #, kde-format
@@ -290,7 +290,7 @@ msgstr "عنوان الحواري"
 #: kdialog.cpp:310
 #, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "المُدخلة الافتراضية المستخدَمة للمربع المُنسدل، والقائمة واللون والتقويم"
+msgstr "المُدخلة المبدئية المستخدَمة للمربع المُنسدل، والقائمة واللون والتقويم"
 
 #: kdialog.cpp:311
 #, kde-format
@@ -332,8 +332,8 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
-"تنسيق التاريخ لنتيجة التقويم و / أو القيمة الافتراضية (نمط Qt)؛ الإعدادات "
-"الافتراضية إلى \"ي ي ي  ش ش ش  ي  س س س س\""
+"تنسيق التاريخ لنتيجة التقويم و / أو القيمة المبدئية (نمط Qt)؛ الإعدادات "
+"المبدئية إلى \"ي ي ي  ش ش ش  ي  س س س س\""
 
 #: kdialog.cpp:318
 #, kde-format
