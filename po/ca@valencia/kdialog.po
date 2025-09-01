@@ -443,13 +443,13 @@ msgstr "Anomena i guarda"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
-msgstr "Seleccioneu un directori"
+msgstr "Trieu un directori"
 
 #: kdialog.cpp:952
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
-msgstr "Seleccioneu un color"
+msgstr "Trieu un color"
 
 #: kdialog.cpp:1013
 #, kde-format
