@@ -47,7 +47,6 @@
   <name xml:lang="tr">KDialog</name>
   <name xml:lang="uk">KDialog</name>
   <name xml:lang="vi">KDialog</name>
-  <name xml:lang="x-test">xxKDialogxx</name>
   <name xml:lang="zh-CN">KDialog</name>
   <name xml:lang="zh-TW">KDialog</name>
   <summary>Display dialog boxes from shell scripts</summary>
@@ -93,7 +92,6 @@
   <summary xml:lang="tr">Kabuk betiklerinden iletişim kutuları görüntüler</summary>
   <summary xml:lang="uk">Відкриття діалогових вікон з скриптів командної оболонки</summary>
   <summary xml:lang="vi">Hiển thị các hộp thoại từ các kịch bản hệ vỏ</summary>
-  <summary xml:lang="x-test">xxDisplay dialog boxes from shell scriptsxx</summary>
   <summary xml:lang="zh-CN">通过 Shell 脚本显示对话框</summary>
   <summary xml:lang="zh-TW">在 Shell 指令稿顯示對話框</summary>
   <description>
@@ -136,7 +134,6 @@
     <p xml:lang="sv">Kdialog låter dig visa dialogrutor från skalskript. Syntaxen är i stor utsträckning inspirerad av kommandot "dialog" (som visar dialogrutor i textläge).</p>
     <p xml:lang="tr">KDialog, kabuk betiklerinden iletişim kutuları görüntülemenize izin verir. Sözdizim, büyük ölçüde "dialog" komutundan (metin kipi iletişim kutuları gösterir) esinlenmiştir.</p>
     <p xml:lang="uk">За допомогою KDialog можна відкривати діалогові вікна зі скриптів командної оболонки. Синтаксис команд є дуже схожим на синтаксис команд програми «dialog» (яка показу діалогові вікна у текстовому режимі).</p>
-    <p xml:lang="x-test">xxKDialog allows you to display dialog boxes from shell scripts. The syntax is very much inspired from the "dialog" command (which shows text mode dialogs).xx</p>
     <p xml:lang="zh-CN">KDialog 用于通过 Shell 脚本显示对话框。KDialog 的语法在很大程度上参考了 dialog 命令 (此命令用于显示文本模式的对话信息)。</p>
     <p xml:lang="zh-TW">kDialog 讓您能使用 Shell 指令稿顯示對話框。語法不少啟發自「dialog」（顯示文字模式的對話框）指令。</p>
   </description>
