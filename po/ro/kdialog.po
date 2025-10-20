@@ -1,10 +1,8 @@
 # Traducerea kdialog.po în Română
 # translation of kdialog.po to Romanian
-# translation of @PACKAGE.po to @LANGUAGE
 # Copyright (C) 2003, 2004, 2005, 2008 Free Software Foundation, Inc.
 # Claudiu Costin <claudiuc@kde.org>, 2003, 2004, 2005.
-# Sergiu Bivol <sergiu@cip.md>, 2008.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2014, 2020, 2024.
+# SPDX-FileCopyrightText: 2008, 2009, 2014, 2020, 2024, 2025 Sergiu Bivol <sergiu@cip.md>
 # Cristian Oneț <onet.cristian@gmail.com>, 2011.
 #
 msgid ""
@@ -12,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-15 00:41+0000\n"
-"PO-Revision-Date: 2024-02-24 14:49+0000\n"
+"PO-Revision-Date: 2025-10-19 02:30+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -21,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -231,23 +229,21 @@ msgid "Popup icon"
 msgstr "Pictogramă pentru fereastra contextuală"
 
 #: kdialog.cpp:299
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Dialog de fișiere pentru deschiderea unui fișier existent (argumente "
-"[dosarInițial] [filtru])"
+"[dosarInițial] [filtru denumiri sau tipuri MIME])"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr ""
 "Dialog de fișiere pentru salvarea unui fișier (argumente [dosarInițial] "
-"[filtru])"
+"[filtru denumiri sau tipuri MIME])"
 
 #: kdialog.cpp:301
 #, kde-format
@@ -257,23 +253,21 @@ msgstr ""
 "[dosarInițial])"
 
 #: kdialog.cpp:302
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
 "Dialog de fișiere pentru deschiderea unui URL existent (argumente "
-"[dosarInițial] [filtru])"
+"[dosarInițial] [filtru denumiri sau tipuri MIME])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Dialog de fișiere pentru salvarea unui URL (argumente [dosarInițial] "
-"[filtru])"
+"Dialog de fișiere pentru salvarea unui URL (argumente [dosarInițial] [filtru "
+"denumiri sau tipuri MIME])"
 
 #: kdialog.cpp:304
 #, kde-format
