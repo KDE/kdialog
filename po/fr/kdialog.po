@@ -49,7 +49,7 @@ msgstr ""
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
-"KDialog peut être utilisé pour afficher de jolies boîtes de dialogue depuis "
+"KDialog peut être utilisé pour afficher de jolies boites de dialogue depuis "
 "un script shell"
 
 #: kdialog.cpp:255
@@ -201,7 +201,7 @@ msgstr "Boîte de dialogue pour la saisie d'un mot de passe"
 #: kdialog.cpp:290
 #, kde-format
 msgid "New Password dialog"
-msgstr "Nouvelle boîte de dialogue pour la saisie d'un mot de passe"
+msgstr "Nouvelle boite de dialogue pour la saisie d'un mot de passe"
 
 #: kdialog.cpp:291
 #, kde-format
@@ -310,7 +310,7 @@ msgstr "Permet à --getcolor de spécifier le format de sortie"
 #: kdialog.cpp:309 kdialog_progress_helper.cpp:41
 #, kde-format
 msgid "Dialog title"
-msgstr "Titre de la boîte de dialogue"
+msgstr "Titre de la boite de dialogue"
 
 #: kdialog.cpp:310
 #, kde-format
@@ -341,7 +341,7 @@ msgstr ""
 #: kdialog.cpp:313
 #, kde-format
 msgid "Outputs the winId of each dialog"
-msgstr "Affiche l'identifiant de fenêtre « winid » de chaque boîte de dialogue"
+msgstr "Affiche l'identifiant de fenêtre « winid » de chaque boite de dialogue"
 
 #: kdialog.cpp:314
 #, kde-format
@@ -378,7 +378,7 @@ msgstr "Boîte de dialogue de calendrier, retourne la date sélectionnée"
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr ""
-"Affiche temporairement la boîte pour une application X définie par son "
+"Affiche temporairement la boite pour une application X définie par son "
 "identifiant « winid »"
 
 #: kdialog.cpp:322
@@ -390,7 +390,7 @@ msgstr "Un synonyme de --attacher"
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
-"Géométrie de la boîte de dialogue : [=][<largeur>{xX}<hauteur>][{+-}"
+"Géométrie de la boite de dialogue : [=][<largeur>{xX}<hauteur>][{+-}"
 "<décalage_x>{+-}<décalage_y>]"
 
 #: kdialog.cpp:327 kdialog_progress_helper.cpp:42
