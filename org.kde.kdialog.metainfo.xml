@@ -65,7 +65,7 @@
   <summary xml:lang="et">Shelliskriptidega dialoogikastide näitamine</summary>
   <summary xml:lang="eu">Bistaratu elkarrizketa-koadroak «shell script»etatik</summary>
   <summary xml:lang="fi">Näytä komentotulkkiskriptistä kyselyikkunoita</summary>
-  <summary xml:lang="fr">Affiche des boîtes de dialogue depuis un script shell</summary>
+  <summary xml:lang="fr">Affiche des boites de dialogue depuis un script shell</summary>
   <summary xml:lang="gl">Amosar cadros de diálogo a partir de guións de intérprete de ordes</summary>
   <summary xml:lang="he">הצגת תיבות בחלוניות מסקריפטים של מעטפת</summary>
   <summary xml:lang="hi">शेल स्क्रिप्टों से संवाद बक्से प्रदर्शित करें</summary>
@@ -113,7 +113,7 @@
     <p xml:lang="es">KDialog le permite mostrar cuadros de diálogo desde los scripts del intérprete de órdenes. Su sintaxis está muy inspirada en la orden «dialog» (que muestra diálogos en modo de texto).</p>
     <p xml:lang="eu">«KDialog»ek oskoleko gidoietatik elkarrizketa-koadroak azaltzen uzten dizu. Sintaxia "dialog" komandoan (testu-moduko elkarrizketa-koadroak erakusten dituena) oso inspiratua dago.</p>
     <p xml:lang="fi">KDialogilla voi näyttää kyselyikkunoita komentotulkkiskriptistä. Syntaksi on saanut vaikutteita dialog-komennosta (joka näyttää tekstitilan kyselyikkunoita).</p>
-    <p xml:lang="fr">KDialog vous permet d'afficher des boîtes de dialogue depuis des scripts shell. Sa syntaxe s'inspire largement de celle de la commande « dialog » (qui affiche des boîtes de dialogue en mode texte).</p>
+    <p xml:lang="fr">KDialog vous permet d'afficher des boites de dialogue depuis des scripts shell. Sa syntaxe s'inspire largement de celle de la commande « dialog » (qui affiche des boites de dialogue en mode texte).</p>
     <p xml:lang="gl">KDialog permítelle amosar cadros de diálogo a partir de guións de intérprete de ordes. A sintaxe está inspirada en gran medida na orde «dialog» (que mostra diálogos en modo texto).</p>
     <p xml:lang="he">KDialog מאפשר לך להציג חלוניות מסקריפטים של מעטפת. התחביר מושפע למכביר מהפקודה „dialog” (שמציגה חלוניות במצב טקסט).</p>
     <p xml:lang="hu">A KDialog lehetővé teszi párbeszédablakok megjelenítését parancsfájlokból. A szintaxisára nagy hatással volt a „dialog” parancs (amely szöveges párbeszédablakokat jelenít meg).</p>
