@@ -110,10 +110,9 @@ msgid "Warning message box with yes/no/cancel buttons"
 msgstr "Bosca rabhaidh le cnaipí Tá/Níl/Cealaigh"
 
 #: kdialog.cpp:276
-#, fuzzy, kde-format
-#| msgid "Use text as No button label"
+#, kde-format
 msgid "Use text as OK button label"
-msgstr "Úsáid an téacs mar lipéad i gcnaipe 'Níl'"
+msgstr ""
 
 #: kdialog.cpp:277
 #, kde-format
@@ -166,16 +165,14 @@ msgid "Input Box dialog"
 msgstr "Bosca Ionchurtha"
 
 #: kdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box dialog"
-msgstr "Bosca Teachtaireachta"
+msgstr ""
 
 #: kdialog.cpp:288
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box Input dialog"
-msgstr "Bosca Teachtaireachta"
+msgstr ""
 
 #: kdialog.cpp:289
 #, kde-format
@@ -183,10 +180,9 @@ msgid "Password dialog"
 msgstr "Dialóg fhocail faire"
 
 #: kdialog.cpp:290
-#, fuzzy, kde-format
-#| msgid "Password dialog"
+#, kde-format
 msgid "New Password dialog"
-msgstr "Dialóg fhocail faire"
+msgstr ""
 
 #: kdialog.cpp:291
 #, kde-format
@@ -224,46 +220,40 @@ msgid "Passive Popup"
 msgstr "Preabfhuinneog Éighníomhach"
 
 #: kdialog.cpp:298
-#, fuzzy, kde-format
-#| msgid "Passive Popup"
+#, kde-format
 msgid "Popup icon"
-msgstr "Preabfhuinneog Éighníomhach"
+msgstr ""
 
 #: kdialog.cpp:299
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "Dialóg chomhaid chun comhad atá ann a oscailt"
+msgstr ""
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "Dialóg chomhaid chun comhad a shábháil"
+msgstr ""
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
-msgstr "Dialóg chomhaid chun comhadlann atá ann a roghnú"
+msgstr ""
 
 #: kdialog.cpp:302
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "Dialóg chomhaid chun comhad atá ann a oscailt"
+msgstr ""
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Dialóg chomhaid chun comhad a shábháil"
+msgstr ""
 
 #: kdialog.cpp:304
 #, kde-format
@@ -292,11 +282,9 @@ msgid "Dialog title"
 msgstr "Teideal dialóige"
 
 #: kdialog.cpp:310
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox, menu and color"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
 msgstr ""
-"Iontráil réamhshocraithe le húsáid i mbosca teaglama, roghchlár agus dath"
 
 #: kdialog.cpp:311
 #, kde-format
@@ -330,12 +318,11 @@ msgstr ""
 "fiafraigh-arís\" ann"
 
 #: kdialog.cpp:316
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Dialóg shleamhnáin a aischuireann an luach roghnaithe"
+msgstr ""
 
 #: kdialog.cpp:317
 #, kde-format
@@ -450,12 +437,3 @@ msgstr ""
 #, kde-format
 msgid "kdialog: could not open file %1"
 msgstr "kdialog: níorbh fhéidir comhad %1 a oscailt"
-
-#~ msgid "File dialog to open an existing URL"
-#~ msgstr "Dialóg chomhaid chun URL atá ann a oscailt"
-
-#~ msgid "File dialog to save a URL"
-#~ msgstr "Dialóg chomhaid chun URL a shábháil"
-
-#~ msgid "Icon chooser dialog"
-#~ msgstr "Dialóg roghnaithe deilbhín"
