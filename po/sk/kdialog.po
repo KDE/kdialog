@@ -19,8 +19,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.07.80\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.07.80\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -233,8 +233,7 @@ msgid "Popup icon"
 msgstr "Vyskakovacia ikona"
 
 #: kdialog.cpp:299
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
@@ -243,8 +242,7 @@ msgstr ""
 "[filter])"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr "Dialóg súborov pre uloženie súboru (argumenty [startDir] [filter])"
@@ -255,8 +253,7 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Dialóg súborov pre výber existujúceho priečinka (argument [startDir])"
 
 #: kdialog.cpp:302
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
@@ -264,8 +261,7 @@ msgstr ""
 "Dialóg súborov pre otvorenie existujúceho URL (argumenty [startDir] [filter])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr "Dialóg súborov pre uloženie URL (argumenty [startDir] [filter])"
@@ -334,8 +330,7 @@ msgstr ""
 "nepýtať sa znovu\""
 
 #: kdialog.cpp:316
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
@@ -385,13 +380,13 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "Áno"
 
 #: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "Nie"
 
 #: kdialog.cpp:501
 #, kde-format
@@ -445,7 +440,7 @@ msgstr "Vybrať farbu"
 #: kdialog.cpp:1013
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Syntax: --slider <text> <min> <max> <krok>"
 
 #: progressdialog.cpp:24
 #, kde-format
