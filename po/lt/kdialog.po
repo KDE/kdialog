@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2017-10-02 10:33+0200\n"
+"PO-Revision-Date: 2026-05-03 20:48+0300\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -16,24 +16,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 3.8\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Ričardas Čepas, Donatas Glodenis"
+msgstr "Ričardas Čepas, Donatas Glodenis, Moo"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "rch@richard.eu.org, dgvirtual@akl.lt"
+msgstr "rch@richard.eu.org, dgvirtual@akl.lt, <>"
 
 #: kdialog.cpp:253
 #, kde-format
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
-"KDialog gali būti naudojamas gražiems dialogų langams rodyti iš apvalkalo "
-"scenarijų"
+"KDialog gali būti naudojama siekiant rodyti patrauklius dialogo langelius iš "
+"apvalkalo scenarijų"
 
 #: kdialog.cpp:255
 #, kde-format
@@ -88,95 +88,95 @@ msgstr "Kai Uwe Broulik"
 #: kdialog.cpp:270
 #, kde-format
 msgid "Question message box with yes/no buttons"
-msgstr "Klausimo pranešimo langas su taip/ne mygtukais"
+msgstr "Klausimo pranešimo langelis su taip/ne mygtukais"
 
 #: kdialog.cpp:271
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
-msgstr "Klausimo pranešimo langas su taip/ne/atšaukti mygtukais"
+msgstr "Klausimo pranešimo langelis su taip/ne/atsisakyti mygtukais"
 
 #: kdialog.cpp:272
 #, kde-format
 msgid "Warning message box with yes/no buttons"
-msgstr "Perspėjimo pranešimo langas su taip/ne mygtukais"
+msgstr "Įspėjimo pranešimo langelis su taip/ne mygtukais"
 
 #: kdialog.cpp:273
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
-msgstr "Perspėjimo pranešimo langas su taip/ne/atšaukti mygtukais"
+msgstr "Įspėjimo pranešimo langelis su tęsti/atsisakyti mygtukais"
 
 #: kdialog.cpp:274
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
-msgstr "Perspėjimo pranešimo langas su taip/ne/atšaukti mygtukais"
+msgstr "Įspėjimo pranešimo langelis su taip/ne/atsisakyti mygtukais"
 
 #: kdialog.cpp:276
-#, fuzzy, kde-format
-#| msgid "Use text as No button label"
+#, kde-format
 msgid "Use text as OK button label"
-msgstr "Naudoti tekstą, kaip mygtuko „Ne“ etiketę"
+msgstr "Naudoti tekstą kaip mygtuko „Gerai“ etiketę"
 
 #: kdialog.cpp:277
 #, kde-format
 msgid "Use text as Yes button label"
-msgstr "Naudoti tekstą, kaip mygtuko „Taip“ etiketę"
+msgstr "Naudoti tekstą kaip mygtuko „Taip“ etiketę"
 
 #: kdialog.cpp:278
 #, kde-format
 msgid "Use text as No button label"
-msgstr "Naudoti tekstą, kaip mygtuko „Ne“ etiketę"
+msgstr "Naudoti tekstą kaip mygtuko „Ne“ etiketę"
 
 #: kdialog.cpp:279
 #, kde-format
 msgid "Use text as Cancel button label"
-msgstr "Naudoti tekstą, kaip mygtuko „Nutraukti“ etiketę"
+msgstr "Naudoti tekstą kaip mygtuko „Atsisakyti“ etiketę"
 
 #: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Continue button label"
-msgstr "Naudoti tekstą, kaip mygtuko „Tęsti“ etiketę"
+msgstr "Naudoti tekstą kaip mygtuko „Tęsti“ etiketę"
 
 #: kdialog.cpp:281
 #, kde-format
 msgid "'Sorry' message box"
-msgstr "„Atleiskite“ pranešimo langas"
+msgstr "„Apgailestavimo“ pranešimo langelis"
 
 #: kdialog.cpp:282
 #, kde-format
 msgid "'Sorry' message box with expandable Details field"
 msgstr ""
+"„Apgailestavimo“ pranešimo langelis su išskleidžiamu išsamesnės informacijos "
+"lauku"
 
 #: kdialog.cpp:283
 #, kde-format
 msgid "'Error' message box"
-msgstr "„Klaida“ pranešimo langas"
+msgstr "„Klaidos“ pranešimo langelis"
 
 #: kdialog.cpp:284
 #, kde-format
 msgid "'Error' message box with expandable Details field"
 msgstr ""
+"„Klaidos“ pranešimo langelis su išskleidžiamu išsamesnės informacijos lauku"
 
 #: kdialog.cpp:285
 #, kde-format
 msgid "Message Box dialog"
-msgstr "Pranešimo lango dialogas"
+msgstr "Pranešimo langelio dialogas"
 
 #: kdialog.cpp:286
 #, kde-format
 msgid "Input Box dialog"
-msgstr "Įvedimo dialogas"
+msgstr "Įvedimo langelio dialogas"
 
 #: kdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box dialog"
-msgstr "Pranešimo lango dialogas"
+msgstr "Paveikslo langelio dialogas"
 
 #: kdialog.cpp:288
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box Input dialog"
-msgstr "Pranešimo lango dialogas"
+msgstr "Paveikslo įvedimo langelio dialogas"
 
 #: kdialog.cpp:289
 #, kde-format
@@ -184,25 +184,24 @@ msgid "Password dialog"
 msgstr "Slaptažodžio dialogas"
 
 #: kdialog.cpp:290
-#, fuzzy, kde-format
-#| msgid "Password dialog"
+#, kde-format
 msgid "New Password dialog"
-msgstr "Slaptažodžio dialogas"
+msgstr "Naujo slaptažodžio dialogas"
 
 #: kdialog.cpp:291
 #, kde-format
 msgid "Text Box dialog"
-msgstr "Teksto dialogas"
+msgstr "Teksto langelio dialogas"
 
 #: kdialog.cpp:292
 #, kde-format
 msgid "Text Input Box dialog"
-msgstr "Teksto įvedimo dialogas"
+msgstr "Teksto įvedimo langelio dialogas"
 
 #: kdialog.cpp:293
 #, kde-format
 msgid "ComboBox dialog"
-msgstr "Išskleidžiamo sąrašo dialogas"
+msgstr "Jungtinio langelio dialogas"
 
 #: kdialog.cpp:294
 #, kde-format
@@ -212,79 +211,84 @@ msgstr "Meniu dialogas"
 #: kdialog.cpp:295
 #, kde-format
 msgid "Check List dialog"
-msgstr "Pažymėjimų sąrašo dialogas"
+msgstr "Žymimojo sąrašo dialogas"
 
 #: kdialog.cpp:296
 #, kde-format
 msgid "Radio List dialog"
-msgstr "Radio sąrašo dialogas"
+msgstr "Akučių sąrašo dialogas"
 
 #: kdialog.cpp:297
 #, kde-format
 msgid "Passive Popup"
-msgstr "Pasyvus pasirodantis langas"
+msgstr "Pasyvus iškylantysis langas"
 
 #: kdialog.cpp:298
-#, fuzzy, kde-format
-#| msgid "Passive Popup"
+#, kde-format
 msgid "Popup icon"
-msgstr "Pasyvus pasirodantis langas"
+msgstr "Iškylančioji piktograma"
 
 #: kdialog.cpp:299
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "Dialogas egzistuojančio failo atvėrimui"
+msgstr ""
+"Failo dialogas, skirtas atverti esamą failą (argumentai [pradžios katalogas] "
+"[pavadinimas arba mime tipo filtras])"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "Dialogas failo įrašymui"
+msgstr ""
+"Failo dialogas, skirtas įrašyti failą (argumentai [pradžios katalogas] "
+"[pavadinimas arba mime tipo filtras])"
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
-msgstr "Dialogas egzistuojančio aplanko pasirinkimui"
+msgstr ""
+"Failo dialogas, skirtas pasirinkti esamą katalogą (argumentai [pradžios "
+"katalogas])"
 
 #: kdialog.cpp:302
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "Dialogas egzistuojančio failo atvėrimui"
+msgstr ""
+"Failo dialogas, skirtas atverti esamą URL (argumentai [pradinis katalogas] "
+"[pavadinimas ar mime tipo filtras])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Dialogas failo įrašymui"
+msgstr ""
+"Failo dialogas, skirtas įrašyti URL (argumentai [pradinis katalogas] "
+"[pavadinimas ar mime tipo filtras])"
 
 #: kdialog.cpp:304
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
-msgstr ""
+msgstr "Piktogramos parinkiklio dialogas (argumentai [grupė] [kontekstas])"
 
 #: kdialog.cpp:305 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
-msgstr "Eigos juostos dialogas, grąžinantis D-Bus nuorodą komunikacijai"
+msgstr ""
+"Eigos juostos dialogas, grąžinantis D-Bus nuorodą, skirtą komunikacijai"
 
 #: kdialog.cpp:306
 #, kde-format
 msgid "Color dialog to select a color"
-msgstr "Dialogas spalvos parinkimui"
+msgstr "Spalvos dialogas, skirtas pasirinkti spalvą"
 
 #: kdialog.cpp:307
 #, kde-format
 msgid "Allow --getcolor to specify output format"
-msgstr ""
+msgstr "Leisti --getcolor nurodyti išvesties formatą"
 
 #: kdialog.cpp:309 kdialog_progress_helper.cpp:41
 #, kde-format
@@ -292,10 +296,11 @@ msgid "Dialog title"
 msgstr "Dialogo antraštė"
 
 #: kdialog.cpp:310
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox, menu and color"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "Išskleidžiamojo sąrašo, spalvos ir meniu numatytasis įrašas"
+msgstr ""
+"Jungtiniam langeliui, meniu, spalvai ir kalendoriui naudojamas numatytasis "
+"įrašas"
 
 #: kdialog.cpp:311
 #, kde-format
@@ -303,7 +308,7 @@ msgid ""
 "Allows the --getopenurl and --getopenfilename options to return multiple "
 "files"
 msgstr ""
-"Leisti parinktims --getopenurl and --getopenfilename rodyti daugelį failų"
+"Leisti parinktims --getopenurl ir --getopenfilename grąžinti keletą failų"
 
 #: kdialog.cpp:312
 #, kde-format
@@ -311,29 +316,30 @@ msgid ""
 "Return list items on separate lines (for checklist option and file open with "
 "--multiple)"
 msgstr ""
-"Grąžinti sąrašo elementus atskirose eilutėse (pažymėjimų sąrašo parinkčiai "
-"bei atveriant failus su parinktimi --multiple)"
+"Grąžinti sąrašo elementus atskirose eilutėse (skirta jungtinio langelio "
+"parinkčiai ir failų atvėrimui naudojant --multiple)"
 
 #: kdialog.cpp:313
 #, kde-format
 msgid "Outputs the winId of each dialog"
-msgstr "Pateikia kiekvieno dialogo lango ID (winid)"
+msgstr "Pateikia kiekvieno dialogo lango ID (winID)"
 
 #: kdialog.cpp:314
 #, kde-format
 msgid ""
 "Config file and option name for saving the \"do-not-show/ask-again\" state"
 msgstr ""
-"Konfigūracijos failas ir parinkties vardas „daugiau nerodyti/neklausti“ "
-"būsenai"
+"Konfigūracijos failas ir parinkties pavadinimas, skirtas „daugiau neberodyti/"
+"nebeklausti“ būsenai įrašyti"
 
 #: kdialog.cpp:316
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Dialogo laukas su slinktuku, grąžina pažymėtą vertę"
+msgstr ""
+"Slinktuko dialogo langelis, grąžina pasirinktą reikšmę (argumentai [tekstas] "
+"[min] [maks] [žingsnis])"
 
 #: kdialog.cpp:317
 #, kde-format
@@ -341,27 +347,30 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"Datos formato, skirto kalendoriui, rezultatas ir/arba numatytoji reikšmė (Qt "
+"stiliaus); pagal numatymą naudojamas 'ddd MMM d yyyy'"
 
 #: kdialog.cpp:318
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
-msgstr "Kalendoriaus dialogas, grąžina pažymėtą datą"
+msgstr "Kalendoriaus dialogo langelis, grąžina pasirinktą datą"
 
 #: kdialog.cpp:321
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
-msgstr ""
-"Padaro dialogą permatomą X programoms, nurodytoms pagal lango ID (winid)"
+msgstr "Padaro dialogą laikiną X programoms, nurodytoms pagal lango ID (winid)"
 
 #: kdialog.cpp:322
 #, kde-format
 msgid "A synonym for --attach"
-msgstr ""
+msgstr "--attach sinonimas"
 
 #: kdialog.cpp:325
 #, kde-format
 msgid "Dialog geometry: [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]"
 msgstr ""
+"Dialogo geometrija: [=][<plotis>{xX}<aukštis>][{+-}<x poslinkis>{+-}<y "
+"poslinkis>]"
 
 #: kdialog.cpp:327 kdialog_progress_helper.cpp:42
 #, kde-format
@@ -377,38 +386,42 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&Taip"
 
 #: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&Ne"
 
 #: kdialog.cpp:501
 #, kde-format
 msgid "Do not ask again"
-msgstr ""
+msgstr "Daugiau nebeklausti"
 
 #: kdialog.cpp:658
 #, kde-format
 msgid "Syntax: --combobox <text> item [item] ..."
-msgstr ""
+msgstr "Sintaksė: --combobox <tekstas> elementas [elementas] ..."
 
 #: kdialog.cpp:680
 #, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr ""
+msgstr "Sintaksė: --menu tekstas žymė elementas [žymė elementas] ..."
 
 #: kdialog.cpp:704
 #, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"Sintaksė: --checklist tekstas žymė elementas on/off [žymė elementas on/"
+"off] ..."
 
 #: kdialog.cpp:722
 #, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
+"Sintaksė: --radiolist tekstas žymė elementas on/off [žymė elementas on/"
+"off] ..."
 
 #: kdialog.cpp:753
 #, kde-format
@@ -426,23 +439,23 @@ msgstr "Įrašyti kaip"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Directory"
-msgstr "Katalogo pasirinkimas"
+msgstr "Pasirinkite katalogą"
 
 #: kdialog.cpp:952
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Color"
-msgstr "Parinkti spalvą"
+msgstr "Pasirinkite spalvą"
 
 #: kdialog.cpp:1013
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Sintaksė: --slider <tekstas> <min> <maks> <žingsnis>"
 
 #: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
-msgstr "Atšaukti"
+msgstr "Atsisakyti"
 
 #: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
 #, kde-format
