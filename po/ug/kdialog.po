@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2013-09-08 07:04+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-31 18:24-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 
 #: kdialog.cpp:253
 #, kde-format
@@ -46,7 +47,7 @@ msgstr "David Faure"
 #: kdialog.cpp:256
 #, kde-format
 msgid "Current maintainer"
-msgstr "نۆۋەتتىكى مەسئۇلى"
+msgstr "نۆۋەتتىكى ئاسرىغۇچى"
 
 #: kdialog.cpp:257
 #, kde-format
@@ -61,12 +62,12 @@ msgstr "Nick Thompson"
 #: kdialog.cpp:259
 #, kde-format
 msgid "Matthias Hölzer"
-msgstr "Matthias Hölzer"
+msgstr ""
 
 #: kdialog.cpp:260
 #, kde-format
 msgid "David Gümbel"
-msgstr "David Gümbel"
+msgstr ""
 
 #: kdialog.cpp:261
 #, kde-format
@@ -76,7 +77,7 @@ msgstr "Richard Moore"
 #: kdialog.cpp:262
 #, kde-format
 msgid "Dawit Alemayehu"
-msgstr "Dawit Alemayehu"
+msgstr ""
 
 #: kdialog.cpp:263
 #, kde-format
@@ -86,53 +87,52 @@ msgstr "Kai Uwe Broulik"
 #: kdialog.cpp:270
 #, kde-format
 msgid "Question message box with yes/no buttons"
-msgstr "ھەئە/ياق توپچا بار سوئال ئۇچۇر قۇتاسى"
+msgstr "ھەئە/ياق توپچە بار سوئال ئۇچۇر قۇتاسى"
 
 #: kdialog.cpp:271
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
-msgstr "ھەئە/ياق/ۋاز كەچ توپچا بار سوئال ئۇچۇر قۇتاسى"
+msgstr "ھەئە/ياق/ۋاز كەچ توپچە بار سوئال ئۇچۇر قۇتاسى"
 
 #: kdialog.cpp:272
 #, kde-format
 msgid "Warning message box with yes/no buttons"
-msgstr "ھەئە/ياق توپچا بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
+msgstr "ھەئە/ياق توپچە بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
 
 #: kdialog.cpp:273
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
-msgstr "داۋاملاشتۇر/ۋاز كەچ توپچا بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
+msgstr "داۋاملاشتۇر/ۋاز كەچ توپچە بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
 
 #: kdialog.cpp:274
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
-msgstr "ھەئە/ياق/ۋاز كەچ توپچا بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
+msgstr "ھەئە/ياق/ۋاز كەچ توپچە بار ئاگاھلاندۇرۇش ئۇچۇر قۇتاسى"
 
 #: kdialog.cpp:276
-#, fuzzy, kde-format
-#| msgid "Use text as No button label"
+#, kde-format
 msgid "Use text as OK button label"
-msgstr "ياق توپچا بەلگىسى تېكىستىنى ئىشلەت"
+msgstr ""
 
 #: kdialog.cpp:277
 #, kde-format
 msgid "Use text as Yes button label"
-msgstr "ھەئە توپچا بەلگىسى تېكىستىنى ئىشلەت"
+msgstr "ھەئە توپچە بەلگىسى تېكىستىنى ئىشلەت"
 
 #: kdialog.cpp:278
 #, kde-format
 msgid "Use text as No button label"
-msgstr "ياق توپچا بەلگىسى تېكىستىنى ئىشلەت"
+msgstr "ياق توپچە بەلگىسى تېكىستىنى ئىشلەت"
 
 #: kdialog.cpp:279
 #, kde-format
 msgid "Use text as Cancel button label"
-msgstr "ۋاز كەچ توپچا بەلگىسى تېكىستىنى ئىشلەت"
+msgstr "ۋاز كەچ توپچە بەلگىسى تېكىستىنى ئىشلەت"
 
 #: kdialog.cpp:280
 #, kde-format
 msgid "Use text as Continue button label"
-msgstr "داۋاملاشتۇر توپچا بەلگىسى تېكىستىنى ئىشلەت"
+msgstr "داۋاملاشتۇر توپچە بەلگىسى تېكىستىنى ئىشلەت"
 
 #: kdialog.cpp:281
 #, kde-format
@@ -165,16 +165,14 @@ msgid "Input Box dialog"
 msgstr "كىرگۈزۈش قۇتا سۆزلەشكۈسى"
 
 #: kdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box dialog"
-msgstr "ئۇچۇر قۇتا سۆزلەشكۈسى"
+msgstr ""
 
 #: kdialog.cpp:288
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box Input dialog"
-msgstr "ئۇچۇر قۇتا سۆزلەشكۈسى"
+msgstr ""
 
 #: kdialog.cpp:289
 #, kde-format
@@ -182,10 +180,9 @@ msgid "Password dialog"
 msgstr "ئىم سۆزلەشكۈسى"
 
 #: kdialog.cpp:290
-#, fuzzy, kde-format
-#| msgid "Password dialog"
+#, kde-format
 msgid "New Password dialog"
-msgstr "ئىم سۆزلەشكۈسى"
+msgstr ""
 
 #: kdialog.cpp:291
 #, kde-format
@@ -223,46 +220,40 @@ msgid "Passive Popup"
 msgstr "پاسسىپ قاڭقىش كۆزنەكى"
 
 #: kdialog.cpp:298
-#, fuzzy, kde-format
-#| msgid "Passive Popup"
+#, kde-format
 msgid "Popup icon"
-msgstr "پاسسىپ قاڭقىش كۆزنەكى"
+msgstr ""
 
 #: kdialog.cpp:299
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "مەۋجۇت ھۆججەتنى ئاچىدىغان ھۆججەت سۆزلەشكۈ"
+msgstr ""
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "ھۆججەت ساقلايدىغان ھۆججەت سۆزلەشكۈ"
+msgstr ""
 
 #: kdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "File dialog to select an existing directory"
+#, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
-msgstr "مەۋجۇت مۇندەرىجىنى تاللايدىغان ھۆججەت سۆزلەشكۈ"
+msgstr ""
 
 #: kdialog.cpp:302
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
-msgstr "مەۋجۇت ھۆججەتنى ئاچىدىغان ھۆججەت سۆزلەشكۈ"
+msgstr ""
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "ھۆججەت ساقلايدىغان ھۆججەت سۆزلەشكۈ"
+msgstr ""
 
 #: kdialog.cpp:304
 #, kde-format
@@ -290,10 +281,9 @@ msgid "Dialog title"
 msgstr "سۆزلەشكۈ ماۋزۇسى"
 
 #: kdialog.cpp:310
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox, menu and color"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "بىرىكمە قۇتا، تىزىملىك ۋە رەڭگە ئىشلىتىدىغان كۆڭۈلدىكى تۈر"
+msgstr ""
 
 #: kdialog.cpp:311
 #, kde-format
@@ -325,12 +315,11 @@ msgstr ""
 "«قايتا كۆرسەتمە/قايتا سورا» ھالىتىنىڭ سەپلىمە ھۆججىتى ۋە تۈر ئاتىنى ساقلايدۇ"
 
 #: kdialog.cpp:316
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "تام تەسۋىر سۆزلەشكۈ قۇتاسى، تاللانغان قىممەتنى قايتۇرىدۇ"
+msgstr ""
 
 #: kdialog.cpp:317
 #, kde-format
@@ -348,7 +337,7 @@ msgstr "يىلنامە سۆزلەشكۈسى، تاللانغان چېسلانى 
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr ""
-"winid كۆرسەتكەن X پروگراممىلىرىنىڭ سۆزلەشكۈسى تېز سۈرئەتتە قىممىتىنى "
+"winid كۆرسەتكەن X پىروگراممىسىنىڭ سۆزلەشكۈسى تېز ئۆزگىرىش قىممىتىنى "
 "ئۆزگەرتىدۇ"
 
 #: kdialog.cpp:322
@@ -375,18 +364,18 @@ msgstr "KDialog"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "ھەئە(&Y)"
 
 #: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "ياق(&N)"
 
 #: kdialog.cpp:501
 #, kde-format
 msgid "Do not ask again"
-msgstr ""
+msgstr "قايتا سورىما"
 
 #: kdialog.cpp:658
 #, kde-format
@@ -440,7 +429,7 @@ msgstr ""
 #: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "ۋاز كەچ"
 
 #: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
 #, kde-format
