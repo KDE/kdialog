@@ -46,6 +46,7 @@
   <name xml:lang="sl">KDialog</name>
   <name xml:lang="sv">Kdialog</name>
   <name xml:lang="tr">KDialog</name>
+  <name xml:lang="ug">KDialog</name>
   <name xml:lang="uk">KDialog</name>
   <name xml:lang="vi">KDialog</name>
   <name xml:lang="zh-CN">KDialog</name>
@@ -92,6 +93,7 @@
   <summary xml:lang="sv">Visa dialogrutor från skalskript</summary>
   <summary xml:lang="ta">சிறுநிரல்களிலிருந்து தேர்வுச்சாளரங்களைக் காட்ட உதவும்</summary>
   <summary xml:lang="tr">Kabuk betiklerinden iletişim kutuları görüntüler</summary>
+  <summary xml:lang="ug">shell قوليازمىدا سۆزلەشكۈ كۆرسەت</summary>
   <summary xml:lang="uk">Відкриття діалогових вікон з скриптів командної оболонки</summary>
   <summary xml:lang="vi">Hiển thị các hộp thoại từ các kịch bản hệ vỏ</summary>
   <summary xml:lang="zh-CN">通过 Shell 脚本显示对话框</summary>
