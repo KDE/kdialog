@@ -2,13 +2,13 @@
 # Tamas Szanto <tszanto@interware.hu>, 2002.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2011.
 # Balázs Úr <urbalazs@gmail.com>, 2013.
-# SPDX-FileCopyrightText: 2021, 2024 Kristof Kiszel <kiszel.kristof@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2024, 2026 Kristof Kiszel <kiszel.kristof@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2024-05-18 14:30+0200\n"
+"PO-Revision-Date: 2026-06-18 21:49+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 26.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -93,7 +93,7 @@ msgstr "Kérdező üzenetablak Igen/Nem nyomógombokkal"
 #: kdialog.cpp:271
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
-msgstr "Kérdező üzenetablak Igen/Nem/Mégsem nyomógombokkal"
+msgstr "Kérdező üzenetablak Igen/Nem/Mégse nyomógombokkal"
 
 #: kdialog.cpp:272
 #, kde-format
@@ -103,12 +103,12 @@ msgstr "Figyelmeztető ablak Igen/Nem gombokkal"
 #: kdialog.cpp:273
 #, kde-format
 msgid "Warning message box with continue/cancel buttons"
-msgstr "Figyelmeztető ablak Folytatás/Mégsem gombokkal"
+msgstr "Figyelmeztető ablak Folytatás/Mégse gombokkal"
 
 #: kdialog.cpp:274
 #, kde-format
 msgid "Warning message box with yes/no/cancel buttons"
-msgstr "Figyelmeztető ablak Igen/Nem/Mégsem gombokkal"
+msgstr "Figyelmeztető ablak Igen/Nem/Mégse gombokkal"
 
 #: kdialog.cpp:276
 #, kde-format
@@ -128,7 +128,7 @@ msgstr "Szöveg használata a Nem gomb címkéjeként"
 #: kdialog.cpp:279
 #, kde-format
 msgid "Use text as Cancel button label"
-msgstr "Szöveg használata a Mégsem gomb címkéjeként"
+msgstr "Szöveg használata a Mégse gomb címkéjeként"
 
 #: kdialog.cpp:280
 #, kde-format
@@ -450,7 +450,7 @@ msgstr "Szintaxis: --slider <szöveg> <min> <max> <lépés>"
 #: progressdialog.cpp:24
 #, kde-format
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Mégse"
 
 #: widgets.cpp:107 widgets.cpp:141 widgets.cpp:154
 #, kde-format
