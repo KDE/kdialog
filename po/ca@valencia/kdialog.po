@@ -377,7 +377,7 @@ msgstr ""
 #: kdialog.cpp:327 kdialog_progress_helper.cpp:42
 #, kde-format
 msgid "Arguments - depending on main option"
-msgstr "Arguments - depenent de l'opció principal"
+msgstr "Arguments – depenent de l'opció principal"
 
 #: kdialog.cpp:339
 #, kde-format
