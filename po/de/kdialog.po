@@ -35,7 +35,7 @@ msgstr "kde-i18n-de@kde.org"
 msgid "KDialog can be used to show nice dialog boxes from shell scripts"
 msgstr ""
 "KDialog kann für die Anzeige hübscher Dialoge aus Shell-Skripten heraus "
-"benutzt werden."
+"verwendet werden."
 
 #: kdialog.cpp:255
 #, kde-format
