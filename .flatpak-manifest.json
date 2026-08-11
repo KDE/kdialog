@@ -5,16 +5,24 @@
     "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "command": "kdialog",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
-    "finish-args": ["--share=ipc", "--socket=fallback-x11", "--socket=wayland" ],
-
+    "finish-args": [
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland"
+    ],
     "modules": [
         {
             "name": "kdialog",
             "buildsystem": "cmake-ninja",
             "sources": [
-                { "type": "dir", "path": "." }
+                {
+                    "type": "dir",
+                    "path": "."
+                }
             ]
         },
         {
@@ -25,6 +33,5 @@
                 "install -D /usr/share/icons/breeze/status/22/dialog-question.svg /app/share/icons/hicolor/32x32/apps/dialog-question.svg"
             ]
         }
-
     ]
 }
