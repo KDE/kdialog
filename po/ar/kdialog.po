@@ -343,7 +343,7 @@ msgstr "حواري تقويم، يُرجع التاريخ المحدّد"
 #: kdialog.cpp:321
 #, kde-format
 msgid "Makes the dialog transient for an X app specified by winid"
-msgstr "يجعل مربع الحوار عابراً للتطبيق X المحدد بـ winid"
+msgstr "يجعل مربع الحوار عابرًا للتطبيق X المحدد بـ winid"
 
 #: kdialog.cpp:322
 #, kde-format
