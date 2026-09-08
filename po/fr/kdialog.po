@@ -105,12 +105,12 @@ msgstr "Kai Uwe Broulik"
 #: kdialog.cpp:270
 #, kde-format
 msgid "Question message box with yes/no buttons"
-msgstr "Boîte de messages avec les boutons « Oui » et « Non »"
+msgstr "Boite de messages avec les boutons « Oui » et « Non »"
 
 #: kdialog.cpp:271
 #, kde-format
 msgid "Question message box with yes/no/cancel buttons"
-msgstr "Boîte de messages avec les boutons « Oui », « Non » et « Annuler »"
+msgstr "Boite de messages avec les boutons « Oui », « Non » et « Annuler »"
 
 #: kdialog.cpp:272
 #, kde-format
@@ -176,27 +176,27 @@ msgstr "Message d'erreur avec un champ de détails expansible"
 #: kdialog.cpp:285
 #, kde-format
 msgid "Message Box dialog"
-msgstr "Boîte de dialogue pour l'affichage d'un message"
+msgstr "Boite de dialogue pour l'affichage d'un message"
 
 #: kdialog.cpp:286
 #, kde-format
 msgid "Input Box dialog"
-msgstr "Boîte de dialogue pour la saisie de texte"
+msgstr "Boite de dialogue pour la saisie de texte"
 
 #: kdialog.cpp:287
 #, kde-format
 msgid "Image Box dialog"
-msgstr "Boîte de dialogue pour l'affichage d'image"
+msgstr "Boite de dialogue pour l'affichage d'image"
 
 #: kdialog.cpp:288
 #, kde-format
 msgid "Image Box Input dialog"
-msgstr "Boîte de dialogue pour la saisie d'image"
+msgstr "Boite de dialogue pour la saisie d'image"
 
 #: kdialog.cpp:289
 #, kde-format
 msgid "Password dialog"
-msgstr "Boîte de dialogue pour la saisie d'un mot de passe"
+msgstr "Boite de dialogue pour la saisie d'un mot de passe"
 
 #: kdialog.cpp:290
 #, kde-format
@@ -206,12 +206,12 @@ msgstr "Nouvelle boite de dialogue pour la saisie d'un mot de passe"
 #: kdialog.cpp:291
 #, kde-format
 msgid "Text Box dialog"
-msgstr "Boîte de dialogue pour l'affichage de texte"
+msgstr "Boite de dialogue pour l'affichage de texte"
 
 #: kdialog.cpp:292
 #, kde-format
 msgid "Text Input Box dialog"
-msgstr "Boîte de dialogue de saisie de texte"
+msgstr "Boite de dialogue de saisie de texte"
 
 #: kdialog.cpp:293
 #, kde-format
@@ -221,17 +221,17 @@ msgstr "Liste déroulante"
 #: kdialog.cpp:294
 #, kde-format
 msgid "Menu dialog"
-msgstr "Boîte de dialogue avec un menu"
+msgstr "Boite de dialogue avec un menu"
 
 #: kdialog.cpp:295
 #, kde-format
 msgid "Check List dialog"
-msgstr "Boîte de dialogue avec une liste à choix multiples"
+msgstr "Boite de dialogue avec une liste à choix multiples"
 
 #: kdialog.cpp:296
 #, kde-format
 msgid "Radio List dialog"
-msgstr "Boîte de dialogue avec une liste à choix unique"
+msgstr "Boite de dialogue avec une liste à choix unique"
 
 #: kdialog.cpp:297
 #, kde-format
@@ -249,7 +249,7 @@ msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Boîte de dialogue pour l'ouverture d'un fichier existant (arguments [Dossier-"
+"Boite de dialogue pour l'ouverture d'un fichier existant (arguments [Dossier-"
 "source] [Filtre de nom ou de type « MIME »])"
 
 #: kdialog.cpp:300
@@ -257,14 +257,14 @@ msgstr ""
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Boîte de dialogue pour l'enregistrement d'un fichier (arguments [Dossier-"
+"Boite de dialogue pour l'enregistrement d'un fichier (arguments [Dossier-"
 "source] [Filtre de nom ou de type « MIME »])"
 
 #: kdialog.cpp:301
 #, kde-format
 msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr ""
-"Boîte de dialogue pour sélectionner un dossier existant (arguments "
+"Boite de dialogue pour sélectionner un dossier existant (arguments "
 "[dossier_démarrage])"
 
 #: kdialog.cpp:302
@@ -273,7 +273,7 @@ msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Boîte de dialogue pour l'ouverture d'une URL existante (arguments [Dossier-"
+"Boite de dialogue pour l'ouverture d'une URL existante (arguments [Dossier-"
 "source] [Filtre de nom ou de type « MIME »])"
 
 #: kdialog.cpp:303
@@ -281,26 +281,26 @@ msgstr ""
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
 msgstr ""
-"Boîte de dialogue pour l'enregistrement d'une URL (arguments [Dossier-"
+"Boite de dialogue pour l'enregistrement d'une URL (arguments [Dossier-"
 "source] [Filtre de nom ou de type « MIME »])"
 
 #: kdialog.cpp:304
 #, kde-format
 msgid "Icon chooser dialog (arguments [group] [context])"
 msgstr ""
-"Boîte de dialogue pour choisir une icône (arguments [groupe] [contexte])"
+"Boite de dialogue pour choisir une icône (arguments [groupe] [contexte])"
 
 #: kdialog.cpp:305 kdialog_progress_helper.cpp:40
 #, kde-format
 msgid "Progress bar dialog, returns a D-Bus reference for communication"
 msgstr ""
-"Boîte de barre de progression, retourne une référence D-Bus pour la "
+"Boite de barre de progression, retourne une référence D-Bus pour la "
 "communication"
 
 #: kdialog.cpp:306
 #, kde-format
 msgid "Color dialog to select a color"
-msgstr "Boîte de dialogue pour sélectionner une couleur"
+msgstr "Boite de dialogue pour sélectionner une couleur"
 
 #: kdialog.cpp:307
 #, kde-format
@@ -357,7 +357,7 @@ msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
 msgstr ""
-"Boîte de dialogue avec curseur. Retourne la valeur sélectionnée (arguments "
+"Boite de dialogue avec curseur. Retourne la valeur sélectionnée (arguments "
 "[texte] [min] [max] [step])"
 
 #: kdialog.cpp:317
@@ -372,7 +372,7 @@ msgstr ""
 #: kdialog.cpp:318
 #, kde-format
 msgid "Calendar dialog box, returns selected date"
-msgstr "Boîte de dialogue de calendrier, retourne la date sélectionnée"
+msgstr "Boite de dialogue de calendrier, retourne la date sélectionnée"
 
 #: kdialog.cpp:321
 #, kde-format
