@@ -2,13 +2,14 @@
 # Toplica Tanaskovic <toptan@kde.org.yu>, 2003, 2004.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2007, 2008, 2009, 2010, 2011, 2013, 2016, 2017.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2009.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdialog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2017-09-28 17:56+0200\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-04 23:13+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -23,12 +24,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Часлав Илић"
+msgstr "Часлав Илић,Немања Хиршл"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "caslav.ilic@gmx.net"
+msgstr "caslav.ilic@gmx.net,nemhirsl@gmail.com"
 
 #: kdialog.cpp:253
 #, kde-format
@@ -111,10 +112,9 @@ msgid "Warning message box with yes/no/cancel buttons"
 msgstr "Упозорење са дугмадима да/не/одустани"
 
 #: kdialog.cpp:276
-#, fuzzy, kde-format
-#| msgid "Use text as No button label"
+#, kde-format
 msgid "Use text as OK button label"
-msgstr "Овај текст је етикета дугмета „Не“"
+msgstr "Овај текст је етикета дугмета „У реду“"
 
 #: kdialog.cpp:277
 #, kde-format
@@ -167,16 +167,14 @@ msgid "Input Box dialog"
 msgstr "Дијалог за унос"
 
 #: kdialog.cpp:287
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box dialog"
-msgstr "Дијалог са поруком"
+msgstr "Дијалог са сликом"
 
 #: kdialog.cpp:288
-#, fuzzy, kde-format
-#| msgid "Message Box dialog"
+#, kde-format
 msgid "Image Box Input dialog"
-msgstr "Дијалог са поруком"
+msgstr "Дијалог за унос са сликом"
 
 #: kdialog.cpp:289
 #, kde-format
@@ -224,26 +222,26 @@ msgid "Passive Popup"
 msgstr "Пасивни искакач"
 
 #: kdialog.cpp:298
-#, fuzzy, kde-format
-#| msgid "Passive popup icon"
+#, kde-format
 msgid "Popup icon"
-msgstr "Пасивна искачућа иконица"
+msgstr "Иконица искакача"
 
 #: kdialog.cpp:299
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing file (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Дијалог за отварање постојећег фајла (аргументи [почетна-фасцикла] [филтер])"
+"Дијалог за отварање постојећег фајла (аргументи [почетна-фасцикла] [филтер "
+"имена или МИМЕ типа])"
 
 #: kdialog.cpp:300
-#, fuzzy, kde-format
-#| msgid "File dialog to save a file (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a file (arguments [startDir] [name or mimetype filter])"
-msgstr "Дијалог за уписивање фајла (аргументи [почетна-фасцикла] [филтер])"
+msgstr ""
+"Дијалог за уписивање фајла (аргументи [почетна-фасцикла] [филтер имена или "
+"МИМЕ типа])"
 
 #: kdialog.cpp:301
 #, kde-format
@@ -251,20 +249,21 @@ msgid "File dialog to select an existing directory (arguments [startDir])"
 msgstr "Дијалог за бирање постојеће фасцикле (аргументи [почетна-фасцикла])"
 
 #: kdialog.cpp:302
-#, fuzzy, kde-format
-#| msgid "File dialog to open an existing URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to open an existing URL (arguments [startDir] [name or mimetype "
 "filter])"
 msgstr ""
-"Дијалог за отварање постојећег УРЛ‑а (аргументи [почетна-фасцикла] [филтер])"
+"Дијалог за отварање постојећег УРЛ‑а (аргументи [почетна-фасцикла] [филтер "
+"имена или МИМЕ типа])"
 
 #: kdialog.cpp:303
-#, fuzzy, kde-format
-#| msgid "File dialog to save a URL (arguments [startDir] [filter])"
+#, kde-format
 msgid ""
 "File dialog to save a URL (arguments [startDir] [name or mimetype filter])"
-msgstr "Дијалог за уписивање УРЛ‑а (аргументи [почетна-фасцикла] [филтер])"
+msgstr ""
+"Дијалог за уписивање УРЛ‑а (аргументи [почетна-фасцикла] [филтер имена или "
+"МИМЕ типа])"
 
 #: kdialog.cpp:304
 #, kde-format
@@ -292,10 +291,9 @@ msgid "Dialog title"
 msgstr "Наслов дијалога"
 
 #: kdialog.cpp:310
-#, fuzzy, kde-format
-#| msgid "Default entry to use for combobox, menu and color"
+#, kde-format
 msgid "Default entry to use for combobox, menu, color, and calendar"
-msgstr "Подразумевани унос за падајући списак, мени и боју"
+msgstr "Подразумевани унос за падајући списак, мени, боју и календар"
 
 #: kdialog.cpp:311
 #, kde-format
@@ -327,12 +325,13 @@ msgstr ""
 "Поставни фајл и име опције за уписивање стања „не приказуј/не питај опет“"
 
 #: kdialog.cpp:316
-#, fuzzy, kde-format
-#| msgid "Slider dialog box, returns selected value"
+#, kde-format
 msgid ""
 "Slider dialog box, returns selected value (arguments [text] [min] [max] "
 "[step])"
-msgstr "Дијалог са клизачем, враћа изабрану вредност"
+msgstr ""
+"Дијалог са клизачем, враћа изабрану вредност (аргументи [текст] [мин] [макс] "
+"[корак])"
 
 #: kdialog.cpp:317
 #, kde-format
@@ -340,6 +339,8 @@ msgid ""
 "Date format for calendar result and/or default value (Qt-style); defaults to "
 "'ddd MMM d yyyy'"
 msgstr ""
+"Формат датума за резултат календара и/или подразумевану вредност (у КуТ "
+"стилу); подразумевано „ddd MMM d yyyy“"
 
 #: kdialog.cpp:318
 #, kde-format
@@ -377,18 +378,18 @@ msgstr "К‑дијалог"
 #, kde-format
 msgctxt "@action:button"
 msgid "&Yes"
-msgstr ""
+msgstr "&Да"
 
 #: kdialog.cpp:366
 #, kde-format
 msgctxt "@action:button"
 msgid "&No"
-msgstr ""
+msgstr "&Не"
 
 #: kdialog.cpp:501
 #, kde-format
 msgid "Do not ask again"
-msgstr ""
+msgstr "Не питај више"
 
 # rewrite-msgid: /<text>/text/
 #: kdialog.cpp:658
@@ -397,29 +398,26 @@ msgid "Syntax: --combobox <text> item [item] ..."
 msgstr "Синтакса: --combobox текст ставка [ставка] ..."
 
 #: kdialog.cpp:680
-#, fuzzy, kde-format
-#| msgid "Syntax: --menu text [tag item] [tag item] ..."
+#, kde-format
 msgid "Syntax: --menu text tag item [tag item] ..."
-msgstr "Синтакса: --menu текст [ознака ставка] [ознака ставка] ..."
+msgstr "Синтакса: --menu текст ознака ставка [ознака ставка] ..."
 
 # rewrite-msgid: /$/.../
 # well-spelled: укљ, искљ
 #: kdialog.cpp:704
-#, fuzzy, kde-format
-#| msgid "Syntax: --checklist text [tag item on/off] [tag item on/off]"
+#, kde-format
 msgid "Syntax: --checklist text tag item on/off [tag item on/off] ..."
 msgstr ""
-"Синтакса: --checklist текст [ознака ставка укљ/искљ] [ознака ставка укљ/"
+"Синтакса: --checklist текст ознака ставка укљ/искљ [ознака ставка укљ/"
 "искљ] ..."
 
 # rewrite-msgid: /$/.../
 # well-spelled: укљ, искљ
 #: kdialog.cpp:722
-#, fuzzy, kde-format
-#| msgid "Syntax: --checklist text [tag item on/off] [tag item on/off]"
+#, kde-format
 msgid "Syntax: --radiolist text tag item on/off [tag item on/off] ..."
 msgstr ""
-"Синтакса: --checklist текст [ознака ставка укљ/искљ] [ознака ставка укљ/"
+"Синтакса: --radiolist текст ознака ставка укљ/искљ [ознака ставка укљ/"
 "искљ] ..."
 
 #: kdialog.cpp:753
@@ -449,7 +447,7 @@ msgstr "Избор боје"
 #: kdialog.cpp:1013
 #, kde-format
 msgid "Syntax: --slider <text> <min> <max> <step>"
-msgstr ""
+msgstr "Синтакса: --slider текст мин макс корак"
 
 #: progressdialog.cpp:24
 #, kde-format
@@ -460,7 +458,3 @@ msgstr "Одустани"
 #, kde-format
 msgid "kdialog: could not open file %1"
 msgstr "К‑дијалог: Не могу да отворим фајл ‘%1’"
-
-# well-spelled: укљ, искљ
-#~ msgid "Syntax: --radiolist text [tag item on/off] ..."
-#~ msgstr "Синтакса: --radiolist текст [ознака ставка укљ/искљ] ..."
