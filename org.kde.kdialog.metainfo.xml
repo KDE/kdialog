@@ -44,6 +44,10 @@
   <name xml:lang="sa">केसंवादः</name>
   <name xml:lang="sk">KDialog</name>
   <name xml:lang="sl">KDialog</name>
+  <name xml:lang="sr">К‑дијалог</name>
+  <name xml:lang="sr-Latn">K‑dijalog</name>
+  <name xml:lang="sr-ijekavian">К‑дијалог</name>
+  <name xml:lang="sr-ijekavianlatin">K‑dijalog</name>
   <name xml:lang="sv">Kdialog</name>
   <name xml:lang="tr">KDialog</name>
   <name xml:lang="uk">KDialog</name>
@@ -90,6 +94,10 @@
   <summary xml:lang="sa">शेल् स्क्रिप्ट् तः संवादपेटिकाः प्रदर्शयन्तु</summary>
   <summary xml:lang="sk">Zobraziť dialógové okná zo shellových príkazov</summary>
   <summary xml:lang="sl">Prikažite pogovorna okna iz shell skripta</summary>
+  <summary xml:lang="sr">Приказивање дијалога из скрипти шкољке</summary>
+  <summary xml:lang="sr-Latn">Prikazivanje dijaloga iz skripti školjke</summary>
+  <summary xml:lang="sr-ijekavian">Приказивање дијалога из скрипти шкољке</summary>
+  <summary xml:lang="sr-ijekavianlatin">Prikazivanje dijaloga iz skripti školjke</summary>
   <summary xml:lang="sv">Visa dialogrutor från skalskript</summary>
   <summary xml:lang="ta">சிறுநிரல்களிலிருந்து தேர்வுச்சாளரங்களைக் காட்ட உதவும்</summary>
   <summary xml:lang="tr">Kabuk betiklerinden iletişim kutuları görüntüler</summary>
@@ -138,6 +146,10 @@
     <p xml:lang="sa">KDialog इत्यनेन शेल् स्क्रिप्ट् तः संवादपेटिकाः प्रदर्शयितुं शक्यन्ते । वाक्यविन्यासः "dialog" आदेशात् (यत् पाठविधिसंवादं दर्शयति) अतीव प्रेरितम् अस्ति ।</p>
     <p xml:lang="sk">kdialog vám umožní zobraziť dialógové okná zo shellových skriptov. Syntax je inšpirovaná príkazom "dialog" (ktorý zobrazí textové dialógy)</p>
     <p xml:lang="sl">kdialog omogoča prikazovanje pogovornih oken iz shell skripta. Skladnja je navdihnjena iz ukaza "dialog" (ki prikazuje besedilni način dialogov).</p>
+    <p xml:lang="sr">К‑дијалог омогућава приказивање дијалога из скрипти шкољке. Синтакса је у великој мери надахнута наредбом dialog (која приказује дијалоге у текстуалном режиму).</p>
+    <p xml:lang="sr-Latn">K‑dijalog omogućava prikazivanje dijaloga iz skripti školjke. Sintaksa je u velikoj meri nadahnuta naredbom dialog (koja prikazuje dijaloge u tekstualnom režimu).</p>
+    <p xml:lang="sr-ijekavian">К‑дијалог омогућава приказивање дијалога из скрипти шкољке. Синтакса је у великој мјери надахнута наредбом dialog (која приказује дијалоге у текстуалном режиму).</p>
+    <p xml:lang="sr-ijekavianlatin">K‑dijalog omogućava prikazivanje dijaloga iz skripti školjke. Sintaksa je u velikoj mjeri nadahnuta naredbom dialog (koja prikazuje dijaloge u tekstualnom režimu).</p>
     <p xml:lang="sv">Kdialog låter dig visa dialogrutor från skalskript. Syntaxen är i stor utsträckning inspirerad av kommandot "dialog" (som visar dialogrutor i textläge).</p>
     <p xml:lang="tr">KDialog, kabuk betiklerinden iletişim kutuları görüntülemenize izin verir. Sözdizim, büyük ölçüde "dialog" komutundan (metin kipi iletişim kutuları gösterir) esinlenmiştir.</p>
     <p xml:lang="uk">За допомогою KDialog можна відкривати діалогові вікна зі скриптів командної оболонки. Синтаксис команд є дуже схожим на синтаксис команд програми «dialog» (яка показу діалогові вікна у текстовому режимі).</p>
