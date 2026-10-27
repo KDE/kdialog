@@ -347,7 +347,7 @@ msgid ""
 "'ddd MMM d yyyy'"
 msgstr ""
 "Takvim sonucu ve/veya öntanımlı değer (Qt stili) için tarih biçimi; "
-"öntanımlı: 'ggg AAA g yyyy'"
+"öntanımlı: “ddd MMM d yyyy”"
 
 #: kdialog.cpp:318
 #, kde-format
