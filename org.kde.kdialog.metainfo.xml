@@ -2,7 +2,7 @@
 <component type="console-application">
   <id>org.kde.kdialog</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2.0+</project_license>
+  <project_license>GPL-2.0-or-later</project_license>
   <name>KDialog</name>
   <name xml:lang="ar">حواريك</name>
   <name xml:lang="ast">KDialog</name>
@@ -161,6 +161,8 @@
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kdialog</url>
   <url type="help">https://techbase.kde.org/Development/Tutorials/Shell_Scripting_with_KDE_Dialogs</url>
   <url type="donation">https://www.kde.org/community/donations/?app=kdialog&amp;source=appdata</url>
+  <url type="vcs-browser">https://invent.kde.org/utilities/kdialog</url>
+  <url type="contribute">https://community.kde.org/Get_Involved</url>
   <screenshots>
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/kdialog/kdialog.png</image>
