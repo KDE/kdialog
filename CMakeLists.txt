@@ -32,6 +32,9 @@ if(NOT WITHOUT_X11)
     set(HAVE_X11 ${X11_FOUND})
 endif()
 
+if(ECM_VERSION VERSION_GREATER_EQUAL "6.33.0")
+    add_definitions(-DQT_LEAN_HEADERS=2)
+endif()
 ecm_set_disabled_deprecation_versions(
     QT 6.8.0
     KF 6.14.0
